@@ -6,6 +6,8 @@ const BASE_URL = 'edicoes/index.json';
 const NAV_STORAGE_KEY = 'biblia:last-navigation';
 const THEME_STORAGE_KEY = 'biblia:theme';
 const REVIEW_POPUP_STORAGE_KEY = 'biblia:hide-review-popup';
+const INSTALL_POPUP_STORAGE_KEY = 'biblia:hide-install-popup-until';
+const INSTALL_POPUP_DISMISS_DAYS = 7;
 const ROUTING_MODE = 'hash';
 const MOBILE_PDF_INITIAL_SCALE = 1;
 
@@ -50,6 +52,7 @@ let ignoreNextModalPopstate = false;
 let pdfModalGesturesBound = false;
 let pdfPinchGesturesBound = false;
 let pdfPinchState = null;
+let deferredInstallPrompt = null;
 
 function isIOSMobile() {
   const ua = navigator.userAgent || '';
@@ -307,6 +310,104 @@ function initReviewPopup() {
 
   okBtn.addEventListener('click', () => hideReviewPopup());
   hideBtn.addEventListener('click', () => hideReviewPopup({ permanent: true }));
+}
+
+function isRunningStandaloneMode() {
+  const inStandaloneMedia = window.matchMedia && window.matchMedia('(display-mode: standalone)').matches;
+  const inStandaloneNavigator = window.navigator && window.navigator.standalone === true;
+  return Boolean(inStandaloneMedia || inStandaloneNavigator);
+}
+
+function parseInstallDismissUntil() {
+  try {
+    const raw = localStorage.getItem(INSTALL_POPUP_STORAGE_KEY);
+    const n = Number.parseInt(raw || '', 10);
+    return Number.isFinite(n) ? n : 0;
+  } catch (_) {
+    return 0;
+  }
+}
+
+function dismissInstallPopupForDays(days = INSTALL_POPUP_DISMISS_DAYS) {
+  try {
+    const now = Date.now();
+    const until = now + (Math.max(1, days) * 24 * 60 * 60 * 1000);
+    localStorage.setItem(INSTALL_POPUP_STORAGE_KEY, String(until));
+  } catch (_) {
+    // sem persistencia quando localStorage nao estiver disponivel
+  }
+}
+
+function canShowInstallPopup() {
+  if (isRunningStandaloneMode()) return false;
+  const dismissedUntil = parseInstallDismissUntil();
+  return dismissedUntil < Date.now();
+}
+
+function setInstallPopupVisibility(visible) {
+  const popup = document.getElementById('install-popup');
+  if (!popup) return;
+  popup.hidden = !visible;
+}
+
+async function promptInstallApp() {
+  if (!deferredInstallPrompt) return;
+
+  try {
+    await deferredInstallPrompt.prompt();
+    await deferredInstallPrompt.userChoice;
+  } catch (_) {
+    // ignora cancelamento ou erro de prompt
+  } finally {
+    deferredInstallPrompt = null;
+    setInstallPopupVisibility(false);
+  }
+}
+
+function initInstallPopup() {
+  const installBtn = document.getElementById('install-popup-install');
+  const closeBtn = document.getElementById('install-popup-close');
+  const popup = document.getElementById('install-popup');
+  if (!installBtn || !closeBtn || !popup) return;
+
+  setInstallPopupVisibility(false);
+
+  installBtn.addEventListener('click', () => {
+    promptInstallApp();
+  });
+
+  closeBtn.addEventListener('click', () => {
+    dismissInstallPopupForDays();
+    setInstallPopupVisibility(false);
+  });
+
+  window.addEventListener('beforeinstallprompt', (event) => {
+    event.preventDefault();
+    deferredInstallPrompt = event;
+    if (canShowInstallPopup()) {
+      setInstallPopupVisibility(true);
+    }
+  });
+
+  window.addEventListener('appinstalled', () => {
+    deferredInstallPrompt = null;
+    setInstallPopupVisibility(false);
+    dismissInstallPopupForDays(3650);
+  });
+}
+
+async function registerPwaServiceWorker(appBasePath) {
+  if (!('serviceWorker' in navigator)) return;
+
+  const base = appBasePath || '';
+  const swUrl = `${base}/service-worker.js`;
+  const scope = `${base || ''}/`;
+
+  try {
+    await navigator.serviceWorker.register(swUrl, { scope });
+  } catch (error) {
+    console.warn('Falha ao registrar service worker:', error);
+  }
 }
 
 function parsePositiveInt(value) {
@@ -630,6 +731,7 @@ async function restoreNavigationFromState(nav, options = {}) {
 async function init() {
   initTheme();
   initReviewPopup();
+  initInstallPopup();
   initPdfModalGestures();
   initPdfPinchGestures();
 
@@ -644,6 +746,7 @@ async function init() {
 
   buildEditionSelector();
   state.appBasePath = detectAppBasePath(state.editions);
+  registerPwaServiceWorker(state.appBasePath);
 
   const navFromUrl = parseNavigationFromUrl();
   const navFromStorage = loadNavigationFromStorage();

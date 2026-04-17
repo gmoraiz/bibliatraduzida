@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bíblia Sagrada</title>
+<title>Biblia Traduzida</title>
+<meta name="application-name" content="Biblia Traduzida">
+<meta name="theme-color" content="#f7f2e8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Biblia Traduzida">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap" rel="stylesheet">
@@ -17,6 +25,16 @@
     <div class="review-popup-actions">
       <button id="review-popup-ok" class="review-popup-btn" type="button">Ok</button>
       <button id="review-popup-hide" class="review-popup-btn review-popup-btn-secondary" type="button">Não mostrar novamente</button>
+    </div>
+  </div>
+</div>
+
+<div id="install-popup" class="install-popup" role="dialog" aria-live="polite" aria-label="Instalar aplicativo" hidden>
+  <div class="install-popup-content">
+    <p class="install-popup-text">Instale o app <strong>Biblia Traduzida</strong> para acessâ-la mais rápido, tendo-a na área de trabalho de seu dispositivo.</p>
+    <div class="install-popup-actions">
+      <button id="install-popup-install" class="install-popup-btn" type="button">Instalar</button>
+      <button id="install-popup-close" class="install-popup-btn install-popup-btn-secondary" type="button">Agora não</button>
     </div>
   </div>
 </div>
