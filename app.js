@@ -1159,8 +1159,7 @@ function centerPdfViewerHorizontallyAtTop(viewerKey) {
   const scrollHost = dom && dom.pages ? dom.pages.parentElement : null;
   if (!scrollHost) return;
 
-  const maxLeft = Math.max(0, scrollHost.scrollWidth - scrollHost.clientWidth);
-  scrollHost.scrollLeft = Math.round(maxLeft / 2);
+  scrollHost.scrollLeft = 0;
   scrollHost.scrollTop = 0;
 }
 
@@ -1245,11 +1244,10 @@ async function renderPdfViewerDocument(viewerKey, options = {}) {
     if (viewer.token !== token) return;
 
     const baseViewport = firstPage.getViewport({ scale: 1 });
+    const scrollHost = dom.pages.parentElement;
+    const hostClientWidth = scrollHost ? Math.floor(scrollHost.clientWidth) : 0;
     const measuredPagesWidth = Math.floor(dom.pages.getBoundingClientRect().width);
-    const parentWidth = dom.pages.parentElement
-      ? Math.floor(dom.pages.parentElement.getBoundingClientRect().width - 16)
-      : 0;
-    const pagesWidth = measuredPagesWidth || parentWidth || baseViewport.width;
+    const pagesWidth = hostClientWidth || measuredPagesWidth || baseViewport.width;
     const fitScale = pagesWidth > 0 ? (pagesWidth / baseViewport.width) : 1;
     const zoomScale = Number.isFinite(viewer.scale) && viewer.scale > 0 ? viewer.scale : 1;
     const displayScale = Math.max(0.5, fitScale * zoomScale);
