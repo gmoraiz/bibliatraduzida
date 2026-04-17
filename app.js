@@ -8,8 +8,526 @@ const THEME_STORAGE_KEY = 'biblia:theme';
 const REVIEW_POPUP_STORAGE_KEY = 'biblia:hide-review-popup';
 const INSTALL_POPUP_STORAGE_KEY = 'biblia:hide-install-popup-until';
 const INSTALL_POPUP_DISMISS_DAYS = 7;
+const INSTALL_POPUP_MODE_NATIVE = 'native';
+const INSTALL_POPUP_MODE_IOS_MANUAL = 'ios-manual';
 const ROUTING_MODE = 'hash';
 const MOBILE_PDF_INITIAL_SCALE = 1;
+
+const CANONICAL_BOOK_CATALOG = [
+  {
+    id: 'genesis',
+    tituloIndice: 'Genesis',
+    titulo: 'Gênesis',
+    testamento: 'Antigo Testamento',
+    grupo: 'Pentateuco',
+  },
+  {
+    id: 'exodo',
+    tituloIndice: 'Exodo',
+    titulo: 'Êxodo',
+    testamento: 'Antigo Testamento',
+    grupo: 'Pentateuco',
+  },
+  {
+    id: 'levitico',
+    tituloIndice: 'Levitico',
+    titulo: 'Levítico',
+    testamento: 'Antigo Testamento',
+    grupo: 'Pentateuco',
+  },
+  {
+    id: 'numeros',
+    tituloIndice: 'Numeros',
+    titulo: 'Números',
+    testamento: 'Antigo Testamento',
+    grupo: 'Pentateuco',
+  },
+  {
+    id: 'deuteronomio',
+    tituloIndice: 'Deuteronomio',
+    titulo: 'Deuteronômio',
+    testamento: 'Antigo Testamento',
+    grupo: 'Pentateuco',
+  },
+  {
+    id: 'josue',
+    tituloIndice: 'Josue',
+    titulo: 'Josué',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: 'juizes',
+    tituloIndice: 'Juizes',
+    titulo: 'Juízes',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: 'rute',
+    tituloIndice: 'Rute',
+    titulo: 'Rute',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: '1-samuel',
+    tituloIndice: '1 Samuel',
+    titulo: 'Primeiro Livro de Samuel',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: '2-samuel',
+    tituloIndice: '2 Samuel',
+    titulo: 'Segundo Livro de Samuel',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: '1-reis',
+    tituloIndice: '1 Reis',
+    titulo: 'Primeiro Livro dos Reis',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: '2-reis',
+    tituloIndice: '2 Reis',
+    titulo: 'Segundo Livro dos Reis',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: '1-cronicas',
+    tituloIndice: '1 Cronicas',
+    titulo: 'Primeiro Livro das Crónicas',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: '2-cronicas',
+    tituloIndice: '2 Cronicas',
+    titulo: 'Segundo Livro das Crónicas',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: 'esdras',
+    tituloIndice: 'Esdras',
+    titulo: 'Esdras',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: 'neemias',
+    tituloIndice: 'Neemias',
+    titulo: 'Neemias',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: 'tobias',
+    tituloIndice: 'Tobias',
+    titulo: 'Tobias',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: 'judite',
+    tituloIndice: 'Judite',
+    titulo: 'Judite',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: 'ester',
+    tituloIndice: 'Ester',
+    titulo: 'Ester',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: '1-macabeus',
+    tituloIndice: '1 Macabeus',
+    titulo: 'Primeiro Livro dos Macabeus',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: '2-macabeus',
+    tituloIndice: '2 Macabeus',
+    titulo: 'Segundo Livro dos Macabeus',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Históricos',
+  },
+  {
+    id: 'jo',
+    tituloIndice: 'Jo',
+    titulo: 'Jó',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Poéticos e Sapienciais',
+  },
+  {
+    id: 'salmos',
+    tituloIndice: 'Salmos',
+    titulo: 'Livro dos Salmos',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Poéticos e Sapienciais',
+  },
+  {
+    id: 'proverbios',
+    tituloIndice: 'Proverbios',
+    titulo: 'Provérbios',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Poéticos e Sapienciais',
+  },
+  {
+    id: 'eclesiastes',
+    tituloIndice: 'Eclesiastes',
+    titulo: 'Eclesiastes',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Poéticos e Sapienciais',
+  },
+  {
+    id: 'cantico-dos-canticos',
+    tituloIndice: 'Cantico dos Canticos',
+    titulo: 'Cântico dos Cânticos',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Poéticos e Sapienciais',
+  },
+  {
+    id: 'sabedoria',
+    tituloIndice: 'Sabedoria',
+    titulo: 'Sabedoria',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Poéticos e Sapienciais',
+  },
+  {
+    id: 'eclesiastico',
+    tituloIndice: 'Eclesiastico',
+    titulo: 'Eclesiástico',
+    testamento: 'Antigo Testamento',
+    grupo: 'Livros Poéticos e Sapienciais',
+  },
+  {
+    id: 'isaias',
+    tituloIndice: 'Isaias',
+    titulo: 'Isaías',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Maiores',
+  },
+  {
+    id: 'jeremias',
+    tituloIndice: 'Jeremias',
+    titulo: 'Jeremias',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Maiores',
+  },
+  {
+    id: 'lamentacoes',
+    tituloIndice: 'Lamentacoes',
+    titulo: 'Lamentações',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Maiores',
+  },
+  {
+    id: 'baruc',
+    tituloIndice: 'Baruc',
+    titulo: 'Baruc',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Maiores',
+  },
+  {
+    id: 'ezequiel',
+    tituloIndice: 'Ezequiel',
+    titulo: 'Ezequiel',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Maiores',
+  },
+  {
+    id: 'daniel',
+    tituloIndice: 'Daniel',
+    titulo: 'Daniel',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Maiores',
+  },
+  {
+    id: 'oseias',
+    tituloIndice: 'Oseias',
+    titulo: 'Oseias',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Menores',
+  },
+  {
+    id: 'joel',
+    tituloIndice: 'Joel',
+    titulo: 'Joel',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Menores',
+  },
+  {
+    id: 'amos',
+    tituloIndice: 'Amos',
+    titulo: 'Amós',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Menores',
+  },
+  {
+    id: 'abdias',
+    tituloIndice: 'Abdias',
+    titulo: 'Abdias',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Menores',
+  },
+  {
+    id: 'jonas',
+    tituloIndice: 'Jonas',
+    titulo: 'Jonas',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Menores',
+  },
+  {
+    id: 'miqueias',
+    tituloIndice: 'Miqueias',
+    titulo: 'Miqueias',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Menores',
+  },
+  {
+    id: 'naum',
+    tituloIndice: 'Naum',
+    titulo: 'Naum',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Menores',
+  },
+  {
+    id: 'habacuc',
+    tituloIndice: 'Habacuc',
+    titulo: 'Habacuc',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Menores',
+  },
+  {
+    id: 'sofonias',
+    tituloIndice: 'Sofonias',
+    titulo: 'Sofonias',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Menores',
+  },
+  {
+    id: 'ageu',
+    tituloIndice: 'Ageu',
+    titulo: 'Ageu',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Menores',
+  },
+  {
+    id: 'zacarias',
+    tituloIndice: 'Zacarias',
+    titulo: 'Zacarias',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Menores',
+  },
+  {
+    id: 'malaquias',
+    tituloIndice: 'Malaquias',
+    titulo: 'Malaquias',
+    testamento: 'Antigo Testamento',
+    grupo: 'Profetas Menores',
+  },
+  {
+    id: 'mateus',
+    tituloIndice: 'Mateus',
+    titulo: 'Evangelho de S. Mateus',
+    testamento: 'Novo Testamento',
+    grupo: 'Evangelhos',
+  },
+  {
+    id: 'marcos',
+    tituloIndice: 'Marcos',
+    titulo: 'Evangelho de S. Marcos',
+    testamento: 'Novo Testamento',
+    grupo: 'Evangelhos',
+  },
+  {
+    id: 'lucas',
+    tituloIndice: 'Lucas',
+    titulo: 'Evangelho de S. Lucas',
+    testamento: 'Novo Testamento',
+    grupo: 'Evangelhos',
+  },
+  {
+    id: 'joao',
+    tituloIndice: 'Joao',
+    titulo: 'Evangelho de S. João',
+    testamento: 'Novo Testamento',
+    grupo: 'Evangelhos',
+  },
+  {
+    id: 'atos-dos-apostolos',
+    tituloIndice: 'Atos dos Apostolos',
+    titulo: 'Atos dos Apóstolos',
+    testamento: 'Novo Testamento',
+    grupo: 'Atos',
+  },
+  {
+    id: 'romanos',
+    tituloIndice: 'Romanos',
+    titulo: 'Epístola de S. Paulo aos Romanos',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Paulinas',
+  },
+  {
+    id: '1-corintios',
+    tituloIndice: '1 Corintios',
+    titulo: 'Primeira Epístola de S. Paulo aos Coríntios',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Paulinas',
+  },
+  {
+    id: '2-corintios',
+    tituloIndice: '2 Corintios',
+    titulo: 'Segunda Epístola de S. Paulo aos Coríntios',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Paulinas',
+  },
+  {
+    id: 'galatas',
+    tituloIndice: 'Galatas',
+    titulo: 'Epístola de S. Paulo aos Gálatas',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Paulinas',
+  },
+  {
+    id: 'efesios',
+    tituloIndice: 'Efesios',
+    titulo: 'Epístola de S. Paulo aos Efésios',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Paulinas',
+  },
+  {
+    id: 'filipenses',
+    tituloIndice: 'Filipenses',
+    titulo: 'Epístola de S. Paulo aos Filipenses',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Paulinas',
+  },
+  {
+    id: 'colossenses',
+    tituloIndice: 'Colossenses',
+    titulo: 'Epístola de S. Paulo aos Colossenses',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Paulinas',
+  },
+  {
+    id: '1-tessalonicenses',
+    tituloIndice: '1 Tessalonicenses',
+    titulo: 'Epístola I de S. Paulo aos Tessalonicenses',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Paulinas',
+  },
+  {
+    id: '2-tessalonicenses',
+    tituloIndice: '2 Tessalonicenses',
+    titulo: 'Epístola II de S. Paulo aos Tessalonicenses',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Paulinas',
+  },
+  {
+    id: '1-timoteo',
+    tituloIndice: '1 Timoteo',
+    titulo: 'Epístola I de S. Paulo a Timóteo',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Paulinas',
+  },
+  {
+    id: '2-timoteo',
+    tituloIndice: '2 Timoteo',
+    titulo: 'Epístola II de S. Paulo a Timóteo',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Paulinas',
+  },
+  {
+    id: 'tito',
+    tituloIndice: 'Tito',
+    titulo: 'Epístola de S. Paulo a Tito',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Paulinas',
+  },
+  {
+    id: 'filemon',
+    tituloIndice: 'Filemon',
+    titulo: 'Epístola de S. Paulo a Filêmon',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Paulinas',
+  },
+  {
+    id: 'hebreus',
+    tituloIndice: 'Hebreus',
+    titulo: 'Epístola aos Hebreus',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Paulinas',
+  },
+  {
+    id: 'tiago',
+    tituloIndice: 'Tiago',
+    titulo: 'Epístola de S. Tiago',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Católicas',
+  },
+  {
+    id: '1-pedro',
+    tituloIndice: '1 Pedro',
+    titulo: 'Primeira Epístola de S. Pedro Apóstolo',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Católicas',
+  },
+  {
+    id: '2-pedro',
+    tituloIndice: '2 Pedro',
+    titulo: 'Segunda Epístola de S. Pedro Apóstolo',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Católicas',
+  },
+  {
+    id: '1-joao',
+    tituloIndice: '1 Joao',
+    titulo: 'Primeira Epístola de S. João Apóstolo',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Católicas',
+  },
+  {
+    id: '2-joao',
+    tituloIndice: '2 Joao',
+    titulo: 'Segunda Epístola de S. João Apóstolo',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Católicas',
+  },
+  {
+    id: '3-joao',
+    tituloIndice: '3 Joao',
+    titulo: 'Terceira Epístola de S. João Apóstolo',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Católicas',
+  },
+  {
+    id: 'judas',
+    tituloIndice: 'Judas',
+    titulo: 'Epístola de S. Judas Apóstolo',
+    testamento: 'Novo Testamento',
+    grupo: 'Epístolas Católicas',
+  },
+  {
+    id: 'apocalipse',
+    tituloIndice: 'Apocalipse',
+    titulo: 'Apocalipse de S. João Apóstolo',
+    testamento: 'Novo Testamento',
+    grupo: 'Apocalipse',
+  },
+];
+
+const CANONICAL_BOOK_MAP = new Map(CANONICAL_BOOK_CATALOG.map((book) => [book.id, book]));
 
 function createPdfViewerState() {
   return {
@@ -43,6 +561,7 @@ let state = {
     inline: createPdfViewerState(),
     modal: createPdfViewerState(),
   },
+  bookSelectorHtmlByEdition: {},
   darkMode: false,
 };
 
@@ -344,6 +863,32 @@ function canShowInstallPopup() {
   return dismissedUntil < Date.now();
 }
 
+function setInstallPopupContent(mode) {
+  const popup = document.getElementById('install-popup');
+  const textEl = popup ? popup.querySelector('.install-popup-text') : null;
+  const installBtn = document.getElementById('install-popup-install');
+  const closeBtn = document.getElementById('install-popup-close');
+  if (!popup || !textEl || !installBtn || !closeBtn) return;
+
+  popup.dataset.installMode = mode;
+
+  if (mode === INSTALL_POPUP_MODE_IOS_MANUAL) {
+    textEl.innerHTML = 'Instale o app <strong>Biblia Traduzida</strong> para acessâ-la mais rápido. No seu iPhone/iPad, toque em <strong>Compartilhar</strong> no navegador e depois em <strong>Adicionar à Tela de Início</strong> para instalá-lo.';
+    installBtn.textContent = 'Entendi';
+    closeBtn.textContent = 'Não mostrar novamente';
+    return;
+  }
+
+  textEl.innerHTML = 'Instale o app <strong>Biblia Traduzida</strong> para acessâ-la mais rápido, tendo-a na área de trabalho de seu dispositivo.';
+  installBtn.textContent = 'Instalar';
+  closeBtn.textContent = 'Agora não';
+}
+
+function showInstallPopup(mode) {
+  setInstallPopupContent(mode);
+  setInstallPopupVisibility(true);
+}
+
 function setInstallPopupVisibility(visible) {
   const popup = document.getElementById('install-popup');
   if (!popup) return;
@@ -370,22 +915,39 @@ function initInstallPopup() {
   const popup = document.getElementById('install-popup');
   if (!installBtn || !closeBtn || !popup) return;
 
+  setInstallPopupContent(INSTALL_POPUP_MODE_NATIVE);
   setInstallPopupVisibility(false);
 
   installBtn.addEventListener('click', () => {
+    const mode = popup.dataset.installMode || INSTALL_POPUP_MODE_NATIVE;
+    if (mode === INSTALL_POPUP_MODE_IOS_MANUAL) {
+      dismissInstallPopupForDays(1);
+      setInstallPopupVisibility(false);
+      return;
+    }
+
     promptInstallApp();
   });
 
   closeBtn.addEventListener('click', () => {
-    dismissInstallPopupForDays();
+    const mode = popup.dataset.installMode || INSTALL_POPUP_MODE_NATIVE;
+    if (mode === INSTALL_POPUP_MODE_IOS_MANUAL) {
+      dismissInstallPopupForDays(3650);
+    } else {
+      dismissInstallPopupForDays();
+    }
     setInstallPopupVisibility(false);
   });
+
+  if (isIOSMobile() && canShowInstallPopup()) {
+    showInstallPopup(INSTALL_POPUP_MODE_IOS_MANUAL);
+  }
 
   window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
     deferredInstallPrompt = event;
     if (canShowInstallPopup()) {
-      setInstallPopupVisibility(true);
+      showInstallPopup(INSTALL_POPUP_MODE_NATIVE);
     }
   });
 
@@ -534,6 +1096,99 @@ function findBookFileByBookId(editionId, bookId) {
   const ed = state.editions.find(e => e.id === editionId);
   if (!ed || !ed.livros || !bookId) return null;
   return ed.livros.find(f => f.includes('/' + bookId + '/')) || null;
+}
+
+function getBookIdFromFile(bookFile) {
+  if (!bookFile) return null;
+  const parts = bookFile.split('/');
+  return parts.length >= 2 ? parts[parts.length - 2] : null;
+}
+
+function getCanonicalBooksForEdition(ed) {
+  if (!ed || !ed.livros) return [];
+
+  const availableFilesById = new Map();
+  ed.livros.forEach((file) => {
+    const bookId = getBookIdFromFile(file);
+    if (bookId) availableFilesById.set(bookId, file);
+  });
+
+  const books = CANONICAL_BOOK_CATALOG
+    .filter((book) => availableFilesById.has(book.id))
+    .map((book) => ({
+      ...book,
+      file: availableFilesById.get(book.id),
+    }));
+
+  ed.livros.forEach((file) => {
+    const bookId = getBookIdFromFile(file);
+    if (!bookId || CANONICAL_BOOK_MAP.has(bookId)) return;
+    books.push({
+      id: bookId,
+      tituloIndice: bookId,
+      titulo: bookId,
+      testamento: 'Outros',
+      grupo: 'Outros',
+      file,
+    });
+  });
+
+  return books;
+}
+
+function buildBookSelectorHtml(ed) {
+  const books = getCanonicalBooksForEdition(ed);
+  const testamentoMap = new Map();
+
+  books.forEach((book) => {
+    const testamento = book.testamento || 'Outros';
+    const grupo = book.grupo || 'Outros';
+    if (!testamentoMap.has(testamento)) {
+      testamentoMap.set(testamento, new Map());
+    }
+    const grupoMap = testamentoMap.get(testamento);
+    if (!grupoMap.has(grupo)) {
+      grupoMap.set(grupo, []);
+    }
+    grupoMap.get(grupo).push(book);
+  });
+
+  let html = '';
+  for (const [testamento, grupoMap] of testamentoMap.entries()) {
+    html += `<div class="testament-section"><div class="testament-title">${testamento}</div>`;
+    for (const [grupo, items] of grupoMap.entries()) {
+      html += `<div class="book-group"><div class="group-label">${grupo}</div>`;
+      items.forEach((book) => {
+        html += `<a data-book-id="${book.id}" href="#" onclick="selectBook('${book.file}'); return false;">${book.tituloIndice || book.titulo}</a>`;
+      });
+      html += `</div>`;
+    }
+    html += `</div>`;
+  }
+
+  return html || '<p style="color:#888;font-size:13px;">Nenhum livro disponível ainda.</p>';
+}
+
+function primeBookSelectorCache() {
+  const nextCache = {};
+  state.editions.forEach((ed) => {
+    nextCache[ed.id] = buildBookSelectorHtml(ed);
+  });
+  state.bookSelectorHtmlByEdition = nextCache;
+}
+
+function syncCurrentBookInSelector() {
+  const container = document.getElementById('book-list-content');
+  if (!container) return;
+
+  container.querySelectorAll('a.current-book').forEach((el) => {
+    el.classList.remove('current-book');
+  });
+
+  if (!state.currentBookId) return;
+
+  const current = container.querySelector(`a[data-book-id="${state.currentBookId}"]`);
+  if (current) current.classList.add('current-book');
 }
 
 function scrollToVerse(verseNumber) {
@@ -745,6 +1400,7 @@ async function init() {
   }
 
   buildEditionSelector();
+  primeBookSelectorCache();
   state.appBasePath = detectAppBasePath(state.editions);
   registerPwaServiceWorker(state.appBasePath);
 
@@ -1759,64 +2415,16 @@ function buildBookSelector() {
   const ed = state.editions.find(e => e.id === state.currentEditionId);
   if (!ed) return;
 
-  const testamentoMap = new Map();
-  const testamentoFirstIdx = new Map();
-  const grupoFirstIdx = new Map();
-  const unloaded = [];
+  const container = document.getElementById('book-list-content');
+  if (!container) return;
 
-  ed.livros.forEach((file, idx) => {
-    const cacheKey = ed.id + '/' + file;
-    const bookIdx = state.loadedBookIndexes[cacheKey];
-    if (!bookIdx) { unloaded.push(file); return; }
-    const testamento = bookIdx.testamento || 'Outros';
-    const grupo = bookIdx.grupo || 'Outros';
-    const grupoKey = testamento + '\0' + grupo;
-    if (!testamentoMap.has(testamento)) {
-      testamentoMap.set(testamento, new Map());
-      testamentoFirstIdx.set(testamento, idx);
-    }
-    const grupoMap = testamentoMap.get(testamento);
-    if (!grupoMap.has(grupo)) {
-      grupoMap.set(grupo, []);
-      grupoFirstIdx.set(grupoKey, idx);
-    }
-    grupoMap.get(grupo).push({ file, book: bookIdx });
-  });
-
-  const sortedTestamentos = [...testamentoMap.entries()]
-    .sort(([a], [b]) => (testamentoFirstIdx.get(a) ?? 0) - (testamentoFirstIdx.get(b) ?? 0));
-
-  let html = '';
-  for (const [testamento, grupoMap] of sortedTestamentos) {
-    html += `<div class="testament-section"><div class="testament-title">${testamento}</div>`;
-    const sortedGrupos = [...grupoMap.entries()]
-      .sort(([a], [b]) => {
-        const ia = grupoFirstIdx.get(testamento + '\0' + a) ?? 0;
-        const ib = grupoFirstIdx.get(testamento + '\0' + b) ?? 0;
-        return ia - ib;
-      });
-    for (const [grupo, items] of sortedGrupos) {
-      html += `<div class="book-group"><div class="group-label">${grupo}</div>`;
-      items.forEach(({ file, book }) => {
-        const cls = book.id === state.currentBookId ? ' class="current-book"' : '';
-        html += `<a${cls} href="#" onclick="selectBook('${file}'); return false;">${book.tituloIndice || book.titulo}</a>`;
-      });
-      html += `</div>`;
-    }
-    html += `</div>`;
+  const cachedHtml = state.bookSelectorHtmlByEdition[ed.id] || buildBookSelectorHtml(ed);
+  if (container.dataset.editionId !== ed.id) {
+    container.innerHTML = cachedHtml;
+    container.dataset.editionId = ed.id;
   }
 
-  if (unloaded.length > 0) {
-    html += `<div class="testament-section"><div class="book-group"><div class="group-label">Carregando…</div>`;
-    unloaded.forEach(file => {
-      const label = file.split('/').slice(-2, -1)[0] || file.split('/').pop().replace('.json', '');
-      html += `<a href="#" onclick="selectBook('${file}'); return false;">${label}</a>`;
-    });
-    html += `</div></div>`;
-  }
-
-  if (!html) html = '<p style="color:#888;font-size:13px;">Nenhum livro disponível ainda.</p>';
-  document.getElementById('book-list-content').innerHTML = html;
+  syncCurrentBookInSelector();
 }
 
 async function selectBook(file) {
@@ -1828,14 +2436,6 @@ async function selectBook(file) {
 async function openBooks() {
   document.getElementById('book-selector').classList.add('open');
   buildBookSelector();
-
-  const ed = state.editions.find(e => e.id === state.currentEditionId);
-  if (!ed) return;
-  const pending = ed.livros.filter(f => !state.loadedBookIndexes[ed.id + '/' + f]);
-  if (pending.length > 0) {
-    await Promise.all(pending.map(f => fetchBookIndex(ed.id, f).catch(() => null)));
-    buildBookSelector();
-  }
 }
 
 function closeBooks() { document.getElementById('book-selector').classList.remove('open'); }
