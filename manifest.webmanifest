@@ -1,7 +1,7 @@
 {
   "name": "Biblia Traduzida",
-  "short_name": "Biblia",
-  "description": "Leitura da Biblia com edicoes, comparacao e acesso offline.",
+  "short_name": "Biblia Traduzida",
+  "description": "Leitura da Biblia Traduzida para o português pela primeira vez pelo Pe. Figueiredo. Também você pode compará-la com a Vulgata Clementina.",
   "lang": "pt-BR",
   "start_url": "./",
   "scope": "./",
