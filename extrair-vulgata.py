@@ -144,6 +144,10 @@ def clean_text(value: str) -> str:
     return text
 
 
+def collapse_spaces(value: str) -> str:
+    return re.sub(r"\s{2,}", " ", value).strip()
+
+
 def extract_heading_title(page_html: str, fallback: str) -> str:
     heading_match = re.search(r'<h1[^>]*id="firstHeading"[^>]*>(.*?)</h1>', page_html, re.DOTALL | re.IGNORECASE)
     if not heading_match:
@@ -164,7 +168,7 @@ def parse_verses(paragraph_html: str) -> list[dict[str, Any]]:
     idx = 1
     while idx < len(parts) - 1:
         n = int(parts[idx])
-        txt = parts[idx + 1].strip()
+        txt = collapse_spaces(parts[idx + 1])
         if txt:
             verses.append({"n": n, "texto": txt})
         idx += 2
@@ -215,7 +219,7 @@ def extract_chapters(page_html: str, page_url: str) -> list[dict[str, Any]]:
             else:
                 last = verses[-1]
                 if "texto" in last:
-                    last["texto"] = f"{last['texto']} {plain}".strip()
+                    last["texto"] = collapse_spaces(f"{last['texto']} {plain}")
 
         if not verses:
             continue
