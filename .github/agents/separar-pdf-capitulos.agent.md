@@ -97,14 +97,14 @@ Retorne tabela curta:
 | Edição | Capítulos | Transições |
 |--------|-----------|------------|
 
-Na coluna **Transições**, liste cada transição entre capítulos consecutivos indicando o número da página e o tipo, uma por linha (use `<br>` para quebras dentro da célula). Formato:
+Na coluna **Transições**, liste cada transição entre capítulos consecutivos separadas por `; `. Formato:
 
-- Página compartilhada: `Cap N→N+1 compartilham pág X`
-- Página limpa: `Cap N→N+1 limpa (pág X)`
+- Página compartilhada: `Cap N→N+1 compartilham pág`
+- Página limpa: `Cap N→N+1 limpa`
 
 Exemplo:
 ```
-Cap 1→2 compartilham pág 5<br>Cap 2→3 limpa (pág 7)<br>Cap 3→4 compartilham pág 9
+Cap 1→2 compartilham pág; Cap 2→3 limpa; Cap 3→4 compartilham pág
 ```
 
 Além das transições, acrescente na mesma célula qualquer outra peculiaridade relevante (ex: introdução gerada, páginas em branco ignoradas, número de capítulos diferente do esperado).
