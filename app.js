@@ -2166,7 +2166,7 @@ function renderCompareGrid(ch1, bookDir1, compareEntries) {
 
   const ed1 = state.editions.find(e => e.id === state.currentEditionId);
 
-  const makeHeaderCell = (ed, ch, bookDir) => {
+  const makeHeaderCell = (ed, ch, bookDir, isLastCompare = false) => {
     const div = document.createElement('div');
     div.className = 'cg-cell cg-header-cell';
     if (!ch) {
@@ -2185,6 +2185,9 @@ function renderCompareGrid(ch1, bookDir1, compareEntries) {
     if (originalLink) {
       buttonsHtml += `<button class="ver-original-btn" onclick="openPdfPanel('${originalLink}', 'Ver no Wikisource', 'link')">Ver no Wikisource</button>`;
     }
+    if (isLastCompare) {
+      buttonsHtml += `<button class="ver-original-btn compare-undo-btn" onclick="onCompareSelectChange('')" title="Desfazer comparação">✕ Desfazer</button>`;
+    }
     const actionsHtml = buttonsHtml ? `<div class="chapter-header-actions">${buttonsHtml}</div>` : '';
     div.innerHTML = `<div class="cg-edition-label">${ed ? ed.edicao : ''}</div>`
       + `<div class="cg-chapter-title">Capítulo ${ch.num}</div>`
@@ -2194,9 +2197,11 @@ function renderCompareGrid(ch1, bookDir1, compareEntries) {
   };
 
   grid.appendChild(makeHeaderCell(ed1, ch1, bookDir1));
-  for (const entry of compareEntries) {
+  for (let i = 0; i < compareEntries.length; i++) {
+    const entry = compareEntries[i];
     const ed = state.editions.find(e => e.id === entry.editionId);
-    grid.appendChild(makeHeaderCell(ed, entry.ch, entry.bookDir));
+    const isLast = i === compareEntries.length - 1;
+    grid.appendChild(makeHeaderCell(ed, entry.ch, entry.bookDir, isLast));
   }
 
   const rule = document.createElement('div');

@@ -373,6 +373,9 @@ select.compare-toggle-btn.active {
 
 select.compare-toggle-btn:hover {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23493f34'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 8px 5px;
 }
 
 .compare-toggle-btn.disabled,
@@ -440,6 +443,26 @@ select.compare-toggle-btn:hover {
 .compare-unavailable {
   color: #bbb;
   font-style: italic;
+}
+
+.compare-undo-btn {
+  border-color: #c9a0a0 !important;
+  color: #8b3030 !important;
+}
+
+.compare-undo-btn:hover {
+  background: #f7e8e8 !important;
+  border-color: #bd7070 !important;
+}
+
+body.dark-mode .compare-undo-btn {
+  border-color: #8b5555 !important;
+  color: #f4b8b8 !important;
+}
+
+body.dark-mode .compare-undo-btn:hover {
+  background: #4c2424 !important;
+  border-color: #c07070 !important;
 }
 
 .cg-rule {
