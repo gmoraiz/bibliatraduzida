@@ -2186,7 +2186,7 @@ function renderCompareGrid(ch1, bookDir1, compareEntries) {
       buttonsHtml += `<button class="ver-original-btn" onclick="openPdfPanel('${originalLink}', 'Ver no Wikisource', 'link')">Ver no Wikisource</button>`;
     }
     if (isLastCompare) {
-      buttonsHtml += `<button class="ver-original-btn compare-undo-btn" onclick="onCompareSelectChange('')" title="Desfazer comparação">✕ Desfazer</button>`;
+      buttonsHtml += `<button class="ver-original-btn compare-undo-btn" onclick="onCompareSelectChange('')" title="Desfazer comparação">✕ Desfazer comparação</button>`;
     }
     const actionsHtml = buttonsHtml ? `<div class="chapter-header-actions">${buttonsHtml}</div>` : '';
     div.innerHTML = `<div class="cg-edition-label">${ed ? ed.edicao : ''}</div>`
