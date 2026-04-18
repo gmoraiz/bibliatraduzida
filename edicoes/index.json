@@ -81,7 +81,7 @@
   },
   {
     "id": "vulgata",
-    "edicao": "Vulgata Latina",
+    "edicao": "Vulgata Clementina",
     "idioma": "la",
     "livros": [
       "edicoes/vulgata/genesis/index.json",
