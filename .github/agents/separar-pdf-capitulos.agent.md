@@ -94,7 +94,17 @@ Verifique que todos os arquivos foram gerados. Para a edição `figueiredo`, con
 
 Retorne tabela curta:
 
-| Edição | Capítulos | Observação |
+| Edição | Capítulos | Transições |
 |--------|-----------|------------|
 
-Na observação, relacione as transições de páginas compartilhadas, e outras peculiaridades quanto à divisão dos capítulos.
+Na coluna **Transições**, liste cada transição entre capítulos consecutivos indicando o número da página e o tipo, uma por linha (use `<br>` para quebras dentro da célula). Formato:
+
+- Página compartilhada: `Cap N→N+1 compartilham pág X`
+- Página limpa: `Cap N→N+1 limpa (pág X)`
+
+Exemplo:
+```
+Cap 1→2 compartilham pág 5<br>Cap 2→3 limpa (pág 7)<br>Cap 3→4 compartilham pág 9
+```
+
+Além das transições, acrescente na mesma célula qualquer outra peculiaridade relevante (ex: introdução gerada, páginas em branco ignoradas, número de capítulos diferente do esperado).
