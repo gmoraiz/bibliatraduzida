@@ -1107,18 +1107,15 @@ function getBookIdFromFile(bookFile) {
 function getCanonicalBooksForEdition(ed) {
   if (!ed || !ed.livros) return [];
 
-  const availableFilesById = new Map();
+  const availableBookIds = new Set();
   ed.livros.forEach((file) => {
     const bookId = getBookIdFromFile(file);
-    if (bookId) availableFilesById.set(bookId, file);
+    if (bookId) availableBookIds.add(bookId);
   });
 
   const books = CANONICAL_BOOK_CATALOG
-    .filter((book) => availableFilesById.has(book.id))
-    .map((book) => ({
-      ...book,
-      file: availableFilesById.get(book.id),
-    }));
+    .filter((book) => availableBookIds.has(book.id))
+    .map((book) => ({ ...book }));
 
   ed.livros.forEach((file) => {
     const bookId = getBookIdFromFile(file);
@@ -1159,7 +1156,7 @@ function buildBookSelectorHtml(ed) {
     for (const [grupo, items] of grupoMap.entries()) {
       html += `<div class="book-group"><div class="group-label">${grupo}</div>`;
       items.forEach((book) => {
-        html += `<a data-book-id="${book.id}" href="#" onclick="selectBook('${book.file}'); return false;">${book.tituloIndice || book.titulo}</a>`;
+        html += `<a data-book-id="${book.id}" href="#" onclick="selectBookById('${book.id}'); return false;">${book.tituloIndice || book.titulo}</a>`;
       });
       html += `</div>`;
     }
@@ -1175,6 +1172,11 @@ function primeBookSelectorCache() {
     nextCache[ed.id] = buildBookSelectorHtml(ed);
   });
   state.bookSelectorHtmlByEdition = nextCache;
+}
+
+function buildBookIndexFilePath(editionId, bookId) {
+  if (!editionId || !bookId) return null;
+  return `edicoes/${editionId}/${bookId}/index.json`;
 }
 
 function syncCurrentBookInSelector() {
@@ -1400,7 +1402,6 @@ async function init() {
   }
 
   buildEditionSelector();
-  primeBookSelectorCache();
   state.appBasePath = detectAppBasePath(state.editions);
   registerPwaServiceWorker(state.appBasePath);
 
@@ -2427,7 +2428,11 @@ function buildBookSelector() {
   syncCurrentBookInSelector();
 }
 
-async function selectBook(file) {
+async function selectBookById(bookId) {
+  if (!bookId || !state.currentEditionId) return;
+  const file = buildBookIndexFilePath(state.currentEditionId, bookId);
+  if (!file) return;
+
   closeBooks();
   markUserNavigation();
   await loadBook(state.currentEditionId, file, 1, null, { scrollToTop: true, historyMode: 'push' });
