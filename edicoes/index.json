@@ -161,7 +161,7 @@
   },
   {
     "id": "douay-rheims",
-    "edicao": "Douay-Rheims (1950)",
+    "edicao": "Douay-Rheims, Challoner",
     "idioma": "en",
     "livros": [
       "edicoes/douay-rheims/genesis/index.json",
