@@ -13,6 +13,7 @@ Regras gerais para todos os prompts:
   - I/II Samuel -> `1-samuel` / `2-samuel`
   - I/II Macabeus -> `1-macabeus` / `2-macabeus`
 - Não sobrescrever PDFs já existentes sem checar tamanho/diferença.
+- Não deixar últimas páginas em branco ou com fotos. É pra parar onde termina o capitulo!
 - Ao final de cada prompt: listar tabela `Livro | Páginas | Arquivo`.
 
 ---
