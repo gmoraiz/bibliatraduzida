@@ -2162,7 +2162,9 @@ function renderCompareGrid(ch1, bookDir1, compareEntries) {
   }
 
   const numCols = 1 + compareEntries.length;
-  grid.style.gridTemplateColumns = `repeat(${numCols}, 1fr)`;
+  grid.style.gridTemplateColumns = '';
+  grid.className = grid.className.replace(/\bcg-cols-\d+\b/g, '').trim();
+  grid.classList.add(`cg-cols-${numCols}`);
 
   const ed1 = state.editions.find(e => e.id === state.currentEditionId);
 

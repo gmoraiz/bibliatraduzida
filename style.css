@@ -413,6 +413,10 @@ select.compare-toggle-btn:hover {
   column-gap: 24px;
 }
 
+#main-area.compare #compare-grid.cg-cols-2 { grid-template-columns: repeat(2, 1fr); }
+#main-area.compare #compare-grid.cg-cols-3 { grid-template-columns: repeat(3, 1fr); }
+#main-area.compare #compare-grid.cg-cols-4 { grid-template-columns: repeat(4, 1fr); }
+
 #col-compare-header { display: none; }
 
 /* ── Compare grid ── */
@@ -1020,7 +1024,10 @@ body.pdf-modal-open {
 
   #edition-selector { margin-left: 0; }
 
-  #main-area.compare #compare-grid { grid-template-columns: 1fr; }
+  #main-area.compare #compare-grid,
+  #main-area.compare #compare-grid.cg-cols-2,
+  #main-area.compare #compare-grid.cg-cols-3,
+  #main-area.compare #compare-grid.cg-cols-4 { grid-template-columns: 1fr; }
 
   /* Popup de notas: fixo na parte inferior da tela para não ser cortado */
   .fn-popup {
