@@ -1,0 +1,14 @@
+{
+  "id": "rute",
+  "titulo": "Ruth",
+  "tituloIndice": "Rute",
+  "abreviacao": "Rt",
+  "testamento": "Antigo Testamento",
+  "grupo": "Livros Históricos",
+  "capitulos": [
+    1,
+    2,
+    3,
+    4
+  ]
+}

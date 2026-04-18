@@ -1,0 +1,19 @@
+{
+  "id": "amos",
+  "titulo": "Amos",
+  "tituloIndice": "Amos",
+  "abreviacao": "Am",
+  "testamento": "Antigo Testamento",
+  "grupo": "Profetas Menores",
+  "capitulos": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}

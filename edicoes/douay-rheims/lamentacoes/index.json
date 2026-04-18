@@ -1,0 +1,15 @@
+{
+  "id": "lamentacoes",
+  "titulo": "Lamentations",
+  "tituloIndice": "Lamentacoes",
+  "abreviacao": "Lm",
+  "testamento": "Antigo Testamento",
+  "grupo": "Profetas Maiores",
+  "capitulos": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "esdras",
+  "titulo": "Ezra",
+  "tituloIndice": "Esdras",
+  "abreviacao": "Ed",
+  "testamento": "Antigo Testamento",
+  "grupo": "Livros Históricos",
+  "capitulos": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "tito",
+  "titulo": "Titus",
+  "tituloIndice": "Tito",
+  "abreviacao": "Tt",
+  "testamento": "Novo Testamento",
+  "grupo": "Epístolas Paulinas",
+  "capitulos": [
+    1,
+    2,
+    3
+  ]
+}

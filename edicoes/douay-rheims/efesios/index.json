@@ -1,0 +1,16 @@
+{
+  "id": "efesios",
+  "titulo": "Ephesians",
+  "tituloIndice": "Efesios",
+  "abreviacao": "Ef",
+  "testamento": "Novo Testamento",
+  "grupo": "Epístolas Paulinas",
+  "capitulos": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ]
+}

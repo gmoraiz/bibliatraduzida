@@ -1,0 +1,54 @@
+{
+  "num": 8,
+  "sumario": "Domine, Dominus noster. God is wonderful in his works; especially in mankind, singularly exalted by the incarnation of Christ.",
+  "versiculos": [
+    {
+      "n": 1,
+      "texto": "Unto the end, for the presses: a psalm of David.",
+      "nota": "fn8_10"
+    },
+    {
+      "n": 2,
+      "texto": "O Lord our Lord, how admirable is thy name in the whole earth! For thy magnificence is elevated above the heavens."
+    },
+    {
+      "n": 3,
+      "texto": "Out of the mouth of infants and of sucklings thou hast perfected praise, because of thy enemies, that thou mayst destroy the enemy and the avenger."
+    },
+    {
+      "n": 4,
+      "texto": "For I will behold thy heavens, the works of thy fingers: the moon and the stars which thou hast founded."
+    },
+    {
+      "n": 5,
+      "texto": "What is man that thou art mindful of him? or the son of man that thou visitest him?"
+    },
+    {
+      "n": 6,
+      "texto": "Thou hast made him a little less than the angels, thou hast crowned him with glory and honour:"
+    },
+    {
+      "n": 7,
+      "texto": "And hast set him over the works of thy hands."
+    },
+    {
+      "n": 8,
+      "texto": "Thou hast subjected all things under his feet, all sheep and oxen: moreover the beasts also of the fields."
+    },
+    {
+      "n": 9,
+      "texto": "The birds of the air, and the fishes of the sea, that pass through the paths of the sea."
+    },
+    {
+      "n": 10,
+      "texto": "O Lord our Lord, how admirable is thy name in all the earth!"
+    }
+  ],
+  "notas": {
+    "fn8_10": {
+      "rotulo": "Nota 10",
+      "texto": "The presses. In Hebrew, Gittith, supposed to be a musical instrument."
+    }
+  },
+  "link": "https://en.wikisource.org/wiki/Bible_(Douay-Rheims,_Challoner)/Psalms#PSALM_8"
+}

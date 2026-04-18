@@ -1,0 +1,50 @@
+{
+  "num": 19,
+  "sumario": "Exaudiat te Dominus. A prayer for the king.",
+  "versiculos": [
+    {
+      "n": 1,
+      "texto": "Unto the end. A psalm for David."
+    },
+    {
+      "n": 2,
+      "texto": "May the Lord hear thee in the day of tribulation: may the name of the God of Jacob protect thee."
+    },
+    {
+      "n": 3,
+      "texto": "May he send thee help from the sanctuary: and defend thee out of Sion."
+    },
+    {
+      "n": 4,
+      "texto": "May he be mindful of all thy sacrifices: and may thy whole burnt offering be made fat."
+    },
+    {
+      "n": 5,
+      "texto": "May he give thee according to thy own heart; and confirm all thy counsels."
+    },
+    {
+      "n": 6,
+      "texto": "We will rejoice in thy salvation; and in the name of our God we shall be exalted."
+    },
+    {
+      "n": 7,
+      "texto": "The Lord fulfill all thy petitions: now have I known that the Lord hath saved his anointed. He will hear him from his holy heaven: the salvation of his right hand is in powers.",
+      "nota": "fn19_15"
+    },
+    {
+      "n": 8,
+      "texto": "Some trust in chariots, and some in horses: but we will call upon the name of the Lord our God."
+    },
+    {
+      "n": 9,
+      "texto": "They are bound, and have fallen; but we are risen, and are set upright. O Lord, save the king: and hear us in the day that we shall call upon thee. ​"
+    }
+  ],
+  "notas": {
+    "fn19_15": {
+      "rotulo": "Nota 15",
+      "texto": "The salvation of his right hand is in powers. That is, in strength. His right hand is strong and mighty to save them that trust in him."
+    }
+  },
+  "link": "https://en.wikisource.org/wiki/Bible_(Douay-Rheims,_Challoner)/Psalms#PSALM_19"
+}

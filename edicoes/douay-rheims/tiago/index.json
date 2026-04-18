@@ -1,0 +1,15 @@
+{
+  "id": "tiago",
+  "titulo": "James",
+  "tituloIndice": "Tiago",
+  "abreviacao": "Tg",
+  "testamento": "Novo Testamento",
+  "grupo": "Epístolas Católicas",
+  "capitulos": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

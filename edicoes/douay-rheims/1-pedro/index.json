@@ -1,0 +1,15 @@
+{
+  "id": "1-pedro",
+  "titulo": "1 Peter",
+  "tituloIndice": "1 Pedro",
+  "abreviacao": "1Pd",
+  "testamento": "Novo Testamento",
+  "grupo": "Epístolas Católicas",
+  "capitulos": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

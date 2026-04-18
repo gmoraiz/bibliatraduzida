@@ -1,0 +1,258 @@
+{
+  "num": 5,
+  "sumario": "Christ's sermon upon the mount. The eight beatitudes.",
+  "versiculos": [
+    {
+      "n": 1,
+      "texto": "And seeing the multitudes, he went up into a mountain, and when he was set down, his disciples came unto him."
+    },
+    {
+      "n": 2,
+      "texto": "And opening his mouth, he taught them, saying:"
+    },
+    {
+      "n": 3,
+      "texto": "Blessed are the poor in spirit: for theirs is the kingdom of heaven.",
+      "nota": "fn5_6"
+    },
+    {
+      "n": 4,
+      "texto": "Blessed are the meek: for they shall possess the land."
+    },
+    {
+      "n": 5,
+      "texto": "Blessed are they that mourn: for they shall be comforted."
+    },
+    {
+      "n": 6,
+      "texto": "Blessed are they that hunger and thirst after justice: for they shall have their fill."
+    },
+    {
+      "n": 7,
+      "texto": "Blessed are the merciful: for they shall obtain mercy."
+    },
+    {
+      "n": 8,
+      "texto": "Blessed are the clean of heart: for they shall see God."
+    },
+    {
+      "n": 9,
+      "texto": "Blessed are the peacemakers: for they shall be called children of God."
+    },
+    {
+      "n": 10,
+      "texto": "Blessed are they that suffer persecution for justice' sake: for theirs is the kingdom of heaven."
+    },
+    {
+      "n": 11,
+      "texto": "Blessed are ye when they shall revile you, and persecute you, and speak all that is evil against you, untruly, for my sake:"
+    },
+    {
+      "n": 12,
+      "texto": "Be glad and rejoice, for your reward is very great in heaven. For so they persecuted the prophets that were before you."
+    },
+    {
+      "n": 13,
+      "texto": "You are the salt of the earth. But if the salt lose its savour, wherewith shall it be salted? It is good for nothing any more but to be cast out, and to be trodden on by men."
+    },
+    {
+      "n": 14,
+      "texto": "You are the light of the world. A city seated on a mountain cannot be hid."
+    },
+    {
+      "n": 15,
+      "texto": "Neither do men light a candle and put it under a bushel, but upon a candlestick, that it may shine to all that are in the house."
+    },
+    {
+      "n": 16,
+      "texto": "So let your light shine before men, that they may see your good works, and glorify your Father who is in heaven."
+    },
+    {
+      "n": 17,
+      "texto": "Do not think that I am come to destroy the law, or the prophets. I am not come to destroy, but to fulfill.",
+      "nota": "fn5_7"
+    },
+    {
+      "n": 18,
+      "texto": "For amen I say unto you, till heaven and earth pass, one jot, or one tittle shall not pass of the law, till all be fulfilled.",
+      "nota": "fn5_8"
+    },
+    {
+      "n": 19,
+      "texto": "He therefore that shall break one of these least commandments, and shall so teach men, shall be called the least in the kingdom of heaven. But he that shall do and teach, he shall be called great in the kingdom of heaven."
+    },
+    {
+      "n": 20,
+      "texto": "For I tell you, that unless your justice abound more than that of the scribes and Pharisees, you shall not enter into the kingdom of heaven.",
+      "nota": "fn5_9"
+    },
+    {
+      "n": 21,
+      "texto": "You have heard that it was said to them of old: Thou shalt not kill. And whosoever shall kill shall be in danger of the judgment.",
+      "nota": "fn5_10"
+    },
+    {
+      "n": 22,
+      "texto": "But I say to you, that whosoever is angry with his brother, shall be in danger of the judgment. And whosoever shall say to his brother, Raca, shall be in danger of the council. And whosoever shall say, Thou Fool, shall be in danger of hell fire.",
+      "nota": [
+        "fn5_11",
+        "fn5_12"
+      ]
+    },
+    {
+      "n": 23,
+      "texto": "If therefore thou offer thy gift at the altar, and there thou remember that thy brother hath any thing against thee;"
+    },
+    {
+      "n": 24,
+      "texto": "Leave there thy offering before the altar, and go first to be reconciled to thy brother: and then coming thou shalt offer thy gift."
+    },
+    {
+      "n": 25,
+      "texto": "Be at agreement with thy adversary betimes, whilst thou art in the way with him: lest perhaps the adversary deliver thee to the judge, and the judge deliver thee to the officer, and thou be cast into prison."
+    },
+    {
+      "n": 26,
+      "texto": "Amen I say to thee, thou shalt not go out from thence till thou repay the last farthing."
+    },
+    {
+      "n": 27,
+      "texto": "You have heard that it was said to them of old: Thou shalt not commit adultery."
+    },
+    {
+      "n": 28,
+      "texto": "But I say to you, that whosoever shall look on a woman to lust after her, hath already committed adultery with her in his heart."
+    },
+    {
+      "n": 29,
+      "texto": "And if thy right eye scandalize thee, pluck it out and cast it from thee. For it is expedient for thee that one of thy members should perish, rather than that thy whole body be cast into hell.",
+      "nota": "fn5_13"
+    },
+    {
+      "n": 30,
+      "texto": "And if thy right hand scandalize thee, cut it off, and cast it from thee: for it is expedient for thee that one of thy members should perish, rather than that thy whole body be cast into hell."
+    },
+    {
+      "n": 31,
+      "texto": "And it hath been said, whosoever shall put away his wife, let him give her a bill of divorce."
+    },
+    {
+      "n": 32,
+      "texto": "But I say to you, that whosoever shall put away his wife, excepting for the cause of fornication, maketh her to commit adultery: and he that shall marry her that is put away, committeth adultery."
+    },
+    {
+      "n": 33,
+      "texto": "Again you have heard that it was said to them of old, Thou shalt not forswear thyself: but thou shalt perform thy oaths to the Lord."
+    },
+    {
+      "n": 34,
+      "texto": "But I say to you not to swear at all, neither by heaven, for it is the throne of God:",
+      "nota": "fn5_14"
+    },
+    {
+      "n": 35,
+      "texto": "Nor by the earth, for it is his footstool: nor by Jerusalem, for it is the city of the great king:"
+    },
+    {
+      "n": 36,
+      "texto": "Neither shalt thou swear by thy head, because thou canst not make one hair white or black."
+    },
+    {
+      "n": 37,
+      "texto": "But let your speech be yea, yea: no, no: and that which is over and above these, is of evil."
+    },
+    {
+      "n": 38,
+      "texto": "You have heard that it hath been said, An eye for an eye, and a tooth for a tooth."
+    },
+    {
+      "n": 39,
+      "texto": "But I say to you not to resist evil: but if one strike thee on thy right cheek, turn to him also the other:",
+      "nota": "fn5_15"
+    },
+    {
+      "n": 40,
+      "texto": "And if a man will contend with thee in judgment, and take away thy coat, let go thy cloak also unto him."
+    },
+    {
+      "n": 41,
+      "texto": "And whosoever will force thee one mile, go with him other two,"
+    },
+    {
+      "n": 42,
+      "texto": "Give to him that asketh of thee and from him that would borrow of thee turn not away."
+    },
+    {
+      "n": 43,
+      "texto": "You have heard that it hath been said, Thou shalt love thy neighbour, and hate thy enemy."
+    },
+    {
+      "n": 44,
+      "texto": "But I say to you, Love your enemies: do good to them that hate you: and pray for them that persecute and calumniate you:"
+    },
+    {
+      "n": 45,
+      "texto": "That you may be the children of your Father who is in heaven, who maketh his sun to rise upon the good, and bad, and raineth upon the just and the unjust."
+    },
+    {
+      "n": 46,
+      "texto": "For if you love them that love you, what reward shall you have? do not even the publicans this?",
+      "nota": "fn5_16"
+    },
+    {
+      "n": 47,
+      "texto": "And if you salute your brethren only, what do you more? do not also the heathens this?"
+    },
+    {
+      "n": 48,
+      "texto": "Be you therefore perfect, as also your heavenly Father is perfect."
+    }
+  ],
+  "notas": {
+    "fn5_6": {
+      "rotulo": "The poor in spirit",
+      "texto": "That is, the humble; and they whose spirit is not set upon riches."
+    },
+    "fn5_7": {
+      "rotulo": "To fulfill",
+      "texto": "By accomplishing all the figures and prophecies; and perfecting all that was imperfect."
+    },
+    "fn5_8": {
+      "rotulo": "Amen",
+      "texto": "That is, assuredly of a truth. This Hebrew word, amen, is here retained by the example and authority of all the four Evangelists. It is used by our Lord as a strong asseveration, and affirmation of the truth."
+    },
+    "fn5_9": {
+      "rotulo": "The scribes and Pharisees",
+      "texto": "The scribes were the doctors of the law of Moses: the Pharisees were a precise set of men, making profession of a more exact observance of the law: and upon that account greatly esteemed among the people."
+    },
+    "fn5_10": {
+      "rotulo": "Shall be in danger of the judgment",
+      "texto": "That is, shall deserve to be punished by that lesser tribunal among the Jews, called the Judgment, which took cognizance of such crimes."
+    },
+    "fn5_11": {
+      "rotulo": "Raca",
+      "texto": "A word expressing great indignation or contempt. Shall be in danger of the council ... That is, shall deserve to be punished by the highest court of judicature, called the Council, or Sanhedrim, consisting of seventy-two persons, where the highest causes were tried and judged, which was at Jerusalem."
+    },
+    "fn5_12": {
+      "rotulo": "Thou fool",
+      "texto": "This was then looked upon as a heinous injury, when uttered with contempt, spite, or malice: and therefore is here so severely condemned. Shall be in danger of hell fire-- literally, according to the Greek, shall deserve to be cast into the Gehenna of fire. Which words our Saviour made use of to express the fire and punishments of hell."
+    },
+    "fn5_13": {
+      "rotulo": "Scandalize thee",
+      "texto": "That is, if it be a stumblingblock, or occasion of sin to thee. By which we are taught to fly the immediate occasions of sin, though they be as dear to us, or as necessary as a hand or an eye."
+    },
+    "fn5_14": {
+      "rotulo": "Not to swear at all",
+      "texto": "It is not forbid to swear in truth, justice and judgment; to the honour of God, or our own or neighbour's just defence: but only to swear rashly, or profanely, in common discourse, and without necessity."
+    },
+    "fn5_15": {
+      "rotulo": "Not to resist evil",
+      "texto": "What is here commanded, is a Christian patience under injuries and affronts, and to be willing even to suffer still more, rather than to indulge the desire of revenge: but what is further added does not strictly oblige according to the letter, for neither did Christ nor St. Paul turn the other cheek. St. John 18., and Acts 23."
+    },
+    "fn5_16": {
+      "rotulo": "The publicans",
+      "texto": "These were the gatherers of the public taxes: a set of men, odious and infamous among the Jews, for their extortions and injustice."
+    }
+  },
+  "link": "https://en.wikisource.org/wiki/Bible_(Douay-Rheims,_Challoner)/Matthew#Chapter_5"
+}

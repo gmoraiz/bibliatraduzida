@@ -1,0 +1,12 @@
+{
+  "id": "lucas",
+  "titulo": "Luke",
+  "tituloIndice": "Lucas",
+  "abreviacao": "Lc",
+  "testamento": "Novo Testamento",
+  "grupo": "Evangelhos",
+  "capitulos": [
+    1,
+    2
+  ]
+}

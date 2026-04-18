@@ -1,0 +1,15 @@
+{
+  "id": "1-joao",
+  "titulo": "1 John",
+  "tituloIndice": "1 Joao",
+  "abreviacao": "1Jo",
+  "testamento": "Novo Testamento",
+  "grupo": "Epístolas Católicas",
+  "capitulos": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

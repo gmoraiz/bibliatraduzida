@@ -1,0 +1,16 @@
+{
+  "id": "baruc",
+  "titulo": "Baruch",
+  "tituloIndice": "Baruc",
+  "abreviacao": "Br",
+  "testamento": "Antigo Testamento",
+  "grupo": "Profetas Maiores",
+  "capitulos": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "num": 1,
+  "sumario": "Beatus vir. The happiness of the just and the evil state of the wicked.",
+  "versiculos": [
+    {
+      "n": 1,
+      "texto": "Blessed is the man who hath not walked in the counsel of the ungodly, nor stood in the way of sinners, nor sat in the chair of pestilence."
+    },
+    {
+      "n": 2,
+      "texto": "But his will is in the law of the Lord, and on his law he shall meditate day and night.",
+      "nota": "fn1_1"
+    },
+    {
+      "n": 3,
+      "texto": "And he shall be like a tree which is planted near the running waters, which shall bring forth its fruit, in due season. And his leaf shall not fall off: and all whatsoever he shall do shall prosper.",
+      "nota": "fn1_2"
+    },
+    {
+      "n": 4,
+      "texto": "Not so the wicked, not so: but like the dust, which the wind driveth from the face of the earth."
+    },
+    {
+      "n": 5,
+      "texto": "Therefore the wicked shall not rise again in judgment: nor sinners in the council of the just."
+    },
+    {
+      "n": 6,
+      "texto": "For the Lord knoweth the way of the just: and the way of the wicked shall perish."
+    }
+  ],
+  "notas": {
+    "fn1_1": {
+      "rotulo": "Nota 1",
+      "texto": "Job. 1. 8."
+    },
+    "fn1_2": {
+      "rotulo": "Nota 2",
+      "texto": "Jer. 17. 8."
+    }
+  },
+  "link": "https://en.wikisource.org/wiki/Bible_(Douay-Rheims,_Challoner)/Psalms#PSALM_1"
+}
