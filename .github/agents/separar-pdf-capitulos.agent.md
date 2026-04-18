@@ -94,7 +94,7 @@ Verifique que todos os arquivos foram gerados. Para a edição `figueiredo`, con
 
 Retorne tabela curta:
 
-| Edição | Livro | Cap | Páginas | Arquivo |
-|--------|-------|-----|---------|---------|
+| Edição | Capítulos | Observação |
+|--------|-----------|------------|
 
-Inclua avisos de capítulos pulados ou intervalos ajustados.
+Na observação, relacione as transições de páginas compartilhadas, e outras peculiaridades quanto à divisão dos capítulos.
