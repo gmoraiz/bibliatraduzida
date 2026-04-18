@@ -19,43 +19,76 @@ Você separa um único PDF de livro em PDFs de capítulos.
 
 ## Fluxo
 
-1. Normalizar pedido em `{ edicao, livroId, capInicio, capFim }`, onde `edicao` é `figueiredo` ou `figueiredo-original`.
-2. Validar se o PDF fonte da edição existe. Se não existir, pare e informe caminho esperado.
-3. Detectar a página real de início de cada capítulo com `pdftotext -layout`.
-   - Cabeçalho corrido ≠ início de capítulo. Linhas do tipo `"Lamentações de Jeremias 2, 1-4"` ou `"Jeremias."` no topo são cabeçalhos tipográficos — ignorar.
-   - O início real é a página onde o título centralizado `CAPÍTULO N` / `CAPITULO N.` aparece como *heading*, não como referência marginal dentro do texto.
-   - Validar sempre as páginas `p-1`, `p` e `p+1` ao redor do candidato detectado por OCR.
+### 1. Normalizar pedido
 
-4. Definir `inicio` e `fim` de cada capítulo — **regra de página compartilhada**:
+Extrair `{ edicao, livroId, capInicio, capFim }`, onde `edicao` é `figueiredo` ou `figueiredo-original`.
+Validar que o PDF fonte existe. Se não existir, pare e informe o caminho esperado.
 
-   Para cada transição N → N+1, inspecione a página `p` onde o título "CAPÍTULO N+1" aparece como heading:
+### 2. Detectar páginas de início de cada capítulo
 
-   a) **Página compartilhada** — há texto narrativo/versículos do capítulo N *antes* do título "CAPÍTULO N+1" na mesma página `p`:
-      - `fim_N   = p`   (capítulo N inclui a página compartilhada)
-      - `inicio_(N+1) = p`   (capítulo N+1 **também** começa na mesma página)
-      - A página `p` aparece nos dois PDFs — isso é intencional para não cortar versículos.
+**Use exclusivamente Python com split em `\f`** — nunca use `awk` com `/\f/`, pois awk não processa corretamente o form feed quando há páginas em branco ou caracteres `\f` embutidos em linhas de texto, gerando offset silencioso de −1.
 
-   b) **Página limpa** — a página `p` começa diretamente com o título "CAPÍTULO N+1" (nenhum texto do capítulo N antes dele, exceto o cabeçalho tipográfico):
-      - `fim_N   = p - 1`
-      - `inicio_(N+1) = p`
+```python
+import sys
+text = open('<pdf>.txt', 'rb').read().decode('latin-1')  # ou via pdftotext pipe
+pages = text.split('\f')
+for i, page in enumerate(pages, 1):
+    if 'CAPÍTULO' in page:
+        for line in page.split('\n'):
+            if 'CAPÍTULO' in line:
+                print(f'pág {i}: {line.strip()}')
+```
 
-   c) **Página em branco ou com figura fora de contexto** — evite página em branco (sem texto), ou com figuras sem contexto, no início ou final de cada capítulo.
+Ou em bash:
+```bash
+pdftotext -layout arquivo.pdf - | python3 -c "
+import sys
+pages = sys.stdin.read().split('\f')
+for i,p in enumerate(pages,1):
+    for l in p.split('\n'):
+        if 'CAPÍTULO' in l: print(i, l.strip())
+"
+```
 
-   > **Atenção ao verso do versículo**: se o versículo 1 do capítulo N+1 começa na página `p` (compartilhada) e *continua* na página `p+1`, a página `p+1` deve obrigatoriamente estar dentro do capítulo N+1. Isso é garantido pelo uso de `inicio_(N+1) = p` e não `p+1`.
+Regras de identificação:
+- O heading real é a linha centralizada `CAPÍTULO N` no corpo da página, não referências marginais como `"Jeremias 3, 1-4"` no cabeçalho corrido.
+- Depois de detectar a página `p` de cada capítulo, sempre confirme visualmente o conteúdo de `p` com `pdftotext -layout -f p -l p arquivo.pdf -`.
 
-5. Verificar a **introdução antes do capítulo 1** (somente edição `figueiredo`):
-   - Se houver páginas com texto *anteriores* à página de início do capítulo 1 (i.e., `inicio_1 > 1`), gerar `introducao.pdf` com essas páginas.
-   - Se o proêmio/introdução está na **mesma página** que o heading "CAPÍTULO 1" e o versículo 1, **não separar**: `inicio_1 = essa página`, sem `introducao.pdf`.
+### 3. Classificar cada transição N → N+1
 
-6. Executar:
+Para cada transição, inspecione a **página `p`** onde o heading "CAPÍTULO N+1" aparece e a **página `p−1`** (última página antes do novo capítulo):
+
+**a) Página limpa** — `p` começa diretamente com o heading "CAPÍTULO N+1" (nenhum texto narrativo/versículos do capítulo N antes dele, exceto o cabeçalho tipográfico corrido no topo):
+- `fim_N = p − 1`
+- `inicio_(N+1) = p`
+
+**b) Página compartilhada** — `p` contém versículos/texto narrativo do capítulo N *antes* do heading "CAPÍTULO N+1":
+- `fim_N = p` — capítulo N inclui a página compartilhada como sua **última** página
+- `inicio_(N+1) = p` — capítulo N+1 **também começa nessa mesma página** (overlap intencional)
+
+> **Regra crítica — a página compartilhada deve ser incluída nos DOIS capítulos.**
+> `fim_N = p` e `inicio_(N+1) = p` simultaneamente. Isso é correto e intencional.
+> O leitor do cap N+1 deve encontrar o versículo 1 logo no início do PDF; isso só é possível se a página compartilhada estiver incluída no cap N+1.
+> Nunca use `inicio_(N+1) = p + 1` em página compartilhada — isso faz o cap N+1 perder seu versículo 1.
+
+**c) Página em branco** — ignore, não inclua como início ou fim de capítulo.
+
+### 4. Verificar a introdução antes do capítulo 1 (somente `figueiredo`)
+
+- Se `inicio_1 > 1`, gerar `introducao.pdf` com as páginas `1` até `inicio_1 − 1`.
+- Se o proêmio está na mesma página que o heading "CAPÍTULO 1", não separar: `inicio_1 = essa página`, sem `introducao.pdf`.
+
+### 5. Executar
+
 ```bash
 node extrair-capitulos.js <livroId> <cap:inicio:fim> [<cap:inicio:fim>...]
 # se edicao=figueiredo-original:
 node extrair-capitulos.js <livroId> --old <cap:inicio:fim> [<cap:inicio:fim>...]
 ```
 
-7. Confirmar geração de todos os arquivos na pasta da edição escolhida.
-8. Para a edição `figueiredo`, verifique se `introducao.pdf` foi gerado quando esperado.
+### 6. Confirmar
+
+Verifique que todos os arquivos foram gerados. Para a edição `figueiredo`, confirme a geração de `introducao.pdf` quando esperado.
 
 ## Resposta final
 
