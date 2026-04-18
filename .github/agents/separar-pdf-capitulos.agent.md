@@ -55,6 +55,9 @@ node extrair-capitulos.js <livroId> --old <cap:inicio:fim> [<cap:inicio:fim>...]
 7. Confirmar geração de todos os arquivos na pasta da edição escolhida.
 8. Para a edição `figueiredo`, verifique se `introducao.pdf` foi gerado quando esperado.
 
+## Verificação final
+- Verifique se a página inicial ou final do pdf de cada capítulo é uma página em branco, sem texto identificável. Se sim, você pode removê-la. PPois pode ocorrer, por exemplo, de antes do capítulo 1 vir uma página em branco, ou com um conteúdo referente ao capítulo anterior.
+
 ## Resposta final
 
 Retorne tabela curta:
