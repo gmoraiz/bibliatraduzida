@@ -552,7 +552,7 @@ let state = {
   loadedBookIndexes: {},
   loadedChapters: {},
   compareMode: false,
-  compareEditionId: null,
+  compareEditionIds: [],
   compareBookData: null,
   activePdfType: null,
   chapterViewMode: 'text',
@@ -1071,14 +1071,16 @@ function updateUrlFromState(historyMode = 'replace') {
   if (state.currentVerse) {
     nextPath += `/${state.currentVerse}`;
   }
-  if (state.compareMode && state.compareEditionId) {
-    nextPath += `/compare/${state.compareEditionId}`;
+  if (state.compareMode && state.compareEditionIds.length > 0) {
+    const cp = state.compareEditionIds.length === 1 ? state.compareEditionIds[0] : 'all';
+    nextPath += `/compare/${cp}`;
   }
 
   let hashRoute = route;
   if (state.currentVerse) hashRoute += `/${state.currentVerse}`;
-  if (state.compareMode && state.compareEditionId) {
-    hashRoute += `/compare/${state.compareEditionId}`;
+  if (state.compareMode && state.compareEditionIds.length > 0) {
+    const cp = state.compareEditionIds.length === 1 ? state.compareEditionIds[0] : 'all';
+    hashRoute += `/compare/${cp}`;
   }
 
   const next = ROUTING_MODE === 'hash'
@@ -1228,9 +1230,10 @@ function highlightSelectedVerses(verseNumber) {
 function buildShareUrl() {
   const route = `${state.currentEditionId}/${state.currentBookId}/${state.currentChapter}`
     + (state.currentVerse ? `/${state.currentVerse}` : '');
-  const compareSegment = state.compareMode && state.compareEditionId
-    ? `/compare/${state.compareEditionId}`
+  const cp = state.compareMode && state.compareEditionIds.length > 0
+    ? (state.compareEditionIds.length === 1 ? state.compareEditionIds[0] : 'all')
     : '';
+  const compareSegment = cp ? `/compare/${cp}` : '';
   return `${window.location.origin}${window.location.pathname}${window.location.search}#/${route}${compareSegment}`;
 }
 
@@ -1244,8 +1247,9 @@ function getCurrentVerseText() {
 }
 
 function getCompareVerseText() {
-  if (!state.compareMode || !state.compareEditionId || !state.currentVerse) return null;
-  const ed = state.editions.find(e => e.id === state.compareEditionId);
+  if (!state.compareMode || !state.compareEditionIds.length || !state.currentVerse) return null;
+  const compareEditionId = state.compareEditionIds[0];
+  const ed = state.editions.find(e => e.id === compareEditionId);
   if (!ed || !ed.livros) return null;
   const bookFile2 = ed.livros.find(f => f.includes('/' + state.currentBookId + '/'));
   if (!bookFile2) return null;
@@ -1269,9 +1273,10 @@ function getShareLabel() {
 
   const primaryLine = verseText ? `${ref} — ${verseText}` : ref;
 
-  if (state.compareMode && state.compareEditionId) {
-    const compareEdition = state.editions.find(e => e.id === state.compareEditionId);
-    const compareName = compareEdition ? compareEdition.edicao : state.compareEditionId;
+  if (state.compareMode && state.compareEditionIds.length > 0) {
+    const compareEditionId = state.compareEditionIds[0];
+    const compareEdition = state.editions.find(e => e.id === compareEditionId);
+    const compareName = compareEdition ? compareEdition.edicao : compareEditionId;
     const compareVerseText = getCompareVerseText();
     const compareRef = state.currentVerse
       ? `${bookTitle} (${compareName}), ${state.currentChapter}, ${state.currentVerse}`
@@ -1354,10 +1359,16 @@ async function restoreNavigationFromState(nav, options = {}) {
   document.getElementById('topbar-edition-label').textContent = selectedEdition.edicao;
 
   if (nav && nav.compareEditionId && nav.compareEditionId !== editionId) {
-    const compareEdition = state.editions.find(e => e.id === nav.compareEditionId && e.livros && e.livros.length > 0);
-    if (compareEdition) {
+    let newIds;
+    if (nav.compareEditionId === 'all') {
+      newIds = state.editions.filter(e => e.id !== editionId && e.livros && e.livros.length > 0).map(e => e.id);
+    } else {
+      const compareEdition = state.editions.find(e => e.id === nav.compareEditionId && e.livros && e.livros.length > 0);
+      newIds = compareEdition ? [compareEdition.id] : [];
+    }
+    if (newIds.length > 0) {
       state.compareMode = true;
-      state.compareEditionId = compareEdition.id;
+      state.compareEditionIds = newIds;
       const area = document.getElementById('main-area');
       area.classList.remove('single');
       area.classList.add('compare');
@@ -1420,17 +1431,26 @@ async function init() {
     if (!nav) return;
 
     if (nav.compareEditionId && nav.compareEditionId !== (nav.editionId || state.currentEditionId)) {
-      const compareEdition = state.editions.find(e => e.id === nav.compareEditionId && e.livros && e.livros.length > 0);
-      if (compareEdition) {
-        state.compareMode = true;
-        state.compareEditionId = compareEdition.id;
-        const areaOn = document.getElementById('main-area');
-        areaOn.classList.remove('single');
-        areaOn.classList.add('compare');
+      const currentEditionId = nav.editionId || state.currentEditionId;
+      let newIds;
+      if (nav.compareEditionId === 'all') {
+        newIds = state.editions.filter(e => e.id !== currentEditionId && e.livros && e.livros.length > 0).map(e => e.id);
+      } else {
+        const compareEdition = state.editions.find(e => e.id === nav.compareEditionId && e.livros && e.livros.length > 0);
+        newIds = compareEdition ? [compareEdition.id] : [];
+      }
+      state.compareEditionIds = newIds;
+      state.compareMode = newIds.length > 0;
+      const area = document.getElementById('main-area');
+      area.classList.toggle('compare', state.compareMode);
+      area.classList.toggle('single', !state.compareMode);
+      if (!state.compareMode) {
+        document.getElementById('compare-grid').innerHTML = '';
+        document.getElementById('content-compare').innerHTML = '';
       }
     } else {
       state.compareMode = false;
-      state.compareEditionId = null;
+      state.compareEditionIds = [];
       const areaOff = document.getElementById('main-area');
       areaOff.classList.remove('compare');
       areaOff.classList.add('single');
@@ -1469,40 +1489,46 @@ function getVulgataEdition() {
     || null;
 }
 
-function buildCompareButtonHtml(options = {}) {
-  const isUndo = Boolean(options.isUndo);
-  const extraClass = options.extraClass ? ` ${options.extraClass}` : '';
-  const idAttr = options.withId === false ? '' : ' id="compare-toggle-btn"';
-  const btnClass = `compare-toggle-btn${isUndo ? ' active compare-toggle-btn-undo' : ''}${extraClass}`;
-  const label = isUndo ? 'Desfazer comparação' : 'Comparar à Vulgata';
-  const title = isUndo ? 'Desfazer comparação com Vulgata' : 'Comparar à Vulgata';
-  const icon = isUndo ? '✕' : '';
-  return `<button${idAttr} class="${btnClass}" onclick="toggleCompare()" title="${title}"><span class="compare-toggle-label">${label}</span><span class="compare-toggle-icon" aria-hidden="true">${icon}</span></button>`;
+function getComparableEditions() {
+  return state.editions.filter(e => e.id !== state.currentEditionId && e.livros && e.livros.length > 0);
 }
 
-function updateCompareButton() {
-  const btn = document.getElementById('compare-toggle-btn');
-  if (!btn) return;
-  const label = btn.querySelector('.compare-toggle-label');
-  const icon = btn.querySelector('.compare-toggle-icon');
+function buildCompareSelectHtml(options = {}) {
+  const idAttr = options.withId === false ? '' : ' id="compare-select"';
+  const comparableEditions = getComparableEditions();
+  if (comparableEditions.length === 0) return '';
 
-  const vulgata = getVulgataEdition();
-  const shouldHide = !vulgata || state.currentEditionId === vulgata.id;
-  const shouldDisable = state.chapterViewMode === 'pdf';
-  const isActive = state.compareMode && !shouldDisable;
+  const currentValue = state.compareMode && state.compareEditionIds.length > 0
+    ? (state.compareEditionIds.length === 1 ? state.compareEditionIds[0] : 'all')
+    : '';
 
-  btn.style.display = shouldHide ? 'none' : 'inline-flex';
-  btn.disabled = false;
-  btn.title = isActive ? 'Desfazer comparação com Vulgata' : 'Comparar à Vulgata';
-  if (label) {
-    label.textContent = isActive ? 'Desfazer comparação' : 'Comparar à Vulgata';
-  }
-  if (icon) {
-    icon.textContent = isActive ? '✕' : '';
-  }
-  btn.classList.toggle('active', isActive);
-  btn.classList.toggle('compare-toggle-btn-undo', isActive);
-  btn.classList.toggle('disabled', false);
+  const optionsHtml = comparableEditions.map(ed => {
+    const sel = currentValue === ed.id ? ' selected' : '';
+    return `<option value="${ed.id}"${sel}>${ed.edicao}</option>`;
+  }).join('');
+
+  const allOption = comparableEditions.length > 1
+    ? `<option value="all"${currentValue === 'all' ? ' selected' : ''}>Todos</option>`
+    : '';
+
+  const activeClass = state.compareMode ? ' active' : '';
+  return `<select${idAttr} class="compare-toggle-btn compare-select${activeClass}" onchange="onCompareSelectChange(this.value)" title="Comparar com outra edição"><option value=""${!currentValue ? ' selected' : ''}>Comparar com ▾</option>${optionsHtml}${allOption}</select>`;
+}
+
+function updateCompareSelect() {
+  const sel = document.getElementById('compare-select');
+  if (!sel) return;
+
+  const comparableEditions = getComparableEditions();
+  const shouldHide = comparableEditions.length === 0 || state.chapterViewMode === 'pdf';
+  sel.style.display = shouldHide ? 'none' : '';
+
+  const currentValue = state.compareMode && state.compareEditionIds.length > 0
+    ? (state.compareEditionIds.length === 1 ? state.compareEditionIds[0] : 'all')
+    : '';
+  sel.value = currentValue;
+  sel.classList.toggle('active', state.compareMode);
+  sel.disabled = state.chapterViewMode === 'pdf';
 }
 
 function onEditionChange(editionId) {
@@ -1511,10 +1537,9 @@ function onEditionChange(editionId) {
   state.currentEditionId = editionId;
   document.getElementById('topbar-edition-label').textContent = ed.edicao;
 
-  const vulgata = getVulgataEdition();
-  if (!vulgata || editionId === vulgata.id) {
+  state.compareEditionIds = state.compareEditionIds.filter(id => id !== editionId);
+  if (state.compareEditionIds.length === 0) {
     state.compareMode = false;
-    state.compareEditionId = null;
     const area = document.getElementById('main-area');
     area.classList.remove('compare');
     area.classList.add('single');
@@ -1565,7 +1590,7 @@ function bookDirFromFile(bookFile) {
 function getChapterAssets(bookDir, chapterNumber) {
   const pdfUrl = bookDir + '/' + chapterNumber + '.pdf';
   const pdfOldUrl = bookDir.replace('/figueiredo/', '/figueiredo-original/') + '/' + chapterNumber + '.pdf';
-  const hasPdf = !bookDir.includes('/vulgata/');
+  const hasPdf = bookDir.includes('/figueiredo/');
   return { pdfUrl, pdfOldUrl, hasPdf };
 }
 
@@ -1575,7 +1600,7 @@ function isMissingChapterError(error) {
 
 function disableCompareForPdfFallback() {
   state.compareMode = false;
-  state.compareEditionId = null;
+  state.compareEditionIds = [];
 
   const area = document.getElementById('main-area');
   area.classList.remove('compare');
@@ -1603,15 +1628,14 @@ async function loadBook(editionId, bookFile, chapter = 1, verse = null, options 
     state.chapterViewMode = 'text';
     document.getElementById('compare-status').textContent = '';
 
-    const vulgata = getVulgataEdition();
+    state.compareEditionIds = state.compareEditionIds.filter(id => id !== editionId);
     const area = document.getElementById('main-area');
-    if (!vulgata || editionId === vulgata.id) {
+    if (state.compareEditionIds.length === 0) {
       state.compareMode = false;
-      state.compareEditionId = null;
       area.classList.remove('compare');
       area.classList.add('single');
-    } else if (state.compareMode) {
-      state.compareEditionId = vulgata.id;
+    } else {
+      state.compareMode = true;
       area.classList.remove('single');
       area.classList.add('compare');
     }
@@ -1626,7 +1650,7 @@ async function loadBook(editionId, bookFile, chapter = 1, verse = null, options 
         disableCompareForPdfFallback();
         renderChapterPdfFallback(chapterNumber, bookDir, 'content');
         updateNav(bookIndex);
-        updateCompareButton();
+        updateCompareSelect();
         document.getElementById('nav-book-title').textContent = bookIndex.tituloIndice || bookIndex.titulo;
         document.getElementById('bot-book-title').textContent = bookIndex.tituloIndice || bookIndex.titulo;
         buildBookSelector();
@@ -1647,7 +1671,7 @@ async function loadBook(editionId, bookFile, chapter = 1, verse = null, options 
 
     renderChapter(chData, bookDir, 'content');
     updateNav(bookIndex);
-    updateCompareButton();
+    updateCompareSelect();
     document.getElementById('nav-book-title').textContent = bookIndex.tituloIndice || bookIndex.titulo;
     document.getElementById('bot-book-title').textContent = bookIndex.tituloIndice || bookIndex.titulo;
     buildBookSelector();
@@ -1666,7 +1690,7 @@ async function loadBook(editionId, bookFile, chapter = 1, verse = null, options 
       }
     });
 
-    if (state.compareMode && state.compareEditionId) {
+    if (state.compareMode && state.compareEditionIds.length > 0) {
       await loadCompareChapter();
     }
   } catch (e) {
@@ -1717,7 +1741,7 @@ function renderChapter(ch, bookDir, targetId) {
   const pdfBtn = hasPdf ? `<button class="ver-original-btn" onclick="openPdfPanel('${pdfUrl}', 'Ver PDF 1950', 'recent')">Ver PDF 1950</button>` : '';
   const pdfOldBtn = hasPdf ? `<button class="ver-original-btn" onclick="openPdfPanel('${pdfOldUrl}', 'Ver PDF original', 'original')">Ver PDF original</button>` : '';
   const linkBtn = originalLink ? `<button class="ver-original-btn" onclick="openPdfPanel('${originalLink}', 'Ver no Wikisource', 'link')">Ver no Wikisource</button>` : '';
-  const compareBtn = buildCompareButtonHtml();
+  const compareBtn = buildCompareSelectHtml();
 
   document.getElementById(targetId).innerHTML = `
     <div class="chapter-header">
@@ -1775,7 +1799,7 @@ function renderChapterPdfFallback(chapterNumber, bookDir, targetId) {
       <div class="inline-pdf-toolbar chapter-header-actions">
         <button class="ver-original-btn inline-pdf-toggle${activeType === 'recent' ? ' active' : ''}" data-pdf-type="recent" onclick="switchInlinePdfFallback('recent')">Ver PDF 1950</button>
         <button class="ver-original-btn inline-pdf-toggle${activeType === 'original' ? ' active' : ''}" data-pdf-type="original" onclick="switchInlinePdfFallback('original')">Ver PDF original</button>
-        ${buildCompareButtonHtml()}
+        ${buildCompareSelectHtml()}
       </div>
     </div>
     <hr class="section-rule">
@@ -2127,7 +2151,8 @@ function renderVerseHtml(item, notas, notaKeys, prefix) {
   return `<span class="vnum"><a href="#" onclick="onVerseNumberClick(event, ${item.n}); return false;" name="v${item.n}_${prefix}">${vnumLabel}</a></span>${item.texto}${fnHtml}`;
 }
 
-function renderCompareGrid(ch1, ch2, bookDir1, bookDir2) {
+// compareEntries: [{editionId, ch, bookDir, error}]
+function renderCompareGrid(ch1, bookDir1, compareEntries) {
   const grid = document.getElementById('compare-grid');
   grid.innerHTML = '';
 
@@ -2136,26 +2161,29 @@ function renderCompareGrid(ch1, ch2, bookDir1, bookDir2) {
     return;
   }
 
-  const ed1 = state.editions.find(e => e.id === state.currentEditionId);
-  const ed2 = ch2 ? state.editions.find(e => e.id === state.compareEditionId) : null;
+  const numCols = 1 + compareEntries.length;
+  grid.style.gridTemplateColumns = `repeat(${numCols}, 1fr)`;
 
-  const makeHeaderCell = (ed, ch, bookDir, showPdfButtons) => {
+  const ed1 = state.editions.find(e => e.id === state.currentEditionId);
+
+  const makeHeaderCell = (ed, ch, bookDir) => {
     const div = document.createElement('div');
     div.className = 'cg-cell cg-header-cell';
+    if (!ch) {
+      div.innerHTML = `<div class="cg-edition-label">${ed ? ed.edicao : ''}</div>`
+        + `<div class="cg-summary-text compare-unavailable">Não disponível nesta edição</div>`;
+      return div;
+    }
     const chapterSummary = typeof ch.sumario === 'string' ? ch.sumario : '';
     const originalLink = getOriginalLinkForChapter(ch);
+    const { hasPdf, pdfUrl, pdfOldUrl } = getChapterAssets(bookDir, ch.num);
     let buttonsHtml = '';
-    const hasPdf = !bookDir.includes('/vulgata/');
-    if (showPdfButtons && hasPdf) {
-      const { pdfUrl, pdfOldUrl } = getChapterAssets(bookDir, ch.num);
-      buttonsHtml = `<button class="ver-original-btn" onclick="openPdfPanel('${pdfUrl}', 'Ver PDF 1950', 'recent')">Ver PDF 1950</button>`
+    if (hasPdf) {
+      buttonsHtml += `<button class="ver-original-btn" onclick="openPdfPanel('${pdfUrl}', 'Ver PDF 1950', 'recent')">Ver PDF 1950</button>`
         + `<button class="ver-original-btn" onclick="openPdfPanel('${pdfOldUrl}', 'Ver PDF original', 'original')">Ver PDF original</button>`;
     }
     if (originalLink) {
       buttonsHtml += `<button class="ver-original-btn" onclick="openPdfPanel('${originalLink}', 'Ver no Wikisource', 'link')">Ver no Wikisource</button>`;
-    }
-    if (state.compareMode && ed && ed.id === state.compareEditionId) {
-      buttonsHtml += buildCompareButtonHtml({ isUndo: true, extraClass: 'compare-toggle-btn-right', withId: false });
     }
     const actionsHtml = buttonsHtml ? `<div class="chapter-header-actions">${buttonsHtml}</div>` : '';
     div.innerHTML = `<div class="cg-edition-label">${ed ? ed.edicao : ''}</div>`
@@ -2165,66 +2193,56 @@ function renderCompareGrid(ch1, ch2, bookDir1, bookDir2) {
     return div;
   };
 
-  grid.appendChild(makeHeaderCell(ed1, ch1, bookDir1, true));
-  if (ch2) {
-    grid.appendChild(makeHeaderCell(ed2, ch2, bookDir2, false));
-  } else {
-    grid.appendChild(document.createElement('div'));
+  grid.appendChild(makeHeaderCell(ed1, ch1, bookDir1));
+  for (const entry of compareEntries) {
+    const ed = state.editions.find(e => e.id === entry.editionId);
+    grid.appendChild(makeHeaderCell(ed, entry.ch, entry.bookDir));
   }
 
   const rule = document.createElement('div');
   rule.className = 'cg-rule';
   grid.appendChild(rule);
 
-  const verses1  = ch1.versiculos.filter(i => i.tipo !== 'bio');
-  const bios1    = ch1.versiculos.filter(i => i.tipo === 'bio');
-  const verses2  = ch2 ? ch2.versiculos.filter(i => i.tipo !== 'bio') : [];
-  const bios2    = ch2 ? ch2.versiculos.filter(i => i.tipo === 'bio') : [];
-  const notaKeys1 = ch1.notas ? Object.keys(ch1.notas) : [];
-  const notaKeys2 = ch2 && ch2.notas ? Object.keys(ch2.notas) : [];
-  const maxBios  = Math.max(bios1.length, bios2.length);
+  const allVersesList = [ch1, ...compareEntries.map(e => e.ch)].map(ch =>
+    ch ? ch.versiculos.filter(i => i.tipo !== 'bio') : []
+  );
+  const allNotaKeys = [ch1, ...compareEntries.map(e => e.ch)].map(ch =>
+    ch && ch.notas ? Object.keys(ch.notas) : []
+  );
+  const allBios = [ch1, ...compareEntries.map(e => e.ch)].map(ch =>
+    ch ? ch.versiculos.filter(i => i.tipo === 'bio') : []
+  );
 
-  // Align by verse number (not by position) so verse 0 in one edition
-  // doesn't misalign against verse 1 in the other
-  const allNums = [...new Set([...verses1.map(v => v.n), ...verses2.map(v => v.n)])].sort((a, b) => a - b);
+  const allNums = [...new Set(allVersesList.flatMap(vs => vs.map(v => v.n)))].sort((a, b) => a - b);
 
   for (const num of allNums) {
-    const item1 = verses1.find(v => v.n === num);
-    const item2 = verses2.find(v => v.n === num);
-
-    const cell1 = document.createElement('div');
-    cell1.className = 'cg-cell';
-    if (item1) {
-      cell1.innerHTML = `<p class="verse compare-verse" data-v="${item1.n}">${renderVerseHtml(item1, ch1.notas || {}, notaKeys1, 'cg1')}</p>`;
+    for (let col = 0; col < numCols; col++) {
+      const verses = allVersesList[col];
+      const ch = col === 0 ? ch1 : compareEntries[col - 1].ch;
+      const notas = ch && ch.notas ? ch.notas : {};
+      const notaKeys = allNotaKeys[col];
+      const item = verses.find(v => v.n === num);
+      const cell = document.createElement('div');
+      cell.className = 'cg-cell';
+      if (item) {
+        cell.innerHTML = `<p class="verse compare-verse" data-v="${item.n}">${renderVerseHtml(item, notas, notaKeys, `cg${col + 1}`)}</p>`;
+      }
+      grid.appendChild(cell);
     }
-    grid.appendChild(cell1);
-
-    const cell2 = document.createElement('div');
-    cell2.className = 'cg-cell';
-    if (item2) {
-      cell2.innerHTML = `<p class="verse compare-verse" data-v="${item2.n}">${renderVerseHtml(item2, (ch2 && ch2.notas) || {}, notaKeys2, 'cg2')}</p>`;
-    }
-    grid.appendChild(cell2);
-
     const divider = document.createElement('div');
     divider.className = 'cg-divider';
     grid.appendChild(divider);
   }
 
+  const maxBios = Math.max(...allBios.map(b => b.length));
   for (let i = 0; i < maxBios; i++) {
-    const b1 = bios1[i];
-    const b2 = bios2[i];
-
-    const bcell1 = document.createElement('div');
-    bcell1.className = 'cg-cell';
-    if (b1) bcell1.innerHTML = `<div class="bio"><div class="bio-title">${b1.titulo}</div><p>${b1.texto}</p></div>`;
-    grid.appendChild(bcell1);
-
-    const bcell2 = document.createElement('div');
-    bcell2.className = 'cg-cell';
-    if (b2) bcell2.innerHTML = `<div class="bio"><div class="bio-title">${b2.titulo}</div><p>${b2.texto}</p></div>`;
-    grid.appendChild(bcell2);
-
+    for (let col = 0; col < numCols; col++) {
+      const b = allBios[col][i];
+      const bcell = document.createElement('div');
+      bcell.className = 'cg-cell';
+      if (b) bcell.innerHTML = `<div class="bio"><div class="bio-title">${b.titulo}</div><p>${b.texto}</p></div>`;
+      grid.appendChild(bcell);
+    }
     const bdivider = document.createElement('div');
     bdivider.className = 'cg-divider';
     grid.appendChild(bdivider);
@@ -2306,48 +2324,40 @@ async function nextBook() {
 //  MODO COMPARAÇÃO
 // ══════════════════════════════════════════════════════════════
 
-function toggleCompare() {
+function onCompareSelectChange(value) {
   markUserNavigation();
 
   const area = document.getElementById('main-area');
-  const vulgata = getVulgataEdition();
 
   if (state.chapterViewMode === 'pdf') {
-    state.compareMode = false;
-    state.compareEditionId = null;
-    area.classList.remove('compare');
-    area.classList.add('single');
-    document.getElementById('compare-grid').innerHTML = '';
-    document.getElementById('content-compare').innerHTML = '';
-    document.getElementById('compare-status').textContent = '';
     alert('Comparação indisponível em capítulos sem transcrição.');
-    updateCompareButton();
+    updateCompareSelect();
     return;
   }
 
-  if (!vulgata || state.currentEditionId === vulgata.id) {
+  if (!value) {
     state.compareMode = false;
-    state.compareEditionId = null;
-    area.classList.remove('compare');
-    area.classList.add('single');
-    updateCompareButton();
-    return;
-  }
-
-  state.compareMode = !state.compareMode;
-
-  if (state.compareMode) {
-    area.classList.replace('single', 'compare');
-    state.compareEditionId = vulgata.id;
-    loadCompareChapter();
-  } else {
+    state.compareEditionIds = [];
     area.classList.replace('compare', 'single');
-    state.compareEditionId = null;
     document.getElementById('compare-grid').innerHTML = '';
     document.getElementById('content-compare').innerHTML = '';
+    updateCompareSelect();
+    updateUrlFromState('push');
+    return;
   }
 
-  updateCompareButton();
+  let newIds;
+  if (value === 'all') {
+    newIds = getComparableEditions().map(e => e.id);
+  } else {
+    newIds = [value];
+  }
+
+  state.compareMode = true;
+  state.compareEditionIds = newIds;
+  area.classList.replace('single', 'compare');
+  loadCompareChapter();
+  updateCompareSelect();
   updateUrlFromState('push');
 }
 
@@ -2367,45 +2377,52 @@ function buildCompareEditionSelector() {
 function onCompareEditionChange(editionId) {
   if (!editionId) return;
   markUserNavigation();
-  state.compareEditionId = editionId;
+  state.compareEditionIds = [editionId];
+  state.compareMode = true;
   loadCompareChapter();
   updateUrlFromState('push');
 }
 
 async function loadCompareChapter() {
-  if (!state.compareEditionId) return;
-  const ed = state.editions.find(e => e.id === state.compareEditionId);
+  if (!state.compareEditionIds.length) return;
   const grid = document.getElementById('compare-grid');
   document.getElementById('compare-status').textContent = '';
 
   if (state.chapterViewMode === 'pdf') {
     grid.innerHTML = '';
-    document.getElementById('compare-status').textContent = '';
-    return;
-  }
-
-  if (!ed || !ed.livros.length) {
-    grid.innerHTML = '<p class="error-msg" style="grid-column:1/-1">Esta edição ainda não possui livros disponíveis.</p>';
-    return;
-  }
-
-  const bookFile2 = ed.livros.find(f => f.includes('/' + state.currentBookId + '/'));
-  if (!bookFile2) {
-    grid.innerHTML = '<p class="error-msg" style="grid-column:1/-1">O livro atual ainda não está disponível nesta edição.</p>';
-    document.getElementById('compare-status').textContent = 'livro não disponível nesta edição';
     return;
   }
 
   grid.innerHTML = '<p class="loading-msg" style="grid-column:1/-1">Carregando…</p>';
 
-  try {
-    const bookDir2 = bookDirFromFile(bookFile2);
-    const ch2 = await fetchChapter(bookDir2, state.currentChapter);
-    const ch1 = state.loadedChapters[state.currentBookDir + '/' + state.currentChapter];
-    renderCompareGrid(ch1, ch2, state.currentBookDir, bookDir2);
-  } catch (e) {
-    grid.innerHTML = `<p class="error-msg" style="grid-column:1/-1">Erro: ${e.message}</p>`;
+  const ch1 = state.loadedChapters[state.currentBookDir + '/' + state.currentChapter];
+
+  const compareEntries = await Promise.all(state.compareEditionIds.map(async (compareEdId) => {
+    const ed = state.editions.find(e => e.id === compareEdId);
+    if (!ed || !ed.livros.length) {
+      return { editionId: compareEdId, ch: null, bookDir: null, error: 'Edição sem livros disponíveis' };
+    }
+    const bookFile2 = ed.livros.find(f => f.includes('/' + state.currentBookId + '/'));
+    if (!bookFile2) {
+      return { editionId: compareEdId, ch: null, bookDir: null, error: 'Livro não disponível nesta edição' };
+    }
+    try {
+      const bookDir2 = bookDirFromFile(bookFile2);
+      const ch2 = await fetchChapter(bookDir2, state.currentChapter);
+      return { editionId: compareEdId, ch: ch2, bookDir: bookDir2 };
+    } catch (e) {
+      return { editionId: compareEdId, ch: null, bookDir: null, error: e.message };
+    }
+  }));
+
+  const firstError = compareEntries.find(e => e.error && !e.ch);
+  if (firstError && compareEntries.every(e => !e.ch)) {
+    grid.innerHTML = `<p class="error-msg" style="grid-column:1/-1">${firstError.error}</p>`;
+    document.getElementById('compare-status').textContent = firstError.error;
+    return;
   }
+
+  renderCompareGrid(ch1, state.currentBookDir, compareEntries);
 }
 
 // ══════════════════════════════════════════════════════════════
