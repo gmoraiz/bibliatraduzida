@@ -1512,7 +1512,7 @@ function buildCompareSelectHtml(options = {}) {
     : '';
 
   const activeClass = state.compareMode ? ' active' : '';
-  return `<select${idAttr} class="compare-toggle-btn compare-select${activeClass}" onchange="onCompareSelectChange(this.value)" title="Comparar com outra edição"><option value=""${!currentValue ? ' selected' : ''}>Comparar com ▾</option>${optionsHtml}${allOption}</select>`;
+  return `<select${idAttr} class="compare-toggle-btn compare-select${activeClass}" onchange="onCompareSelectChange(this.value)" title="Comparar com outra edição"><option value=""${!currentValue ? ' selected' : ''}>Comparar com</option>${optionsHtml}${allOption}</select>`;
 }
 
 function updateCompareSelect() {
