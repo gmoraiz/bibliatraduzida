@@ -1,27 +1,96 @@
 {
   "num": 28,
-  "sumario": "Treme a terra. Espantam-se os guardas. Um anjo declara às santas mulheres a ressurreição de Jesus. O Senhor mesmo lhes aparece, e manda-lhes que avisem os Apóstolos, que o verão em Galileia. Os guardas subornados dizem que estando êles dormindo, vieram os discípulos, e levaram o corpo. Os discípulos o vêem em Galileia. Êle os envia a pregar e batizar por todo o mundo.",
+  "sumario": "Treme a terra. Espantam-se os guardas. Um anjo declara às santas mulheres a ressurreição de Jesus. O Senhor mesmo lhes aparece, e manda-lhes que avisem os Apóstolos, que o verão em Galiléia. Os guardas subornados dizem que estando êles dormindo, vieram os discípulos, e levaram o corpo. Os discípulos o vêem em Galiléia. Êle os envia a pregar e batizar por todo o mundo.",
   "versiculos": [
-    { "n": 1, "texto": "Mas na tarde do sábado, ao amanhecer o primeiro dia da semana, veio Maria Madalena, e outra Maria a ver o sepulcro.", "nota": "fn28_1" },
-    { "n": 2, "texto": "E eis que tinha havido um grande terremoto, porque um anjo do Senhor desceu do Céu: E chegando revoltou a pedra, e estava assentado sôbre ela." },
-    { "n": 3, "texto": "E o seu aspecto era como um relâmpago: E a sua vestidura como a neve." },
-    { "n": 4, "texto": "E de temor dêle se assombraram os guardas, e ficaram como mortos." },
-    { "n": 5, "texto": "Mas o Anjo falando primeiro, disse às mulheres: Vós outras não tenhais mêdo: Porque sei que vindes buscar a Jesus, que foi crucificado:" },
-    { "n": 6, "texto": "Êle já aqui não está, porque ressuscitou como tinha dito: Vinde, e vêde o lugar onde o Senhor estava pôsto." },
-    { "n": 7, "texto": "E ide logo, e dizei aos seus discípulos que êle ressuscitou: E ei-lo aí vai adiante de vós para Galileia: Lá o vereis: Olhai, que eu vo-lo disse antes.", "nota": "fn28_2" },
-    { "n": 8, "texto": "E saíram logo do sepulcro com mêdo, e ao mesmo tempo com grande gôzo, e foram correndo a dar a nova aos seus discípulos.", "nota": "fn28_3" },
-    { "n": 9, "texto": "E eis que lhes saiu Jesus ao encontro, dizendo: Deus vos salve. E elas se chegaram a êle, e se abraçaram com os seus pés, e o adoraram.", "nota": "fn28_4" },
-    { "n": 10, "texto": "E então lhes disse Jesus: Não temais, ide, dai as novas a meus irmãos para que vão a Galileia, que lá me verão.", "nota": "fn28_5" },
-    { "n": 11, "texto": "Ao tempo que elas iam, eis que vieram à cidade alguns dos guardas, e noticiaram aos príncipes dos sacerdotes tudo o que havia sucedido." },
-    { "n": 12, "texto": "E tendo-se congregado com os anciãos, depois de tomarem conselho, deram uma grande soma de dinheiro aos soldados," },
-    { "n": 13, "texto": "intimando-lhes esta ordem: Dizei que vieram de noite os seus discípulos, e o levaram furtado enquanto nós estávamos dormindo.", "nota": "fn28_6" },
-    { "n": 14, "texto": "E se chegar isto aos ouvidos do governador, nós lho faremos crer, e atenderemos à vossa segurança." },
-    { "n": 15, "texto": "Êles porém depois de receberem o dinheiro, o fizeram conforme as instruções que tinham. E esta voz que se divulgou entre os judeus, dura até ao dia de hoje." },
-    { "n": 16, "texto": "Partiram pois os onze discípulos para Galileia; para cima de um monte, onde Jesus lhes havia ordenado que se achassem." },
-    { "n": 17, "texto": "E vendo-o o adoraram: Ainda que alguns tiveram sua dúvida.", "nota": "fn28_7" },
-    { "n": 18, "texto": "E chegando Jesus lhes falou, dizendo: Tem-se-me dado todo o poder no Céu e na terra.", "nota": "fn28_8" },
-    { "n": 19, "texto": "Ide pois e ensinai tôdas as gentes: Batizando-as em nome do Padre, e do Filho, e do Espírito Santo.", "nota": "fn28_9" },
-    { "n": 20, "texto": "Ensinando-as a observar tôdas as coisas que vos tenho mandado, e estai certos de que eu estou convosco todos os dias, até à consumação do século." }
+    {
+      "n": 1,
+      "texto": "Mas na tarde do sábado, ao amanhecer o primeiro dia da semana, veio Maria Madalena, e outra Maria a ver o sepulcro.",
+      "nota": "fn28_1"
+    },
+    {
+      "n": 2,
+      "texto": "E eis que tinha havido um grande terremoto, porque um anjo do Senhor desceu do Céu: E chegando revoltou a pedra, e estava assentado sôbre ela."
+    },
+    {
+      "n": 3,
+      "texto": "E o seu aspecto era como um relâmpago: E a sua vestidura como a neve."
+    },
+    {
+      "n": 4,
+      "texto": "E de temor dêle se assombraram os guardas, e ficaram como mortos."
+    },
+    {
+      "n": 5,
+      "texto": "Mas o Anjo falando primeiro, disse às mulheres: Vós outras não tenhais mêdo: Porque sei que vindes buscar a Jesus, que foi crucificado:"
+    },
+    {
+      "n": 6,
+      "texto": "Êle já aqui não está, porque ressuscitou como tinha dito: Vinde, e vêde o lugar onde o Senhor estava pôsto."
+    },
+    {
+      "n": 7,
+      "texto": "E ide logo, e dizei aos seus discípulos que êle ressuscitou: E ei-lo aí vai adiante de vós para Galiléia: Lá o vereis: Olhai, que eu vo-lo disse antes.",
+      "nota": "fn28_2"
+    },
+    {
+      "n": 8,
+      "texto": "E saíram logo do sepulcro com mêdo, e ao mesmo tempo com grande gôzo, e foram correndo a dar a nova aos seus discípulos.",
+      "nota": "fn28_3"
+    },
+    {
+      "n": 9,
+      "texto": "E eis que lhes saiu Jesus ao encontro, dizendo: Deus vos salve. E elas se chegaram a êle, e se abraçaram com os seus pés, e o adoraram.",
+      "nota": "fn28_4"
+    },
+    {
+      "n": 10,
+      "texto": "E então lhes disse Jesus: Não temais, ide, dai as novas a meus irmãos para que vão a Galiléia, que lá me verão.",
+      "nota": "fn28_5"
+    },
+    {
+      "n": 11,
+      "texto": "Ao tempo que elas iam, eis que vieram à cidade alguns dos guardas, e noticiaram aos príncipes dos sacerdotes tudo o que havia sucedido."
+    },
+    {
+      "n": 12,
+      "texto": "E tendo-se congregado com os anciãos, depois de tomarem conselho, deram uma grande soma de dinheiro aos soldados,"
+    },
+    {
+      "n": 13,
+      "texto": "intimando-lhes esta ordem: Dizei que vieram de noite os seus discípulos, e o levaram furtado enquanto nós estávamos dormindo.",
+      "nota": "fn28_6"
+    },
+    {
+      "n": 14,
+      "texto": "E se chegar isto aos ouvidos do governador, nós lho faremos crer, e atenderemos à vossa segurança."
+    },
+    {
+      "n": 15,
+      "texto": "Êles porém depois de receberem o dinheiro, o fizeram conforme as instruções que tinham. E esta voz que se divulgou entre os judeus, dura até ao dia de hoje."
+    },
+    {
+      "n": 16,
+      "texto": "Partiram pois os onze discípulos para Galiléia; para cima de um monte, onde Jesus lhes havia ordenado que se achassem."
+    },
+    {
+      "n": 17,
+      "texto": "E vendo-o o adoraram: Ainda que alguns tiveram sua dúvida.",
+      "nota": "fn28_7"
+    },
+    {
+      "n": 18,
+      "texto": "E chegando Jesus lhes falou, dizendo: Tem-se-me dado todo o poder no Céu e na terra.",
+      "nota": "fn28_8"
+    },
+    {
+      "n": 19,
+      "texto": "Ide pois e ensinai tôdas as gentes: Batizando-as em nome do Padre, e do Filho, e do Espírito Santo.",
+      "nota": "fn28_9"
+    },
+    {
+      "n": 20,
+      "texto": "Ensinando-as a observar tôdas as coisas que vos tenho mandado, e estai certos de que eu estou convosco todos os dias, até à consumação do século."
+    }
   ],
   "notas": {
     "fn28_1": {
@@ -30,7 +99,7 @@
     },
     "fn28_2": {
       "rotulo": "2",
-      "texto": "VAI ADIANTE DE VÓS — Obrigando-os assim a sair quanto antes de Jerusalém, e passar a Galileia, para que estivessem mais distantes de todos aqueles que lhes pudessem fazer algum dano. — S. João Crisóstomo e S. Tomás."
+      "texto": "VAI ADIANTE DE VÓS — Obrigando-os assim a sair quanto antes de Jerusalém, e passar a Galiléia, para que estivessem mais distantes de todos aqueles que lhes pudessem fazer algum dano. — S. João Crisóstomo e S. Tomás."
     },
     "fn28_3": {
       "rotulo": "3",

@@ -1,11 +1,11 @@
 {
   "num": 15,
-  "sumario": "Tradição dos fariseus, que os obrigava a lavarem as mãos frequentemente. Êles tinham corrompido o quarto preceito do decálogo. A cananéia alcança remédio para uma sua filha endemoninhada. Jesus sustenta quatro mil homens com sete pães e poucos peixes.",
+  "sumario": "Tradição dos fariseus, que os obrigava a lavarem as mãos freqüentemente. Êles tinham corrompido o quarto preceito do decálogo. A cananéia alcança remédio para uma sua filha endemoninhada. Jesus sustenta quatro mil homens com sete pães e poucos peixes.",
   "versiculos": [
     { "n": 1,  "texto": "Então chegaram a êle uns escribas, e fariseus de Jerusalém, dizendo:" },
     { "n": 2,  "texto": "Por que violam os teus discípulos a tradição dos antigos? pois não lavam as suas mãos, quando comem pão.", "nota": "fn15_1" },
     { "n": 3,  "texto": "E êle, respondendo, lhes disse: E vós também por que transgredis o mandamento de Deus pela vossa tradição? Porque Deus disse:" },
-    { "n": 4,  "texto": "Honra a teu pai, e a tua mãe: E o que amaldiçoar a seu pai, ou a sua mãe, morra de morte;", "nota": "fn15_2" },
+    { "n": 4,  "texto": "Honra a teu pai, e a tua mãe: E o que amaldiçoar a seu pai, ou a sua mãe, morra de morte.", "nota": "fn15_2" },
     { "n": 5,  "texto": "Porém vós outros dizeis: Qualquer que disser a seu pai, ou a sua mãe, toda a oferta que eu faça a Deus, te aproveitará a ti." },
     { "n": 6,  "texto": "Pois é certo que o tal não honrará a seu pai, ou a sua mãe: Assim é que vós tendes feito vão o mandamento de Deus pela vossa tradição.", "nota": "fn15_3" },
     { "n": 7,  "texto": "Hipócritas, bem profetizou de vós outros Isaías, quando diz:" },
@@ -38,7 +38,7 @@
     { "n": 34, "texto": "E Jesus lhes perguntou: Quantos pães tendes vós? E êles responderam: Sete, e uns poucos de peixinhos.", "nota": "fn15_13" },
     { "n": 35, "texto": "Mandou êle então à gente que se recostasse sôbre a terra." },
     { "n": 36, "texto": "E tomando os sete pães e os peixes, e dando graças, os partiu, e deu aos seus discípulos, e os discípulos os deram ao povo." },
-    { "n": 37, "texto": "E comeram todos e se fartaram. E dos fragmentos que sobejaram, levantaram sete alcovas cheias." },
+    { "n": 37, "texto": "E comeram todos e se fartaram. E dos fragmentos que sobejaram, levantaram sete alcôfas cheias." },
     { "n": 38, "texto": "E os que comeram foram quatro mil homens, fora meninos e mulheres." },
     { "n": 39, "texto": "E despedida a gente entrou Jesus em uma barca, e passou os limites de Magedan.", "nota": "fn15_14" }
   ],
@@ -49,7 +49,7 @@
     },
     "fn15_2": {
       "rotulo": "Morra de morte",
-      "texto": "Hebraísmo frequente, que significa, morrerá infalivelmente."
+      "texto": "Hebraísmo freqüente, que significa, morrerá infalivelmente."
     },
     "fn15_3": {
       "rotulo": "Não honrará a seu pai",
@@ -57,7 +57,7 @@
     },
     "fn15_4": {
       "rotulo": "Honra-me com os lábios",
-      "texto": "Quer dizer, entrega-se tão sòmente às práticas exteriores, sem se importar com o que lhe vai na alma. Esta censura cabe àqueles que se contentam em rezar e frequentar os templos, sem que contudo procurem viver na observância da lei de Jesus Cristo, de cujo espírito não estão possuídos, pois o seu coração está longe do mesmo Senhor. Finalmente êste versículo tão singelo, contém a mais formal, a mais veemente condenação da hipocrisia. Jesus Cristo quer a sinceridade do coração, não o fingimento das palavras e dos atos externos."
+      "texto": "Quer dizer, entrega-se tão sòmente às práticas exteriores, sem se importar com o que lhe vai na alma. Esta censura cabe àqueles que se contentam em rezar e frequentar os templos, sem que contudo procurem viver na observância da lei de Jesus Cristo, de cujo espírito não estão possuídos, pois o seu coração está longe do mesmo Senhor, mas o seu coração está longe de mim. Finalmente êste versículo tão singelo, contém a mais formal, a mais veemente condenação da hipocrisia. Jesus Cristo quer a sinceridade do coração, não o fingimento das palavras e dos atos externos. Tartufo poderá iludir os homens, bem merecer até dêles, de Deus só receberá castigo, pois que o seu coração está muito longe do mesmo Deus."
     },
     "fn15_5": {
       "rotulo": "Que vêm dos homens",
@@ -65,7 +65,7 @@
     },
     "fn15_6": {
       "rotulo": "Não é o que entra pela bôca",
-      "texto": "Frequentes vêzes se tem abusado deste texto para autorizar a violação da abstinência prescrita pela Igreja nos chamados dias proibidos, em que há obrigação de não comer carne, etc. É certo que a carne que se ingere não pode manchar a alma, mas o desprêzo das leis da Igreja estabelecidas por Jesus Cristo, isso é que mancha a alma, e torna-a criminosa diante de Deus. Não foi o fruto que entrou na bôca de Adão que o manchou, foi sim a desobediência à lei de Deus."
+      "texto": "Freqüentes vêzes se tem abusado deste texto para autorizar a violação da abstinência prescrita pela Igreja nos chamados dias proibidos, em que há obrigação de não comer carne, etc. É certo que a carne que se ingere não pode manchar a alma, mas o desprêzo das leis da Igreja estabelecidas por Jesus Cristo, isso é que mancha a alma, e torna-a criminosa diante de Deus. Não foi o fruto que entrou na bôca de Adão que o maculou, foi sim a desobediência à lei de Deus."
     },
     "fn15_7": {
       "rotulo": "Tôda a planta",
@@ -73,7 +73,7 @@
     },
     "fn15_8": {
       "rotulo": "Uma mulher cananéia",
-      "texto": "S. Marcos lhe chama grega sirofenicia, porque esta província que estava entre a Palestina e a Síria, era naquele tempo poblada pelo resto dos antigos cananeus, que usavam do idioma, e ritos dos gregos, introduzidos pelos reis da Síria, sucessores de Alexandre."
+      "texto": "S. Marcos lhe chama grega sirofenicia, porque esta província que estava entre a Palestina e a Síria, era naquele tempo povoada pelo resto dos antigos cananeus, que usavam do idioma, e ritos dos gregos, introduzidos pelos reis da Síria, sucessores de Alexandre."
     },
     "fn15_9": {
       "rotulo": "Não lhe respondeu palavra",

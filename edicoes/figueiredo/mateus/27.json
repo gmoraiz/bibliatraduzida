@@ -2,72 +2,302 @@
   "num": 27,
   "sumario": "Segunda assembleia do sinédrio. Judas torna a entregar aos sacerdotes o dinheiro, que êles lhe tinham dado, e vai enforcar-se. Jesus acusado na presença de Pilatos não responde palavra. Sonho da mulher de Pilatos a respeito da inocência de Jesus. O povo lhe prefere Barrabás. Pilatos, depois de lavar as mãos, o manda açoitar, e o entrega aos judeus para ser crucificado. Os soldados o carregam de opróbrios. Caminha para o monte Calvário, levando a cruz aos ombros. Ali lhe dão a beber vinho misturado com fel. É crucificado entre dois ladrões. Dividem os soldados entre si os seus vestidos. É blasfemado. Trevas em toda a terra. Clama em alta voz, Eli. Dão-lhe a beber vinagre. Torna a dar outro brado, e expira. Prodígios que sucederam na sua morte. José de Arimateia pede o seu corpo, e o enterra. Põem-se guardas ao sepulcro.",
   "versiculos": [
-    { "n": 1, "texto": "E chegada que foi a manhã, todos os príncipes dos sacerdotes, e os anciãos do povo entraram em conselho contra Jesus, para o entregarem à morte.", "nota": "fn27_1" },
-    { "n": 2, "texto": "E prêso o levaram, e entregaram ao governador Pôncio Pilatos.", "nota": "fn27_2" },
-    { "n": 3, "texto": "Então Judas, que havia sido o traidor, vendo que fôra condenado Jesus, tocado de arrependimento, tornou a levar as trinta moedas de prata aos príncipes dos sacerdotes, e anciãos," },
-    { "n": 4, "texto": "dizendo: Pequei, entregando o sangue inocente. Mas êles lhe responderam: A nós que se nos dá? viras tu lá o que fazias." },
-    { "n": 5, "texto": "E depois de lançar as moedas no templo retirou-se: E foi-se pendurar de um laço." },
-    { "n": 6, "texto": "Mas os príncipes dos sacerdotes, tomando o dinheiro, disseram: Não é lícito deitá-lo na arca das esmolas: Porque é preço de sangue.", "nota": "fn27_3" },
-    { "n": 7, "texto": "Tendo, pois, deliberado em conselho sôbre a matéria, compraram com êle o campo de um oleiro, e para servir de cemitério aos forasteiros.", "nota": "fn27_4" },
-    { "n": 8, "texto": "Por esta razão se ficou chamando aquele campo até o dia de hoje, Haceldamá, isto é, campo de sangue.", "nota": "fn27_5" },
-    { "n": 9, "texto": "Então se cumpriu o que foi anunciado ao profeta Jeremias, que diz: E tomaram as trinta moedas de prata, preço do que foi apreçado, a quem puseram em preço com os filhos de Israel:", "nota": "fn27_6" },
-    { "n": 10, "texto": "E deram-nas pelo campo de um oleiro, assim como me ordenou o Senhor." },
-    { "n": 11, "texto": "Foi apresentado, pois, Jesus ao governador, e o governador lhe fez esta pergunta, dizendo: Tu és o rei dos judeus? Respondeu-lhe Jesus: Tu o dizes." },
-    { "n": 12, "texto": "E sendo acusado pelos príncipes dos sacerdotes, e pelos anciãos, não respondeu coisa alguma." },
-    { "n": 13, "texto": "Então lhe disse Pilatos: Tu não ouves de quantos crimes te fazem cargo?" },
-    { "n": 14, "texto": "E não lhe respondeu a palavra alguma, de modo que se admirou o governador em grande maneira." },
-    { "n": 15, "texto": "Ora o governador tinha por costume, no dia da festa, soltar aquele preso que os do povo quisessem;", "nota": "fn27_7" },
-    { "n": 16, "texto": "E naquela ocasião tinha êle um preso afamado, que se chamava Barrabás." },
-    { "n": 17, "texto": "Estando pois êles todos juntos, disse-lhes Pilatos: Qual quereis vós que eu vos solte? Barrabás, ou Jesus, que se chama o Cristo?", "nota": "fn27_8" },
-    { "n": 18, "texto": "Porque sabia que por inveja é que lho haviam entregado." },
-    { "n": 19, "texto": "Entretanto, estando êle assentado no seu tribunal, mandou-lhe dizer sua mulher: Não te embaraces com a causa dêsse justo: Porque hoje em sonhos foi muito o que padeci por seu respeito.", "nota": "fn27_9" },
-    { "n": 20, "texto": "Mas os príncipes dos sacerdotes, e os anciãos persuadiram aos do povo que pedissem a Barrabás, e que fizessem morrer a Jesus." },
-    { "n": 21, "texto": "E fazendo o governador esta pergunta, lhes disse: Qual dos dois quereis vós que eu vos solte? e responderam êles: Barrabás." },
-    { "n": 22, "texto": "Disse-lhes Pilatos: Pois que hei de fazer de Jesus, que se chama o Cristo?" },
-    { "n": 23, "texto": "Responderam todos: Seja crucificado. O governador lhes disse: Pois que mal tem êle feito? e êles levantaram mais o grito dizendo: Seja crucificado." },
-    { "n": 24, "texto": "Então Pilatos vendo que nada aproveitava, mas que cada vez era maior o tumulto: Mandando vir água, lavou as mãos à vista do povo, dizendo: Eu sou inocente do sangue dêste justo: Vós lá vos avinde.", "nota": "fn27_10" },
-    { "n": 25, "texto": "E respondendo todo o povo, disse: O seu sangue caia sôbre nós, e sôbre nossos filhos.", "nota": "fn27_11" },
-    { "n": 26, "texto": "Então lhes soltou a Barrabás: E depois de fazer açoitar a Jesus, entregou-lho para ser crucificado.", "nota": "fn27_12" },
-    { "n": 27, "texto": "Então os soldados do governador, tomando a Jesus para o levarem ao Pretório, fizeram formar à roda dêle tôda a coorte:", "nota": "fn27_13" },
-    { "n": 28, "texto": "E despindo-o, lhe vestiram um manto carmezim.", "nota": "fn27_14" },
-    { "n": 29, "texto": "E tecendo uma coroa de espinhos, lha puseram sôbre a cabeça, e na sua mão direita uma cana. E ajoelhando diante dêle, o escarneciam, dizendo: Deus te salve, rei dos judeus.", "nota": "fn27_15" },
-    { "n": 30, "texto": "E cuspindo nêle, tomaram uma cana, e lhe davam com ela na cabeça." },
-    { "n": 31, "texto": "E depois que o escarneceram, despiram-no do manto, e vestiram-lhe os seus hábitos, e assim o levaram para o crucificarem." },
-    { "n": 32, "texto": "E ao sair da cidade acharam um homem de Cirene, por nome Simão: A êste constrangeram a que levasse a cruz dêle padecente.", "nota": "fn27_16" },
-    { "n": 33, "texto": "E vieram a um lugar que se chama Gólgota, que é o lugar do Calvário.", "nota": "fn27_17" },
-    { "n": 34, "texto": "E lhe deram a beber vinho misturado com fel. E tendo-o provado não o quis beber.", "nota": "fn27_18" },
-    { "n": 35, "texto": "E depois que o crucificaram, repartiram as suas vestiduras, lançando sortes: Porque se cumprisse o que tinha sido anunciado pelo profeta, que diz: Repartiram entre si as minhas vestiduras, e sôbre a minha túnica lançaram sortes.", "nota": "fn27_19" },
-    { "n": 36, "texto": "E assentados o guardavam." },
-    { "n": 37, "texto": "Puseram-lhe também sôbre a cabeça esta inscrição, que declarava a causa da sua morte: ÊSTE É JESUS, REI DOS JUDEUS.", "nota": "fn27_20" },
-    { "n": 38, "texto": "Ao mesmo tempo foram crucificados com êle dois ladrões: Um da parte direita, e outro da parte esquerda." },
-    { "n": 39, "texto": "E os que iam passando blasfemavam dêle, movendo as suas cabeças," },
-    { "n": 40, "texto": "e dizendo: Ah, tu o que destrói o templo de Deus, e o reedificas em três dias, salva-te a ti mesmo: Se és filho de Deus, desce da cruz." },
-    { "n": 41, "texto": "Da mesma sorte insultando-o também os príncipes dos sacerdotes com os escribas, e anciãos, diziam:" },
-    { "n": 42, "texto": "Êle salvou a outros, a si mesmo não se pode salvar: Se é rei de Israel, desça agora da cruz, e creremos nêle:" },
-    { "n": 43, "texto": "Confiou em Deus; livre-o lá agora, se é seu amigo, porque êle disse: Eu, pois, sou Filho de Deus." },
-    { "n": 44, "texto": "E os mesmos impropérios lhe diziam também os ladrões, que haviam sido crucificados com êle." },
-    { "n": 45, "texto": "Mas desde a hora sexta até à hora nona se difundiram trevas sôbre tôda a terra.", "nota": "fn27_21" },
-    { "n": 46, "texto": "E perto da hora nona deu Jesus um grande brado, dizendo: Eli, Eli, lamma sabachthani? isto é: Deus meu, Deus meu, por que me desamparaste?" },
-    { "n": 47, "texto": "Alguns porém dos que ali estavam, e que ouviram isto, diziam: Êste chama por Elias.", "nota": "fn27_22" },
-    { "n": 48, "texto": "E logo correndo um dêles, tendo tomado uma esponja, a ensopou em vinagre, e a pôs sôbre uma cana e lha dava a beber." },
-    { "n": 49, "texto": "Porém os mais diziam: Deixa, vejamos se vem Elias a livrá-lo." },
-    { "n": 50, "texto": "E Jesus tornando a dar outro grande brado, rendeu o espírito." },
-    { "n": 51, "texto": "E eis que se rasgou o véu do templo em duas partes de alto abaixo: E tremeu a terra, e partiram-se as pedras.", "nota": "fn27_23" },
-    { "n": 52, "texto": "E abriram-se as sepulturas: E muitos corpos de santos, que eram mortos, ressurgiram." },
-    { "n": 53, "texto": "E saindo das sepulturas depois da ressurreição de Jesus, vieram à cidade santa, e apareceram a muitos." },
-    { "n": 54, "texto": "Mas o centurião, e os que com êle estavam de guarda a Jesus, tendo presenciado o terremoto, e os sucessos que aconteciam, tiveram grande mêdo, e diziam: Na verdade, êste homem era filho de Deus.", "nota": "fn27_24" },
-    { "n": 55, "texto": "Achavam-se também ali, vindo de longe, muitas mulheres; que desde a Galileia tinham seguido a Jesus, subministrando-lhe o necessário:" },
-    { "n": 56, "texto": "Entre as quais estava Maria Madalena, e Maria, mãe de Tiago, e de José, e a mãe dos filhos de Zebedeu.", "nota": "fn27_25" },
-    { "n": 57, "texto": "E quando foi lá pela tarde, veio um homem rico de Arimateia, por nome José, que também era discípulo de Jesus:", "nota": "fn27_26" },
-    { "n": 58, "texto": "Êste chegou a Pilatos, e lhe pediu o corpo de Jesus. Pilatos mandou então que se lhe desse o corpo.", "nota": "fn27_27" },
-    { "n": 59, "texto": "Tomando, pois, o corpo, amortalhou-o José num asseado lenção.", "nota": "fn27_28" },
-    { "n": 60, "texto": "E depositou-o no seu sepulcro, que ainda não tinha servido, o qual êle tinha aberto numa rocha. E tapou a bôca do sepulcro com uma grande pedra que para ali revolveu, e retirou-se.", "nota": "fn27_29" },
-    { "n": 61, "texto": "E Maria Madalena, e outra Maria estavam ali sentadas defronte do sepulcro." },
-    { "n": 62, "texto": "E no outro dia, que é o seguinte ao Parasceve, os príncipes dos sacerdotes, e os fariseus acudiram juntos à casa de Pilatos,", "nota": "fn27_30" },
-    { "n": 63, "texto": "dizendo: Senhor, lembramo-nos de que aquele embusteiro, vivendo ainda, disse: Eu hei de ressurgir depois de três dias." },
-    { "n": 64, "texto": "Dá logo ordem que se guarde o sepulcro até ao dia terceiro: Por não suceder que venham seus discípulos, e o furtem, e digam à plebe: Ressurgiu dos mortos: E desta sorte virá o último embuste a ser pior do que o primeiro." },
-    { "n": 65, "texto": "Pilatos lhes respondeu: Vós aí tendes guardas; ide, guardai-o como entendeis.", "nota": "fn27_31" },
-    { "n": 66, "texto": "Êles, porém, retirando-se, trabalharam por ficar seguro o sepulcro, selando a campa, e pondo-lhe guardas.", "nota": "fn27_32" }
+    {
+      "n": 1,
+      "texto": "E chegada que foi a manhã, todos os príncipes dos sacerdotes, e os anciãos do povo entraram em conselho contra Jesus, para o entregarem à morte.",
+      "nota": "fn27_1"
+    },
+    {
+      "n": 2,
+      "texto": "E prêso o levaram, e entregaram ao governador Pôncio Pilatos.",
+      "nota": "fn27_2"
+    },
+    {
+      "n": 3,
+      "texto": "Então Judas, que havia sido o traidor, vendo que fôra condenado Jesus, tocado de arrependimento, tornou a levar as trinta moedas de prata aos príncipes dos sacerdotes, e anciãos,"
+    },
+    {
+      "n": 4,
+      "texto": "dizendo: Pequei, entregando o sangue inocente. Mas êles lhe responderam: A nós que se nos dá? viras tu lá o que fazias."
+    },
+    {
+      "n": 5,
+      "texto": "E depois de lançar as moedas no templo retirou-se: E foi-se pendurar de um laço."
+    },
+    {
+      "n": 6,
+      "texto": "Mas os príncipes dos sacerdotes, tomando o dinheiro, disseram: Não é lícito deitá-lo na arca das esmolas: Porque é preço de sangue.",
+      "nota": "fn27_3"
+    },
+    {
+      "n": 7,
+      "texto": "Tendo, pois, deliberado em conselho sôbre a matéria, compraram com êle o campo de um oleiro, e para servir de cemitério aos forasteiros.",
+      "nota": "fn27_4"
+    },
+    {
+      "n": 8,
+      "texto": "Por esta razão se ficou chamando aquele campo até o dia de hoje, Haceldamá, isto é, campo de sangue.",
+      "nota": "fn27_5"
+    },
+    {
+      "n": 9,
+      "texto": "Então se cumpriu o que foi anunciado ao profeta Jeremias, que diz: E tomaram as trinta moedas de prata, preço do que foi apreçado, a quem puseram em preço com os filhos de Israel:",
+      "nota": "fn27_6"
+    },
+    {
+      "n": 10,
+      "texto": "E deram-nas pelo campo de um oleiro, assim como me ordenou o Senhor."
+    },
+    {
+      "n": 11,
+      "texto": "Foi apresentado, pois, Jesus ao governador, e o governador lhe fez esta pergunta, dizendo: Tu és o rei dos judeus? Respondeu-lhe Jesus: Tu o dizes."
+    },
+    {
+      "n": 12,
+      "texto": "E sendo acusado pelos príncipes dos sacerdotes, e pelos anciãos, não respondeu coisa alguma."
+    },
+    {
+      "n": 13,
+      "texto": "Então lhe disse Pilatos: Tu não ouves de quantos crimes te fazem cargo?"
+    },
+    {
+      "n": 14,
+      "texto": "E não lhe respondeu a palavra alguma, de modo que se admirou o governador em grande maneira."
+    },
+    {
+      "n": 15,
+      "texto": "Ora o governador tinha por costume, no dia da festa, soltar aquele preso que os do povo quisessem;",
+      "nota": "fn27_7"
+    },
+    {
+      "n": 16,
+      "texto": "E naquela ocasião tinha êle um preso afamado, que se chamava Barrabás."
+    },
+    {
+      "n": 17,
+      "texto": "Estando pois êles todos juntos, disse-lhes Pilatos: Qual quereis vós que eu vos solte? Barrabás, ou Jesus, que se chama o Cristo?",
+      "nota": "fn27_8"
+    },
+    {
+      "n": 18,
+      "texto": "Porque sabia que por inveja é que lho haviam entregado."
+    },
+    {
+      "n": 19,
+      "texto": "Entretanto, estando êle assentado no seu tribunal, mandou-lhe dizer sua mulher: Não te embaraces com a causa dêsse justo: Porque hoje em sonhos foi muito o que padeci por seu respeito.",
+      "nota": "fn27_9"
+    },
+    {
+      "n": 20,
+      "texto": "Mas os príncipes dos sacerdotes, e os anciãos persuadiram aos do povo que pedissem a Barrabás, e que fizessem morrer a Jesus."
+    },
+    {
+      "n": 21,
+      "texto": "E fazendo o governador esta pergunta, lhes disse: Qual dos dois quereis vós que eu vos solte? e responderam êles: Barrabás."
+    },
+    {
+      "n": 22,
+      "texto": "Disse-lhes Pilatos: Pois que hei de fazer de Jesus, que se chama o Cristo?"
+    },
+    {
+      "n": 23,
+      "texto": "Responderam todos: Seja crucificado. O governador lhes disse: Pois que mal tem êle feito? e êles levantaram mais o grito dizendo: Seja crucificado."
+    },
+    {
+      "n": 24,
+      "texto": "Então Pilatos vendo que nada aproveitava, mas que cada vez era maior o tumulto: Mandando vir água, lavou as mãos à vista do povo, dizendo: Eu sou inocente do sangue dêste justo: Vós lá vos avinde.",
+      "nota": "fn27_10"
+    },
+    {
+      "n": 25,
+      "texto": "E respondendo todo o povo, disse: O seu sangue caia sôbre nós, e sôbre nossos filhos.",
+      "nota": "fn27_11"
+    },
+    {
+      "n": 26,
+      "texto": "Então lhes soltou a Barrabás: E depois de fazer açoitar a Jesus, entregou-lho para ser crucificado.",
+      "nota": "fn27_12"
+    },
+    {
+      "n": 27,
+      "texto": "Então os soldados do governador, tomando a Jesus para o levarem ao Pretório, fizeram formar à roda dêle tôda a coorte:",
+      "nota": "fn27_13"
+    },
+    {
+      "n": 28,
+      "texto": "E despindo-o, lhe vestiram um manto carmezim.",
+      "nota": "fn27_14"
+    },
+    {
+      "n": 29,
+      "texto": "E tecendo uma coroa de espinhos, lha puseram sôbre a cabeça, e na sua mão direita uma cana. E ajoelhando diante dêle, o escarneciam, dizendo: Deus te salve, rei dos judeus.",
+      "nota": "fn27_15"
+    },
+    {
+      "n": 30,
+      "texto": "E cuspindo nêle, tomaram uma cana, e lhe davam com ela na cabeça."
+    },
+    {
+      "n": 31,
+      "texto": "E depois que o escarneceram, despiram-no do manto, e vestiram-lhe os seus hábitos, e assim o levaram para o crucificarem."
+    },
+    {
+      "n": 32,
+      "texto": "E ao sair da cidade acharam um homem de Cirene, por nome Simão: A êste constrangeram a que levasse a cruz dêle padecente.",
+      "nota": "fn27_16"
+    },
+    {
+      "n": 33,
+      "texto": "E vieram a um lugar que se chama Gólgota, que é o lugar do Calvário.",
+      "nota": "fn27_17"
+    },
+    {
+      "n": 34,
+      "texto": "E lhe deram a beber vinho misturado com fel. E tendo-o provado não o quis beber.",
+      "nota": "fn27_18"
+    },
+    {
+      "n": 35,
+      "texto": "E depois que o crucificaram, repartiram as suas vestiduras, lançando sortes: Porque se cumprisse o que tinha sido anunciado pelo profeta, que diz: Repartiram entre si as minhas vestiduras, e sôbre a minha túnica lançaram sortes.",
+      "nota": "fn27_19"
+    },
+    {
+      "n": 36,
+      "texto": "E assentados o guardavam."
+    },
+    {
+      "n": 37,
+      "texto": "Puseram-lhe também sôbre a cabeça esta inscrição, que declarava a causa da sua morte: ÊSTE É JESUS, REI DOS JUDEUS.",
+      "nota": "fn27_20"
+    },
+    {
+      "n": 38,
+      "texto": "Ao mesmo tempo foram crucificados com êle dois ladrões: Um da parte direita, e outro da parte esquerda."
+    },
+    {
+      "n": 39,
+      "texto": "E os que iam passando blasfemavam dêle, movendo as suas cabeças,"
+    },
+    {
+      "n": 40,
+      "texto": "e dizendo: Ah, tu o que destrói o templo de Deus, e o reedificas em três dias, salva-te a ti mesmo: Se és filho de Deus, desce da cruz."
+    },
+    {
+      "n": 41,
+      "texto": "Da mesma sorte insultando-o também os príncipes dos sacerdotes com os escribas, e anciãos, diziam:"
+    },
+    {
+      "n": 42,
+      "texto": "Êle salvou a outros, a si mesmo não se pode salvar: Se é rei de Israel, desça agora da cruz, e creremos nêle:"
+    },
+    {
+      "n": 43,
+      "texto": "Confiou em Deus; livre-o lá agora, se é seu amigo, porque êle disse: Eu, pois, sou Filho de Deus."
+    },
+    {
+      "n": 44,
+      "texto": "E os mesmos impropérios lhe diziam também os ladrões, que haviam sido crucificados com êle."
+    },
+    {
+      "n": 45,
+      "texto": "Mas desde a hora sexta até à hora nona se difundiram trevas sôbre tôda a terra.",
+      "nota": "fn27_21"
+    },
+    {
+      "n": 46,
+      "texto": "E perto da hora nona deu Jesus um grande brado, dizendo: Eli, Eli, lamma sabachthani? isto é: Deus meu, Deus meu, por que me desamparaste?"
+    },
+    {
+      "n": 47,
+      "texto": "Alguns porém dos que ali estavam, e que ouviram isto, diziam: Êste chama por Elias.",
+      "nota": "fn27_22"
+    },
+    {
+      "n": 48,
+      "texto": "E logo correndo um dêles, tendo tomado uma esponja, a ensopou em vinagre, e a pôs sôbre uma cana e lha dava a beber."
+    },
+    {
+      "n": 49,
+      "texto": "Porém os mais diziam: Deixa, vejamos se vem Elias a livrá-lo."
+    },
+    {
+      "n": 50,
+      "texto": "E Jesus tornando a dar outro grande brado, rendeu o espírito."
+    },
+    {
+      "n": 51,
+      "texto": "E eis que se rasgou o véu do templo em duas partes de alto abaixo: E tremeu a terra, e partiram-se as pedras.",
+      "nota": "fn27_23"
+    },
+    {
+      "n": 52,
+      "texto": "E abriram-se as sepulturas: E muitos corpos de santos, que eram mortos, ressurgiram."
+    },
+    {
+      "n": 53,
+      "texto": "E saindo das sepulturas depois da ressurreição de Jesus, vieram à cidade santa, e apareceram a muitos."
+    },
+    {
+      "n": 54,
+      "texto": "Mas o centurião, e os que com êle estavam de guarda a Jesus, tendo presenciado o terremoto, e os sucessos que aconteciam, tiveram grande mêdo, e diziam: Na verdade, êste homem era filho de Deus.",
+      "nota": "fn27_24"
+    },
+    {
+      "n": 55,
+      "texto": "Achavam-se também ali, vindo de longe, muitas mulheres; que desde a Galiléia tinham seguido a Jesus, subministrando-lhe o necessário:"
+    },
+    {
+      "n": 56,
+      "texto": "Entre as quais estava Maria Madalena, e Maria, mãe de Tiago, e de José, e a mãe dos filhos de Zebedeu.",
+      "nota": "fn27_25"
+    },
+    {
+      "n": 57,
+      "texto": "E quando foi lá pela tarde, veio um homem rico de Arimateia, por nome José, que também era discípulo de Jesus:",
+      "nota": "fn27_26"
+    },
+    {
+      "n": 58,
+      "texto": "Êste chegou a Pilatos, e lhe pediu o corpo de Jesus. Pilatos mandou então que se lhe desse o corpo.",
+      "nota": "fn27_27"
+    },
+    {
+      "n": 59,
+      "texto": "Tomando, pois, o corpo, amortalhou-o José num asseado lenção.",
+      "nota": "fn27_28"
+    },
+    {
+      "n": 60,
+      "texto": "E depositou-o no seu sepulcro, que ainda não tinha servido, o qual êle tinha aberto numa rocha. E tapou a bôca do sepulcro com uma grande pedra que para ali revolveu, e retirou-se.",
+      "nota": "fn27_29"
+    },
+    {
+      "n": 61,
+      "texto": "E Maria Madalena, e outra Maria estavam ali sentadas defronte do sepulcro."
+    },
+    {
+      "n": 62,
+      "texto": "E no outro dia, que é o seguinte ao Parasceve, os príncipes dos sacerdotes, e os fariseus acudiram juntos à casa de Pilatos,",
+      "nota": "fn27_30"
+    },
+    {
+      "n": 63,
+      "texto": "dizendo: Senhor, lembramo-nos de que aquele embusteiro, vivendo ainda, disse: Eu hei de ressurgir depois de três dias."
+    },
+    {
+      "n": 64,
+      "texto": "Dá logo ordem que se guarde o sepulcro até ao dia terceiro: Por não suceder que venham seus discípulos, e o furtem, e digam à plebe: Ressurgiu dos mortos: E desta sorte virá o último embuste a ser pior do que o primeiro."
+    },
+    {
+      "n": 65,
+      "texto": "Pilatos lhes respondeu: Vós aí tendes guardas; ide, guardai-o como entendeis.",
+      "nota": "fn27_31"
+    },
+    {
+      "n": 66,
+      "texto": "Êles, porém, retirando-se, trabalharam por ficar seguro o sepulcro, selando a campa, e pondo-lhe guardas.",
+      "nota": "fn27_32"
+    }
   ],
   "notas": {
     "fn27_1": {
@@ -76,7 +306,7 @@
     },
     "fn27_2": {
       "rotulo": "2",
-      "texto": "PÔNCIO PILATOS — Êste não era mais do que um procurador da Judeia. Assim chamavam os romanos aos que estavam encarregados de cobrar as rendas do Império. Os romanos tinham tirado aos judeus o poder de condenar algum réu à pena capital, e por esta razão, ainda que Caifás declarou a Jesus Cristo réu de morte, não deu contra êle a sentença, mas remeteu-o ao governador da província. Governou a província da Judeia desde 26 a 36, subordinado ao legado da Síria."
+      "texto": "PÔNCIO PILATOS — Êste não era mais do que um procurador da Judéia. Assim chamavam os romanos aos que estavam encarregados de cobrar as rendas do Império. Os romanos tinham tirado aos judeus o poder de condenar algum réu à pena capital, e por esta razão, ainda que Caifás declarou a Jesus Cristo réu de morte, não deu contra êle a sentença, mas remeteu-o ao governador da província. Governou a província da Judéia desde 26 a 36, subordinado ao legado da Síria."
     },
     "fn27_3": {
       "rotulo": "3",
@@ -168,7 +398,7 @@
     },
     "fn27_25": {
       "rotulo": "25",
-      "texto": "MARIA MADALENA — É célebre no Evangelho pelos seus sentimentos de caridade ardente para com Jesus Cristo, e na tradição eclesiástica pelas suas lágrimas de penitência. Êste sobrenome de Madalena vem-lhe da sua casa de Magdala, na Galileia, perto do lago de Tiberíades. Foi desde então que ela, renunciando a tudo quanto fôsse vaidade, se entregou à mais áspera penitência."
+      "texto": "MARIA MADALENA — É célebre no Evangelho pelos seus sentimentos de caridade ardente para com Jesus Cristo, e na tradição eclesiástica pelas suas lágrimas de penitência. Êste sobrenome de Madalena vem-lhe da sua casa de Magdala, na Galiléia, perto do lago de Tiberíades. Foi desde então que ela, renunciando a tudo quanto fôsse vaidade, se entregou à mais áspera penitência."
     },
     "fn27_26": {
       "rotulo": "26",

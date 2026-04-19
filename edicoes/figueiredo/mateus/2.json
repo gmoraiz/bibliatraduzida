@@ -2,34 +2,110 @@
   "num": 2,
   "sumario": "Chegada dos Magos, e suas ofertas ao Deus Menino. Morte dos Inocentes por Herodes. Fugida de Jesus para o Egito, e a sua volta para Judéia.",
   "versiculos": [
-    { "n": 1, "texto": "Tendo pois nascido Jesus em Belém de Judá, em tempo do rei Herodes, eis-que vieram do Oriente uns Magos a Jerusalém,", "nota": "fn2_1" },
-    { "n": 2, "texto": "dizendo: Onde está o rei dos judeus, que é nascido? Porque nós vimos no Oriente a sua estrêla: E viemos a adorá-lo.", "nota": "fn2_2" },
-    { "n": 3, "texto": "E o rei Herodes ouvindo isto se turbou e tôda Jerusalém com êle." },
-    { "n": 4, "texto": "E convocando todos os príncipes dos sacerdotes e os escribas do povo, lhes perguntava onde havia de nascer o Cristo.", "nota": "fn2_3" },
-    { "n": 5, "texto": "E êles lhe disseram: Em Belém de Judá: Porque assim está escrito pelo profeta:" },
-    { "n": 6, "texto": "<span class='prophetic'>E tu Belém, terra de Judá, não és a de menos consideração entre as principais de Judá: Porque de ti sairá o condutor que há de comandar o meu povo de Israel.</span>" },
-    { "n": 7, "texto": "Então Herodes tendo chamado secretamente os Magos, inquiriu dêles com todo o cuidado que tempo havia que lhes aparecera a estrêla:" },
-    { "n": 8, "texto": "E enviando-os a Belém, disse-lhes: Ide, e informai-vos bem que menino é esse: E depois que o houverdes achado, vinde-mo dizer, para eu ir também adorá-lo." },
-    { "n": 9, "texto": "Êles, tendo ouvido as palavras do rei, partiram: e logo a estrêla, que tinham visto no Oriente, lhes apareceu, indo adiante dêles, até que, chegando, parou sôbre onde estava o menino." },
-    { "n": 10, "texto": "E quando êles viram a estrêla, foi sobremaneira grande o júbilo que sentiram." },
-    { "n": 11, "texto": "E entrando na casa, acharam o menino com Maria sua Mãe, e prostrando-se, o adoraram: e abrindo os seus cofres, lhe fizeram suas ofertas de ouro, incenso, e mirra:", "nota": "fn2_4" },
-    { "n": 12, "texto": "E havida resposta em sonhos, que não tornassem a Herodes, voltaram por outro caminho para a sua terra." },
-    { "n": 13, "texto": "Partidos que êles foram, eis-que apareceu um anjo do Senhor em sonhos a José e lhe disse: Levanta-te, e toma o menino, e sua mãe, e foge para o Egito, e fica-te lá até que eu te avise, porque Herodes tem de buscar o menino para o matar." },
-    { "n": 14, "texto": "José, levantando-se, tomou de noite o menino, e sua mãe, e retirou-se para o Egito:" },
-    { "n": 15, "texto": "E ali estêve até à morte de Herodes: para se cumprir o que proferira o Senhor pelo profeta, que diz: <span class='prophetic'>Do Egito chamei a meu filho,</span>" },
-    { "n": 16, "texto": "Herodes então, vendo que tinha sido iludido dos Magos, ficou muito irado por isso, e mandou matar todos os meninos que havia em Belém, e em todo o seu têrmo que tivessem dois anos, e daí para baixo, regulando-se nisto pelo tempo que tinha exatamente averiguado dos Magos." },
-    { "n": 17, "texto": "Então se cumpriu o que estava anunciado pelo profeta Jeremias que diz:" },
-    { "n": 18, "texto": "<span class='prophetic'>Em Ramá se ouviu um clamor, um chôro, e uma grande lamento: Vinha a ser Raquel chorando a seus filhos, sem admitir consolação pela falta dêles.</span>", "nota": "fn2_5" },
-    { "n": 19, "texto": "E sendo morto Herodes, eis-que o anjo do Senhor apareceu em sonhos a José no Egito," },
-    { "n": 20, "texto": "dizendo: Levanta-te, e toma o menino e sua mãe, e vai para a terra de Israel: Porque são mortos os que buscavam o menino para o matar." },
-    { "n": 21, "texto": "José, levantando-se, tomou o menino e sua mãe, e veio para a terra de Israel." },
-    { "n": 22, "texto": "Mas ouvindo que Arquelau reinava na Judéia em lugar de seu pai Herodes, temeu ir para lá: E avisado em sonhos, se retirou para as partes da Galiléia.", "nota": "fn2_6" },
-    { "n": 23, "texto": "E veio morar em uma cidade que se chama Nazaré: Para se cumprir o que fôra dito pelos profetas: <span class='prophetic'>Que será chamado Nazareno.</span>", "nota": "fn2_7" }
+    {
+      "n": 1,
+      "texto": "Tendo pois nascido Jesus em Belém de Judá, em tempo do rei Herodes, eis-que vieram do Oriente uns Magos a Jerusalém,",
+      "nota": "fn2_1"
+    },
+    {
+      "n": 2,
+      "texto": "dizendo: Onde está o rei dos judeus, que é nascido? Porque nós vimos no Oriente a sua estrêla: E viemos a adorá-lo.",
+      "nota": "fn2_2"
+    },
+    {
+      "n": 3,
+      "texto": "E o rei Herodes ouvindo isto se turbou e tôda Jerusalém com êle."
+    },
+    {
+      "n": 4,
+      "texto": "E convocando todos os príncipes dos sacerdotes e os escribas do povo, lhes perguntava onde havia de nascer o Cristo.",
+      "nota": "fn2_3"
+    },
+    {
+      "n": 5,
+      "texto": "E êles lhe disseram: Em Belém de Judá: Porque assim está escrito pelo profeta:"
+    },
+    {
+      "n": 6,
+      "texto": "<span class='prophetic'>E tu Belém, terra de Judá, não és a de menos consideração entre as principais de Judá: Porque de ti sairá o condutor que há de comandar o meu povo de Israel.</span>"
+    },
+    {
+      "n": 7,
+      "texto": "Então Herodes tendo chamado secretamente os Magos, inquiriu dêles com todo o cuidado que tempo havia que lhes aparecera a estrêla:"
+    },
+    {
+      "n": 8,
+      "texto": "E enviando-os a Belém, disse-lhes: Ide, e informai-vos bem que menino é esse: E depois que o houverdes achado, vinde-mo dizer, para eu ir também adorá-lo."
+    },
+    {
+      "n": 9,
+      "texto": "Êles, tendo ouvido as palavras do rei, partiram: e logo a estrêla, que tinham visto no Oriente, lhes apareceu, indo adiante dêles, até que, chegando, parou sôbre onde estava o menino."
+    },
+    {
+      "n": 10,
+      "texto": "E quando êles viram a estrêla, foi sobremaneira grande o júbilo que sentiram."
+    },
+    {
+      "n": 11,
+      "texto": "E entrando na casa, acharam o menino com Maria sua Mãe, e prostrando-se, o adoraram: e abrindo os seus cofres, lhe fizeram suas ofertas de ouro, incenso, e mirra:",
+      "nota": "fn2_4"
+    },
+    {
+      "n": 12,
+      "texto": "E havida resposta em sonhos, que não tornassem a Herodes, voltaram por outro caminho para a sua terra."
+    },
+    {
+      "n": 13,
+      "texto": "Partidos que êles foram, eis-que apareceu um anjo do Senhor em sonhos a José e lhe disse: Levanta-te, e toma o menino, e sua mãe, e foge para o Egito, e fica-te lá até que eu te avise, porque Herodes tem de buscar o menino para o matar."
+    },
+    {
+      "n": 14,
+      "texto": "José, levantando-se, tomou de noite o menino, e sua mãe, e retirou-se para o Egito:"
+    },
+    {
+      "n": 15,
+      "texto": "E ali estêve até à morte de Herodes: para se cumprir o que proferira o Senhor pelo profeta, que diz: <span class='prophetic'>Do Egito chamei a meu filho,</span>"
+    },
+    {
+      "n": 16,
+      "texto": "Herodes então, vendo que tinha sido iludido dos Magos, ficou muito irado por isso, e mandou matar todos os meninos que havia em Belém, e em todo o seu têrmo que tivessem dois anos, e daí para baixo, regulando-se nisto pelo tempo que tinha exatamente averiguado dos Magos."
+    },
+    {
+      "n": 17,
+      "texto": "Então se cumpriu o que estava anunciado pelo profeta Jeremias que diz:"
+    },
+    {
+      "n": 18,
+      "texto": "<span class='prophetic'>Em Ramá se ouviu um clamor, um chôro, e um grande lamento: Vinha a ser Raquel chorando a seus filhos, sem admitir consolação pela falta dêles.</span>",
+      "nota": "fn2_5"
+    },
+    {
+      "n": 19,
+      "texto": "E sendo morto Herodes, eis-que o anjo do Senhor apareceu em sonhos a José no Egito,"
+    },
+    {
+      "n": 20,
+      "texto": "dizendo: Levanta-te, e toma o menino e sua mãe, e vai para a terra de Israel: Porque são mortos os que buscavam o menino para o matar."
+    },
+    {
+      "n": 21,
+      "texto": "José, levantando-se, tomou o menino e sua mãe, e veio para a terra de Israel."
+    },
+    {
+      "n": 22,
+      "texto": "Mas ouvindo que Arquelau reinava na Judéia em lugar de seu pai Herodes, temeu ir para lá: E avisado em sonhos, se retirou para as partes da Galiléia.",
+      "nota": "fn2_6"
+    },
+    {
+      "n": 23,
+      "texto": "E veio morar em uma cidade que se chama Nazaré: Para se cumprir o que fôra dito pelos profetas: <span class='prophetic'>Que será chamado Nazareno.</span>",
+      "nota": "fn2_7"
+    }
   ],
   "notas": {
     "fn2_1": {
       "rotulo": "Belém de Judá",
-      "texto": "BELÉM DE JUDÁ — Etimologicamente Bethleem significa a 'casa do pão', nome dado a esta povoação por causa da sua singular fertilidade. Era a pátria de Davi, pertencia à tribo de Judá e tinha o sobrenome Efrata, a fértil, para a distinguir de Belém, da tribo de Zabulon. Erguia-se sôbre um montículo, a 822 metros de altitude, rodeada de vales tão amenos como fecundos. O seu clima é frio, caindo no Inverno abundante neve, que depressa se derrete. A este estão as colinas selvagens, onde pastaram os rebanhos de Davi, de Amós e doutros pastores belemitas. Hoje vê-se a Igreja da Natividade sôbre a gruta onde nasceu Jesus Cristo. Esta gruta, que se venera na cripta, tem 12m40 de comprido, 3m91 de largura e 3m de altura. Era um estábulo. Hoje as paredes primitivas estão cobertas de mármore. Numa pequena capela, ao este, vê-se uma estrêla de prata com esta inscrição: <em>Hic de Virgine Maria Jesus Christus natus est</em>. Imediatamente para o sul, está a capela do Presépio, para a qual se descem três degraus. No Presépio de mármore, que aí se guarda, venera-se uma Imagem do Menino Jesus. Porém, o verdadeiro presépio, ou melhor, os fragmentos que restam, foram transportados para Roma em 642 e guardam-se na Basílica de Santa Maria Maior, na Capela do Presépio. Êstes fragmentos são cinco tábuas, de madeira enegrecida pelo tempo, de vinte e cinco centímetros de comprimento. Para este de Belém estende-se um pequeno vale, chamado Ouadi-el-Scharabéh, que vai até ao Mar Morto e de notável fertilidade, onde se ergue a tôrre do Rebanho, Migdal Reder, Gên 35, 21, onde Jacó apascentava o seu gado, e onde, diz S. Jerônimo, vigiavam, à distância de mil passos, os pastores que ouviram o <em>Gloria in excelsis</em>, na fausta noite do nascimento de Jesus. Santa Helena levantou neste lugar uma capela consagrada aos Santos Anjos. Os primitivos costumes de Belém conservam-se íntegros. As mulheres vestem da mesma maneira que nós representamos a Virgem das Dores: vestido roxo e manto azul, ou vice-versa, e um véu branco sôbre a cabeça.<br><br>EM TEMPO DO REI HERODES — Três Herodes é preciso distinguir na história evangélica. Um, que chamam Herodes o Grande, de nação idumeu, que reinou em Judéia depois de Antígono, e que é o de quem neste capítulo fala S. Mateus, quando põe no seu tempo o nascimento de Cristo, e a morte dos inocentes. E neste Herodes, que era príncipe estrangeiro, se verificou o célebre vaticínio de Jacó, Gên 49, 10: que se não tiraria o cetro de Judá, enquanto não viesse o Messias. Outro que chamam Herodes Antipas, filho do mesmo Herodes o Grande, e irmão e sucessor de Arquelau; e êste Herodes é o que mandou degolar o Batista e o que concorreu com Pilatos na morte de Cristo. Outro, que chamamos Herodes Agripa, o que mandou cortar a cabeça a S. Pedro, como lemos nos Atos dos Apóstolos. Veja-se Pert. na dissertação <em>De Epochis Herodiadum</em>.<br><br>VIERAM DO ORIENTE UNS MAGOS A JERUSALÉM — Os Magos eram sábios que vieram da Arábia deserta, da Caldéia e da Mesopotâmia. Como Balaão habitou estas regiões, conservou-se a lembrança da profecia que anunciou o advento do Messias por uma estrêla. Num 24, 17."
+      "texto": "BELÉM DE JUDÁ — Etimologicamente Bethleem significa a 'casa do pão', nome dado a esta povoação por causa da sua singular fertilidade. Era a pátria de Davi, pertencia à tribo de Judá e tinha o sobrenome Efrata, a fértil, para a distinguir de Belém, da tribo de Zabulon. Erguia-se sôbre um montículo, a 822 metros de altitude, rodeada de vales tão amenos como fecundos. O seu clima é frio, caindo no Inverno abundante neve, que depressa se derrete. A este estão as colinas selvagens, onde pastaram os rebanhos de Davi, de Amós e doutros pastores belemitas. Hoje vê-se a Igreja da Natividade sôbre a gruta onde nasceu Jesus Cristo. Esta gruta, que se venera na cripta, tem 12m40 de comprido, 3m91 de largura e 3m de altura. Era um estábulo. Hoje as paredes primitivas estão cobertas de mármore. Numa pequena capela, ao este, vê-se uma estrêla de prata com esta inscrição: <em>Hic de Virgine Maria Jesus Christus natus est</em>. Imediatamente para o sul, está a capela do Presépio, para a qual se descem três degraus. No Presépio de mármore, que aí se guarda, venera-se uma Imagem do Menino Jesus. Porém, o verdadeiro presépio, ou melhor, os fragmentos que restam, foram transportados para Roma em 642 e guardam-se na Basílica de Santa Maria Maior, na Capela do Presépio. Êstes fragmentos são cinco tábuas, de madeira enegrecida pelo tempo, de vinte e cinco centímetros de comprimento. Para este de Belém estende-se um pequeno vale, chamado Ouadi-el-Scharabéh, que vai até ao Mar Morto e de notável fertilidade, onde se ergue a tôrre do Rebanho, Migdal Reder, Gên 35, 21, onde Jacó apascentava o seu gado, e onde, diz S. Jerônimo, vigiavam, à distância de mil passos, os pastores que ouviram o <em>Gloria in excelsis</em>, na fausta noite do nascimento de Jesus. Santa Helena levantou neste lugar uma capela consagrada aos Santos Anjos. Os primitivos costumes de Belém conservam-se íntegros. As mulheres vestem da mesma maneira que nós representamos a Virgem das Dores: vestido roxo e manto azul, ou vice-versa, e um véu branco sôbre a cabeça.<br><br>EM TEMPO DO REI HERODES — Três Herodes é preciso distinguir na história evangélica. Um, que chamam Herodes o Grande, de nação idumeu, que reinou em Judéia depois de Antígono, e que é o de quem neste capítulo fala S. Mateus, quando põe no seu tempo o nascimento de Cristo, e a morte dos inocentes. E neste Herodes, que era príncipe estrangeiro, se verificou o célebre vaticínio de Jacó, Gên 49, 10: que se não tiraria o cetro de Judá, enquanto não viesse o Messias. Outro que chamam Herodes Antipas, filho do mesmo Herodes o Grande, e irmão e sucessor de Arquelau; e êste Herodes é o que mandou degolar o Batista e o que concorreu com Pilatos na morte de Cristo. Outro, que chamamos Herodes Agripa, o que mandou cortar a cabeça a S. Tiago, e prender a S. Pedro, como lemos nos Atos dos Apóstolos. Veja-se Pert. na dissertação <em>De Epochis Herodiadum</em>.<br><br>VIERAM DO ORIENTE UNS MAGOS A JERUSALÉM — Os Magos eram sábios que vieram da Arábia deserta, da Caldéia e da Mesopotâmia. Como Balaão habitou estas regiões, conservou-se a lembrança da profecia que anunciou o advento do Messias por uma estrêla. Num 24, 17."
     },
     "fn2_2": {
       "rotulo": "A sua estrêla",
