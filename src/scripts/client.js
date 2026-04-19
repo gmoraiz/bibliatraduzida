@@ -60,12 +60,16 @@ function toggleDarkMode() {
 // ── NAVIGATION STORAGE ─────────────────────────────────────────
 
 function saveNavigationToStorage() {
-  if (!pageData.edition || !pageData.book || !pageData.chapter) return;
   try {
+    // Lê diretamente do DOM — mais seguro que depender do cache de módulo
+    const el = document.getElementById('page-data');
+    if (!el) return;
+    const data = JSON.parse(el.textContent || '{}');
+    if (!data.edition || !data.book || !data.chapter) return;
     localStorage.setItem(NAV_STORAGE_KEY, JSON.stringify({
-      editionId: pageData.edition,
-      bookId: pageData.book,
-      chapter: pageData.chapter,
+      editionId: data.edition,
+      bookId: data.book,
+      chapter: data.chapter,
     }));
   } catch (_) {}
 }
@@ -967,12 +971,22 @@ window.closeIntroOverlay = closeIntroOverlay;
 window.switchInlinePdfFallback = switchInlinePdfFallback;
 
 // ── INIT ──────────────────────────────────────────────────────
+// Usar DOMContentLoaded garante que o DOM está pronto mesmo em
+// dev mode (Vite pode executar módulos antes de DOMContentLoaded).
 
-initTheme();
-initReviewPopup();
-initInstallPopup();
-initPdfModalGestures();
-initPdfPinchGestures();
-initPdfFallback();
-saveNavigationToStorage();
-registerPwaServiceWorker();
+function runInit() {
+  try { initTheme(); } catch (_) {}
+  try { initReviewPopup(); } catch (_) {}
+  try { initInstallPopup(); } catch (_) {}
+  try { initPdfModalGestures(); } catch (_) {}
+  try { initPdfPinchGestures(); } catch (_) {}
+  try { initPdfFallback(); } catch (_) {}
+  try { saveNavigationToStorage(); } catch (_) {}
+  try { registerPwaServiceWorker(); } catch (_) {}
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', runInit, { once: true });
+} else {
+  runInit();
+}
