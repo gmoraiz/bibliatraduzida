@@ -91,6 +91,8 @@ const chapterHtml = renderChapterHtml(chapterData);
 const hasPdf = edition.id === 'figueiredo';
 const pdfUrl = hasPdf ? `/${bookDir}/${capitulo}.pdf` : null;
 const pdfOldUrl = hasPdf ? `/${bookDir.replace('/figueiredo/', '/figueiredo-original/')}/${capitulo}.pdf` : null;
+// Fallback: capítulo sem transcrição → exibir PDF inline (como no app.js original)
+const isPdfFallback = hasPdf && (!chapterData.versiculos || chapterData.versiculos.length === 0);
 
 const title = `${bookIndex.titulo} — Capítulo ${capitulo} | Bíblia ${edition.edicao} | Bíblia Traduzida`;
 const description = chapterData.sumario
@@ -142,6 +144,7 @@ const pageDataJson = JSON.stringify({
   hasPdf,
   pdfUrl,
   pdfOldUrl,
+  isPdfFallback,
   prevCap,
   nextCap,
   prevBookId,
@@ -237,27 +240,65 @@ const pageDataJson = JSON.stringify({
 <div id="main-area" class="single">
   <div id="col-primary">
     <div id="content">
-      <div class="chapter-header">
-        <h1>Capítulo {capitulo}</h1>
-        {chapterData.sumario && <div class="summary">{chapterData.sumario}</div>}
-        <div class="chapter-header-actions">
-          {hasPdf && <button class="ver-original-btn" onclick={`openPdfPanel('${pdfOldUrl}', 'Ver PDF original', 'original')`}>Ver PDF original</button>}
-          {hasPdf && <button class="ver-original-btn" onclick={`openPdfPanel('${pdfUrl}', 'Ver PDF 1950', 'recent')`}>Ver PDF 1950</button>}
-          {allEditions.filter(e => e.id !== edition.id).length > 0 && (
-            <select id="compare-select" class="compare-toggle-btn compare-select" onchange="onCompareSelectChange(this.value)" title="Comparar com outra edição">
-              <option value="">Comparar com</option>
-              {allEditions.filter(e => e.id !== edition.id).map(e => (
-                <option value={e.id}>{e.edicao}</option>
-              ))}
-              {allEditions.filter(e => e.id !== edition.id).length > 1 && (
-                <option value="all">Todos</option>
-              )}
-            </select>
-          )}
+      {isPdfFallback ? (
+        /* ── PDF FALLBACK: capítulo sem transcrição ── */
+        <div class="chapter-header pdf-fallback-header">
+          <h1>Capítulo {capitulo}</h1>
+          <div class="summary">Texto deste capítulo ainda não foi transcrito. Exibindo o PDF do capítulo.</div>
+          <div class="inline-pdf-toolbar chapter-header-actions">
+            <button class="ver-original-btn inline-pdf-toggle active" data-pdf-type="recent"
+              onclick="switchInlinePdfFallback('recent')">Ver PDF 1950</button>
+            <button class="ver-original-btn inline-pdf-toggle" data-pdf-type="original"
+              onclick="switchInlinePdfFallback('original')">Ver PDF original</button>
+          </div>
+          <hr class="section-rule" />
+          {/* Desktop: iframe direto */}
+          <iframe
+            id="chapter-pdf-fallback-frame"
+            class="chapter-pdf-fallback-frame"
+            src={pdfUrl}
+            title={`PDF do capítulo ${capitulo}`}
+          ></iframe>
+          {/* Mobile: pdf.js (client.js troca automaticamente em telas pequenas) */}
+          <div class="pdfjs-mobile-toolbar" id="chapter-pdf-toolbar"
+            role="toolbar" aria-label="Controles de zoom do PDF" style="display:none">
+            <button class="pdfjs-tool-btn" onclick="pdfViewerZoomOut('inline')" title="Diminuir zoom">&#8722;</button>
+            <button class="pdfjs-tool-btn pdfjs-tool-btn-label" id="chapter-pdf-zoom-label"
+              onclick="pdfViewerZoomReset('inline')" title="Resetar zoom">100%</button>
+            <button class="pdfjs-tool-btn" onclick="pdfViewerZoomIn('inline')" title="Aumentar zoom">+</button>
+            <button class="pdfjs-tool-btn" onclick="pdfViewerFitWidth('inline')" title="Ajustar à largura">Ajustar</button>
+          </div>
+          <div class="pdfjs-canvas-wrap" style="display:none">
+            <div class="pdfjs-status" id="chapter-pdf-status"></div>
+            <div id="chapter-pdf-pages" class="pdfjs-pages" aria-label={`PDF do capítulo ${capitulo}`}></div>
+          </div>
         </div>
-      </div>
-      <hr class="section-rule" />
-      <Fragment set:html={chapterHtml} />
+      ) : (
+        /* ── TEXTO NORMAL ── */
+        <>
+          <div class="chapter-header">
+            <h1>Capítulo {capitulo}</h1>
+            {chapterData.sumario && <div class="summary">{chapterData.sumario}</div>}
+            <div class="chapter-header-actions">
+              {hasPdf && <button class="ver-original-btn" onclick={`openPdfPanel('${pdfOldUrl}', 'Ver PDF original', 'original')`}>Ver PDF original</button>}
+              {hasPdf && <button class="ver-original-btn" onclick={`openPdfPanel('${pdfUrl}', 'Ver PDF 1950', 'recent')`}>Ver PDF 1950</button>}
+              {allEditions.filter(e => e.id !== edition.id).length > 0 && (
+                <select id="compare-select" class="compare-toggle-btn compare-select" onchange="onCompareSelectChange(this.value)" title="Comparar com outra edição">
+                  <option value="">Comparar com</option>
+                  {allEditions.filter(e => e.id !== edition.id).map(e => (
+                    <option value={e.id}>{e.edicao}</option>
+                  ))}
+                  {allEditions.filter(e => e.id !== edition.id).length > 1 && (
+                    <option value="all">Todos</option>
+                  )}
+                </select>
+              )}
+            </div>
+          </div>
+          <hr class="section-rule" />
+          <Fragment set:html={chapterHtml} />
+        </>
+      )}
     </div>
   </div>
   <div id="col-compare">

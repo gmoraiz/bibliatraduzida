@@ -886,6 +886,46 @@ window.addEventListener('popstate', () => {
   if (isPdfModalOpen()) closePdfModal({ fromPopstate: true });
 });
 
+// ── PDF FALLBACK (capítulo sem transcrição) ───────────────────
+
+/**
+ * No mobile, troca o iframe pelo pdf.js viewer; no desktop mantém o iframe.
+ * Chamado no init quando pageData.isPdfFallback === true.
+ */
+function initPdfFallback() {
+  if (!pageData.isPdfFallback) return;
+  const activeUrl = pageData.pdfUrl;
+  if (window.innerWidth < 768) {
+    const frame = document.getElementById('chapter-pdf-fallback-frame');
+    const toolbar = document.getElementById('chapter-pdf-toolbar');
+    const wrap = document.querySelector('.pdfjs-canvas-wrap');
+    if (frame) frame.style.display = 'none';
+    if (toolbar) toolbar.style.display = '';
+    if (wrap) wrap.style.display = '';
+    loadPdfInViewer('inline', activeUrl, { scale: 1 });
+  }
+}
+
+/**
+ * Alterna entre PDF 1950 e PDF original no fallback inline.
+ * Chamado pelos botões "Ver PDF 1950" / "Ver PDF original".
+ */
+function switchInlinePdfFallback(type) {
+  const nextUrl = type === 'original' ? pageData.pdfOldUrl : pageData.pdfUrl;
+  if (!nextUrl) return;
+
+  const frame = document.getElementById('chapter-pdf-fallback-frame');
+  if (frame && frame.style.display !== 'none') {
+    frame.src = nextUrl;
+  } else {
+    loadPdfInViewer('inline', nextUrl, { scale: 1 });
+  }
+
+  document.querySelectorAll('.inline-pdf-toggle').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.pdfType === type);
+  });
+}
+
 // ── EXPOSE ON WINDOW ──────────────────────────────────────────
 
 window.toggleDarkMode = toggleDarkMode;
@@ -910,6 +950,7 @@ window.pdfViewerFitWidth = pdfViewerFitWidth;
 window.openIntro = openIntro;
 window.closeIntro = closeIntro;
 window.closeIntroOverlay = closeIntroOverlay;
+window.switchInlinePdfFallback = switchInlinePdfFallback;
 
 // ── INIT ──────────────────────────────────────────────────────
 
@@ -918,4 +959,5 @@ initReviewPopup();
 initInstallPopup();
 initPdfModalGestures();
 initPdfPinchGestures();
+initPdfFallback();
 registerPwaServiceWorker();
