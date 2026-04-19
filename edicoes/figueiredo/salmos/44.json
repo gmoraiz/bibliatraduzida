@@ -9,7 +9,7 @@
     { "n": 5, "texto": "Com a tua beleza e com a tua formosura enteza o arco, vai adiante felizmente, e reina. Por meio da verdade e da mansidão, e da justiça: E a tua destra te conduzirá a coisas maravilhosas." },
     { "n": 6, "texto": "As tuas setas são agudas nos corações dos inimigos do rei, debaixo de ti cairão os povos." },
     { "n": 7, "texto": "O teu trono, ó Deus, subsistirá por todos os séculos: Vara de retidão é a vara do teu reino.", "nota": "fn44_7" },
-    { "n": 8, "texto": "Amaste a justiça, e aborreceste a iniquidade: Por isso te ungiu Deus o teu Deus com óleo de alegria sôbre teus companheiros.", "nota": "fn44_8" },
+    { "n": 8, "texto": "Amaste a justiça, e aborreceste a iniqüidade: Por isso te ungiu Deus o teu Deus com óleo de alegria sôbre teus companheiros.", "nota": "fn44_8" },
     { "n": 9, "texto": "Cheiro de mirra, de aloés, e de cássia sai de teus vestidos, desde as casas de marfim: Com as quais coisas te alegraram", "nota": "fn44_9" },
     { "n": 10, "texto": "as filhas dos reis na tua glória. Apresentou-se a rainha à tua destra com manto de ouro: Cercada de variedade.", "nota": "fn44_10" },
     { "n": 11, "texto": "Escuta, ó filha, e vê, e inclina o teu ouvido: E esquece-te do teu povo, e da casa de teu pai.", "nota": "fn44_11" },
@@ -28,35 +28,35 @@
     },
     "fn44_2": {
       "rotulo": "Uma palavra boa / A minha língua é pena de escrivão, etc.",
-      "texto": "Um discurso de coisas excelentes e misteriosas, como são os louvores de Jesus Cristo. — P. Seio. — Ao rei, etc.: Ao rei Cristo, a quem celebro, e que é o objeto imediato dêste salmo; no que convêm os Santos Padres, e os mais doutos dos rabinos. — P. Seio. — A minha língua é pena de escrivão: Quer dizer: Eu nisto não tenho outra parte, senão aquela que tem o que escreve velozmente o que outro lhe dita. O sentido é: \"É o Espírito Santo se serve da minha língua para que eu publique isto\". — Santo Agostinho."
+      "texto": "Um discurso de coisas excelentes e misteriosas, como são os louvores de Jesus Cristo. — P. Scio. — Ao rei, etc.: Ao rei Cristo, a quem celebro, e que é o objeto imediato dêste salmo; no que convêm os Santos Padres, e os mais doutos dos rabinos. — P. Scio. — A minha língua é pena de escrivão: Quer dizer: Eu nisto não tenho outra parte, senão aquela que tem o que escreve velozmente o que outro lhe dita. O sentido é: \"E o Espírito Santo se serve da minha língua para que eu publique isto\". — Santo Agostinho."
     },
     "fn44_3": {
       "rotulo": "Vistoso em formosura, etc.",
-      "texto": "Aqui principiam os louvores de Cristo, vistoso e magnífico em formosura, e perfeito em tôda a virtude, e tal te descobres à tua Igreja. Is 33, 17. — P. Seio. — Por isso, etc.: O propterea se explica como causa do que precede no sentido de propterea quod: és belo, e engraçado; porque o Senhor te abençoou. Outros o entendem na sua natural significação ob id: êstes são os dois motivos ou fundamentos, aos quais tem atendido Deus teu Pai para estabelecer o teu reino eterno. — P. Seio."
+      "texto": "Aqui principiam os louvores de Cristo, vistoso e magnífico em formosura, e perfeito em tôda a virtude, e tal te descobres à tua Igreja. Is 33, 17. — P. Scio. — Por isso, etc.: O propterea se explica como causa do que precede no sentido de propterea quod: és belo, e engraçado; porque o Senhor te abençoou. Outros o entendem na sua natural significação ob id: êstes são os dois motivos ou fundamentos, aos quais tem atendido Deus teu Pai para estabelecer o teu reino eterno. — P. Scio."
     },
     "fn44_4": {
       "rotulo": "Cinge a tua espada, etc.",
-      "texto": "Por esta espada se denota a eficacíssima e penetrante palavra do Evangelho. Is 49, 2; ad Hebr. 4, 12; Apc 1, 16 e 19, 15. — P. Seio."
+      "texto": "Por esta espada se denota a eficacíssima e penetrante palavra do Evangelho. Is 49, 2; ad Hebr. 4, 12; Apc 1, 16 e 19, 15. — P. Scio."
     },
     "fn44_7": {
       "rotulo": "Vara de retidão",
-      "texto": "Dirige o seu discurso a Jesus Cristo, o qual, além do reino de glória eterna, e essencial, possui também o reino com que manda a todo o criado em qualidade de medianeiro, e o excita pela união das duas naturezas. S. Paulo aplica êste versículo a Jesus Cristo, e prova por êle a sua divindade, segundo a palavra de Deus que se lhe atribui. Ad Hebr. 1, 8. — P. Seio."
+      "texto": "Dirige o seu discurso a Jesus Cristo, o qual, além do reino de glória eterna, e essencial, possui também o reino com que manda a todo o criado em qualidade de medianeiro, e o excita pela união das duas naturezas. S. Paulo aplica êste versículo a Jesus Cristo, e prova por êle a sua divindade, segundo a palavra de Deus que se lhe atribui. Ad Hebr. 1, 8. — P. Scio."
     },
     "fn44_8": {
       "rotulo": "Por isso te ungiu",
-      "texto": "O propterea se pode explicar em os dois sentidos que ficam notados no v. 3. Porque tu só pela tua perfeitíssima justiça és digno de ser o rei da Igreja: Deus te tem destinado, e consagrado para êste ofício, não só pela tua pessoa, que é igual com a do Padre, senão ainda no teu ser de homem te tem dotado sem medida dos dons do seu espírito; o que figuravam as antigas unções dos reis. Jo 3, 34, e 1 Jo 2, 20-27. A primeira unção de Cristo foi na sua Encarnação, quando o Verbo se uniu hipostàticamente com a natureza humana. Ela precede a todo o mérito, e é de todo gratuita. A segunda unção foi na sua Ressurreição, quando o Padre encheu a Cristo da glória que merecia. — Sôbre teus companheiros: Sôbre todos os verdadeiros fiéis santificados pelo mesmo espírito, e dotados das suas graças para serem reis, e sacerdotes. Apc 1, 6 e 4, 10; mas que não recebem senão uma porção, e essa por medida. 1 Cor 13, 7-11, Ef 4, 7. Mas Jesus Cristo tem tôda a enchente e plenidão. Jo 3, 34. — P. Seio."
+      "texto": "O propterea se pode explicar em os dois sentidos que ficam notados no v. 3. Porque tu só pela tua perfeitíssima justiça és digno de ser o rei da Igreja: Deus te tem destinado, e consagrado para êste ofício, não só pela tua pessoa, que é igual com a do Padre, senão ainda no teu ser de homem te tem dotado sem medida dos dons do seu espírito; o que figuravam as antigas unções dos reis. Jo 3, 34, e 1 Jo 2, 20-27. A primeira unção de Cristo foi na sua Encarnação, quando o Verbo se uniu hipostàticamente com a natureza humana. Ela precede a todo o mérito, e é de todo gratuita. A segunda unção foi na sua Ressurreição, quando o Padre encheu a Cristo da glória que merecia. Pode o texto explicar-se de uma e outra maneira. S. Paulo parece o entendeu no primeiro sentido, como se o Deus estivesse em vocativo, ó Deus, conforme a versão dos Setenta, ó Deus, o teu Deus. E Santo Agostinho insiste no mesmo, por ser o texto uma prova evidente da divindade de Jesus Cristo. Veja-se Enarr, in hunc psalmo numero 19. — P. Scio. — Sôbre teus companheiros: Sôbre todos os verdadeiros fiéis santificados pelo mesmo espírito, e dotados das suas graças para serem reis, e sacerdotes. Apc 1, 6 e 4, 10; mas que não recebem senão uma porção, e essa por medida. 1 Cor 13, 7-11, Ef 4, 7. Mas Jesus Cristo tem tôda a enchente e plenidão. Jo 3, 34. — P. Scio."
     },
     "fn44_9": {
       "rotulo": "De teus vestidos / Desde as casas de marfim",
-      "texto": "Dos dons do Espírito Santo de que estás revestido, e que derramam um cheiro suavíssimo de graça e de virtude: Cant 1, 3 e por meio dêles atraístes a tôdas as nações. — P. Seio. — Desde as casas de marfim: Desde o Céu, palácio real de Jesus Cristo. Costumavam os reis cobrir as paredes dos seus gabinetes, com pranchas de marfim. O hebreu tem: \"Todos os teus vestidos são mirra, aloés, e cássia\", que espalham o seu cheiro desde os palácios de marfim, desde os Céus onde tens a tua morada cheio de um eterno gôzo. — P. Seio."
+      "texto": "Dos dons do Espírito Santo de que estás revestido, e que derramam um cheiro suavíssimo de graça e de virtude: Cant 1, 3 e por meio dêles atraístes a tôdas as nações. — P. Scio. — Desde as casas de marfim: Desde o Céu, palácio real de Jesus Cristo. Costumavam os reis cobrir as paredes dos seus gabinetes, com pranchas de marfim. O hebreu tem: \"Todos os teus vestidos são mirra, aloés, e cássia, que espalham o seu cheiro desde os palácios de marfim, desde os Céus onde tens a tua morada cheio de um eterno gôzo.\" — P. Scio."
     },
     "fn44_10": {
       "rotulo": "Com manto de ouro",
-      "texto": "O hebreu diz: \"Em coroa de Ofir:\" De ouro puríssimo: Jó 22, 24. Mas não se lêem as palavras: circumdata varietate. Êste ouro, e vários adornos da Espôsa são a caridade, e variedade de virtudes, e dons de graça, dos quais está ricamente adornada a Igreja. 1 Cor 12, 6. 7. 8. Hbr 2, 4. S. Bernardo, S. Ildefonso, e outros muitos intérpretes aplicam à rainha dos anjos o que neste salmo se diz da espôsa, a quem muito bem se atribuem quantos adornos e graças insinua aqui o profeta. — P. Seio."
+      "texto": "O hebreu diz: \"Em coroa de Ofir:\" De ouro puríssimo: Jó 22, 24. Mas não se lêem as palavras: circumdata varietate. Êste ouro, e vários adornos da Espôsa são a caridade, e variedade de virtudes, e dons de graça, dos quais está ricamente adornada a Igreja. 1 Cor 12, 6. 7. 8. Hbr 2, 4. S. Bernardo, S. Ildefonso, e outros muitos intérpretes aplicam à rainha dos anjos o que neste salmo se diz da espôsa, a quem muito bem se atribuem quantos adornos e graças insinua aqui o profeta. — P. Scio."
     },
     "fn44_11": {
       "rotulo": "E esquece-te do teu povo",
-      "texto": "Renuncia ao mundo, e à infidelidade, que é como a casa paterna, de onde fôste tirada por chamamento do Padre, para estar unida perfeitamente com teu espôso, segundo a lei do matrimónio, Gên 2, 24, Flp 14. — P. Seio."
+      "texto": "Renuncia ao mundo, e à infidelidade, que é como a casa paterna, de onde fôste tirada por chamamento do Padre, para estar unida perfeitamente com teu espôso, segundo a lei do matrimónio, Gên 2, 24, Flp 14. — P. Scio."
     },
     "fn44_15": {
       "rotulo": "Tôda vestida de vários adornos",
@@ -64,7 +64,7 @@
     },
     "fn44_18": {
       "rotulo": "Lembrar-se-ão do teu nome",
-      "texto": "O texto hebreu diz: \"Publicarei a memória do teu nome por tôdas as idades.\" Palavras do profeta a Jesus Cristo. — P. Seio."
+      "texto": "O texto hebreu diz: \"Publicarei a memória do teu nome por tôdas as idades.\" Palavras do profeta a Jesus Cristo. — P. Scio."
     }
   }
 }

@@ -1,7 +1,8 @@
 {
   "num": 142,
-  "sumario": "Salmo deprecatório. Implora o socorro do Senhor, castigados seus inimigos. Salmo de Davi.",
+  "sumario": "Salmo deprecatório. Implora o socorro do Senhor, castigados seus inimigos.",
   "versiculos": [
+    { "n": 0, "tipo": "epigrafe", "texto": "Salmo de Davi." },
     { "n": 1, "texto": "Quando seu filho Absalão o perseguia. (2 Rs 17).<br>Senhor, atende a minha oração: Percebe nos teus ouvidos o meu rogo, segundo a tua verdade; atende-me na tua justiça.", "nota": "fn142_1" },
     { "n": 2, "texto": "E não entres em juízo com o teu servo: Porque não será justificado na tua presença todo o vivente." },
     { "n": 3, "texto": "Porque o inimigo me perseguiu a minha alma: Humilhou a minha vida até ao chão.<br>Colocou-me em lugares obscuros como a mortos de muitos séculos:", "nota": "fn142_3" },

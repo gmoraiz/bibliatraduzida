@@ -1,7 +1,8 @@
 {
   "num": 116,
-  "sumario": "Os Padres e intérpretes entendem comumente êste salmo da vocação dos gentios, e da união de todos os povos da terra para formar um só corpo, que é o da Igreja. Aleluia.",
+  "sumario": "Os Padres e intérpretes entendem comumente êste salmo da vocação dos gentios, e da união de todos os povos da terra para formar um só corpo, que é o da Igreja.",
   "versiculos": [
+    { "n": 0, "tipo": "epigrafe", "texto": "Aleluia." },
     { "n": 1, "texto": "Louvai tôdas as gentes ao Senhor:<br>Louvai-o todos os povos.", "nota": "fn116_1" },
     { "n": 2, "texto": "Porque sôbre nós foi confirmada a sua misericórdia:<br>E a verdade do Senhor permanece eternamente.", "nota": "fn116_2" }
   ],

@@ -11,10 +11,10 @@
     { "n": 7, "texto": "Tributai ao Senhor, ó famílias das gentes, tributai ao Senhor glória e honra:", "nota": "fn95_7" },
     { "n": 8, "texto": "Tributai ao Senhor a glória devida ao seu nome.<br>Tomai vítimas, e entrai nos seus átrios:" },
     { "n": 9, "texto": "Adorai ao Senhor no átrio do santo tabernáculo.<br>Trema tôda a terra à sua presença:" },
-    { "n": 10, "texto": "Dizei entre as gentes que o Senhor reinou.<br>Porque firmou a redondeza da terra, que não será comovida: Julgará os povos com equidade." },
+    { "n": 10, "texto": "Dizei entre as gentes que o Senhor reinou.<br>Porque firmou a redondeza da terra, que não será comovida: Julgará os povos com eqüidade." },
     { "n": 11, "texto": "Alegrem-se os céus, e regozije-se a terra, comova-se o mar, e o que êle contém:" },
     { "n": 12, "texto": "Alegrar-se-ão os campos, e tôdas as coisas, que dêles há.<br>Então se regozijarão tôdas as árvores das selvas." },
-    { "n": 13, "texto": "Ante a face do Senhor porque veio: Porque veio a julgar a terra.<br>Julgará a redondeza da terra com equidade, e os povos segundo a sua verdade." }
+    { "n": 13, "texto": "Ante a face do Senhor porque veio: Porque veio a julgar a terra.<br>Julgará a redondeza da terra com eqüidade, e os povos segundo a sua verdade." }
   ],
   "notas": {
     "fn95_1": {
@@ -23,7 +23,7 @@
     },
     "fn95_7": {
       "rotulo": "Ó famílias",
-      "texto": "Ó FAMÍLIAS — Na Vulgata se conserva a palavra grega, que significa famílias, tribos, e aqui, em significação mais extensa, os povos, ou nações que não eram do povo de Deus, no que se insinua o Mistério da conversão dos gentios, tantas vêzes anunciada. — P. Seio."
+      "texto": "Ó FAMÍLIAS — Na Vulgata se conserva a palavra grega, que significa famílias, tribos, e aqui, em significação mais extensa, os povos, ou nações que não eram do povo de Deus, no que se insinua o Mistério da conversão dos gentios, tantas vêzes anunciada. — P. Scio."
     }
   }
 }

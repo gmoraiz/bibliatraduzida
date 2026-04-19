@@ -3,8 +3,8 @@
   "sumario": "Salmo moral em que Davi pede a Deus o livre das traições, crueldades de seus inimigos: recomenda a bondade, e paciência de Deus.",
   "versiculos": [
     { "n": 1, "texto": "Oração de Davi. Ouve, Senhor, a minha justiça: Atende ao meu humilde rogo. Chegue aos teus ouvidos a oração que te faço, não com lábios enganosos.", "nota": "fn16_1" },
-    { "n": 2, "texto": "Do teu rosto saia o meu juízo: Vejam teus olhos a equidade." },
-    { "n": 3, "texto": "Provaste o meu coração, e o visitaste de noite: No fogo me examinaste, e não se achou em mim a iniquidade.", "nota": "fn16_3" },
+    { "n": 2, "texto": "Do teu rosto saia o meu juízo: Vejam teus olhos a eqüidade." },
+    { "n": 3, "texto": "Provaste o meu coração, e o visitaste de noite: No fogo me examinaste, e não se achou em mim a iniqüidade.", "nota": "fn16_3" },
     { "n": 4, "texto": "Para que a minha boca não fale as obras dos homens: Por amor às palavras de teus lábios tenho guardado caminhos penosos.", "nota": "fn16_4" },
     { "n": 5, "texto": "Firma os meus passos nas tuas veredas: Para que os meus pés não vacilem.", "nota": "fn16_5" },
     { "n": 6, "texto": "Eu clamei, porque tu me tens ouvido, ó Deus: Inclina para mim a tua orelha, e ouve as minhas palavras." },
@@ -45,7 +45,11 @@
     },
     "fn16_14": {
       "rotulo": "Separa-os, Senhor",
-      "texto": "A Igreja quer, segundo a parábola, que ainda nesta vida se separe o joio do trigo, os maus dos bons, ou dos escolhidos, que são poucos. Mas debalde o quer: porque eis-aqui a divina resposta que lemos no mesmo c. 13, v. 30. Sinite utrosque crescere usque ad messem. Deixai que cresçam uns e outros até o tempo da messe. — S. Jerônimo. Aos seus pequeninos — Em lugar do que a Vulgata diz, parvulis suis, aos seus pequeninos, tem S. Jerônimo parvulis eorum, aos pequeninos dêles, isto é, aos netos. — Bossuet."
+      "texto": "A Igreja quer, segundo a parábola, que ainda nesta vida se separe o joio do trigo, os maus dos bons, ou dos escolhidos, que são poucos. Mas debalde o quer: porque eis-aqui a divina resposta que lemos no mesmo c. 13, v. 30. Sinite utrosque crescere usque ad messem. Deixai que cresçam uns e outros até o tempo da messe. — S. Jerônimo."
+    },
+    "fn16_14b": {
+      "rotulo": "Aos seus pequeninos",
+      "texto": "Em lugar do que a Vulgata diz, parvulis suis, aos seus pequeninos, tem S. Jerônimo parvulis eorum, aos pequeninos dêles, isto é, aos netos. — Bossuet."
     }
   }
 }

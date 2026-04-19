@@ -1,6 +1,6 @@
 {
   "num": 103,
-  "sumario": "Salmo gratulatório. Vai fazendo memória das maravilhas do Senhor. E o louva e glorifica por tôdas elas: para que aprendamos a fazer bom uso delas, elevando-nos às coisas espirituais pela contemplação das coisas visíveis.",
+  "sumario": "Salmo gratulatório. Vai fazendo memória das maravilhas do Senhor, e o louva e glorifica por tôdas elas: para que aprendamos a fazer bom uso delas, elevando-nos às coisas espirituais pela contemplação das coisas visíveis.",
   "versiculos": [
     { "n": 1, "texto": "Do mesmo Davi.<br>Bendiz, ó alma minha, ao Senhor: Senhor Deus meu, tu te tens engrandecido poderosamente.<br>De glória, e de formosura te tens vestido:", "nota": "fn103_1" },
     { "n": 2, "texto": "Coberto de lume como de vestidura:<br>Que estendes o céu como um pavilhão:", "nota": "fn103_2" },
@@ -22,7 +22,7 @@
     { "n": 18, "texto": "Os montes altos são refúgio aos cervos: Os penhascos para os ouriços cacheiros." },
     { "n": 19, "texto": "Fêz a lua para designar os tempos: O sol conheceu o seu ocaso." },
     { "n": 20, "texto": "Puseste trevas, e foi feita a noite: Nela transitarão tôdas as alimárias da selva." },
-    { "n": 21, "texto": "Os cachorros dos leões rugem em busca da presa, e para pedirem a Deus o seu sustento.", "nota": "fn103_21" },
+    { "n": 21, "texto": "Os cachorros dos leões rugem em busca da prêsa, e para pedirem a Deus o seu sustento.", "nota": "fn103_21" },
     { "n": 22, "texto": "Saiu o sol, e recolheram-se: E meter-se-ão nos seus covis." },
     { "n": 23, "texto": "Sairá o homem à sua obra: aos seus trabalhos até à noite." },
     { "n": 24, "texto": "Quão magníficas são as tuas obras, Senhor! tôdas as coisas fizeste com sabedoria! cheia está a terra da tua possessão.", "nota": "fn103_24" },
@@ -53,11 +53,11 @@
     },
     "fn103_12": {
       "rotulo": "Sôbre elas morarão",
-      "texto": "SÔBRE ELAS MORARÃO — Sôbre as fontes, rios, ribeiros. O hebreu tem: \"Sôbre elas as fontes, habitarão as aves do Céu\", nas árvores: de onde de entre as fôlhas, ou ramos destas, darão vozes e cantarão. — P. Seio."
+      "texto": "SÔBRE ELAS MORARÃO — Sôbre as fontes, rios, ribeiros. O hebreu tem: \"Sôbre elas as fontes, habitarão as aves do Céu\", nas árvores: de onde de entre as fôlhas, ou ramos destas, darão vozes e cantarão. — P. Scio."
     },
     "fn103_15": {
       "rotulo": "Faça brilhar",
-      "texto": "FAÇA BRILHAR — \"Para fazer brilhar\", e resplandecer \"a face com o azeite\", diz o hebreu. Não há quem ignore o grande uso que faziam os antigos, e particularmente os orientais, do azeite e dos unguentos, para cuja composição empregavam o óleo mais puro e escolhido. Plínio, Lib. XIV. Cap. XXII. Duo sunt liquores corporibus humanis gratissimi intus vini foris olei. — P. Seio."
+      "texto": "FAÇA BRILHAR — \"Para fazer brilhar\", e resplandecer \"a face com o azeite\", diz o hebreu. Não há quem ignore o grande uso que faziam os antigos, e particularmente os orientais, do azeite e dos unguentos, para cuja composição empregavam o óleo mais puro e escolhido. Plínio, Lib. XIV. Cap. XXII. Duo sunt liquores corporibus humanis gratissimi intus vini foris olei. — P. Scio."
     },
     "fn103_16": {
       "rotulo": "Que plantou",
@@ -69,7 +69,7 @@
     },
     "fn103_21": {
       "rotulo": "E para pedirem a Deus",
-      "texto": "E PARA PEDIREM A DEUS — Correm famintos a tôdas as partes, os cachorrinhos dos leões, e com os seus rugidos parece clamam, pedindo-te lhes depares alguma presa. — Pereira."
+      "texto": "E PARA PEDIREM A DEUS — Correm famintos a tôdas as partes, os cachorrinhos dos leões, e com os seus rugidos parece clamam, pedindo-te lhes depares alguma prêsa. — Pereira."
     },
     "fn103_24": {
       "rotulo": "Cheia está a terra",
@@ -81,7 +81,7 @@
     },
     "fn103_30": {
       "rotulo": "Enviarás o teu espírito",
-      "texto": "ENVIARÁS O TEU ESPÍRITO — Aquela virtude vivificante, que conserva tôdas as coisas criadas no seu sêr, que é um efeito próprio da pessoa do Espírito Santo, Gên 1, 1-2. E assim em sentido mais sublime se aplica isto aos dons interiores do Espírito Santo, por meio dos quais, e da efusão, se criam homens novos, e novos corações; e êste é o sentido dos Santos Padres. A Igreja a cada passo emprega êste versículo. — P. Seio."
+      "texto": "ENVIARÁS O TEU ESPÍRITO — Aquela virtude vivificante, que conserva tôdas as coisas criadas no seu sêr, que é um efeito próprio da pessoa do Espírito Santo, Gên 1, 1-2. E assim em sentido mais sublime se aplica isto aos dons interiores do Espírito Santo, por meio dos quais, e da efusão, se criam homens novos, e novos corações; e êste é o sentido dos Santos Padres. A Igreja a cada passo emprega êste versículo. — P. Scio."
     }
   }
 }

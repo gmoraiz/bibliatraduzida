@@ -1,7 +1,8 @@
 {
   "num": 87,
-  "sumario": "Salmo deprecatório. Êste salmo é uma admirável oração, na qual o profeta patenteia a Deus a grandeza dos seus trabalhos, e implora com instância o seu socorro. Cântico de salmo. Ao regente do côro.",
+  "sumario": "Salmo deprecatório. Êste salmo é uma admirável oração, na qual o profeta patenteia a Deus a grandeza dos seus trabalhos, e implora com instância o seu socorro.",
   "versiculos": [
+    { "n": 0, "tipo": "epigrafe", "texto": "Cântico de salmo. Ao regente do côro." },
     { "n": 1, "texto": "Dos filhos de Coré, sôbre Makhalath para cantar-se alternativamente, para entendimento de Eman ezraita.", "nota": "fn87_1" },
     { "n": 2, "texto": "Senhor Deus da minha salvação, de dia e de noite clamei diante de ti." },
     { "n": 3, "texto": "Entre à tua presença a minha oração: Inclina o teu ouvido ao meu rogo:" },

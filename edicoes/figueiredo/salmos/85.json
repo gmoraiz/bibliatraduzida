@@ -1,8 +1,9 @@
 {
   "num": 85,
-  "sumario": "Oração de Davi pedindo socorro contra os seus inimigos: nela se anuncia a conversão dos gentios. Oração do mesmo Davi.",
+  "sumario": "Oração de Davi pedindo socorro contra os seus inimigos: nela se anuncia a conversão dos gentios.",
   "versiculos": [
-    { "n": 1, "texto": "Inclina, Senhor, o teu ouvido, e ouve-me: Porque eu sou desvalido, e pobre.", "nota": "fn85_1" },
+    { "n": 0, "tipo": "epigrafe", "texto": "Oração do mesmo Davi", "nota": "fn85_0" },
+    { "n": 1, "texto": "Inclina, Senhor, o teu ouvido, e ouve-me: Porque eu sou desvalido, e pobre." },
     { "n": 2, "texto": "Guarda a minha alma, porque sou santo: Salva-me, Deus meu, a mim teu servo, que espero em ti.", "nota": "fn85_2" },
     { "n": 3, "texto": "Senhor, tem misericórdia de mim, por que a ti clamei todo o dia:" },
     { "n": 4, "texto": "Alegra a alma do teu servo, porque a ti, Senhor, levantei a minha alma." },
@@ -21,8 +22,8 @@
     { "n": 17, "texto": "Faze em meu favor algum sinal, para que o vejam aqueles que me têm ódio, e sejam confundidos: Pois tu, Senhor, me tens ajudado, e me tens consolado." }
   ],
   "notas": {
-    "fn85_1": {
-      "rotulo": "Oração de Davi",
+    "fn85_0": {
+      "rotulo": "Oração do mesmo Davi",
       "texto": "Davi na adversidade, naturalmente durante a revolta de Absalão, pede a Deus que o socorra. Alguns comentadores entendem que esta oração foi composta nos tempos de Ezequias e de Zorobabel, e que o nome de Davi, que se lê no título, significa simplesmente que o autor escreve êste salmo sôbre fragmentos de outros de Davi. O nome de Adonai, meu Deus, encontra-se sete vêzes no original. Tem cinco estrofes. Primeira (1-4). Suplica a Deus. Segunda (5-7). Porque é misericordioso. Terceira (8-10). Porque é grande e opera maravilhas. Quarta (11-13). Impetra a luz e a graça divina. Quinta (14-17). Invocação contra os inimigos de Deus."
     },
     "fn85_2": {

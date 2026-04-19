@@ -4,7 +4,7 @@
   "versiculos": [
     { "n": 1, "texto": "Ao regente do côro salmo de Davi.", "nota": "fn139_1" },
     { "n": 2, "texto": "Livra-me, Senhor, do homem malvado: Livra-me do homem perverso." },
-    { "n": 3, "texto": "Os que maquinaram iniquidades no coração: Todo o dia dispunham combates." },
+    { "n": 3, "texto": "Os que maquinaram iniqüidades no coração: Todo o dia dispunham combates." },
     { "n": 4, "texto": "Aguçaram as suas línguas como a de serpente: Veneno de áspides têm debaixo de seus lábios." },
     { "n": 5, "texto": "Guardai-me, Senhor, da mão do pecador: E livrai-me de homens iníquos.<br>Os que cogitaram derribar os meus passos:", "nota": "fn139_5" },
     { "n": 6, "texto": "Êles soberbos me esconderam o laço:<br>E estenderam cordas para me surpreender: Junto do meu caminho me puseram tropêço." },
@@ -28,7 +28,7 @@
     },
     "fn139_8": {
       "rotulo": "Tu puseste reparo",
-      "texto": "A letra: \"fizeste sombra\" como estendendo o braço, e cobrindo-me com um escudo. — Pereira."
+      "texto": "À letra: \"fizeste sombra\" como estendendo o braço, e cobrindo-me com um escudo. — Pereira."
     },
     "fn139_10": {
       "rotulo": "A cabeça",

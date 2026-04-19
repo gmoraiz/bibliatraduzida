@@ -1,6 +1,6 @@
 {
   "num": 145,
-  "sumario": "Salmo gratulatório. Devemos pôr a nossa confiança em Deus. E louvar o seu poder, bondade e fidelidade, e celebrar o seu reino eterno.",
+  "sumario": "Salmo gratulatório. Devemos pôr a nossa confiança em Deus, e louvar o seu poder, bondade e fidelidade, e celebrar o seu reino eterno.",
   "versiculos": [
     { "n": 1, "texto": "Aleluia, de Ageu, e de Zacarias.", "nota": "fn145_1" },
     { "n": 2, "texto": "Louva, ó alma minha, ao Senhor, eu louvarei ao Senhor, durante a minha vida: Cantarei salmos ao meu Deus por quanto tempo eu viver.<br>Não queirais confiar nos príncipes:" },
@@ -20,7 +20,7 @@
     },
     "fn145_4": {
       "rotulo": "Sairá o seu espírito",
-      "texto": "SAIRÁ O SEU ESPÍRITO — Revertetur, non spiritus, sed filius hominis, isto é, corpus ejus, porque no hebreu ruahh, Spiritus, é feminino, e o verbo jaschubh, revertetur, está na forma masculina. — P. Seio."
+      "texto": "SAIRÁ O SEU ESPÍRITO — Revertetur, non spiritus, sed filius hominis, isto é, corpus ejus, porque no hebreu ruahh, Spiritus, é feminino, e o verbo Jaschubh, revertetur, está na forma masculina. — P. Scio."
     },
     "fn145_10": {
       "rotulo": "Reinará",

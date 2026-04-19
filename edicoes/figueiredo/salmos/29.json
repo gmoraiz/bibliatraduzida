@@ -2,7 +2,8 @@
   "num": 29,
   "sumario": "Salmo gratulatório. Davi convida a todos os povos a que se unam a êle para dar graças ao Senhor, pelo ter livrado de grandes tribulações, e da morte, de que estava ameaçado.",
   "versiculos": [
-    { "n": 1, "texto": "Salmo ou Cântico de Davi. Na dedicação da casa de Davi.", "nota": "fn29_1" },
+    { "n": 0, "tipo": "epigrafe", "texto": "Salmo ou Cântico de Davi." },
+    { "n": 1, "texto": "Na dedicação da casa de Davi.", "nota": "fn29_1" },
     { "n": 2, "texto": "Eu te glorificarei, Senhor, porque me recebeste: E não comprazeste a meus inimigos em meu dano." },
     { "n": 3, "texto": "Senhor meu Deus, eu clamei a ti, e tu me saraste." },
     { "n": 4, "texto": "Senhor, tiraste do inferno a minha alma: Puseste-me a salvo dos que descem ao lago." },
@@ -19,11 +20,11 @@
   "notas": {
     "fn29_1": {
       "rotulo": "Na dedicação da casa de Davi",
-      "texto": "Talvez depois da revolta de Absalão e a seguir a uma doença. O Cardeal Belarmino sustenta que êste cântico foi composto para celebrar a primeira dedicação da casa edificada por Davi sôbre o monte Sion, depois que conquistara Jerusalém aos jebuseus. Esta opinião é perfilhada por Aben-Esra. Calmet opina que êste cântico foi entoado quando Davi dedicou ao Senhor um altar em memória da misericórdia que usou com o seu povo, na casa de Ornan, edificada sôbre o monte Sion."
+      "texto": "Talvez depois da revolta de Absalão e a seguir a uma doença. O Cardeal Belarmino sustenta que êste cântico foi composto para celebrar a primeira dedicação da casa edificada por Davi sôbre o monte Sion, depois que conquistara Jerusalém aos jebuseus. Esta opinião é perfilhada por Aben-Esra, e Le Clerc Grocio é de parecer que foi composto para celebrar a segunda dedicação da casa de Davi, pois que êle a reedificara e a purificara das profanações e impurezas praticadas por seu filho Absalão. Calmet opina que êste cântico foi entoado quando Davi dedicou ao Senhor um altar em memória da misericórdia que usou com o seu povo, na casa de Ornan, edificada sôbre o monte Sion. Teodoreto entende que êste cântico deve ser atribuído a Ezequias depois da milagrosa derrota de Senaquerib. A primeira opinião é a mais seguida. Salmo é uma ação de graças."
     },
     "fn29_6": {
       "rotulo": "Porque êle nos fere na sua ira / De tarde estaremos em lágrimas",
-      "texto": "PORQUE ÊLE NOS FERE NA SUA IRA — O hebreu lê: \"Porque a sua ira é momentânea\". Eu segui a versão de Calmet, por me parecer mais simples, e desembaraçada. — Pereira. DE TARDE ESTAREMOS EM LÁGRIMAS — Neste sentido disse Jesus Cristo aos seus apóstolos: \"Mas a vossa tristeza se converterá em gôzo\". E com esta comparação se confirma o que fica dito no antecedente verso. — Sacy."
+      "texto": "PORQUE ÊLE NOS FERE NA SUA IRA — O hebreu lê: \"Porque a sua ira é momentânea\". O que a Vulgata verte Quoniam ira in indignatione ejus, et vita involuntate ejus. O que Sacy verte: \"Porque o castigo é a conseqüência da sua indignação, e a vida é um puro efeito de seu amor\". De Carrières: \"Porque a ira vem da sua indignação, e a vida é um puro efeito da sua boa vontade\". Eu segui à versão de Calmet, por me parecer mais simples, e desembaraçada. — Pereira. DE TARDE ESTAREMOS EM LÁGRIMAS — Neste sentido disse Jesus Cristo aos seus apóstolos: \"Mas a vossa tristeza se converterá em gôzo\". E com esta comparação se confirma o que fica dito no antecedente verso. — Sacy."
     },
     "fn29_7": {
       "rotulo": "Na minha abundância",
@@ -31,7 +32,7 @@
     },
     "fn29_8": {
       "rotulo": "Deste firmeza à minha prosperidade",
-      "texto": "O hebreu tem: \"Senhor, por tua vontade, e favor, fizeste estar na minha mente a fortaleza; deste estado firme ao meu reino, cujo assento estava no monte de Sião. — P. Seio."
+      "texto": "O hebreu tem: \"Senhor, por tua vontade, e favor, fizeste estar na minha mente a fortaleza; deste estado firme ao meu reino, cujo assento estava no monte de Sião. — P. Scio."
     }
   }
 }

@@ -1,8 +1,10 @@
 {
   "num": 118,
-  "sumario": "Salmo didático e deprecatório. Oração para pedir a Deus a graça de entendê-la, amá-la e observá-la. Aleluia.",
+  "sumario": "Salmo didático e deprecatório. Oração para pedir a Deus a graça de entendê-la, amá-la e observá-la.",
   "versiculos": [
-    { "n": 1, "texto": "Bem-aventurados os que se conservam sem mácula no caminho:<br>Os que andam na lei do Senhor.", "nota": "fn118_1" },
+    { "n": 0, "tipo": "epigrafe", "texto": "Aleluia.", "nota": "fn118_0" },
+    { "tipo": "estrofe", "titulo": "ALEF", "nota": "fn118_alef" },
+    { "n": 1, "texto": "Bem-aventurados os que se conservam sem mácula no caminho:<br>Os que andam na lei do Senhor." },
     { "n": 2, "texto": "Bem-aventurados os que consideram os seus testemunhos:<br>Os que de todo o coração o buscam." },
     { "n": 3, "texto": "Porque os que praticam iniquidade, não andam nos caminhos dêle." },
     { "n": 4, "texto": "Tu ordenaste que os teus mandamentos fossem guardados à risca." },
@@ -10,6 +12,7 @@
     { "n": 6, "texto": "Então não serei confundido, quando me empregar atento na observância de todos os teus mandamentos." },
     { "n": 7, "texto": "Eu te louvarei com retidão de coração:<br>Porque tenho aprendido os juízos da tua justiça." },
     { "n": 8, "texto": "Guardarei as tuas justificações:<br>Não me desampares jamais.", "nota": "fn118_8" },
+    { "tipo": "estrofe", "titulo": "BETH", "nota": "fn118_beth" },
     { "n": 9, "texto": "De que modo emenda o mancebo o seu caminho?<br>Guardando as tuas palavras." },
     { "n": 10, "texto": "De todo o meu coração te busquei:<br>Não me deixes sair dos teus mandamentos." },
     { "n": 11, "texto": "No meu coração escondi as tuas palavras:<br>Para não pecar contra ti." },
@@ -18,6 +21,7 @@
     { "n": 14, "texto": "Eu me deleitei no caminho de teus testemunhos, como em tôdas as riquezas." },
     { "n": 15, "texto": "Nos teus mandamentos me exercitarei:<br>E considerarei os teus caminhos." },
     { "n": 16, "texto": "Nas tuas justificações meditarei:<br>Não me esquecerei das tuas palavras." },
+    { "tipo": "estrofe", "titulo": "GHIMEL", "nota": "fn118_ghimel" },
     { "n": 17, "texto": "Concede esta graça ao teu servo, dá-me vida:<br>E eu guardarei as tuas palavras." },
     { "n": 18, "texto": "Tira o véu dos meus olhos:<br>E eu considerarei as maravilhas da tua lei." },
     { "n": 19, "texto": "Eu sou peregrino na terra:<br>Não escondas de mim os teus mandamentos." },
@@ -26,6 +30,7 @@
     { "n": 22, "texto": "Livra-me do opróbrio, e desprêzo:<br>Porque busquei cuidadoso os teus mandamentos." },
     { "n": 23, "texto": "Pôsto que se sentaram os príncipes, e falavam contra mim:<br>O teu servo todavia se exercitava nas tuas justificações." },
     { "n": 24, "texto": "Porque tanto os seus testemunhos são a minha meditação:<br>Como as tuas justificações são o meu conselho." },
+    { "tipo": "estrofe", "titulo": "DALETH", "nota": "fn118_daleth" },
     { "n": 25, "texto": "A minha alma estêve pegada com o chão, dá-me vida, segundo a tua palavra.", "nota": "fn118_25" },
     { "n": 26, "texto": "Eu te expus os meus caminhos, e tu me atendeste:<br>Ensina-me as tuas justificações." },
     { "n": 27, "texto": "Instrui-me no caminho das tuas justificações:<br>E exercitar-me-ei nas tuas maravilhas." },
@@ -34,6 +39,7 @@
     { "n": 30, "texto": "Eu escolhi o caminho da verdade:<br>Não me esqueci dos teus juízos." },
     { "n": 31, "texto": "Eu, Senhor, me tenho apoiado nos teus testemunhos:<br>Não me queiras confundir." },
     { "n": 32, "texto": "Corri pelo caminho dos teus mandamentos, quando dilataste o meu coração.", "nota": "fn118_32" },
+    { "tipo": "estrofe", "titulo": "HE", "nota": "fn118_he" },
     { "n": 33, "texto": "Impõe-me por lei, Senhor, o caminho das tuas justificações:<br>E buscá-lo-ei sempre." },
     { "n": 34, "texto": "Dá-me inteligência, e estudarei na tua lei:<br>E a guardarei de todo o meu coração." },
     { "n": 35, "texto": "Guia-me pela vereda dos teus mandamentos:<br>Porque essa mesma desejei." },
@@ -42,6 +48,7 @@
     { "n": 38, "texto": "Faze firme ao teu servo a tua palavra mediante o teu temor." },
     { "n": 39, "texto": "Aparta de mim o opróbrio, que eu temi:<br>Porque os teus juízos são agradáveis." },
     { "n": 40, "texto": "Tu vês que eu desejei muito os teus mandamentos:<br>Faze que eu viva na tua justiça." },
+    { "tipo": "estrofe", "titulo": "VAU", "nota": "fn118_vau" },
     { "n": 41, "texto": "E venha sôbre mim a tua misericórdia, Senhor:<br>A tua salvação segundo a tua palavra." },
     { "n": 42, "texto": "E darei em resposta aos que me insultam:<br>Que pus a minha esperança nas tuas palavras." },
     { "n": 43, "texto": "E não tires jamais da minha bôca a palavra de verdade:<br>Porque nos teus juízos tenho esperado muito." },
@@ -50,6 +57,7 @@
     { "n": 46, "texto": "E falava dos teus testemunhos diante dos reis:<br>E não me envergonhava." },
     { "n": 47, "texto": "E meditava nos teus mandamentos, que amei." },
     { "n": 48, "texto": "E levantei as minhas mãos aos teus mandamentos, que amei:<br>E me exercitava nas tuas justificações." },
+    { "tipo": "estrofe", "titulo": "ZAIN", "nota": "fn118_zain" },
     { "n": 49, "texto": "Lembra-te da tua palavra a favor do teu servo, na qual me tens feito esperar.", "nota": "fn118_49" },
     { "n": 50, "texto": "Isto me consolou no meu abatimento:<br>Porque a tua palavra me deu vida.", "nota": "fn118_50" },
     { "n": 51, "texto": "Os soberbos obravam sem cessar iniquamente:<br>Mas eu não me apartei da tua lei.", "nota": "fn118_51" },
@@ -58,6 +66,7 @@
     { "n": 54, "texto": "As tuas justificações eram dignas de ser cantadas por mim, no lugar da minha peregrinação." },
     { "n": 55, "texto": "Lembrei-me do teu Nome, Senhor, durante a noite:<br>E guardei a tua lei." },
     { "n": 56, "texto": "Isto me veio:<br>Porque busquei cuidadoso as tuas justificações." },
+    { "tipo": "estrofe", "titulo": "HETH", "nota": "fn118_heth" },
     { "n": 57, "texto": "Eu disse, Senhor, a minha pertença é guardar a tua lei." },
     { "n": 58, "texto": "Roguei na tua presença de todo o meu coração:<br>Compadece-te de mim segundo a tua palavra." },
     { "n": 59, "texto": "Considerei os meus caminhos:<br>E voltei os meus pés para os teus testemunhos.", "nota": "fn118_59" },
@@ -66,6 +75,7 @@
     { "n": 62, "texto": "À meia-noite me levantava para te louvar, sôbre os juízos da tua justificação." },
     { "n": 63, "texto": "Eu sou participante de todos os que te temem:<br>E dos que guardam os teus mandamentos.", "nota": "fn118_63" },
     { "n": 64, "texto": "A terra está cheia, Senhor, da tua misericórdia:<br>Ensina-me as tuas justificações." },
+    { "tipo": "estrofe", "titulo": "TETH", "nota": "fn118_teth" },
     { "n": 65, "texto": "De bondade tens usado com o teu servo, Senhor, segundo a tua palavra." },
     { "n": 66, "texto": "Ensina-me bondade, e doutrina, e ciência:<br>Porque dei crédito aos teus mandamentos.", "nota": "fn118_66" },
     { "n": 67, "texto": "Antes de ser humilhado eu delinqui:<br>Por isso guardei a tua palavra.", "nota": "fn118_67" },
@@ -74,6 +84,7 @@
     { "n": 70, "texto": "O coração dêles se coalhou como leite:<br>Porém eu me pus a meditar na tua lei.", "nota": "fn118_70" },
     { "n": 71, "texto": "Para mim foi-me bom que tu me humilhasses:<br>Para eu aprender as tuas justificações." },
     { "n": 72, "texto": "Para mim foi melhor a lei que saiu da tua bôca, do que milhões de ouro e de prata." },
+    { "tipo": "estrofe", "titulo": "IOD", "nota": "fn118_iod" },
     { "n": 73, "texto": "As tuas mãos me fizeram, e me formaram:<br>Dá-me inteligência, e eu aprenderei os teus mandamentos." },
     { "n": 74, "texto": "Os que te temem me verão, e se alegrarão:<br>Porque pus tôda a minha esperança nas tuas palavras." },
     { "n": 75, "texto": "Tenho conhecido, Senhor, que os teus juízos são de equidade:<br>E na verdade me humilhaste." },
@@ -82,6 +93,7 @@
     { "n": 78, "texto": "Sejam confundidos os soberbos, pois injustamente maquinaram males contra mim:<br>Mas eu nos teus mandamentos me exercitarei." },
     { "n": 79, "texto": "Voltem-se para mim os que te temem:<br>E os que conhecem os teus testemunhos." },
     { "n": 80, "texto": "Seja imaculado o meu coração na prática das tuas justificações, para que eu não seja confundido.", "nota": "fn118_80" },
+    { "tipo": "estrofe", "titulo": "CAPH", "nota": "fn118_caph" },
     { "n": 81, "texto": "Desfaleceu a minha alma pela tua salvação:<br>E na tua palavra tenho pôsto tôda a minha esperança." },
     { "n": 82, "texto": "Os meus olhos se enfraqueceram de atentos à tua palavra, dizendo:<br>Quando me consolarás?" },
     { "n": 83, "texto": "Porque eu me tornei como ódre exposto à geada:<br>Mas não me esqueci das tuas justificações.", "nota": "fn118_83" },
@@ -90,6 +102,7 @@
     { "n": 86, "texto": "Todos os teus mandamentos são verdade:<br>Injustamente me têm perseguido, dá-me socorro." },
     { "n": 87, "texto": "Por pouco não deram cabo de mim na terra:<br>Mas eu não abandonei os teus mandamentos." },
     { "n": 88, "texto": "Segundo a tua misericórdia vivifica-me:<br>E eu guardarei os testemunhos da tua bôca." },
+    { "tipo": "estrofe", "titulo": "LAMED", "nota": "fn118_lamed" },
     { "n": 89, "texto": "Senhor, para sempre no céu permanece a tua palavra." },
     { "n": 90, "texto": "Por geração e geração subsiste a tua verdade:<br>Tu fundaste a terra, e ela permanece." },
     { "n": 91, "texto": "Por tua ordem persevera o dia:<br>Porque tôdas as coisas te servem.", "nota": "fn118_91" },
@@ -98,7 +111,8 @@
     { "n": 94, "texto": "Eu sou teu, salva-me:<br>Porque as tuas justificações busquei ansioso." },
     { "n": 95, "texto": "Os pecadores me esperaram para me perder:<br>Os teus testemunhos tenho entendido." },
     { "n": 96, "texto": "Tenho visto o fim de tôda a coisa acabada:<br>O teu mandamento é largo sem medida." },
-    { "n": 97, "texto": "De que modo tenho eu, Senhor, amado a tua lei?<br>Ela é a minha meditação todo o dia." },
+    { "tipo": "estrofe", "titulo": "MEM", "nota": "fn118_mem" },
+    { "n": 97, "texto": "De que modo tenho eu, Senhor, amado a tua lei?<br>ela é a minha meditação todo o dia." },
     { "n": 98, "texto": "Mais que os meus inimigos me fizeste prudente no teu mandamento:<br>Porque o tenho perpètuamente diante de meus olhos." },
     { "n": 99, "texto": "Mais que todos os que me ensinavam tenho entendido:<br>Porque os teus testemunhos são a minha meditação." },
     { "n": 100, "texto": "Mais que os anciãos entendi:<br>Porque busquei os teus mandamentos." },
@@ -106,6 +120,7 @@
     { "n": 102, "texto": "De teus juízos não me tenho apartado:<br>Porque tu me prescreveste uma lei." },
     { "n": 103, "texto": "Quão doces são as tuas palavras ao meu paladar, mais que o mel à minha bôca!" },
     { "n": 104, "texto": "Pelos teus mandamentos tenho adquirido inteligência:<br>Por isso aborreço todo o caminho de iniquidade." },
+    { "tipo": "estrofe", "titulo": "NUN", "nota": "fn118_nun" },
     { "n": 105, "texto": "Tocha resplandecente para os meus pés é a tua palavra, e luz para os meus caminhos.", "nota": "fn118_105" },
     { "n": 106, "texto": "Jurei, e determinei guardar os juízos da tua justiça." },
     { "n": 107, "texto": "Tenho sido humilhado, Senhor, de todos os modos:<br>Faze-me viver segundo a tua palavra." },
@@ -114,6 +129,7 @@
     { "n": 110, "texto": "Laço me têm armado os pecadores:<br>E dos teus mandamentos não me apartei." },
     { "n": 111, "texto": "Por herança tenho adquirido os teus testemunhos para sempre:<br>Porque são a alegria do meu coração." },
     { "n": 112, "texto": "Inclinei o meu coração a praticar eternamente as tuas justificações, pela retribuição.", "nota": "fn118_112" },
+    { "tipo": "estrofe", "titulo": "SAMECH", "nota": "fn118_samech" },
     { "n": 113, "texto": "Tenho aborrecido aos iníquos:<br>E tenho amado a tua lei." },
     { "n": 114, "texto": "Tu és o meu favorecedor, e o meu amparador:<br>E tenho pôsto tôda a minha esperança na tua palavra.", "nota": "fn118_114" },
     { "n": 115, "texto": "Retirai-vos de mim, malignos:<br>E eu estudarei os mandamentos do meu Deus." },
@@ -122,6 +138,7 @@
     { "n": 118, "texto": "Desprezaste a todos os que se desviam dos teus juízos:<br>Porque é injusto o seu pensamento." },
     { "n": 119, "texto": "Reputei por prevaricadores a todos os pecadores da terra:<br>Por isso amei os teus testemunhos." },
     { "n": 120, "texto": "Traspassa com o teu temor as minhas carnes:<br>Porque tenho temido os teus juízos." },
+    { "tipo": "estrofe", "titulo": "AIN", "nota": "fn118_ain" },
     { "n": 121, "texto": "Tenho feito juízo e justiça:<br>Não me entregues aos que me caluniam.", "nota": "fn118_121" },
     { "n": 122, "texto": "Ampara o teu servo para o bem:<br>Não caluniem os soberbos." },
     { "n": 123, "texto": "Os meus olhos desfaleceram na expectação da sua salvação;<br>E pela palavra da tua justiça." },
@@ -130,6 +147,7 @@
     { "n": 126, "texto": "É tempo de assim o fazeres, Senhor:<br>Êles dissiparam a tua lei." },
     { "n": 127, "texto": "Por isso amei os teus mandamentos mais do que o ouro e o topázio.", "nota": "fn118_127" },
     { "n": 128, "texto": "Pelo que me tenho dirigido a todos os teus mandamentos:<br>E aborreci todo o caminho mau." },
+    { "tipo": "estrofe", "titulo": "PHE", "nota": "fn118_phe" },
     { "n": 129, "texto": "Maravilhosos são teus testemunhos:<br>Por isso os tem investigado a minha alma." },
     { "n": 130, "texto": "A exposição das tuas palavras alumia:<br>E dá inteligência aos pequeninos." },
     { "n": 131, "texto": "Abri a minha bôca, e atraí o ar.<br>Porque desejava os teus mandamentos.", "nota": "fn118_131" },
@@ -138,6 +156,7 @@
     { "n": 134, "texto": "Redime-me das injúrias dos homens:<br>Para que guarde os teus mandamentos." },
     { "n": 135, "texto": "Faze que a luz do teu rosto reluza sôbre o teu servo:<br>E ensina-me as tuas justificações." },
     { "n": 136, "texto": "Rios de lágrimas derramaram os meus olhos:<br>Porque não guardaram a tua lei.", "nota": "fn118_136" },
+    { "tipo": "estrofe", "titulo": "TSADE", "nota": "fn118_tsade" },
     { "n": 137, "texto": "Tu és justo, Senhor:<br>E é reto o teu juízo." },
     { "n": 138, "texto": "Mandaste estreitamente observar os teus preceitos:<br>Como a tua suma verdade." },
     { "n": 139, "texto": "O meu zêlo me tem feito entisicar:<br>Porque os meus inimigos se esqueceram das tuas palavras." },
@@ -146,6 +165,7 @@
     { "n": 142, "texto": "A tua justiça é justiça eterna:<br>E a tua lei é a mesma verdade." },
     { "n": 143, "texto": "A tribulação, e a angústia me surpreenderam:<br>Os teus mandamentos são a minha meditação." },
     { "n": 144, "texto": "Os teus testemunhos são cheios duma eterna equidade:<br>Dá-me inteligência dêles, e viverei." },
+    { "tipo": "estrofe", "titulo": "COPH", "nota": "fn118_coph" },
     { "n": 145, "texto": "Clamei de todo o meu coração, ouve-me, Senhor, as tuas justificações buscarei." },
     { "n": 146, "texto": "Clamei a ti, salva-me:<br>Para que guarde os teus mandamentos." },
     { "n": 147, "texto": "Eu me antecipei pela manhã, e clamei:<br>Porque esperei firmemente nas tuas palavras." },
@@ -154,6 +174,7 @@
     { "n": 150, "texto": "Os meus perseguidores se chegaram para a iniquidade:<br>E da tua lei se desviaram." },
     { "n": 151, "texto": "Perto estás tu, Senhor:<br>E todos os teus caminhos são verdade." },
     { "n": 152, "texto": "Acerca dos teus testemunhos desde o princípio tenho reconhecido:<br>Que tu os estabeleceste para sempre.", "nota": "fn118_152" },
+    { "tipo": "estrofe", "titulo": "RES", "nota": "fn118_res" },
     { "n": 153, "texto": "Olha para o meu abatimento, e livra-me:<br>Porque não me tenho esquecido da tua lei." },
     { "n": 154, "texto": "Julga a minha causa, e liberta-me:<br>Faze-me viver pela tua palavra." },
     { "n": 155, "texto": "Longe está dos pecadores a salvação:<br>Porque não têm buscado as tuas justificações." },
@@ -162,6 +183,7 @@
     { "n": 158, "texto": "Vi os prevaricadores, e me consumia:<br>Porque êles não têm guardado as tuas palavras." },
     { "n": 159, "texto": "Olha que tenho amado os teus mandamentos, Senhor:<br>Dá-me vida pela tua misericórdia." },
     { "n": 160, "texto": "O princípio das tuas palavras é a verdade:<br>Todos os juízos da tua justiça são eternos." },
+    { "tipo": "estrofe", "titulo": "SIN", "nota": "fn118_sin" },
     { "n": 161, "texto": "Os príncipes me perseguiram sem causa:<br>E o meu coração temeu as tuas palavras." },
     { "n": 162, "texto": "Eu me alegrarei sôbre as tuas palavras:<br>Como quem acha muitos despojos." },
     { "n": 163, "texto": "Tenho aborrecido e abominado a iniquidade:<br>Tenho porém amado a tua lei." },
@@ -170,6 +192,7 @@
     { "n": 166, "texto": "Esperava a tua salvação, Senhor:<br>E amei os teus mandamentos.", "nota": "fn118_166" },
     { "n": 167, "texto": "A minha alma guardou os teus testemunhos:<br>E em grande maneira os amou." },
     { "n": 168, "texto": "Guardei os teus preceitos, e os teus testemunhos:<br>Porque todos os meus caminhos estão expostos aos teus olhos." },
+    { "tipo": "estrofe", "titulo": "TAU", "nota": "fn118_tau" },
     { "n": 169, "texto": "Cheguem, Senhor, os meus rogos à tua presença:<br>Dá-me entendimento segundo a tua palavra." },
     { "n": 170, "texto": "Entre a minha petição até ao teu acatamento:<br>Livra-me segundo a tua palavra." },
     { "n": 171, "texto": "Sairão dos meus lábios com grande ímpeto hinos, quando me ensinares as tuas justificações." },
@@ -180,9 +203,9 @@
     { "n": 176, "texto": "Andei errante, como ovelha, que se desgarrou:<br>Busca o teu servo, porque não me esqueci dos teus mandamentos.", "nota": "fn118_176" }
   ],
   "notas": {
-    "fn118_1": {
+    "fn118_0": {
       "rotulo": "Aleluia",
-      "texto": "Êste salmo é o mais extenso de tôda a coleção, e a Igreja repete-o cotidianamente, dividido pelas horas menores. É acróstico ou alfabético, compreendendo cada letra do alfabeto hebraico oito versículos. S. Ambrósio diz que o salmista seguiu a ordem alfabética para nos ensinar que êste salmo é o alfabeto dos cristãos, porque aí estão indicados todos os nossos deveres. Êste salmo não tem título nem nome de autor; a opinião geral, partindo do princípio que os salmos anónimos têm por autor ou Davi ou o poeta indicado no salmo mais próximo, atribui-o àquele. A análise do salmo fornece-nos indicações sôbre a personalidade do autor. Chama-se êle mesmo \"mancebo\" nahar, têrmo que indica os vinte anos, mas que se pode aplicar ainda aos de mais idade (vv. 9. 99. 100). Também se denomina \"pequeno\" tsahir, adolescentulus (v. 141), mas provàvelmente por humildade. Queixa-se de sofrimentos que lhe torturam o corpo e afligem a alma. 25. 23. 50. 83. 107. 153. Vive no exílio, 19. 54. 176; é prisioneiro, 61, que a vida corre grande perigo, 109. Os ímpios escarnecem-no e o maltratam, 51. 78. 85. 87. 95. 110. 157, por causa da sua fidelidade a Deus, 22. 39. 42. 141. Tudo isto se pode aplicar ao rei salmista. Alguns críticos porém atribuem-no a Esdras. O assunto do salmo, do princípio ao fim, é o elogio da lei de Deus. Em cada versículo se lhe faz uma alusão, sob dez denominações diferentes, talvez para designar, segundo os rabinos, os preceitos do decálogo."
+      "texto": "Êste salmo é o mais extenso de tôda a coleção, e a Igreja repete-o cotidianamente, dividido pelas horas menores. É acróstico ou alfabético, compreendendo cada letra do alfabeto hebraico oito versículos. S. Ambrósio diz que o salmista seguiu a ordem alfabética para nos ensinar que êste salmo é o alfabeto dos cristãos, porque aí estão indicados todos os nossos deveres. Êste salmo não tem título nem nome de autor; a opinião geral, partindo do princípio que os salmos anónimos têm por autor ou Davi ou o poeta indicado no salmo mais próximo, atribui-o àquele. A análise do salmo fornece-nos indicações sôbre a personalidade do autor. Chama-se êle mesmo \"mancebo\" nahar, têrmo que indica os vinte anos, mas que se pode aplicar ainda aos de mais idade (vv. 9. 99. 100). Também se denomina \"pequeno\" tsahir, adolescentulus (v. 141), mas provàvelmente por humildade. Queixa-se de sofrimentos que lhe torturam o corpo e afligem a alma. 25. 23. 50. 83. 107. 153. Vive no exílio, 19. 54. 176; é prisioneiro, 61, que a vida corre grande perigo, 109. Os ímpios escarnecem-no e o maltratam, 51. 78. 85. 87. 95. 110. 157, por causa da sua fidelidade a Deus, 22. 39. 42. 141. Tudo isto se pode aplicar ao rei salmista. Alguns críticos porém atribuem-no a Esdras. O assunto do salmo, do princípio ao fim, é o elogio da lei de Deus. Em cada versículo se lhe faz uma alusão, sob dez denominações diferentes, talvez para designar, segundo os rabinos, os preceitos do decálogo. Estes têrmos são 1.° thorah, a lei; 2.° hedoth, os testemunhos; 3.° piqqoudim, as ordens; 4.° choqqim, os preceitos; 5.° mitsoth, os mandamentos; 6.° mischpatim, as sentenças; 7.° derek, o caminho; 8.° orach, o atalho; 9.° dabar, a palavra; 10.° emer, o discurso. A seqüência dos pensamentos é esta: Louva a palavra do Senhor (aleph) e proclama a grandeza da sua santidade, que aperfeiçoa o homem que a estuda com cuidado, (beth) pede, no meio dos inimigos que o perseguem, a graça de bem conhecer, (ghimel) da perseverança (he) e da fôrça para confessar a fé com júbilo e entusiasmo (vau); a palavra de Deus é o objeto dos seus afetos (zain); está junto dos que têm temor de Deus (kheth); reconhece que a sua humilhação é salutar (teth); mas tem necessidade de consolação (yod) e pergunta quando será livre? (caph). Sem a palavra onipotente de Deus perde a coragem (lamed); dá-lhe a sabedoria e a prudência (mem); êle jurou fidelidade e guardou o seu juramento, apesar da perseguição (nun); aborrece os apóstatas (samech). Está oprimido mas Deus não o deixará perecer (ain) nem permitirá que os esforços dos ímpios o vençam (phé) a êle que é pequeno e desprezado, mas que zela dos interêsses de Deus (tsadé). Possa o Senhor escutar os lamentos que êle lhe dirige dia e noite (coph), consolá-lo pela sua bondade (resh), êle que por sendo perseguido confia em Deus (schin) e salvá-lo, pobre ovelha errante e em grande perigo (thau). Delitzsch, Die Psalmen, 1874, t. II, p. 241, 242."
     },
     "fn118_5": {
       "rotulo": "Oxalá que os meus caminhos",
@@ -238,7 +261,7 @@
     },
     "fn118_70": {
       "rotulo": "O coração dêles se coalhou",
-      "texto": "O CORAÇÃO DÊLES SE COALHOU — O hebreu diz: \"Engrossou-se o seu coração como a gordura por causa das comodidades que de ti têm recebido, das quais de tal maneira têm abusado, que se têm tornado como néscios, e insensatos. Jó 15, 27. Sl 16, 10; 77, 7. — P. Seio."
+      "texto": "O CORAÇÃO DÊLES SE COALHOU — O hebreu diz: \"Engrossou-se o seu coração como a gordura por causa das comodidades que de ti têm recebido, das quais de tal maneira têm abusado, que se têm tornado como néscios, e insensatos. Jó 15, 27. Salom 16, 10; 77, 7. — P. Seio."
     },
     "fn118_80": {
       "rotulo": "Das tuas justificações",
@@ -299,6 +322,94 @@
     "fn118_176": {
       "rotulo": "Como ovelha que se desgarrou",
       "texto": "COMO OVELHA QUE SE DESGARROU — Alguns explicam isto da vida errante que seguia para se livrar da perseguição de Saul; porém os Padres comumente entendem ser uma confissão que Davi faz dos seus próprios desvarios. — Sacy. BUSCA O TEU SERVO — Roga por fim o profeta ao Senhor que envie aquêle bom pastor, que havia de ir ansioso em busca da ovelha perdida, e achada a havia de conduzir sôbre seus ombros ao redil, e havia de celebrar com festa o achado. Lc 15. — Teodoreto."
+    },
+    "fn118_alef": {
+      "rotulo": "ALEF",
+      "texto": "ALEF — É a primeira letra do alfabeto hebraico."
+    },
+    "fn118_beth": {
+      "rotulo": "BETH",
+      "texto": "BETH — É a segunda letra do alfabeto hebraico."
+    },
+    "fn118_ghimel": {
+      "rotulo": "GHIMEL",
+      "texto": "GHIMEL — É a terceira letra do alfabeto hebraico."
+    },
+    "fn118_daleth": {
+      "rotulo": "DALETH",
+      "texto": "DALETH — É a quarta letra do alfabeto hebraico."
+    },
+    "fn118_he": {
+      "rotulo": "HE",
+      "texto": "HE — É a quinta letra do alfabeto hebraico."
+    },
+    "fn118_vau": {
+      "rotulo": "VAU",
+      "texto": "VAU — Sexta letra do alfabeto hebraico."
+    },
+    "fn118_zain": {
+      "rotulo": "ZAIN",
+      "texto": "ZAIN — Sétima letra do alfabeto hebraico."
+    },
+    "fn118_heth": {
+      "rotulo": "HETH",
+      "texto": "HETH — Oitava letra."
+    },
+    "fn118_teth": {
+      "rotulo": "TETH",
+      "texto": "TETH — Nona letra."
+    },
+    "fn118_iod": {
+      "rotulo": "IOD",
+      "texto": "IOD — Décima letra."
+    },
+    "fn118_caph": {
+      "rotulo": "CAPH",
+      "texto": "CAPH — É a undécima."
+    },
+    "fn118_lamed": {
+      "rotulo": "LAMED",
+      "texto": "LAMED — Duodécima letra."
+    },
+    "fn118_mem": {
+      "rotulo": "MEM",
+      "texto": "MEM — Décima terceira."
+    },
+    "fn118_nun": {
+      "rotulo": "NUN",
+      "texto": "NUN — Décima quarta."
+    },
+    "fn118_samech": {
+      "rotulo": "SAMECH",
+      "texto": "SAMECH — Décima quinta letra."
+    },
+    "fn118_ain": {
+      "rotulo": "AIN",
+      "texto": "AIN — Décima sexta."
+    },
+    "fn118_phe": {
+      "rotulo": "PHE",
+      "texto": "PHE — Décima sétima."
+    },
+    "fn118_tsade": {
+      "rotulo": "TSADE",
+      "texto": "TSADE — Décima oitava."
+    },
+    "fn118_coph": {
+      "rotulo": "COPH",
+      "texto": "COPH — Décima nona."
+    },
+    "fn118_res": {
+      "rotulo": "RES",
+      "texto": "RES — Vigésima."
+    },
+    "fn118_sin": {
+      "rotulo": "SIN",
+      "texto": "SIN — Vigésima primeira."
+    },
+    "fn118_tau": {
+      "rotulo": "TAU",
+      "texto": "TAU — É a letra final."
     }
   }
 }

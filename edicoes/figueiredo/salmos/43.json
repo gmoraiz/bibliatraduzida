@@ -18,7 +18,7 @@
     { "n": 14, "texto": "Puseste-nos no opróbrio aos nossos vizinhos, por escárnio e zombaria àqueles que estão ao redor de nós." },
     { "n": 15, "texto": "Puseste-nos em provérbio às gentes por exemplo de irrisão nos povos.", "nota": "fn43_15" },
     { "n": 16, "texto": "A minha ignomínia está todo o dia diante de mim, e a confusão do meu rosto me tem coberto.", "nota": "fn43_16" },
-    { "n": 17, "texto": "À voz do que me afronta, e vitupera: A vista do inimigo, e do que me persegue." },
+    { "n": 17, "texto": "À voz do que me afronta, e vitupera: À vista do inimigo, e do que me persegue." },
     { "n": 18, "texto": "Tôdas estas coisas vieram sôbre nós, e ainda assim nós nos não temos esquecido de ti: E não temos cometido iniquidade contra o teu pacto." },
     { "n": 19, "texto": "O nosso coração não tornou atrás: Nem tu desviaste do teu caminho os nossos passos:", "nota": "fn43_19" },
     { "n": 20, "texto": "Porque tu nos humilhaste no lugar da aflição, e a sombra da morte nos cobriu." },
@@ -40,15 +40,15 @@
     },
     "fn43_4": {
       "rotulo": "Porque não foi com a sua espada que possuíram a terra, etc.",
-      "texto": "Porque ainda que a manejaram com muito valor, nunca houvera produzido aquêles efeitos maravilhosos, que excediam todo o poder humano, e eram verdadeiros milagres do poder de Deus. — P. Seio."
+      "texto": "Porque ainda que a manejaram com muito valor, nunca houvera produzido aquêles efeitos maravilhosos, que excediam todo o poder humano, e eram verdadeiros milagres do poder de Deus. — P. Scio."
     },
     "fn43_5": {
       "rotulo": "Que dispões as salvações, etc.",
-      "texto": "Produzidas pela tua onipotente palavra, que dá o ser, e a lei a tôdas as coisas. Sl 41, 9; 67, 29. Ou que mandas aos teus Anjos, que salvem ao povo de Jacó, ou de Israel. Mandas que sejam salvos, e os salvas; porque a ordem e mandamento de Deus sempre se cumpre. — P. Seio."
+      "texto": "Produzidas pela tua onipotente palavra, que dá o ser, e a lei a tôdas as coisas. Sl 41, 9; 67, 29. Ou que mandas aos teus Anjos, que salvem ao povo de Jacó, ou de Israel. Mandas que sejam salvos, e os salvas; porque a ordem e mandamento de Deus sempre se cumpre. — P. Scio."
     },
     "fn43_15": {
       "rotulo": "Por exemplo de irrisão, etc.",
-      "texto": "À letra: \"por movimento de cabeça,\" que é gesto de escárnio, e de irrisão. 4 Rs 19, 21; Jó 16, 5; Sl 21, 8. — P. Seio."
+      "texto": "À letra: \"por movimento de cabeça,\" que é gesto de escárnio, e de irrisão. 4 Rs 19, 21; Jó 16, 5; Sl 21, 8. — P. Scio."
     },
     "fn43_16": {
       "rotulo": "E a confusão do meu rosto me tem coberto",
@@ -64,11 +64,11 @@
     },
     "fn43_23": {
       "rotulo": "Levanta-te por que dormes, etc.",
-      "texto": "Parece que Deus em certo modo dorme, quando tarda em socorrer ao homem que padece, e se acha em miséria: mas, non dormitat, neque dormiet, qui custodit Israel. Sl 120, 4; e quando exercita com trabalhos aos seus, sabe muito bem o tempo em que os há de livrar dêles com maior glória e proveito. — P. Seio."
+      "texto": "Parece que Deus em certo modo dorme, quando tarda em socorrer ao homem que padece, e se acha em miséria: mas, non dormitat, neque dormiet, qui custodit Israel. Sl 120, 4; e quando exercita com trabalhos aos seus, sabe muito bem o tempo em que os há de livrar dêles com maior glória e proveito. — P. Scio."
     },
     "fn43_25": {
       "rotulo": "Pegado está com a terra o nosso ventre",
-      "texto": "Isto é: Nós nos vemos reduzidos ao maior abatimento: não podemos levantar-nos por nós mesmos: venha, Senhor, o teu socorro; ajuda-nos e resgata-nos. Venha a êsse fim o único Libertador e Redentor do homem. — P. Seio."
+      "texto": "Isto é: Nós nos vemos reduzidos ao maior abatimento: não podemos levantar-nos por nós mesmos: venha, Senhor, o teu socorro; ajuda-nos e resgata-nos. Venha a êsse fim o único Libertador e Redentor do homem. — P. Scio."
     }
   }
 }

@@ -1,8 +1,9 @@
 {
   "num": 105,
-  "sumario": "Salmo histórico. Faz-se memória dos benefícios que Deus fêz ao seu povo desde que saiu do Egito, até os juízes: da ingratidão com que êste lhe correspondeu; e como o misericordioso Senhor o corrigia e tirava das suas angústias. Aleluia. (Jdt 13, 21.)",
+  "sumario": "Salmo histórico. Faz-se memória dos benefícios que Deus fêz ao seu povo desde que saiu do Egito, até os juízes: da ingratidão com que êste lhe correspondeu; e como o misericordioso Senhor o corrigia e tirava das suas angústias.",
   "versiculos": [
-    { "n": 1, "texto": "Louvai ao Senhor porque êle é bom: Porque a sua misericórdia é por todos os séculos.", "nota": "fn105_1" },
+    { "n": 0, "tipo": "epigrafe", "texto": "Aleluia. (Jdt 13, 21.)", "nota": "fn105_0" },
+    { "n": 1, "texto": "Louvai ao Senhor porque êle é bom: Porque a sua misericórdia é por todos os séculos." },
     { "n": 2, "texto": "Quem referirá as obras do poder do Senhor, quem fará que sejam ouvidos todos os seus louvores?" },
     { "n": 3, "texto": "Bem-aventurados os que observam retidão, e praticam a justiça em todo o tempo." },
     { "n": 4, "texto": "Lembra-te de nós, Senhor, segundo a bondade que te aprouve mostrar ao teu povo: Visita-nos com a tua salvação:" },
@@ -44,7 +45,7 @@
     { "n": 40, "texto": "E se incendeu de furor o Senhor contra o seu povo: E abominou a sua herança." },
     { "n": 41, "texto": "E os entregou em poder das gentes: E os dominaram aquêles que os aborreciam." },
     { "n": 42, "texto": "E angustiaram-nos os seus inimigos, e foram humilhados debaixo do seu poder:" },
-    { "n": 43, "texto": "Muitas vêzes os livrou.<br>Mas êles o irritaram com o seu intento: E foram humilhados pelas suas maldades." },
+    { "n": 43, "texto": "Muitas vêzes o livrou.<br>Mas êles o irritaram com o seu intento: E foram humilhados pelas suas maldades." },
     { "n": 44, "texto": "E olhou-os quando estavam em angústia: E ouviu a sua oração." },
     { "n": 45, "texto": "E lembrou-se do seu pacto: E se enterneceu segundo a multidão da sua misericórdia. (Dt 30, 1)." },
     { "n": 46, "texto": "E empregou nêles as suas misericórdias à vista de todos aquêles que os haviam cativado." },
@@ -52,7 +53,7 @@
     { "n": 48, "texto": "Bendito o Senhor Deus de Israel pelos séculos dos séculos: E dirá todo o povo: Assim seja, assim seja.", "nota": "fn105_48" }
   ],
   "notas": {
-    "fn105_1": {
+    "fn105_0": {
       "rotulo": "Aleluia",
       "texto": "ALELUIA — Êste salmo é o primeiro dos da coleção que tem por palavra inicial allelou-yah. Louvai o Senhor; o anterior tem esta palavra na Vulgata, adição justificada pela índole do salmo. Êste é um resumo da história do povo de Deus no deserto do Sinai. Não é fácil dividir no original as estrofes. Em todo o caso poder-se-ão agrupar dêste modo as idéias expressas no salmo: (1-3) introdução e exortação a louvar a Deus; (4-6) oração; fatos históricos (7 a 47). O v. 48 é a doxologia que marca o fim do quarto livro dos salmos. Como no salmo anterior indicamos na passagem a que se refere o texto."
     },
@@ -62,7 +63,7 @@
     },
     "fn105_15": {
       "rotulo": "E enviou fartura",
-      "texto": "E ENVIOU FARTURA, ETC. — Até que lhes causou fastio, e náusea o mesmo que haviam desejado. O hebreu diz: \"e mandou fraqueza às suas almas:\" tirou o Senhor a sua virtude, e negou a sua bênção àquela vianda, e assim em lugar de se nutrirem enfraqueciam, e caíam em pthisis, enfermidade que frequentemente procede de comer com excesso, e do que tem princípio aquela náusea e desgôsto, com que o Senhor os havia ameaçado. Núm 11, 20. — P. Seio."
+      "texto": "E ENVIOU FARTURA, ETC. — Até que lhes causou fastio, e náusea o mesmo que haviam desejado. O hebreu diz: \"e mandou fraqueza às suas almas:\" tirou o Senhor a sua virtude, e negou a sua bênção àquela vianda, e assim em lugar de se nutrirem enfraqueciam, e caíam em pthisis, enfermidade que frequentemente procede de comer com excesso, e do que tem princípio aquela náusea e desgôsto, com que o Senhor os havia ameaçado. Núm 11, 20. — P. Scio."
     },
     "fn105_16": {
       "rotulo": "E irritaram a Moisés",
@@ -82,7 +83,7 @@
     },
     "fn105_39": {
       "rotulo": "E se prostituíram",
-      "texto": "E SE PROSTITUÍRAM — Já mesclando-se com mulheres idólatras, já adorando os ídolos das nações, como os mesmos idólatras. As abominações dos israelitas, que se insinuam nos vv. 33 até 38, pertencem principalmente ao tempo em que governaram os juízes; e ainda que estas não constam pormenor naquele livro, não são por isso menos certas. — P. Seio."
+      "texto": "E SE PROSTITUÍRAM — Já mesclando-se com mulheres idólatras, já adorando os ídolos das nações, como os mesmos idólatras. As abominações dos israelitas, que se insinuam nos vv. 33 até 38, pertencem principalmente ao tempo em que governaram os juízes; e ainda que estas não constam pormenor naquele livro, não são por isso menos certas. — P. Scio."
     },
     "fn105_48": {
       "rotulo": "Assim seja",

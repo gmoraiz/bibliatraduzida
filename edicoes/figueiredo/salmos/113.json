@@ -1,9 +1,10 @@
 {
   "num": 113,
-  "sumario": "Salmo histórico. Grandeza de Deus na liberdade que deu ao seu povo. Vaidade dos ídolos. O Senhor é protetor dos que o temem. Aleluia.",
+  "sumario": "Salmo histórico. Grandeza de Deus na liberdade que deu ao seu povo. Vaidade dos ídolos. O Senhor é protetor dos que o temem.",
   "versiculos": [
+    { "n": 0, "tipo": "epigrafe", "texto": "Aleluia.", "nota": "fn113_0" },
     { "n": 1, "texto": "Quando Israel saiu do Egito, a casa de Jacó do meio de um povo bárbaro:", "nota": "fn113_1" },
-    { "n": 2, "texto": "Consagrou Deus a Judeia ao seu serviço, e estabeleceu em Israel o seu império.", "nota": "fn113_2" },
+    { "n": 2, "texto": "Consagrou Deus a Judéia ao seu serviço, e estabeleceu em Israel o seu império.", "nota": "fn113_2" },
     { "n": 3, "texto": "O mar o viu, e fugiu:<br>E o Jordão recuou para trás.", "nota": "fn113_3" },
     { "n": 4, "texto": "Os montes saltaram de alegria como carneiros:<br>E as colinas como cordeiros do rebanho." },
     { "n": 5, "texto": "Que tiveste tu, ó mar, que fugiste:<br>E tu, Jordão, para retrocederes?" },
@@ -44,7 +45,7 @@
       "texto": "QUANDO ISRAEL — É muito provável que fôsse Davi o autor dêste salmo, e que o compôs com o destino de pôr à vista do povo a grandeza com que o Senhor o tirou do Egito, e introduziu na terra prometida para conhecer por êste meio a eficácia da sua proteção. Os hebreus dividem êste salmo em dois, começando o segundo pelo vers. 9 da Vulgata."
     },
     "fn113_2": {
-      "rotulo": "Consagrou Deus a Judeia ao seu serviço",
+      "rotulo": "Consagrou Deus a Judéia ao seu serviço",
       "texto": "CONSAGROU DEUS A JUDÉIA AO SEU SERVIÇO — Em conformidade do que êle tinha prometido ao mesmo povo, estando ainda no deserto, quando lhe disse por Moisés, Êx 19, 5-6: Eritis mihi peculium de cunctis populis . . . et in regnum sacerdotale, et gens sancta. Vós sereis a minha própria e particular herança, e em vós estabelecerei eu o meu reino e o meu sacerdócio. É de advertir que no presente lugar do salmo, onde a Vulgata diz Facta est Judæa sanctificatio ejus, tem S. Jerônimo com o hebreu: Factus est Iudas in sanctificatione ejus. De onde se vê que já no tempo da saída do povo do cativeiro do Egito, era Judas, ou a sua tribo, a que denominava tôda a nação. — Pereira."
     },
     "fn113_3": {
@@ -65,11 +66,11 @@
     },
     "fn113bis_9": {
       "rotulo": "A casa de Israel",
-      "texto": "A CASA DE ISRAEL — Pela casa de Israel se entende aqui tôda a nação dos judeus; pela de Aarão todos os da linhagem sacerdotal; e pelos que temem ao Senhor e esperam nêle, todos os fiéis em geral de qualquer nação, estado e condição que sejam. Desta mesma sorte se distinguia a Igreja em dois estados: de clero e povo. — P. Seio."
+      "texto": "A CASA DE ISRAEL — Pela casa de Israel se entende aqui tôda a nação dos judeus; pela de Aarão todos os da linhagem sacerdotal; e pelos que temem ao Senhor e esperam nêle, todos os fiéis em geral de qualquer nação, estado e condição que sejam. Desta mesma sorte se distinguia a Igreja em dois estados: de clero e povo. — P. Scio."
     },
     "fn113bis_16": {
       "rotulo": "O mais alto dos céus",
-      "texto": "O MAIS ALTO DOS CÉUS — À letra: O Céu do Céu. O Céu empíreo, ou o mais elevado dos Céus, no que se nos dá a entender a infinita distância e elevação que tem o Senhor sôbre todo o criado. — P. Seio."
+      "texto": "O MAIS ALTO DOS CÉUS — À letra: O Céu do Céu. O Céu empíreo, ou o mais elevado dos Céus, no que se nos dá a entender a infinita distância e elevação que tem o Senhor sôbre todo o criado. — P. Scio."
     }
   }
 }

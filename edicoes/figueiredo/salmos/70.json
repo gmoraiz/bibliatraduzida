@@ -1,7 +1,8 @@
 {
   "num": 70,
-  "sumario": "Salmo deprecatório. Davi roga ao Senhor que lhe continue a sua proteção até os últimos anos da sua vida. Salmo de Davi.",
+  "sumario": "Salmo deprecatório. Davi roga ao Senhor que lhe continue a sua proteção até os últimos anos da sua vida.",
   "versiculos": [
+    { "n": 0, "tipo": "epigrafe", "texto": "Salmo de Davi." },
     { "n": 1, "texto": "Dos filhos de Jonadab, e dos primeiros cativos.<br>Em ti, Senhor, tenho esperado, não seja eu jamais confundido:", "nota": "fn70_1" },
     { "n": 2, "texto": "Na tua justiça livra-me, e põe-me a salvo.<br>Inclina para mim o teu ouvido, e salva-me." },
     { "n": 3, "texto": "Sejas para mim um Deus protetor, e um asilo seguro: Para me fazer salvo.<br>Porquanto a minha firmeza, e o meu refúgio és tu." },

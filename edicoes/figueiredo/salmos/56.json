@@ -1,6 +1,6 @@
 {
   "num": 56,
-  "sumario": "Davi pede misericórdia a Deus, refugiando-se na cova.",
+  "sumario": "Salmo deprecatório. Davi pede socorro contra os seus inimigos.",
   "versiculos": [
     {
       "n": 0,
@@ -14,7 +14,7 @@
     },
     {
       "n": 2,
-      "texto": "Tem piedade de mim, ó Deus, tem piedade de mim: Porque em ti confia a minha alma. E na sombra das tuas asas esperarei, até que passe a iniquidade.",
+      "texto": "Tem piedade de mim, ó Deus, tem piedade de mim: Porque em ti confia a minha alma. E na sombra das tuas asas esperarei, até que passe a iniqüidade.",
       "nota": "fn56_2"
     },
     {
@@ -63,15 +63,15 @@
   "notas": {
     "fn56_1": {
       "rotulo": "MIKTHAM",
-      "texto": "A Vulgata traduziu esta palavra por titulus; é o nome dos seus Salmos 15, 55, 59. A sua significação é obscura, mas parece querer significar um salmo dum sentido profundo e oculto. QUANDO FUGINDO — Davi compôs êste salmo quando se viu obrigado a refugiar-se na cova de Odolão, fugindo do furor de Saul, que ia em seu seguimento. 1 Rs 22, 1. As palavras, no disperdas, se explicam comumente como saindo da bôca de Davi falando com Deus: Não me entregues a meus inimigos para que me tirem a vida."
+      "texto": "A Vulgata traduziu esta palavra por titulus; é o nome dos seus Salmos 15, 55. 59. A sua significação é obscura, mas parece querer significar um salmo dum sentido profundo e oculto. QUANDO FUGINDO — Davi compôs êste salmo quando se viu obrigado a refugiar-se na cova de Odolão, fugindo do furor de Saul, que ia em seu seguimento. 22, 1. As palavras, no disperdas, se explicam comumente como saindo da bôca de Davi falando com Deus: Não me entregues a meus inimigos para que me tirem a vida. Mas outros confessam ingênuamente que não sabem a que propósito estão aqui. No hebreu lhes correspondem, Al thasheth: e se crê que são ou princípio de uma canção vulgar, a cujo som se devia cantar êste salmo, ou título de orações feitas em perigos graves da vida, ou o nome de instrumento: e assim trasladam o título do hebreu dêste modo: 'Hicthám de Davi quando se retirou à cova fugindo de Saul, dado ao Mestre dos músicos sôbre Al tascheth.' Duguet havendo observado que os salmos, que têm por título Ne disperdas, estão cheios de ameaças contra os pecadores, e de promessas a favor dos justos, crê ser esta uma oração breve, e a epígrafe do salmo. Êste salmo é muito regular; tem quatro estrofes de seis versos. — Miktham."
     },
     "fn56_2": {
       "rotulo": "ATÉ QUE PASSE A INIQUIDADE",
-      "texto": "Donec transeant cerumna. Os tormentos, e tribulações que me ocasionam a iniquidade, e o ódio dos meus contrários. — Pereira."
+      "texto": "Donec transeant ærumnas. Os tormentos, e tribulações que me ocasionam a iniqüidade, e o ódio dos meus contrários. — Pereira."
     },
     "fn56_5": {
       "rotulo": "CONTURBADO DORMI",
-      "texto": "Outros dizem: inter quos dormivi conturbatus; porque o temor de me ver cercado dêles, não me deixava repousar, ou conciliar o sono. No hebreu se expõem de diversos modos. \"A minha alma dormiu no meio de ferozes leões\", outros aplicam o Feroces a filii hominum dêste modo: Feroces sunt filii hominum: dentes eorum. — P. Seio."
+      "texto": "Outros dizem: inter quos dormivi conturbatus; porque o temor de me ver cercado dêles, não me deixava repousar, ou conciliar o sono. No hebreu se expõem de diversos modos. \"A minha alma dormiu no meio de ferozes leões\", outros aplicam o Feroces a filii hominum dêste modo: Feroces sunt filii hominum: dentes eorum. — P. Scio."
     },
     "fn56_9": {
       "rotulo": "LEVANTAR-ME-EI DE MANHÃ",

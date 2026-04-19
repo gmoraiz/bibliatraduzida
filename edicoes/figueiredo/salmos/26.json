@@ -13,14 +13,14 @@
     { "n": 9, "texto": "Não apartes de mim a tua face. E não te retires do teu servo na tua ira. Sê minha ajuda: Não me deixes, nem me desprezes, ó Deus meu Salvador." },
     { "n": 10, "texto": "Porque meu pai, e minha mãe me deixaram: Mas o Senhor me recolheu.", "nota": "fn26_10" },
     { "n": 11, "texto": "Prescreve-me, Senhor, a lei no teu caminho: E guia-me pela vereda direita por causa dos meus inimigos." },
-    { "n": 12, "texto": "Não me entregues às almas dos que me atribulam: Porque se têm levantado contra mim testemunhas falsas, mas a iniquidade mentiu em seu dano.", "nota": "fn26_12" },
+    { "n": 12, "texto": "Não me entregues às almas dos que me atribulam: Porque se têm levantado contra mim testemunhas falsas, mas a iniqüidade mentiu em seu dano.", "nota": "fn26_12" },
     { "n": 13, "texto": "Creio ver os bens do Senhor na terra dos viventes." },
     { "n": 14, "texto": "Espera ao Senhor, porta-te varonilmente: E fortifique-se o teu coração, e está firme esperando ao Senhor.", "nota": "fn26_14" }
   ],
   "notas": {
     "fn26_1": {
       "rotulo": "Antes de ser ungido",
-      "texto": "Estas palavras não estão no original, mas mostram que êste Salmo foi composto antes da submissão de Israel. Tem duas partes e compreende onze estrofes. Primeira parte: É como que o cântico de confiança triunfante. Segunda parte: É o cântico da confiança suplicante."
+      "texto": "Estas palavras não estão no original, mas mostram que êste Salmo foi composto antes da submissão de Israel. Tem duas partes e compreende onze estrofes. Primeira parte: É como que o cântico de confiança triunfante. 1.ª estrofe (1). Davi não teve mêdo, porque Deus é o seu protetor; — 2.ª (2). Os seus inimigos caem por terra quando o atacam; — 3.ª (3). Sempre cheio de confiança, ainda que se levantem exércitos contra êle; — 4.ª (4). Só pede uma coisa, estar junto da arca; — 5.ª (5 e 6). Deus recolhe-o em seu tabernáculo, onde estará forte como um rochedo; — 6.ª (6). Onde estará superior aos ataques dos inimigos e onde louvará ao Senhor. Segunda parte: É o cântico da confiança suplicante; — 7.ª (7 e 8). Que Deus ouça a sua oração; — 8.ª (9). Que não o abandone; — 9.ª (10 e 11). Que o guie, visto não ter pai nem mãe; — 10.ª (11 e 12). Que o não entregue aos seus inimigos; — 11.ª (13 e 14). Em Deus confia, e firme espera o auxílio do Senhor."
     },
     "fn26_5": {
       "rotulo": "No dia dos males",
@@ -36,7 +36,7 @@
     },
     "fn26_12": {
       "rotulo": "Porque se têm levantado contra mim testemunhas falsas",
-      "texto": "As mesmas que diziam a Saul: David quaeret malum adversum te; Davi intenta fazer-te mal. 1 Rs 24, 10. — Bossuet."
+      "texto": "As mesmas que diziam a Saul: David quaerit malum adversum te; Davi intenta fazer-te mal. 1 Rs 24, 10. — Bossuet."
     },
     "fn26_14": {
       "rotulo": "Espera ao Senhor",

@@ -12,7 +12,7 @@
     { "n": 8, "texto": "Porque fôste meu defensor.<br>E à sombra das tuas asas exultei," },
     { "n": 9, "texto": "a minha alma vai unida após de ti: A tua destra me fortalece." },
     { "n": 10, "texto": "Mas êles em vão procuram tirar-me a vida, entrarão nas profundidades da terra:" },
-    { "n": 11, "texto": "Serão entregues nas mãos da espada, presa serão das rapôsas.", "nota": "fn62_11" },
+    { "n": 11, "texto": "Serão entregues nas mãos da espada, prêsa serão das rapôsas.", "nota": "fn62_11" },
     { "n": 12, "texto": "Mas o rei se alegrará em Deus, louvados serão todos os que juram por êle: Pois se fechou a bôca aos que falam coisas iníquas.", "nota": "fn62_12" }
   ],
   "notas": {
@@ -22,15 +22,15 @@
     },
     "fn62_2": {
       "rotulo": "De ti tem sêde",
-      "texto": "DE TI TEM SÊDE — Sente a minha alma uma sêde tão ardente de ti, que se comunicam os seus efeitos ainda ao mesmo corpo. — P. Seio."
+      "texto": "DE TI TEM SÊDE — Sente a minha alma uma sêde tão ardente de ti, que se comunicam os seus efeitos ainda ao mesmo corpo. — P. Scio."
     },
     "fn62_6": {
       "rotulo": "De banha e gordura",
-      "texto": "DE BANHA E GORDURA — Mantivemos a tradução do Padre Pereira no texto, que assim verteu a Vulgata adipe et pinguedine. Não nos devemos porém esquecer que se trata de verso, empregada a linguagem poética. As palavras que estão no original, correspondentes a estas baleie e dashen, em sentido próprio têm esta significação, em sentido metafórico significam a excelência de bondade e abundância que sacia por completo: optimum cujus rei, fecunditas, fertilitas. Desta sorte o sentido dêste versículo é êste: De opulência e abundância será farta a minha alma. É modo de dizer enfático e metafórico, corresponde a \"ficar-se-á tão saciado, como aquêle que se alimenta com suavíssimo e abundantíssimo manjar.\" Duae voces idem significantes ad majorem euphasim: q. d. Tamquam suavissimo cibo; nam pinguis cibus gratior et suavior: b. e. Omne voluptate perfundetur animus. — Menóquio."
+      "texto": "DE BANHA E GORDURA — Mantivemos a tradução do Padre Pereira no texto, que assim verteu a Vulgata adipe et pinguedine. Não nos devemos porém esquecer que se trata de verso, empregada a linguagem poética. As palavras que estão no original, correspondentes a estas baleie e dashen, em sentido próprio têm esta significação, em sentido metafórico significam a excelência de bondade e abundância que sacia por completo: optimum cujus rei, fecunditas, fertilitas. Desta sorte o sentido dêste versículo é êste: De opulência a abundância será farta a minha alma. É modo de dizer enfático e metafórico, corresponde a \"ficar-se-á tão saciado, como aquêle que se alimenta com suavíssimo e abundantíssimo manjar.\" Duae voces idem significantes ad majorem euphasim: q. d. Tamquam suavissimo cibo; nam pinguis cibus gratior et suavior: h. e. Omne voluptate perfundetur animus. — Menóquio."
     },
     "fn62_11": {
-      "rotulo": "Presa serão",
-      "texto": "PRESA SERÃO — Põem a espécie pelo gênero; porquanto a Judéia e a Palestina abundavam de rapôsas, como se vê pelas trezentas que ajuntou Sansão. O sentido é êste: Os que me perseguem em vão me buscam para me oprimir; antes de o conseguir ou baixarão vivos aos abismos, ou perecerão ao fio da espada; e os seus cadáveres ficarão sem sepultura, para pasto das feras. — Pereira."
+      "rotulo": "Prêsa serão",
+      "texto": "PRÊSA SERÃO — Põem a espécie pelo gênero; porquanto a Judéia e a Palestina abundavam de rapôsas, como se vê pelas trezentas que ajuntou Sansão. O sentido é êste: Os que me perseguem em vão me buscam para me oprimir; antes de o conseguir ou baixarão vivos aos abismos, ou perecerão ao fio da espada; e os seus cadáveres ficarão sem sepultura, para pasto das feras. — Pereira."
     },
     "fn62_12": {
       "rotulo": "O rei",

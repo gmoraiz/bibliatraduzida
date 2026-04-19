@@ -2,6 +2,7 @@
   "num": 120,
   "sumario": "Salmo didático. O homem fiel a Deus tem por meio da fé afiançado o seu socorro contra todos os perigos e trabalhos. Cântico gradual.",
   "versiculos": [
+    { "n": 0, "tipo": "epigrafe", "texto": "Cântico gradual.", "nota": "fn120_0" },
     { "n": 1, "texto": "Levantei os meus olhos aos montes, de onde me virá o socorro.", "nota": "fn120_1" },
     { "n": 2, "texto": "O meu socorro vem do Senhor, que fêz o céu, e a terra." },
     { "n": 3, "texto": "Não permita que vacile o teu pé:<br>Nem dormite aquêle que te guarda." },

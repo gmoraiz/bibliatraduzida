@@ -1715,7 +1715,11 @@ function renderChapter(ch, bookDir, targetId) {
 
   const chapterSummary = typeof ch.sumario === 'string' ? ch.sumario : '';
 
-  const notaKeys = ch.notas ? Object.keys(ch.notas) : [];
+  const notaKeys = ch.notas
+    ? ch.versiculos
+        .map(v => v.nota)
+        .filter((k, i, arr) => k && ch.notas[k] && arr.indexOf(k) === i)
+    : [];
 
   const verses = ch.versiculos.filter(i => i.tipo !== 'bio');
   const bios   = ch.versiculos.filter(i => i.tipo === 'bio');
@@ -2214,7 +2218,11 @@ function renderCompareGrid(ch1, bookDir1, compareEntries) {
     ch ? ch.versiculos.filter(i => i.tipo !== 'bio') : []
   );
   const allNotaKeys = [ch1, ...compareEntries.map(e => e.ch)].map(ch =>
-    ch && ch.notas ? Object.keys(ch.notas) : []
+    ch && ch.notas
+      ? ch.versiculos
+          .map(v => v.nota)
+          .filter((k, i, arr) => k && ch.notas[k] && arr.indexOf(k) === i)
+      : []
   );
   const allBios = [ch1, ...compareEntries.map(e => e.ch)].map(ch =>
     ch ? ch.versiculos.filter(i => i.tipo === 'bio') : []

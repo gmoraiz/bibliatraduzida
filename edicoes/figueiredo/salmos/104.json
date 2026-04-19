@@ -1,8 +1,9 @@
 {
   "num": 104,
-  "sumario": "Salmo de ação de graças, pelos benefícios feitos por Deus ao povo de Israel, desde Abraão até Moisés. Aleluia. (1 Par 16, 18.)",
+  "sumario": "Salmo de ação de graças, pelos benefícios feitos por Deus ao povo de Israel, desde Abraão até Moisés.",
   "versiculos": [
-    { "n": 1, "texto": "Louvai ao Senhor, e invocai o seu nome: Anunciai entre as gentes as suas obras.", "nota": "fn104_1" },
+    { "n": 0, "tipo": "epigrafe", "texto": "Aleluia. (1 Par 16, 18.)", "nota": "fn104_0" },
+    { "n": 1, "texto": "Louvai ao Senhor, e invocai o seu nome: Anunciai entre as gentes as suas obras." },
     { "n": 2, "texto": "Cantai-lhe, e dizei-lhe salmos: Narrai tôdas as suas maravilhas." },
     { "n": 3, "texto": "Gloriai-vos em seu santo Nome: Alegre-se o coração dos que buscam ao Senhor." },
     { "n": 4, "texto": "Buscai ao Senhor, e fortificai-vos: Buscai sempre a sua face." },
@@ -16,7 +17,7 @@
     { "n": 12, "texto": "Quando eram em curto número, mui poucos e estrangeiros nesta terra:", "nota": "fn104_12" },
     { "n": 13, "texto": "E passaram de gente em gente, e de um reino a outro povo." },
     { "n": 14, "texto": "Não permitiu que alguém os ofendesse: E castigou por causa dêles aos reis." },
-    { "n": 15, "texto": "Não toqueis os meus ungidos: E não maltrateis aos meus profetas.", "nota": "fn104_15" },
+    { "n": 15, "texto": "Não toqueis os meus ungidos: E não maltrateis aos meus profetas. (2 Rs 1, 14).", "nota": "fn104_15" },
     { "n": 16, "texto": "E chamou a fome sôbre a terra: E quebrantou tôda a fôrça do pão." },
     { "n": 17, "texto": "Enviou diante dêles um varão: A José que foi vendido por escravo. (Gên 37, 36.)" },
     { "n": 18, "texto": "Apertaram com grilhões seus pés, o êrro traspassou a sua alma (Gên 39, 20)" },
@@ -31,7 +32,7 @@
     { "n": 27, "texto": "Pôs nêles as palavras de seus sinais, e prodígios na terra de Cam. (Êx 7, 10)." },
     { "n": 28, "texto": "Enviou trevas, e difundiu escuridade: E não tornou vãs as suas palavras. (Êx 10, 21)." },
     { "n": 29, "texto": "Converteu-lhes as águas em sangue: E matou os seus peixes. (Êx 7, 20)." },
-    { "n": 30, "texto": "A sua terra produziu rãs até nas câmaras dos mesmos reis. (Êx 8, 6)." },
+    { "n": 30, "texto": "A sua terra produziu rãs até nas câmaras dos mesmos reis. (Êx 8, 8)." },
     { "n": 31, "texto": "Disse, e vieram moscas de tôdas as castas: E mosquitos em todos os seus limites. (Êx 8, 16-24)." },
     { "n": 32, "texto": "Mudou as suas chuvas em granizo: Lançou um fogo abrasador na terra dêles." },
     { "n": 33, "texto": "E feriu as suas vinhas, e os seus figueirais: E quebrou as árvores que havia nos seus limites." },
@@ -49,7 +50,7 @@
     { "n": 45, "texto": "Para que guardassem os seus mandamentos, e buscassem a sua lei." }
   ],
   "notas": {
-    "fn104_1": {
+    "fn104_0": {
       "rotulo": "Aleluia",
       "texto": "ALELUIA — Êste têrmo, que daqui em diante se encontra na Vulgata à testa de outros muitos salmos, vale o mesmo que \"Louvai ao Senhor.\" Quanto aos primeiros quinze versículos, é êste salmo indubitàvelmente de Davi, e composto na trasladação da arca para Sião, porque assim consta do livro 1 Par 16, 8 ss, onde se referem os ditos primeiros quinze versículos dêle. Quanto aos mais que se seguem, é Calmet de parecer que êles foram acrescentados depois, quando o povo judaico voltou do cativeiro de Babilónia para Jerusalém. De Carrières o dá todo por obra de Davi. Resume a história de Israel e por isso se citam entre parênteses os lugares que narram os fatos a que o salmo alude, e tem nove estrofes."
     },

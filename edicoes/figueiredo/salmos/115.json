@@ -1,8 +1,9 @@
 {
   "num": 115,
-  "sumario": "Salmo de ação de graças em que Davi se mostra agradecido ao Senhor pelos seus benefícios e espera com inteira confiança ver cumpridas tôdas as promessas que lhe havia feito o mesmo Senhor. Aleluia.",
+  "sumario": "Salmo de ação de graças em que Davi se mostra agradecido ao Senhor pelos seus benefícios e espera com inteira confiança ver cumpridas tôdas as promessas que lhe havia feito o mesmo Senhor.",
   "versiculos": [
-    { "n": 10, "texto": "Acreditei, por isso falei:<br>Mas eu estive na última humilhação.", "nota": "fn115_10" },
+    { "n": 0, "tipo": "epigrafe", "texto": "Aleluia.", "nota": "fn115_0" },
+    { "n": 10, "texto": "Acreditei, por isso falei:<br>Mas eu estive na última humilhação." },
     { "n": 11, "texto": "Eu disse no meu êxtase:<br>Todo homem é mentiroso.", "nota": "fn115_11" },
     { "n": 12, "texto": "Que darei em retribuição ao Senhor, por todos os benefícios que me tem feito?" },
     { "n": 13, "texto": "Tomarei o cálice da salvação:<br>E invocarei o Nome do Senhor.", "nota": "fn115_13" },
@@ -14,7 +15,7 @@
     { "n": 19, "texto": "Nos átrios da casa do Senhor, no meio de ti, ó Jerusalém." }
   ],
   "notas": {
-    "fn115_10": {
+    "fn115_0": {
       "rotulo": "Aleluia",
       "texto": "Êste salmo é a continuação do anterior; como foi dito no original não está dividido; na Vulgata segue a numeração do salmo anterior, e assim fazem as mais autorizadas edições. Glaire, ob. cit."
     },

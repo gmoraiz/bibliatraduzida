@@ -1,6 +1,6 @@
 {
   "num": 52,
-  "sumario": "A impiedade e corrupção dos mundanos; desejo da salvação de Israel.",
+  "sumario": "Salmo didático. Descreve Davi a impiedade, e geral corrupção dos mundanos, e a perseguição que êles têm declarado contra os fiéis: ameaça-os com o juízo de Deus, desejando que seja prontamente executado para verdadeiro alívio e consolação da sua Igreja.",
   "versiculos": [
     {
       "n": 0,
@@ -14,7 +14,7 @@
     },
     {
       "n": 2,
-      "texto": "Perverteram-se, e se têm feito abomináveis em iniquidades: Não há quem faça bem."
+      "texto": "Perverteram-se, e se têm feito abomináveis em iniqüidades: Não há quem faça bem."
     },
     {
       "n": 3,
@@ -26,7 +26,7 @@
     },
     {
       "n": 5,
-      "texto": "Porventura não virão em conhecimento todos os que obram iniquidade, os que devoram o meu povo como quem come pão?"
+      "texto": "Porventura não virão em conhecimento todos os que obram iniqüidade, os que devoram o meu povo como quem come pão?"
     },
     {
       "n": 6,
@@ -41,20 +41,20 @@
   ],
   "notas": {
     "fn52_1": {
-      "rotulo": "MAELET",
+      "rotulo": "Maelet",
       "texto": "Esta palavra significa doença, e provàvelmente aplica-se a um salmo composto por ocasião duma enfermidade. De resto êste salmo é o mesmo que o Salmo 13, à exceção de algumas palavras que o autor alterou, talvez para melhor o acomodar à música em que devia ser cantado."
     },
     "fn52_6a": {
-      "rotulo": "ALI TREMERAM DE MÊDO",
+      "rotulo": "Ali tremeram de mêdo",
       "texto": "O sentido é: Que devendo temer a Deus, temeram aos homens, a quem não deviam procurar agradar. — Sacy."
     },
     "fn52_6b": {
-      "rotulo": "PORQUE DEUS",
-      "texto": "Êste versículo não se lê no Sl 13. Deus destrói o poder daqueles que por contentar aos homens atropelam a sua divina Lei. Padecerão eterna confusão, porque Deus os apartará de si. — P. Seio."
+      "rotulo": "Porque Deus",
+      "texto": "Êste versículo não se lê no Sl 13. Deus destrói o poder daqueles que por contentar aos homens atropelam a sua divina Lei. Padecerão eterna confusão, porque Deus os apartará de si. — P. Scio."
     },
     "fn52_7": {
-      "rotulo": "E ALEGRAR-SE-Á ISRAEL",
-      "texto": "Quando sairá de Sião o Salvador de Israel, aquêle que há-de pôr fim à opressão que padece Israel livrando ao seu povo da escravidão do pecado, e do demónio? O que alegrará em grande maneira a Jacó, e celebrará o novo povo de Israel com cânticos e festas. — P. Seio."
+      "rotulo": "e alegrar-se-á Israel",
+      "texto": "Quando sairá de Sião o Salvador de Israel, aquêle que há-de pôr fim à opressão que padece Israel livrando ao seu povo da escravidão do pecado, e do demônio? O que alegrará em grande maneira a Jacó, e celebrará o novo povo de Israel com cânticos e festas. — P. Scio."
     }
   }
 }

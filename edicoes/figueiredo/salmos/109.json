@@ -1,14 +1,41 @@
 {
   "num": 109,
-  "sumario": "Salmo profético; o Messias assentado à direita do Padre. O seu reino sôbre tôdas as nações. A sua geração eterna. Êle é sacerdote segundo a ordem de Melquisedec: julgador de todos os homens. O mesmo Cristo no Evangelho, Mt 22, 44, abertamente afirmou que era êle de quem Davi falara neste salmo.",
+  "sumario": "Salmo profético; o Messias assentado à direita do Padre. O seu reino sôbre tôdas as nações. A sua geração eterna. Êle é sacerdote segundo a ordem de Melquisedec: julgador de todos os homens. O mesmo Cristo no Evangelho. Mt 22, 44, abertamente afirmou que era êle de quem Davi falara neste salmo.",
   "versiculos": [
-    { "n": 1, "texto": "Salmo de Davi.<br>Disse o Senhor ao meu Senhor: Senta-te à minha mão direita:<br>Até que ponha a teus inimigos por escabêlo de teus pés.", "nota": "fn109_1" },
-    { "n": 2, "texto": "De Sião fará sair o Senhor o cetro do teu poder: Reina tu no meio de teus inimigos.", "nota": "fn109_2" },
-    { "n": 3, "texto": "Contigo está o principado no dia do teu poder entre os resplendores dos Santos: Eu te gerei do seio antes do luzeiro.", "nota": "fn109_3" },
-    { "n": 4, "texto": "Jurou o Senhor, e não se arrependerá: Tu és sacerdote eternamente segundo a ordem de Melquisedec.", "nota": "fn109_4" },
-    { "n": 5, "texto": "O Senhor está à tua direita, quebrantou os reis no dia da sua ira." },
-    { "n": 6, "texto": "Exercerá o seu juízo no meio das nações, meterá tudo em ruína: Esmigalhará as cabeças de muitos sôbre a terra.", "nota": "fn109_6" },
-    { "n": 7, "texto": "Beberá no caminho da torrente das águas: Por cujo motivo levantará a sua cabeça.", "nota": "fn109_7" }
+    {
+      "n": 1,
+      "texto": "Salmo de Davi.<br>Disse o Senhor ao meu Senhor: Senta-te à minha mão direita:<br>Até que ponha a teus inimigos por escabêlo de teus pés.",
+      "nota": "fn109_1"
+    },
+    {
+      "n": 2,
+      "texto": "De Sião fará sair o Senhor o cetro do teu poder: Reina tu no meio de teus inimigos.",
+      "nota": "fn109_2"
+    },
+    {
+      "n": 3,
+      "texto": "Contigo está o principado no dia do teu poder entre os resplendores dos Santos: Eu te gerei do seio antes do luzeiro.",
+      "nota": "fn109_3"
+    },
+    {
+      "n": 4,
+      "texto": "Jurou o Senhor, e não se arrependerá: Tu és sacerdote eternamente segundo a ordem de Melquisedec.",
+      "nota": "fn109_4"
+    },
+    {
+      "n": 5,
+      "texto": "O Senhor está à tua direita, quebrantou os reis no dia da sua ira."
+    },
+    {
+      "n": 6,
+      "texto": "Exercerá o seu juízo no meio das nações, meterá tudo em ruína: Esmigalhará as cabeças de muitos sôbre a terra.",
+      "nota": "fn109_6"
+    },
+    {
+      "n": 7,
+      "texto": "Beberá no caminho da torrente das águas: Por cujo motivo levantará a sua cabeça.",
+      "nota": "fn109_7"
+    }
   ],
   "notas": {
     "fn109_1": {
@@ -21,7 +48,7 @@
     },
     "fn109_3": {
       "rotulo": "Contigo está",
-      "texto": "CONTIGO ESTÁ — Êste versículo é muito obscuro e tem diversas interpretações. O hebreu tem um sentido muito diverso da Vulgata. NO DIA DO TEU PODER — Isto é, por tôda a eternidade. S. João Crisóstomo, Teodoreto, S. Agostinho e S. Atanásio entendem que esta expressão alude ao dia do Juízo, no qual Jesus Cristo distribuirá a justiça, descendo rodeado de anjos \"entre os resplendores dos Santos\"."
+      "texto": "CONTIGO ESTÁ — Êste versículo é muito obscuro e tem diversas interpretações. O hebreu tem um sentido muito diverso da Vulgata. A tradução literal dêste e do seguinte versículo é esta: Teu povo (te oferece) espontâneamente (seus dons) no dia do teu poder. Na magnificência do lugar santo; Do seio da aurora (Brota) o orvalho da tua juventude. O P. Boulleret apresenta êste sentido: Tibi regnum indie potentiae tuae; In splendores sanctuari tui. A principio ante luciferum genui te. NO DIA DO TEU PODER — Isto é, por tôda a eternidade. S. João Crisóstomo, Teodoreto, S. Agostinho e S. Atanásio entendem que esta expressão alude ao dia do Juízo, no qual Jesus Cristo distribuiu a justiça, descendo rodeado de anjos \"entre os resplendores dos Santos\"."
     },
     "fn109_4": {
       "rotulo": "Segundo a ordem de Melquisedec",

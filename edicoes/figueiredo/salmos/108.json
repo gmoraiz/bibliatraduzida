@@ -7,7 +7,7 @@
     { "n": 3, "texto": "Falaram contra mim com línguas aleivosas, e com palavras de ódio me cercaram: E sem causa me têm feito guerra." },
     { "n": 4, "texto": "Em vez de amar-me, diziam mal de mim: Mas eu orava." },
     { "n": 5, "texto": "E tornaram contra mim males por bens: E ódio em câmbio do amor que lhes tinha." },
-    { "n": 6, "texto": "Põe sôbre êle ao pecador: E o diabo esteja à sua direita.", "nota": "fn108_6" },
+    { "n": 6, "texto": "Põem sôbre êle ao pecador: E o diabo esteja à sua direita.", "nota": "fn108_6" },
     { "n": 7, "texto": "Quando fôr julgado, saia condenado: E a sua oração se lhe impute a pecado." },
     { "n": 8, "texto": "Sejam abreviados os seus dias: E receba outro o seu bispado.", "nota": "fn108_8" },
     { "n": 9, "texto": "Fiquem seus filhos órfãos: E sua mulher viúva." },
@@ -15,7 +15,7 @@
     { "n": 11, "texto": "O usurário dê caça a todos os seus bens: E os estranhos roubem o fruto dos seus trabalhos." },
     { "n": 12, "texto": "Não tenha quem o ajude: Nem haja quem se compadeça dos seus órfãos." },
     { "n": 13, "texto": "Sejam seus filhos para extermínio: Em uma só geração fique apagado o seu nome." },
-    { "n": 14, "texto": "A iniquidade de seus pais reviva na presença do Senhor ocorrendo à sua lembrança: E o pecado de sua mãe não seja apagado.", "nota": "fn108_14" },
+    { "n": 14, "texto": "A inqüidade de seus pais reviva na presença do Senhor ocorrendo à sua lembrança: E o pecado de sua mãe não seja apagado.", "nota": "fn108_14" },
     { "n": 15, "texto": "Estejam sempre diante do Senhor, e seja riscada da terra a memória dêles.", "nota": "fn108_15" },
     { "n": 16, "texto": "Porquanto se não lembrou de usar de misericórdia." },
     { "n": 17, "texto": "E perseguiu ao homem sem amparo, e ao mendigo, e ao quebrantado de coração para o entregar à morte." },
@@ -37,11 +37,11 @@
   "notas": {
     "fn108_1": {
       "rotulo": "Êste salmo",
-      "texto": "Êste salmo foi provàvelmente composto durante a revolta de Absalão, e aplica-se aos inimigos de Davi, especialmente a Doeg ou Aquitofel, o mais encarniçado de todos, e figura de Judas, o traidor, a quem S. Pedro aplicou o vers. 8. At 1, 20; Jo 17, 12. Tem seis estrofes. Primeira (2-5). Mal que lhe fazem os maus, que assim pagam os benefícios recebidos. Segunda (6-8). Que Deus os castigue. Terceira (11-15). Em sua fortuna, posteridade e memória. Quarta (16-20). Por causa das suas iniquidades. Quinta (21-25). Que o Senhor tenha piedade do salmista aflito e doente. Sexta (26-31). Que o Senhor o livre dos seus inimigos, o que saberá agradecer."
+      "texto": "Êste salmo foi provàvelmente composto durante a revolta de Absalão, e aplica-se aos inimigos de Davi, especialmente a Daëgon ou Aquitofel, o mais encarniçado de todos, e figura de Judas, o traidor, a quem S. Pedro aplicou o vers. 8. At 1, 20; Jo 17, 12. Tem seis estrofes. Primeira (2-5). Mal que lhe fazem os maus, que assim pagam os benefícios recebidos. Segunda (6-8). Que Deus os castigue. Terceira (11-15). Em sua fortuna, posteridade e memória. Quarta (16-20). Por causa das suas iniqüidades. Quinta (21-25). Que o Senhor tenha piedade do salmista aflito e doente. Sexta (26-31). Que o Senhor o livre dos seus inimigos, o que saberá agradecer."
     },
     "fn108_6": {
       "rotulo": "Sôbre êle",
-      "texto": "SÔBRE ÊLE — Êste singular que o salmista emprega neste versículo e nos seguintes, até ao 19 inclusive, significa cada um dêles, isto é, cada um dos seus inimigos, de quem êle depois fala no plural. Entretanto, hábeis intérpretes entendem que Davi designa especialmente por êste singular Doeg, o idumeu (1 Rs 21, 7) ou Aquitofel, o gilonita, um dos conselheiros de Davi, que tomou parte na conspiração de Absalão, 2 Rs 15, 12-31."
+      "texto": "SÔBRE ÊLE — Êste singular que o salmista emprega neste versículo e nos seguintes, até ao 19 inclusive, significa cada um dêles, isto é, cada um dos seus inimigos, de quem êle depois fala no plural. Entretanto, hábeis intérpretes entendem que Davi designa especialmente por êste singular Doëg, o idumeu (1 Rs 21, 7) ou Aquitofel, o gilonita, um dos conselheiros de Davi, que tomou parte na conspiração de Absalão, 2 Rs 15, 12-31."
     },
     "fn108_8": {
       "rotulo": "O seu bispado",
@@ -49,7 +49,7 @@
     },
     "fn108_14": {
       "rotulo": "A iniquidade de seus pais",
-      "texto": "A INIQUIDADE DE SEUS PAIS — A memória dos delitos do pai irrite a cólera de Deus contra o filho delinquente, e venha sôbre êle a sua indignação pelos excessos da mãe. — P. Seio."
+      "texto": "A INIQUIDADE DE SEUS PAIS — A memória dos delitos do pai irrite a cólera de Deus contra o filho delinquente, e venha sôbre êle a sua indignação pelos excessos da mãe. — P. Scio."
     },
     "fn108_15": {
       "rotulo": "Estejam sempre diante do Senhor",

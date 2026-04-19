@@ -2,8 +2,9 @@
   "num": 41,
   "sumario": "Desejo ansioso do real profeta de ver o Tabernáculo do Senhor, quando andava ausente por causa da perseguição ou de Saul, ou de Absalão.",
   "versiculos": [
+    { "n": 0, "tipo": "epigrafe", "texto": "Ao regente do côro." },
     { "n": 1, "texto": "Instrução aos filhos de Coré.", "nota": "fn41_1" },
-    { "n": 2, "texto": "Assim como o servo suspira pelas fontes das águas: Assim a minha alma suspira por ti, ó Deus." },
+    { "n": 2, "texto": "Assim como o cervo suspira pelas fontes das águas: Assim a minha alma suspira por ti, ó Deus." },
     { "n": 3, "texto": "A minha alma está ardendo de sêde pelo Deus forte e vivo: Quando virei e aparecerei diante da face de Deus.", "nota": "fn41_3" },
     { "n": 4, "texto": "As minhas lágrimas foram o meu pão de dia e de noite: Enquanto se me diz cada dia: Onde está o teu Deus?" },
     { "n": 5, "texto": "Eu me lembrei destas coisas, e derramei a minha alma dentro de mim: Porque eu passarei ao lugar do tabernáculo admirável, até à casa de Deus: Com voz de regozijo, e louvor: Som festivo de quem se banqueteia.", "nota": "fn41_5" },
@@ -38,7 +39,7 @@
     },
     "fn41_10": {
       "rotulo": "E por que ando triste",
-      "texto": "O hebreu tem: Enlutado, vestido de negro, ou de luto, o que se fazia em tempo de tristeza, e de calamidade pública. — P. Seio."
+      "texto": "O hebreu tem: Enlutado, vestido de negro, ou de luto, o que se fazia em tempo de tristeza, e de calamidade pública. — P. Scio."
     }
   }
 }

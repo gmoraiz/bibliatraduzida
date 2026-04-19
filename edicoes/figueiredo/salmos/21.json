@@ -26,7 +26,7 @@
     { "n": 22, "texto": "Salva-me a mim da bôca do leão: E a minha humildade dos cornos dos unicórnios." },
     { "n": 23, "texto": "Então anunciarei o teu nome a meus irmãos: No meio da Igreja te louvarei.", "nota": "fn21_23" },
     { "n": 24, "texto": "Vós os que temeis ao Senhor, louvai-o: Vós todos os que sois a descendência de Jacó, glorificai-o:" },
-    { "n": 25, "texto": "Tema-o tôda a posteridade de Israel: Porque êle não desprezou, nem se indignou da humilde suplica do pobre: Nem apartou de mim a sua face: Mas êle me ouviu quando eu lhe clamava." },
+    { "n": 25, "texto": "Tema-o tôda a posteridade de Israel: Porque êle não desprezou, nem se indignou da humilde súplica do pobre: Nem apartou de mim a sua face: Mas êle me ouviu quando eu lhe clamava." },
     { "n": 26, "texto": "Para contigo o meu louvor na Igreja grande: Eu cumprirei os meus votos em presença dos que o temem.", "nota": "fn21_26" },
     { "n": 27, "texto": "Os pobres comerão, e serão fartos: E os que buscam ao Senhor louvá-lo-ão: Os seus corações viverão pelos séculos dos séculos.", "nota": "fn21_27" },
     { "n": 28, "texto": "Lembrar-se-ão, e converter-se-ão ao Senhor todos os limites da terra: E adorarão na sua presença tôdas as familias das gentes.", "nota": "fn21_28" },
@@ -38,7 +38,7 @@
   "notas": {
     "fn21_1": {
       "rotulo": "Ayyeleth asch-schakhar",
-      "texto": "Estas palavras indicam o tom em que se deve cantar êste Salmo. Significam: Uma ária que começava por estas palavras. A significação inicial de raiz Aial é corça, veado. Êste canto é desconhecido e por isso Leopold no seu dicionário traduz estas palavras carminis, ad cujus modum Ps. canendus. A Vulgata traduziu susceptio matutina, e o Pe. Pereira socorro da manhã, têrmos desconexos com o objeto do Salmo. O assunto é anunciar os sofrimentos do Messias, cuja Paixão se descreve duma maneira clara. Ut non tam prophetia quam historia videatur, segundo diz Cassiodoro. No Antigo Testamento não se encontra personagem algum a quem êste Salmo possa convir."
+      "texto": "Estas palavras indicam o tom em que se deve cantar êste Salmo. Significam: Uma ária que começava por estas palavras. A significação inicial de raiz, Aial é corça, veado. Êste canto é desconhecido e por isso Leopold no seu dicionário traduz estas palavras carminis, ad cujus modum Ps. canendus. A Vulgata traduziu susceptio matutina, e o Pe. Pereira socorro da manhã, têrmos desconexos com o objeto do Salmo. O assunto é anunciar os sofrimentos do Messias, cuja Paixão se descreve duma maneira clara. Ut non tam prophetia quam historia videatur, segundo diz Cassiodoro. No Antigo Testamento não se encontra personagem algum a quém êste Salmo possa convir. As palavras iniciais foram as que Jesus Cristo repetiu na Cruz: Deus, Deus meus, quare me dercliquisti? Meu pai por que me abandonaste? Mt 27, 46. Mc 15, 34. O Sítio, tenho sêde, é a realização da profecia do v. 16. — Secou-se como barro, etc. Os dados lançados sôbre a túnica estão preditos no v. 19, e as torturas da crucificação, as dores das mãos e dos pés, a sêde ardente, estão descritas nos vv. 15-18. \"Quio pictor, escreve Bossuet, \"Crucifixam Jesum tam ad vivum expressit quim est ille apud Davidem, confossis manibus predibusquo, effusa virtute omni, distractis denudatis que ossibus suspensi ac dilaniati corporis. Dissert. de Psalm. c. 2, n. 17. A Igreja, no IV Cêncilio de Constantinopla, condenou Teodoro de Mopsuesto, que entendia êste Salmo num sentido puramente histórico e não profético. Tem doze estrofes irregulares, as quais formam três partes. Primeira parte, 1.ª a 4.ª estrofes (2-12) O Messias na Cruz abandonado por seu Pai e escarnecido por todos. Segunda parte, 5.ª a 8.ª (13-22) Descrição dos tormentos da Paixão. Terceira parte, 9.ª a 12.ª (23-32) Glória da Ressurreição."
     },
     "fn21_2": {
       "rotulo": "Olha para mim / Os clamores de meus pecados",
@@ -46,11 +46,11 @@
     },
     "fn21_4": {
       "rotulo": "Ó Glória de Israel",
-      "texto": "O hebreu tem: \"E tu, Santo habitante, louvores de Israel\", isto é: \"E tu és o Santo por essência, ou a mesma santidade, o imutável nos teus conselhos e promessas\". Salmo 101, 13. 28, e o único objeto de tôdas as graças e bênçãos que te dá teu povo. Em nome dêste verdadeiro Israel, cujo rei sou, te invoco, para que a Ressurreição, que eu te peço, seja princípio da ressurreição de todo o Israel. — P. Seio."
+      "texto": "O hebreu tem: \"E tu, Santo habitante, louvores de Israel\", isto é: \"E tu és o Santo por essência, ou a mesma santidade, o imutável nos teus conselhos e promessas\". Salmo 101, 13. 28, e o único objeto de tôdas as graças e bênçãos que te dá teu povo. Em nome dêste verdadeiro Israel, cujo rei sou, te invoco, para que a Ressurreição, que eu te peço, seja princípio da ressurreição de todo o Israel. — P. Scio."
     },
     "fn21_8": {
       "rotulo": "Escarneceram de mim",
-      "texto": "Como à letra sucedeu na sua Santíssima Paixão, e estando na Cruz. Mt 27, 39. — P. Seio."
+      "texto": "Como à letra sucedeu na sua Santíssima Paixão, e estando na Cruz. Mt 27, 39. — P. Scio."
     },
     "fn21_9": {
       "rotulo": "Salve-o, se é que o ama",
@@ -62,7 +62,7 @@
     },
     "fn21_12": {
       "rotulo": "Não te retires de mim",
-      "texto": "Aqui principia uma viva pintura da Paixão do Senhor, que descreve por semelhanças mui próprias, para manifestar a grandeza das suas aflições. A palavra quoniam no hebreu, e no grego, é aqui com mais propriedade conjuntiva do que causal. — P. Seio."
+      "texto": "Aqui principia uma viva pintura da Paixão do Senhor, que descreve por semelhanças mui próprias, para manifestar a grandeza das suas aflições. A palavra quoniam no hebreu, e no grego, é aqui com mais propriedade conjuntiva do que causal. — P. Scio."
     },
     "fn21_13": {
       "rotulo": "Um grande número de novilhos me cercaram",
@@ -70,7 +70,7 @@
     },
     "fn21_15": {
       "rotulo": "Eu me derramei como água",
-      "texto": "Sucedeu isto pontualmente, quando viu o Senhor correr o seu Sangue orando no Horto, nos açoites à coluna, e quando o crucificaram no Calvário. — P. Seio."
+      "texto": "Sucedeu isto pontualmente, quando viu o Senhor correr o seu Sangue orando no Horto, nos açoites à coluna, e quando o crucificaram no Calvário. — P. Scio."
     },
     "fn21_16": {
       "rotulo": "E a minha língua se pegou às minhas fauces",
@@ -78,11 +78,11 @@
     },
     "fn21_17": {
       "rotulo": "Êles trespassaram as minhas mãos e os meus pés",
-      "texto": "Um texto tão claro, e tão decisivo pela crucificação de Cristo, pretenderam tirar-nos os judeus modernos, corrompendo a antiga e primitiva lição hebraica Caaru, ou Caru, que quer dizer, \"traspassaram\" com lhes substituírem Caari, que quer dizer \"Como um leão\" e que é hoje a vulgar nos exemplares hebraicos. De sorte que em lugar do que trazem os Setenta e a Vulgata, Foderunt manus meas et pedes meos: Êles me trespassaram as minhas mãos, e os meus pés: lêem os Rabinos nos seus Códices Sicut leo manus meae, et pedes mei. O doutíssimo Calmet escreveu e publicou sôbre êste verso uma Dissertação, deveras notável."
+      "texto": "Um texto tão claro, e tão decisivo pela crucificação de Cristo, pretenderam tirar-nos os judeus modernos, corrompendo a antiga e primitiva lição hebraica Caaru, ou Caru, que quer dizer, \"traspassaram\" com lhes substituírem Caari, que quer dizer \"Como um leão\" e que é hoje a vulgar nos exemplares hebraicos. De sorte que em lugar do que trazem os Setenta e a Vulgata, Foderunt manus meas et pedes meos: Êles me trespassaram as minhas mãos, e os meus pés: lêem os Rabinos nos seus Códices Sicut leo manus meae, et pedes meos, subentendendo mordent, ou lacerant: Como um leão mordem, ou despedaçam as minhas mãos e os meus pés: Como se costumasse o leão acometer às mãos e pés do homem, e não todo o corpo. Para convencer a falsificação dêste famoso texto, pouca força terá para com os Rabinos de hoje a autoridade de alguns poucos Códices Hebraicos, em que Galatino, o nosso Paiva e Andrade, Buxtorf, e Martianay testificam, que acharam Caaru e não Caari, visto que a sua extrema raridade os faz como não entrar em conta. Também lhe não argumentaremos com o testemunho dos Setenta Intérpretes, que por mais grave que se suponha, não pode competir com o do original. Mas que dirão êles a um Padre do segundo século do Cristianismo, e seu nacional, qual S. Justino Mártir, que é tanto no Diálogo com o judeu Trifão, como na sua Apologia pelos Cristãos, alega verificado em Jesus Cristo o verso do presente Salmo, Foderunt manus meas et pedes meos, como êle se acha nos Setenta e na Vulgata? Que dirão a um S. Jerônimo, que traduzindo o Saltério segundo o hebreu, que no quarto século corria por autêntico, verteu o mesmo verso assim: Fixerunt manus et pedes meos? Se isto não é uma prova evidente de que a lição primogênita dêste texto era a que hoje lemos em todos os códices gregos, e latinos: Produzam os Rabinos pela sua outros dois testemunhos tão antigos, e tão graves, e então desistiremos da emprêsa de mostrar-lhes que a Crucificação de Cristo, referida nos Evangelhos, estava profetizada mil anos antes pelo Real Profeta. O doutíssimo Calmet escreveu e publicou sôbre êste verso uma Dissertação, deveras notável."
     },
     "fn21_18": {
       "rotulo": "Me estiveram considerando",
-      "texto": "Dando cruel pasto à sua paixão, e aos seus olhos com a minha miséria, como se assistissem a um espetáculo mui agradável. Lc 23, 35. — P. Seio."
+      "texto": "Dando cruel pasto à sua paixão, e aos seus olhos com a minha miséria, como se assistissem a um espetáculo mui agradável. Lc 23, 35. — P. Scio."
     },
     "fn21_21": {
       "rotulo": "A minha vida",
@@ -90,7 +90,7 @@
     },
     "fn21_23": {
       "rotulo": "A meus irmãos",
-      "texto": "Aos Apóstolos. Mt 28, 10. A todos os verdadeiros fiéis adotados pela graça do Padre, regenerados pelo Espírito Santo, e feitos irmãos de Jesus Cristo, e herdeiros juntamente com êle do seu Reino, Jo 20, 17, Rom 8, 29, e S. Paulo Hebr. 2, 10-12, aplica êste texto a Jesus Cristo. — P. Seio."
+      "texto": "Aos Apóstolos. Mt 28, 10. A todos os verdadeiros fiéis adotados pela graça do Padre, regenerados pelo Espírito Santo, e feitos irmãos de Jesus Cristo, e herdeiros juntamente com êle do seu Reino, Jo 20, 17, Rom 8, 29, e S. Paulo Hebr. 2, 10-12, aplica êste texto a Jesus Cristo. — P. Scio."
     },
     "fn21_26": {
       "rotulo": "Para contigo o meu louvor",

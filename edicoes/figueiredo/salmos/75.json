@@ -3,14 +3,14 @@
   "sumario": "Salmo gratulatório. Honra o poder, e a justiça de Deus empregados em fazer que triunfe gloriosamente de todos os seus inimigos.",
   "versiculos": [
     { "n": 1, "texto": "Ao regente do côro. Com instrumentos de corda. Salmo de Asaf, cântico aos assírios.", "nota": "fn75_1" },
-    { "n": 2, "texto": "Conhecido é Deus na Judeia; em Israel grande é o seu nome." },
+    { "n": 2, "texto": "Conhecido é Deus na Judéia; em Israel grande é o seu nome." },
     { "n": 3, "texto": "E tem feito o seu assento na paz: E a sua morada é em Sião.", "nota": "fn75_3" },
-    { "n": 4, "texto": "Ali quebrou as forças dos arcos, o escudo, a espada, e a guerra." },
+    { "n": 4, "texto": "Ali quebrou as fôrças dos arcos, o escudo, a espada, e a guerra." },
     { "n": 5, "texto": "Fazendo brilhar a tua luz maravilhosa desde os montes eternos." },
     { "n": 6, "texto": "Todos os néscios de coração ficaram perturbados.<br>Dormiram o seu sono: E nada acharam nas suas mãos todos êstes homens de riquezas.", "nota": "fn75_6" },
     { "n": 7, "texto": "À tua ameaça, ó Deus de Jacó, adormeceram os que montam em cavalos.", "nota": "fn75_7" },
     { "n": 8, "texto": "Tu és terrível, e quem te resistirá? desde que aparece a tua ira." },
-    { "n": 9, "texto": "Desde o céu fizeste ouvir o teu juízo: A terra tremeu e ficou em sossego." },
+    { "n": 9, "texto": "Desde o céu fizeste ouvir o teu juízo: A terra tremeu e ficou em sossêgo." },
     { "n": 10, "texto": "Quando se levantou Deus a juízo, para salvar a todos os humildes da terra.", "nota": "fn75_10" },
     { "n": 11, "texto": "Porque o homem que considere te louvará: E as memórias que hão de ficar-te farão dia festivo." },
     { "n": 12, "texto": "Fazei votos ao Senhor vosso Deus, e cumpri-os todos os que ao redor dêle lhe trazeis oferendas.<br>Ao terrível," },
@@ -27,19 +27,19 @@
     },
     "fn75_6": {
       "rotulo": "Ficaram perturbados",
-      "texto": "FICARAM PERTURBADOS — O hebreu diz: \"Foram despojados os fortes de coração: dormiam o seu sono\", o da morte. O que pode com propriedade aplicar-se aos assírios derrotados de noite: \"e não acharam as suas mãos todos os varões de fortaleza.\" As fôrças lhes faltaram, e o coração; não puderam fazer a menor resistência. — P. Seio."
+      "texto": "FICARAM PERTURBADOS — O hebreu diz: \"Foram despojados os fortes de coração: dormiam o seu sono\", o da morte. O que pode com propriedade aplicar-se aos assírios derrotados de noite: \"e não acharam as suas mãos todos os varões de fortaleza.\" As fôrças lhes faltaram, e o coração; não puderam fazer a menor resistência. — P. Scio."
     },
     "fn75_7": {
       "rotulo": "Adormeceram",
-      "texto": "ADORMECERAM — \"Ficou adormecido o carro e o cavalo,\" diz o hebreu: ficaram inúteis, e inábeis para a batalha. Êx 15, 16, Núm 3, 18. — P. Seio."
+      "texto": "ADORMECERAM — \"Ficou adormecido o carro e o cavalo,\" diz o hebreu: ficaram inúteis, e inábeis para a batalha. Êx 15, 16, Núm 3, 18. — P. Scio."
     },
     "fn75_10": {
       "rotulo": "Quando se levantou",
-      "texto": "QUANDO SE LEVANTOU — É uma representação em forma de juízo da derrota dos assírios. — P. Seio."
+      "texto": "QUANDO SE LEVANTOU — É uma representação em forma de juízo da derrota dos assírios. — P. Scio."
     },
     "fn75_13": {
       "rotulo": "Que tira o espírito",
-      "texto": "QUE TIRA O ESPÍRITO — O hebreu diz: \"Tirará ou vindicará\" o espírito aos príncipes, tirando-lhes de repente a vida. Jl 3, 13. Apc 14, 18; ou apartando dêles o dom de conselho, de prudência, e de govêrno. — P. Seio."
+      "texto": "QUE TIRA O ESPÍRITO — O hebreu diz: \"Tirará ou vindicará\" o espírito aos príncipes, tirando-lhes de repente a vida. Jl 3, 13. Apc 14, 18; ou apartando dêles o dom de conselho, de prudência, e de govêrno. — P. Scio."
     }
   }
 }

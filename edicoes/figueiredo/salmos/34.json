@@ -1,15 +1,15 @@
 {
   "num": 34,
-  "sumario": "Davi perseguido de seus inimigos, não se vinga por si, mas remete a sua causa a justiça de Deus.",
+  "sumario": "Davi perseguido de seus inimigos, não se vinga por si, mas remete a sua causa à justiça de Deus.",
   "versiculos": [
     { "n": 1, "texto": "Do mesmo Davi. Julga, Senhor, aos que me fazem dano, expugna aos que me combatem.", "nota": "fn34_1" },
     { "n": 2, "texto": "Toma as tuas armas e o teu escudo: E levanta-te em meu socorro." },
-    { "n": 3, "texto": "Tira da espada, e conclui contra aqueles que me perseguem: Dize à minha alma: Eu sou a tua salvação." },
+    { "n": 3, "texto": "Tira da espada, e conclui contra aquêles que me perseguem: Dize à minha alma: Eu sou a tua salvação." },
     { "n": 4, "texto": "Sejam confundidos e envergonhados os que buscam a minha alma. Voltem atrás, e sejam confundidos os que meditam contra mim." },
     { "n": 5, "texto": "Sejam feitos como o pó ante a face do vento: E o Anjo do Senhor os coarcte." },
     { "n": 6, "texto": "Torne-se o seu caminho em trevas e escorregadio: E o Anjo do Senhor os persiga.", "nota": "fn34_6" },
     { "n": 7, "texto": "Porquanto sem razão me esconderam o seu laço da morte: Sem causa encheram de opróbrios a minha alma." },
-    { "n": 8, "texto": "Venha sôbre êle um laço que ignora: E a rede que escondeu o prenda a êle: E caia no mesmo laço que êle armou." },
+    { "n": 8, "texto": "Venha sôbre êle um laço que ignora: E a rêde que escondeu o prenda a êle: E caia no mesmo laço que êle armou." },
     { "n": 9, "texto": "Mas a minha alma regozijar-se-á no Senhor: E deleitar-se-á em seu Salvador." },
     { "n": 10, "texto": "Todos os meus ossos dirão: Senhor, quem é semelhante a ti? Que livras ao desvalido das mãos dos mais fortes que êle: Ao necessitado e ao pobre dos que o roubam." },
     { "n": 11, "texto": "Levantando-se testemunhos iníquos, coisas que não sabia me perguntavam." },
@@ -32,14 +32,14 @@
     { "n": 28, "texto": "A minha língua publicará a tua justiça, todo o dia o teu louvor.", "nota": "fn34_28" }
   ],
   "notas": {
-    "fn34_1": { "rotulo": "1", "texto": "DO MESMO DAVI — Foi escrito no tempo da perseguição a Saul. Davi implora a assistência de Deus contra os seus inimigos. Tem doze estrofes." },
-    "fn34_6": { "rotulo": "2", "texto": "TORNE-SE O SEU CAMINHO EM TREVAS — Nas suas emprêsas, e obras não tenham luz alguma, nem guia de bom conselho, nem firmeza sôbre que possam subsistir. E acrescenta Santo Agostinho: as trevas são ignorância, e o escorregadio a impureza; \"vaticina que lhes aconteceriam êstes males\". Tudo isto pontualmente sucede à infeliz nação, que com tanta perfídia condenou a morte Jesus Cristo. — P. Seio." },
-    "fn34_13": { "rotulo": "3", "texto": "DAVA VOLTAS NO MEU SEIO — Convertetur, por convertebatur, conforme se acha em alguns Saltérios antigos. Têrmo tomado da maneira de orar dos antigos, com a cabeça inclinada. Desta oração de Jesus Cristo fala altamente o Apóstolo. Ad Heb. 6. — P. Seio." },
+    "fn34_1": { "rotulo": "1", "texto": "DE DAVI — Foi escrito no tempo da perseguição a Saul. Davi implora a assistência de Deus contra os seus inimigos. Tem doze estrofes." },
+    "fn34_6": { "rotulo": "2", "texto": "TORNE-SE O SEU CAMINHO EM TREVAS — Nas suas emprêsas, e obras não tenham luz alguma, nem guia de bom conselho, nem firmeza sôbre que possam subsistir. E acrescenta Santo Agostinho: as trevas são ignorância, e o escorregadio a impureza; \"vaticina que lhes aconteceriam êstes males\". Tudo isto pontualmente sucede à infeliz nação, que com tanta perfídia condenou a morte Jesus Cristo. — P. Scio." },
+    "fn34_13": { "rotulo": "3", "texto": "DAVA VOLTAS NO MEU SEIO — Convertetur, por convertebatur, conforme se acha em alguns Saltérios antigos. Têrmo tomado da maneira de orar dos antigos, com a cabeça inclinada. Desta oração de Jesus Cristo fala altamente o Apóstolo. Ad Heb. 5. — P. Scio." },
     "fn34_14": { "rotulo": "4", "texto": "COMO A PRÓXIMO — No texto hebreu lê-se: \"Como por meu companheiro, como por meu irmão andava, como o que chora a sua mãe, enlutado me encurvava.\" — Calmet." },
-    "fn34_15": { "rotulo": "5", "texto": "AMONTOARAM-SE SÔBRE MIM AÇOITES — A palavra hebraica se pode trasladar flagela e flagelantes. Diz também o hebreu: \"E no meu coxear se alegraram\", isto é: quando me viram derribado e caído. — P. Seio." },
-    "fn34_18": { "rotulo": "6", "texto": "NO MEIO DO POVO NUMEROSO — O hebreu tem: \"Entre um povo forte, etc.\" — P. Seio." },
-    "fn34_19": { "rotulo": "7", "texto": "E ACENAM COM OS OLHOS — O que pode entender-se de vários modos: ou manifestando no semblante o que não tem no coração, como explica Santo Agostinho, ou para zombarem de mim, acenando com os olhos, como maquinando-me a morte, ou outro mal, e comprazendo-se nisso mesmo com os movimentos e trejeitos dos olhos. — P. Seio." },
+    "fn34_15": { "rotulo": "5", "texto": "AMONTOARAM-SE SÔBRE MIM AÇOITES — A palavra hebraica se pode trasladar flagela e flagelantes. Diz também o hebreu: \"E no meu coxear se alegraram\", isto é: quando me viram derribado e caído. — P. Scio." },
+    "fn34_18": { "rotulo": "6", "texto": "NO MEIO DO POVO NUMEROSO — O hebreu tem: \"Entre um povo forte, etc.\" — P. Scio." },
+    "fn34_19": { "rotulo": "7", "texto": "E ACENAM COM OS OLHOS — O que pode entender-se de vários modos: ou manifestando no semblante o que não tem no coração, como explica Santo Agostinho, ou para zombarem de mim, acenando com os olhos, como maquinando-me a morte, ou outro mal, e comprazendo-se nisso mesmo com os movimentos e trejeitos dos olhos. — P. Scio." },
     "fn34_20": { "rotulo": "8", "texto": "NA COMOÇÃO DA TERRA — Esta expressão, que representa a terra como enfurecida, convém ao estado, em que se achavam os inimigos de Jesus Cristo, desde que se ajuntaram em Jerusalém para lhe dar a morte, caluniando-o como a \"perturbador público\". — Pereira." },
-    "fn34_28": { "rotulo": "9", "texto": "PUBLICARÁ, ETC. — À letra: Meditará; se exercitará em louvor e exaltará a tua justiça. E se entende de Cristo quando ressuscitado falou com os seus Apóstolos \"do reino de Deus\". At 1, 3. — P. Seio." }
+    "fn34_28": { "rotulo": "9", "texto": "PUBLICARÁ, ETC. — À letra: Meditará; se exercitará em louvor e exaltará a tua justiça. E se entende de Cristo quando ressuscitado falou com os seus Apóstolos \"do reino de Deus\". At 1, 3. — P. Scio." }
   }
 }

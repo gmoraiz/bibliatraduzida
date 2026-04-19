@@ -5,7 +5,7 @@
     { "n": 1, "texto": "Ao regente do côro, salmo de Davi. A ti, Senhor, elevei a minha alma:", "nota": "fn24_1" },
     { "n": 2, "texto": "Deus meu, em ti confio, não seja eu envergonhado." },
     { "n": 3, "texto": "Nem me insultem meus amigos: Porque todos os que em ti esperam, não serão confundidos." },
-    { "n": 4, "texto": "Sejam confundidos todos os que em vão cometem iniquidades. Mostra-me, Senhor, os teus caminhos: E ensina-me as tuas veredas." },
+    { "n": 4, "texto": "Sejam confundidos todos os que em vão cometem iniqüidades. Mostra-me, Senhor, os teus caminhos: E ensina-me as tuas veredas." },
     { "n": 5, "texto": "Dirige-me na tua verdade, e ensina-me: Porque tu és o Deus meu salvador, e te tenho esperado todo o dia." },
     { "n": 6, "texto": "Lembra-te, Senhor, das tuas comiserações, e das tuas misericórdias, que tem sido desde o século.", "nota": "fn24_6" },
     { "n": 7, "texto": "Não te recordes dos delitos da minha mocidade, nem das minhas ignorâncias. Mas lembra-te de mim segundo a tua misericórdia: Por amor da tua bondade, Senhor.", "nota": "fn24_7" },
@@ -28,23 +28,23 @@
   "notas": {
     "fn24_1": {
       "rotulo": "Ao regente do côro",
-      "texto": "Nem o hebreu, nem os Setenta trazem esta parte da inscrição. E o hebreu nem diz: \"Salmo de Davi\", mas sòmente, \"De Davi\". Muitos intérpretes querem que fôsse êste Salmo composto por Davi, durante a guerra que lhe fêz seu filho Absalão em castigo dos dois grandes pecados que havia cometido, a saber, adultério, e homicídio. É um dos Salmos que se chamam \"Acrósticos\", porque no hebreu cada versículo tem por inicial uma letra do alfabeto pela sua ordem."
+      "texto": "Nem o hebreu, nem os Setenta trazem esta parte da inscrição. E o hebreu nem diz: \"Salmo de Davi\", mas sòmente, \"De Davi\". Muitos intérpretes querem que fôsse êste Salmo composto por Davi, durante a guerra que lhe fêz seu filho Absalão em castigo dos dois grandes pecados que havia cometido, a saber, adultério, e homicídio. É um dos Salmos que se chamam \"Acrósticos\", porque no hebreu cada versículo tem por inicial uma letra do alfabeto pela sua ordem, principiando da primeira, que é aleph, e continuando o versículo que segue pela segunda heth, e assim por diante. Bem que neste Salmo se acha omitida a sexta letra vau, e na sua falta se repete no último verso a décima sétima; e com isto se enche o número das vinte e duas letras de que consta o alfabeto hebreu. Sôbre isto se discorre com variedade, crendo todos que não carece de grande mistério, não podendo entender-se o verdadeiro, mas só, sim, que semelhantes Salmos (que são mais seis) merecem singular consideração. Contém êste uma oração excelente de uma alma aflita e que suspira pelo seu Deus, vendo-se oprimida, e cercada por todos os lados de inimigos. Convém a todo o homem perseguido, que se acha em perigo. — P. Scio."
     },
     "fn24_6": {
       "rotulo": "E das tuas misericórdias",
-      "texto": "Isto é, lembra-te das misericórdias que usaste com nossos pais em todo o tempo desde o princípio do mundo. — P. Seio."
+      "texto": "Isto é, lembra-te das misericórdias que usaste com nossos pais em todo o tempo desde o princípio do mundo. — P. Scio."
     },
     "fn24_7": {
       "rotulo": "Nem das minhas ignorâncias",
-      "texto": "O que se peca por ignorância, em que não obstante há alguma culpa, porém que se perdoa mais fàcilmente. \"Alcancei\", diz S. Paulo 1 Tim 1, 13, misericórdia, porque fiz com ignorância. — P. Seio."
+      "texto": "O que se peca por ignorância, em que não obstante há alguma culpa, porém que se perdoa mais fàcilmente. \"Alcancei\", diz S. Paulo 1 Tim 1, 13, misericórdia, porque fiz com ignorância. — P. Scio."
     },
     "fn24_8": {
       "rotulo": "Por isso dará êle a lei aos que pecam",
-      "texto": "Isto é: Ensinará aos que erram no caminho da vida presente a lei que devem praticar para voltar à justiça; e esta é a lei da penitência, e não há outra, e o mesmo Senhor lhes dará para isso os seus auxílios. — P. Seio."
+      "texto": "Isto é: Ensinará aos que erram no caminho da vida presente a lei que devem praticar para voltar à justiça; e esta é a lei da penitência, e não há outra, e o mesmo Senhor lhes dará para isso os seus auxílios. — P. Scio."
     },
     "fn24_14": {
       "rotulo": "O Senhor é o firme apoio dos que o temem",
-      "texto": "O hebreu tem: \"O segrêdo do Senhor aos que o temem\", isto é: o Senhor tratará como a íntimos amigos aos que deveras o temem, e lhes revelará os seus conselhos e segredos, pelo que pertence a sua salvação, e a todos os meios que tem estabelecidos para que o consigam. Jo 15, 15. At 6, 20; 20, 27. — P. Seio."
+      "texto": "O hebreu tem: \"O segrêdo do Senhor aos que o temem\", isto é: o Senhor tratará como a íntimos amigos aos que deveras o temem, e lhes revelará os seus conselhos e segredos, pelo que pertence a sua salvação, e a todos os meios que tem estabelecidos para que o consigam. Jo 15, 15. At 5, 20; 20, 27. — P. Scio."
     },
     "fn24_15": {
       "rotulo": "Tirará do laço os meus pés",

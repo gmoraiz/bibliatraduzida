@@ -1,7 +1,8 @@
 {
   "num": 143,
-  "sumario": "Salmo gratulatório. Davi dá graças ao Senhor pelas vitórias passadas, as quais lhe dão alento para conseguir outras maiores. Salmo de Davi.",
+  "sumario": "Salmo gratulatório. Davi dá graças ao Senhor pelas vitórias passadas, as quais lhe dão alento para conseguir outras maiores.",
   "versiculos": [
+    { "n": 0, "tipo": "epigrafe", "texto": "Salmo de Davi." },
     { "n": 1, "texto": "Contra Golias.<br>Bendito seja o Senhor Deus meu, que adestra as minhas mãos para a batalha, e os meus dedos para a guerra.", "nota": "fn143_1" },
     { "n": 2, "texto": "Êle para mim é misericórdia, e o meu refúgio: Amparador meu, libertador meu:<br>Protetor meu, e nêle esperei: Êle o que submete o meu povo à minha autoridade." },
     { "n": 3, "texto": "Senhor, que é o homem, pois tu a êle te manifestaste? ou o filho do homem para tu assim o estimares?", "nota": "fn143_3" },
@@ -21,11 +22,11 @@
   "notas": {
     "fn143_1": {
       "rotulo": "Salmo de Davi",
-      "texto": "SALMO DE DAVI — Todos os salmos que se seguem são de ação de graças. Ainda que a palavra contra Golias não está no hebreu, acha-se contudo no grego de que usamos, e estéve nas Hexaplas. Parece que o compôs Davi depois de haver conseguido alguma vitória contra os filisteus. O principal intento se refere ao reino do Messias e às vitórias de Jesus Cristo contra o príncipe das trevas, como o explicam os Padres. Tem cinco estrofes."
+      "texto": "SALMO DE DAVI — Todos os salmos que se seguem são de ação de graças. Ainda que a palavra contra Golias não está no hebreu, acha-se contudo no grego de que usamos, e estêve nas Hexaplas. Parece que o compôs Davi depois de haver conseguido alguma vitória contra os filisteus. O principal intento se refere ao reino do Messias e às vitórias de Jesus Cristo contra o príncipe das trevas, como o explicam os Padres. Tem cinco estrofes."
     },
     "fn143_3": {
       "rotulo": "Senhor, que é o homem",
-      "texto": "SENHOR, QUE É O HOMEM — Conservando-o e tratando com êle, e revelando-lhe os teus mistérios por meio dos teus Anjos e Profetas! Mas principalmente se manifestou Deus ao homem, innotuit homini; encarnando e fazendo-se homem como êle; e aqui é onde Deus fêz conhecer mais a consideração que tinha do homem e a estima e amor com que o atendia, porquanto aquela é uma obra da sua extremada caridade. Ef 2, 4. — P. Seio."
+      "texto": "SENHOR, QUE É O HOMEM — Conservando-o e tratando com êle, e revelando-lhe os teus mistérios por meio dos teus Anjos e Profetas! Mas principalmente se manifestou Deus ao homem, innotuit homini; encarnando e fazendo-se homem como êle; e aqui é onde Deus fêz conhecer mais a consideração que tinha do homem e a estima e amor com que o atendia, porquanto aquela é uma obra da sua extremada caridade. Ef 2, 4. — P. Scio."
     },
     "fn143_7": {
       "rotulo": "Das muitas águas",
@@ -37,11 +38,11 @@
     },
     "fn143_10": {
       "rotulo": "Da espada",
-      "texto": "DA ESPADA — Da espada do ímpio e idólatra, isto é, de Golias e dos filisteus. — P. Seio."
+      "texto": "DA ESPADA — Da espada do ímpio e idólatra, isto é, de Golias e dos filisteus. — P. Scio."
     },
     "fn143_12": {
       "rotulo": "Cujos filhos",
-      "texto": "CUJOS FILHOS — No hebreu se lê tudo o que se segue na primeira pessoa do plural; \"nossos filhos, nossas filhas, nossas ovelhas, nossas vacas... nossas ruas e praças...\" E por isso alguns entendem que isto pertence ao povo dos justos, ou dos hebreus; porém pela Vulgata e pelos Setenta se vê claramente que se deve aplicar aos dos idólatras, ou ímpios: Jó 21, 24. E ainda o texto hebreu se pode reduzir ao mesmo sentido, pondo estas palavras na bôca dos mesmos que se vangloriavam e jactavam de possuir êstes bens. Eripe me de manu filiorum alienorum, quorum os locutum est vanitatem: filii nostri, cellaria nostra. — P. Seio."
+      "texto": "CUJOS FILHOS — No hebreu se lê tudo o que se segue na primeira pessoa do plural; \"nossos filhos, nossas filhas, nossas ovelhas, nossas vacas... nossas ruas e praças...\" E por isso alguns entendem que isto pertence ao povo dos justos, ou dos hebreus; porém pela Vulgata e pelos Setenta se vê claramente que se deve aplicar aos dos idólatras, ou ímpios: Jó 21, 24. E ainda o texto hebreu se pode reduzir ao mesmo sentido, pondo estas palavras na bôca dos mesmos que se vangloriavam e jactavam de possuir êstes bens. Eripe me de manu filiorum alienorum, quorum os locutum est vanitatem: filii nostri, cellaria nostra. — P. Scio."
     }
   }
 }

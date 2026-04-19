@@ -1,8 +1,9 @@
 {
   "num": 117,
-  "sumario": "Salmo gratulatório. Êste salmo parece ser um diálogo, em que se considera a Davi da porta do Templo, convidando a todos a entrar nêle para dar a Deus solenes graças pelos seus benefícios. E para obter a sua bênção para o futuro. Aleluia.",
+  "sumario": "Salmo gratulatório. Êste salmo parece ser um diálogo, em que se considera a Davi da porta do Templo, convidando a todos a entrar nêle para dar a Deus solenes graças pelos seus benefícios, e para obter a sua bênção para o futuro.",
   "versiculos": [
-    { "n": 1, "texto": "Louvai ao Senhor, porque êle é bom:<br>Porque a sua misericórdia se estende a todos os séculos.", "nota": "fn117_1" },
+    { "n": 0, "tipo": "epigrafe", "texto": "Aleluia.", "nota": "fn117_0" },
+    { "n": 1, "texto": "Louvai ao Senhor, porque êle é bom:<br>Porque a sua misericórdia se estende a todos os séculos." },
     { "n": 2, "texto": "Diga agora Israel que o Senhor é bom:<br>Porque a sua misericórdia se estende a todos os séculos." },
     { "n": 3, "texto": "Diga agora a casa de Aarão:<br>Que a sua misericórdia se estende a todos os séculos." },
     { "n": 4, "texto": "Digam agora os que temem ao Senhor:<br>Que a sua misericórdia se estende a todos os séculos.", "nota": "fn117_4" },
@@ -33,7 +34,7 @@
     { "n": 29, "texto": "Louvai ao Senhor porque é bom:<br>Porque a sua misericórdia é para sempre." }
   ],
   "notas": {
-    "fn117_1": {
+    "fn117_0": {
       "rotulo": "Aleluia",
       "texto": "Alguns expositores assentam que Davi compôs êste salmo para que se cantasse na festa dos Tabernáculos, e que contém um como diálogo entre Davi, o povo e os sacerdotes. Outros são de parecer que se cantou no ato de trasladar a Arca para o monte de Sião, e depois de haver conseguido Davi a reunião de tôdas as tribos debaixo do seu domínio e reino. Todos os Santos Padres aplicam êste salmo a Jesus Cristo e à Igreja, o que está fundado no testemunho dos apóstolos, At 6, 11 e 1 Pdr 4, 7, e ainda do mesmo Jesus Cristo. Mt 21, 42. — P. Seio."
     },
@@ -59,7 +60,7 @@
     },
     "fn117_14": {
       "rotulo": "E se tornou para mim",
-      "texto": "E SE TORNOU PARA MIM — Êle foi só o que me salvou, e vingou de todos os meus inimigos, e a êle só lhe devo a honra e a glória de tôdas as minhas vitórias. Êste versículo é tomado do Cântico de Moisés. Êx 16, 2. — Pereira."
+      "texto": "E SE TORNOU PARA MIM — Êle foi só o que me salvou, e vingou de todos os meus inimigos, e a êle só lhe devo a honra e a glória de tôdas as minhas vitórias. Êste versículo é tomado do Cântico de Moisés. Êx 15, 2. — Pereira."
     },
     "fn117_22": {
       "rotulo": "A pedra, que desprezaram os edificadores",

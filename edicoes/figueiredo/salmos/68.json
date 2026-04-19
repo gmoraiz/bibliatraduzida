@@ -8,7 +8,7 @@
     { "n": 4, "texto": "Cansei-me clamando, enrouqueceram-se as minhas fauces: Desfaleceram os meus olhos, enquanto espero no meu Deus." },
     { "n": 5, "texto": "Têm-se multiplicado mais que os cabelos da minha cabeça, os que me aborrecem sem razão.<br>Têm-se fortalecido os meus inimigos que me perseguiram injustamente: Paguei então o que não tinha roubado.", "nota": "fn68_5" },
     { "n": 6, "texto": "Ó Deus, tu conheces as minhas faltas: E os meus delitos não te são ocultos." },
-    { "n": 7, "texto": "Não sejam envergonhados por minha causa os que te esperam, Senhor: Senhor das virtudes.<br>Não sejam confundidos a meu respeito aqueles que te buscam, ó Deus de Israel.", "nota": "fn68_7" },
+    { "n": 7, "texto": "Não sejam envergonhados por minha causa os que te esperam, Senhor: Senhor das virtudes.<br>Não sejam confundidos a meu respeito aquêles que te buscam, ó Deus de Israel.", "nota": "fn68_7" },
     { "n": 8, "texto": "Pois por tua causa tenho sofrido afronta: Foi coberto de confusão o meu rosto." },
     { "n": 9, "texto": "Tenho-me tornado estranho a meus irmãos, e desconhecido aos filhos de minha mãe.", "nota": "fn68_9" },
     { "n": 10, "texto": "Porque o zelo da tua casa me devorou: E os opróbrios dos que te improperavam a ti, recaíram sôbre mim.", "nota": "fn68_10" },
@@ -43,11 +43,11 @@
   "notas": {
     "fn68_1": {
       "rotulo": "Schoschannim",
-      "texto": "SCHOSCHANNIM — Veja-se Sl 44, 1. Êste salmo deve ter sido composto durante a perseguição de Saul, mas referem-no os exegetas a Jesus Cristo, pois que é impossível na vida de Davi encontrar fatos aos quais se possam aplicar as palavras exaradas neste salmo. São frequentes as alusões aos sofrimentos de Jesus Cristo, e por isso, como o salmo 21, é muito citado no Novo Testamento. Êste salmo tem três partes. Primeira parte. 1.° O Messias sofre (2-4). 2.° por Deus (6-7, 8-10, 11-13) — 3.° logo Deus deve-o salvar (14, 15-16, 17-19). Segunda parte. Visto que sofre pela maldade dos seus inimigos (20-22) Deus deve-os castigar (23-26; 27-29). Terceira parte. Mas Deus o salvará (30-32). A sua recompensa será ver convertidos os gentios, que louvarão a Deus com êle."
+      "texto": "SCHOSCHANNIM — Veja-se Sl 44, 1. Êste salmo deve ter sido composto durante a perseguição de Saul, mas referem-no os exegetas a Jesus Cristo, pois que é impossível na vida de Davi encontrar fatos aos quais se possam aplicar as palavras exaradas neste salmo. São freqüentes as alusões aos sofrimentos de Jesus Cristo, e por isso, como o salmo 21, é muito citado no Novo Testamento. Êste salmo tem três partes. Primeira parte. 1.° O Messias sofre (2-4). 2.° por Deus (6-7, 8-10, 11-13) — 3.° logo Deus deve-o salvar (14, 15-16, 17-19). Segunda parte. Visto que sofre pela maldade dos seus inimigos (20-22) Deus deve-os castigar (23-26; 27-29). Terceira parte. Mas Deus o salvará (30-32). A sua recompensa será ver convertidos os gentios, que louvarão a Deus com êle."
     },
     "fn68_2": {
       "rotulo": "Salva-me, ó Deus",
-      "texto": "SALVA-ME, Ó DEUS — Tôda esta alegoria consta de expressões muito enérgicas, e acomodadas a manifestar-nos o extremo a que os pecados de todos os homens, e a crueldade dos judeus haviam de reduzir ao que havia de vir resgatar e salvar o Universo inteiro. — P. Seio. AS ÁGUAS — As grandes calamidades."
+      "texto": "SALVA-ME, Ó DEUS — Tôda esta alegoria consta de expressões muito enérgicas, e acomodadas a manifestar-nos o extremo a que os pecados de todos os homens, e a crueldade dos judeus haviam de reduzir ao que havia de vir resgatar e salvar o Universo inteiro. — P. Scio. AS ÁGUAS — As grandes calamidades."
     },
     "fn68_3": {
       "rotulo": "Nem há consistência",
@@ -59,7 +59,7 @@
     },
     "fn68_7": {
       "rotulo": "Senhor das virtudes",
-      "texto": "SENHOR DAS VIRTUDES — O hebreu diz: \"Dos exércitos.\" — P. Seio."
+      "texto": "SENHOR DAS VIRTUDES — O hebreu diz: \"Dos exércitos.\" — P. Scio."
     },
     "fn68_9": {
       "rotulo": "Aos filhos de minha mãe",
@@ -71,7 +71,7 @@
     },
     "fn68_11": {
       "rotulo": "E cobri",
-      "texto": "E COBRI — Há aqui provàvelmente uma elipse: o sentido da frase deve ser êste: Cobri minha alma com um cilício durante o meu jejum; isto é, vesti-me de cilício para jejuar. É sabido que no hebreu muitas vêzes toma-se a palavra alma para significar pessoa ou indivíduo. A elipse torna-se evidente desde que se comparem estas palavras com as do Sl 34, 13: \"E eu, enquanto me eram molestos me vestia de cilício\". A Vulgata traduziu opertii, a que o padre Pereira deu a significação de \"humilhei\", porém nós seguimos a edição dos Setenta de Compluto, e a maior parte dos exemplares gregos e latinos, que trazem expressamente — eu cobri."
+      "texto": "E COBRI — Há aqui provàvelmente uma elipse: o sentido da frase deve ser êste: Cobri minha alma com um cilício durante o meu jejum; isto é, vesti-me de cilício para jejuar. É sabido que no hebreu muitas vêzes toma-se a palavra alma para significar pessoa ou indivíduo. A elipse torna-se evidente desde que se comparem estas palavras com as do Sl 34, 13: \"E eu, enquanto me eram molestos me vestia de cilício\". A Vulgata traduziu operui, a que o padre Pereira deu a significação de \"humilhei\", porém nós seguimos a edição dos Setenta de Compluto, e a maior parte dos exemplares gregos e latinos, que trazem expressamente — eu cobri."
     },
     "fn68_13": {
       "rotulo": "Se sentavam à porta",
@@ -83,15 +83,15 @@
     },
     "fn68_16": {
       "rotulo": "Nem cerre apertadamente",
-      "texto": "NEM CERRE APERTADAMENTE — O hebreu tem: \"E que o poço não cerre sôbre mim a sua bôca.\" Por poço se entende a morte, ou o estado de morte, do qual pede a seu pai que o livre por uma gloriosa Ressurreição. — P. Seio."
+      "texto": "NEM CERRE APERTADAMENTE — O hebreu tem: \"E que o poço não cerre sôbre mim a sua bôca.\" Por poço se entende a morte, ou o estado de morte, do qual pede a seu pai que o livre por uma gloriosa Ressurreição. — P. Scio."
     },
     "fn68_22": {
       "rotulo": "E na minha sêde",
-      "texto": "E NA MINHA SÊDE — Claramente se cumpriu isto em Cristo. Veja-se Mt 28, 48 e Mc 15, 23. Chama a esta bebida vinho mirrado, misturado com fel. Todos êstes textos parecem mais narrações de história, segundo se refere nos Evangelhos, que profecias do que estava por vir, e ainda tão remoto. — Bossuet."
+      "texto": "E NA MINHA SÊDE — Claramente se cumpriu isto em Cristo. Veja-se Mt 27, 48 e Mc 15, 23. Chama a esta bebida vinho mirrado, misturado com fel. Todos êstes textos parecem mais narrações de história, segundo se refere nos Evangelhos, que profecias do que estava por vir, e ainda tão remoto. — Bossuet."
     },
     "fn68_28": {
       "rotulo": "E não cheguem",
-      "texto": "E NÃO CHEGUEM — Não terão parte naquela justiça que manifestará no Evangelho para justificados pecadores. Rom 3, 25-26; 10, 2. A voz original se usa em sentido de justiça, e de misericórdia. — P. Seio."
+      "texto": "E NÃO CHEGUEM — Não terão parte naquela justiça que manifestará no Evangelho para justificados pecadores. Rom 3, 25-26; 10, 2. A voz original se usa em sentido de justiça, e de misericórdia. — P. Scio."
     },
     "fn68_32": {
       "rotulo": "Que o tenro novilho",
