@@ -111,6 +111,30 @@ Total: **1.578 arquivos** distribuídos em livros abaixo.
 
 ---
 
+## Revisão detalhada dos evangelistas — edicoes/figueiredo (19/04/2026)
+
+> ⚠️ Os PDFs fonte `.pdfs/figueiredo/{mateus,marcos,lucas,joao}.pdf` **não existem**. Os capítulos abaixo **não podem ser reprocessados** até que os PDFs fonte sejam adicionados.
+
+| Evangelho | Resultado | Problemas encontrados |
+|-----------|-----------|----------------------|
+| **marcos** | ✅ Perfeito | Nenhum |
+| **lucas** | ⚠️ `introducao.pdf` ausente | 5 páginas de introdução (Autor, Data, Fim, Estilo, Divisão, Autenticidade) presentes no PDF fonte mas sem PDF gerado. Os 24 capítulos estão corretos. |
+| **mateus** | ⚠️ Overlap cosmético | Cap 2 contém 1 página extra no final (abertura do cap 3 — página limpa com heading "CAPÍTULO 3" + Mt 3:1–5). Sem truncamento de conteúdo. |
+| **joao** | ❌ Bugs reais | 4 capítulos com início truncado (caps 7, 11, 12, 14) — ver tabela abaixo |
+
+### João — capítulos com início truncado
+
+| Cap | Versículos perdidos | Impacto |
+|-----|-------------------|---------|
+| 7 | João 7:1-3 | Heading + 3 versículos ausentes |
+| 11 | João 11:1-6 | Apresentação de Lázaro ausente |
+| 12 | João 12:1-5 | Unção em Betânia ausente |
+| 14 | João 14:1-2 | "Na casa de meu Pai há muitas mansões" ausente |
+
+Causa-raiz: em todas as 4 transições, a página compartilhada (que contém o fim do cap anterior + heading + início do cap seguinte) não foi incluída no capítulo seguinte — `inicio_(N+1)` foi definido como `p+1` em vez de `p`.
+
+---
+
 ## Notas para o agente
 
 - Para cada livro, apagar os PDFs existentes na pasta antes de rodar o `extrair-capitulos.js` novamente.
