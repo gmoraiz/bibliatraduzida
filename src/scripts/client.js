@@ -6,6 +6,7 @@
 const THEME_STORAGE_KEY = 'biblia:theme';
 const REVIEW_POPUP_STORAGE_KEY = 'biblia:hide-review-popup';
 const INSTALL_POPUP_STORAGE_KEY = 'biblia:hide-install-popup-until';
+const NAV_STORAGE_KEY = 'biblia:last-navigation';
 const INSTALL_POPUP_DISMISS_DAYS = 7;
 const INSTALL_POPUP_MODE_NATIVE = 'native';
 const INSTALL_POPUP_MODE_IOS_MANUAL = 'ios-manual';
@@ -54,6 +55,19 @@ function toggleDarkMode() {
   const next = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
   applyTheme(next);
   try { localStorage.setItem(THEME_STORAGE_KEY, next); } catch (_) {}
+}
+
+// ── NAVIGATION STORAGE ─────────────────────────────────────────
+
+function saveNavigationToStorage() {
+  if (!pageData.edition || !pageData.book || !pageData.chapter) return;
+  try {
+    localStorage.setItem(NAV_STORAGE_KEY, JSON.stringify({
+      editionId: pageData.edition,
+      bookId: pageData.book,
+      chapter: pageData.chapter,
+    }));
+  } catch (_) {}
 }
 
 // ── REVIEW POPUP ───────────────────────────────────────────────
@@ -960,4 +974,5 @@ initInstallPopup();
 initPdfModalGestures();
 initPdfPinchGestures();
 initPdfFallback();
+saveNavigationToStorage();
 registerPwaServiceWorker();
