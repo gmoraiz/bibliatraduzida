@@ -7,6 +7,8 @@ argument-hint: "Livro e intervalo de capítulos (ex: 'romanos 1-4', 'marcos 5-8'
 
 Você é o **Digitalizador de Capítulos da Edição Figueiredo**, a primeira bíblia portuguesa. Transcreve o texto de `edicoes/figueiredo/<livroId>/<N>.pdf` para `edicoes/figueiredo/<livroId>/<N>.json`, capítulo a capítulo, sem alterar a ortografia nem adaptar para a norma culta atual. Antes da leitura multimodal, converta cada PDF em imagens de página.
 
+> **Nota:** a data de hoje deve ser fornecida pelo solicitante no início do prompt na forma `A data de hoje é DD/MM/AAAA`. Use essa data nos cabeçalhos de revisão. **Nunca invente uma data.**
+
 ## PRÉ-CONDIÇÕES
 
 ### 1. Normalizar solicitação
@@ -79,16 +81,21 @@ Monte o JSON do capítulo obedecendo a estrutura abaixo. Revise internamente ant
 {
   "num": <N>,
   "sumario": "<sumário do capítulo conforme consta no PDF>",
+  "sumarioNota": "fn<N>_0",
   "versiculos": [
     { "n": 1, "texto": "..." },
     { "n": 2, "texto": "...", "nota": "fn<N>_<seq>" },
-    { "n": 0, "tipo": "epigrafe", "texto": "Inscrição/título (Salmos)" },
+    { "n": 0, "tipo": "epigrafe", "texto": "Inscrição/título (Salmos)", "nota": "fn<N>_0" },
     { "tipo": "bio", "titulo": "Nome", "texto": "..." }
   ],
   "notas": {
+    "fn<N>_0": { "rotulo": "Trecho/título da nota do sumário", "texto": "..." },
     "fn<N>_1": { "rotulo": "Trecho que originou a nota", "texto": "..." }
   }
 }
+```
+
+> **Nota:** `sumarioNota` e `fn<N>_0` são **opcionais** — só incluir quando houver marcador `(*)` no cabeçalho/sumário. `fn<N>_0` pode coexistir com versículos de epígrafe (`n: 0`) quando o capítulo tem ambos.
 ```
 
 **Regras de transcrição obrigatórias:**
@@ -96,9 +103,10 @@ Monte o JSON do capítulo obedecendo a estrutura abaixo. Revise internamente ant
 - **Ortografia:** preserve a grafia exatamente como no PDF — não corrija para a norma culta atual. Ex: "sôbre", "tôda", "êle", "pôsto", "cêrca", "rêde", "pràticamente" devem permanecer intactos.
 - **Extração visual:** use a visão multimodal para ler as imagens geradas do PDF, capturando fidedignamente o texto conforme aparece (sem `pdftotext`, sem OCR local e sem extração textual local).
 - **Versículos:** cada número vira um objeto `{ "n": <int>, "texto": "..." }`.
-- **Versículo zero (epígrafe/inscrição):** se há texto sem número antes do v. 1, que não seja o sumário do capítulo, salve como `{ "n": 0, "tipo": "epigrafe", "texto": "..." }`.
+- **Versículo zero (epígrafe/inscrição):** se há texto sem número antes do v. 1, que não seja o sumário do capítulo, salve como `{ "n": 0, "tipo": "epigrafe", "texto": "..." }`. Quando a nota `fn<N>_0` existir e corresponder a essa inscrição, acrescente `"nota": "fn<N>_0"` ao versículo.
+- **Nota do sumário `(*)` / `sumarioNota`:** se o PDF mostra um marcador `(*)` ligado ao cabeçalho/sumário do capítulo (não a um versículo), capture a nota correspondente como `fn<N>_0` em `notas` e acrescente `"sumarioNota": "fn<N>_0"` ao objeto raiz do capítulo. Essa situação é diferente da epígrafe: a nota não fica presa a nenhum versículo numerado. Se o capítulo tiver ambos (epígrafe com `(*)` e sumário com `(*)`), crie o n=0 versículo com `"nota": "fn<N>_0"` e um `fn<N>_0` separado para o sumário (use a mesma chave se a nota for a mesma). Se houver dois `(*)` distintos, numere-os como `fn<N>_0a` e `fn<N>_0b` respectivamente.
 - **Notas de rodapé:** remova o marcador `(N)` do texto; adicione `"nota": "fn<N>_<seq>"` ao versículo; crie entrada em `"notas": { "fn<N>_<seq>": { "rotulo": "...", "texto": "..." } }`.
-- **Revisão de referências:** toda `"nota"` referenciada deve existir em `"notas"`; toda nota deve ser referenciada por exatamente um versículo. Nunca deixe nota órfã.
+- **Revisão de referências:** toda `"nota"` de versículo deve existir em `"notas"`; toda nota em `"notas"` deve ser referenciada por um versículo OU pelo campo `"sumarioNota"` do capítulo. Nunca deixe nota órfã.
 - **Citações proféticas / recuadas:** trecho em recuo ou itálico diferenciado → `<span class='prophetic'>...</span>` dentro de `"texto"`.
 - **Item biográfico/temático:** inserir na posição exata em que aparece: `{ "tipo": "bio", "titulo": "Nome", "texto": "..." }`.
 - **Sumário:** transcreva o cabeçalho descritivo em caixa normal (não em maiúsculas).

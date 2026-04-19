@@ -1,8 +1,8 @@
 {
   "num": 32,
-  "titulo": "Salmo de Davi.",
   "sumario": "Exorta Davi aos fiéis a que louvem o Senhor, por causa das obras do seu poder, e da fidelidade das suas promessas, e da particular Providência com que governa e atende pela sua Igreja: tendo sempre presente a ruína, e extermínio dos ímpios.",
   "versiculos": [
+    { "n": 0, "tipo": "epigrafe", "texto": "Salmo de Davi.", "nota": "fn32_0" },
     { "n": 1, "texto": "Exultai, ó justos, no Senhor: Aos retos convém que o louvem.", "nota": "fn32_1" },
     { "n": 2, "texto": "Louvai ao Senhor com a cítara: Cantai-lhe hinos a êle com o saltério de dez cordas." },
     { "n": 3, "texto": "Cantai-lhe a êle um novo cântico: Celebrai-o com concêrto de instrumentos e de vozes." },

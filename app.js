@@ -1715,6 +1715,15 @@ function renderChapter(ch, bookDir, targetId) {
 
   const chapterSummary = typeof ch.sumario === 'string' ? ch.sumario : '';
 
+  let sumarioNotaHtml = '';
+  if (ch.sumarioNota && ch.notas && ch.notas[ch.sumarioNota]) {
+    const snNota = ch.notas[ch.sumarioNota];
+    const snPopupId = `popup_${targetId}_sumarioNota`;
+    sumarioNotaHtml = `<sup class="fnref" onclick="togglePopup(event,'${snPopupId}')">(*)` +
+      `<span class="fn-popup" id="${snPopupId}"><button class="fn-close" onclick="closePopup(event)">✕</button>` +
+      `<span class="fn-label">${snNota.rotulo}</span> — <span>${snNota.texto}</span></span></sup>`;
+  }
+
   const notaKeys = ch.notas
     ? ch.versiculos
         .map(v => v.nota)
@@ -1750,7 +1759,7 @@ function renderChapter(ch, bookDir, targetId) {
   document.getElementById(targetId).innerHTML = `
     <div class="chapter-header">
       <h1>Capítulo ${ch.num}</h1>
-      <div class="summary">${chapterSummary}</div>
+      <div class="summary">${chapterSummary}${sumarioNotaHtml}</div>
       <div class="chapter-header-actions">${pdfOldBtn}${pdfBtn}${linkBtn}${compareBtn}</div>
     </div>
     <hr class="section-rule">
@@ -2181,6 +2190,14 @@ function renderCompareGrid(ch1, bookDir1, compareEntries) {
       return div;
     }
     const chapterSummary = typeof ch.sumario === 'string' ? ch.sumario : '';
+    let cgSumarioNotaHtml = '';
+    if (ch.sumarioNota && ch.notas && ch.notas[ch.sumarioNota]) {
+      const snNota = ch.notas[ch.sumarioNota];
+      const snPopupId = `popup_cg_${ed ? ed.id : 'main'}_${ch.num}_sumarioNota`;
+      cgSumarioNotaHtml = `<sup class="fnref" onclick="togglePopup(event,'${snPopupId}')">(*)` +
+        `<span class="fn-popup" id="${snPopupId}"><button class="fn-close" onclick="closePopup(event)">✕</button>` +
+        `<span class="fn-label">${snNota.rotulo}</span> — <span>${snNota.texto}</span></span></sup>`;
+    }
     const originalLink = getOriginalLinkForChapter(ch);
     const { hasPdf, pdfUrl, pdfOldUrl } = getChapterAssets(bookDir, ch.num);
     let buttonsHtml = '';
@@ -2197,7 +2214,7 @@ function renderCompareGrid(ch1, bookDir1, compareEntries) {
     const actionsHtml = buttonsHtml ? `<div class="chapter-header-actions">${buttonsHtml}</div>` : '';
     div.innerHTML = `<div class="cg-edition-label">${ed ? ed.edicao : ''}</div>`
       + `<div class="cg-chapter-title">Capítulo ${ch.num}</div>`
-      + `<div class="cg-summary-text">${chapterSummary}</div>`
+      + `<div class="cg-summary-text">${chapterSummary}${cgSumarioNotaHtml}</div>`
       + actionsHtml;
     return div;
   };

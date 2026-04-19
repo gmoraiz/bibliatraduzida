@@ -1,8 +1,8 @@
 {
   "num": 31,
-  "titulo": "De Davi, Maskil.",
   "sumario": "Salmo deprecatório e didático. Afetos de Davi penitente: podendo chamar-se também êste salmo, como o coração de Davi. Os Santos Padres com o Apóstolo nos fazem reconhecer nêle a graça da justificação como um efeito só da divina Providência.",
   "versiculos": [
+    { "n": 0, "tipo": "epigrafe", "texto": "De Davi, <em>Maskil.</em>", "nota": "fn31_0" },
     { "n": 1, "texto": "Bem-aventurados aqueles cujas iniquidades são perdoadas: E cujos pecados são cobertos.", "nota": "fn31_1" },
     { "n": 2, "texto": "Bem-aventurado o homem, a quem o Senhor não imputou pecado, e cujo espírito é isento de dolo.", "nota": "fn31_2" },
     { "n": 3, "texto": "Porque calei, e envelheceram os meus ossos enquanto clamava todo o dia.", "nota": "fn31_3" },

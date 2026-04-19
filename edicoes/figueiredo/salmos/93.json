@@ -1,7 +1,8 @@
 {
   "num": 93,
-  "sumario": "Salmo didático. Anuncia Davi o castigo dos maus, e o prémio dos bons, que são protegidos pelo Senhor. Salmo do mesmo Davi, para o dia quarto da semana.",
+  "sumario": "Salmo didático. Anuncia Davi o castigo dos maus, e o prémio dos bons, que são protegidos pelo Senhor.",
   "versiculos": [
+    { "n": 0, "tipo": "epigrafe", "texto": "Salmo do mesmo Davi, Para o dia quarto da semana.", "nota": "fn93_0" },
     { "n": 1, "texto": "O Deus das vinganças é o Senhor: O Deus das vinganças sempre obrou livremente.", "nota": "fn93_1" },
     { "n": 2, "texto": "Exalta-te tu que julgas a terra: Dá a retribuição aos soberbos." },
     { "n": 3, "texto": "Até quando os pecadores, Senhor: Até quando os pecadores se hão de gloriar:" },
