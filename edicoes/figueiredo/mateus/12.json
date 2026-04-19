@@ -2,56 +2,217 @@
   "num": 12,
   "sumario": "Defende Jesus Cristo seus discípulos, que haviam colhido umas espigas em dia de sábado. Cura o que tinha uma das mãos ressecada. Manda a outros muitos que curou, que o não digam por ora. Convence a calúnia dos fariseus, que atribuíam a Belzebu a liberdade que êle dera a um possesso. Declara ser irremissível o pecado contra o Espírito Santo. Diz que se há de dar conta de toda a palavra ociosa. Não mostra aos judeus outro prodígio, que o do profeta Jonas. Declara por sua mãe, e por seus irmãos, todos os que fazem a vontade de seu Eterno Pai.",
   "versiculos": [
-    { "n": 1,  "texto": "Naquele tempo, num dia de sábado, saiu Jesus caminhando ao longo dos pães: E seus discípulos, que tinham fome, começaram a colhêr espigas, e a comer delas." },
-    { "n": 2,  "texto": "E vendo isto os fariseus, lhe disseram: Eis-aí estão fazendo os teus discípulos o que não é permitido fazer nos sábados." },
-    { "n": 3,  "texto": "Porém êle lhes disse: Não tendes lido o que fêz Davi, quando êle teve fome, e os que com êle estavam:" },
-    { "n": 4,  "texto": "Como entrou na casa de Deus, e comeu os pães da proposição, os quais não era lícito comer, nem a êle, nem aos que com êle estavam, mas ùnicamente aos sacerdotes?", "nota": "fn12_1" },
-    { "n": 5,  "texto": "Ou não tendes lido na lei, que os sacerdotes nos sábados no templo quebrantam o sábado, e ficam sem pecado?" },
-    { "n": 6,  "texto": "Pois digo-vos, que aqui está o que é maior que o templo." },
-    { "n": 7,  "texto": "E se vós soubésseis o que é: Misericórdia quero, e não sacrifício, jamais condenarieis aos inocentes:" },
-    { "n": 8,  "texto": "Porque o Filho do homem é Senhor até do sábado mesmo." },
-    { "n": 9,  "texto": "E depois de partir dali, veio à sinagoga dêles." },
-    { "n": 10, "texto": "E eis-que aparece um homem, que tinha ressecada uma das mãos, e êles, para terem de que o argúir, lhe fizeram esta pergunta, dizendo: É porventura lícito curar nos sábados?" },
-    { "n": 11, "texto": "E êle lhes disse: Que homem haverá por acaso entre nós, que tenha uma ovelha, e que se esta lhe cair no sábado em uma cova, não lhe lance a mão para dali a tirar?" },
-    { "n": 12, "texto": "Ora quanto mais excelente é um homem, do que uma ovelha? Logo é lícito fazer bem nos dias de sábado." },
-    { "n": 13, "texto": "Então disse para o homem: Estende a tua mão. E êle a estendeu, e lhe foi restituída sã como a outra." },
-    { "n": 14, "texto": "Mas os fariseus saindo dali, consultavam contra êle, como o fariam morrer." },
-    { "n": 15, "texto": "E Jesus sabendo-o, se retirou daquele lugar, e foram muitos após êle, e os curou a todos:" },
-    { "n": 16, "texto": "E lhes pôs preceito, que não descobrissem quem êle era." },
-    { "n": 17, "texto": "Para que se cumprisse o que foi anunciado pelo profeta Isaías, que diz:", "nota": "fn12_2" },
-    { "n": 18, "texto": "<span class='prophetic'>Eis-aqui o meu servo, que eu escolhi, o meu amado, em quem a minha alma tem pôsto a sua complacência. Porei o meu espírito sôbre êle, e êle anunciará às gentes a justiça.</span>" },
-    { "n": 19, "texto": "<span class='prophetic'>Não contenderá, nem clamará, nem ouvirá alguém a sua voz nas praças:</span>" },
-    { "n": 20, "texto": "<span class='prophetic'>Não quebrará a cana, que está deprimida, nem apagará a torcida que fumega, até que saia vitoriosa a sua justiça.</span>" },
-    { "n": 21, "texto": "<span class='prophetic'>E as gentes esperarão no seu nome.</span>" },
-    { "n": 22, "texto": "Então lhe trouxeram um endemoninhado cego, e mudo, e êle o curou, de sorte que falava, e via." },
-    { "n": 23, "texto": "E ficaram pasmadas tôdas as gentes, e diziam: Porventura é êste o filho de Davi?" },
-    { "n": 24, "texto": "Mas os fariseus ouvindo isto diziam: Êste não lança fora os demônios, senão em virtude de Belzebu, príncipe dos demônios.", "nota": "fn12_3" },
-    { "n": 25, "texto": "E Jesus sabendo os pensamentos dêles, lhes disse: Todo o reino dividido contra si mesmo, será desolado: E tôda a cidade, ou casa dividida contra si mesma, não subsistirá." },
-    { "n": 26, "texto": "Ora se satanás lança fora a satanás, está êle dividido contra si mesmo: Como persistirá logo o seu reino?" },
-    { "n": 27, "texto": "E se eu lanço fora os demônios em virtude de Belzebu, em virtude de quem os expelem vossos filhos? Por isso é que êles serão os vossos juízes." },
-    { "n": 28, "texto": "Se eu porém lanço fora os demônios pela virtude do espírito de Deus, logo é chegado a vós o Reino de Deus:" },
-    { "n": 29, "texto": "Ou como pode alguém entrar na casa do valente e saquear os seus móveis, se antes não prender o valente? e então lhe saqueará a casa." },
-    { "n": 30, "texto": "O que não é comigo, é contra mim: E o que não ajunta comigo, dispersa.", "nota": "fn12_4" },
-    { "n": 31, "texto": "Portanto vos digo: Todo o pecado e blasfêmia serão perdoados aos homens, porém a blasfêmia contra o Espírito Santo não lhes será perdoada.", "nota": "fn12_5" },
-    { "n": 32, "texto": "E todo o que disser alguma palavra contra o Filho do homem, perdoar-se-lhe-á: Porém o que a disser contra o Espírito Santo, não se lhe perdoará, nem neste mundo, nem no outro.", "nota": "fn12_6" },
-    { "n": 33, "texto": "Ou fazei a árvore boa, e o seu fruto bom: Ou fazei a árvore má e o seu fruto mau: Pois que pelo fruto é que a árvore se conhece." },
-    { "n": 34, "texto": "Raça de víboras, como podeis falar coisas boas sendo maus? porque a bôca fala o de que está cheio o coração." },
-    { "n": 35, "texto": "O homem bom do bom tesouro tira boas coisas: Mas o homem mau do mau tesouro tira más coisas." },
-    { "n": 36, "texto": "E digo-vos, que tôda a palavra ociosa, que falarem os homens, darão conta dela no dia do Juízo.", "nota": "fn12_7" },
-    { "n": 37, "texto": "Porque pelas tuas palavras serás justificado, e pelas tuas palavras serás condenado." },
-    { "n": 38, "texto": "Então lhe tornaram alguns dos escribas, e fariseus, dizendo: Mestre, nós quiséramos ver-te fazer algum prodígio." },
-    { "n": 39, "texto": "Êle lhes respondeu, dizendo: Esta geração má, e adúltera, pede um prodígio: Mas não lhe será dado outro prodígio, senão o prodígio do profeta Jonas." },
-    { "n": 40, "texto": "Porque assim como Jonas estêve no ventre da baleia três dias, e três noites; assim estará o Filho do homem três dias, e três noites no coração da terra." },
-    { "n": 41, "texto": "Os habitantes de Nínive se levantarão no dia do Juízo com esta geração, e a condenarão: Porque fizeram penitência com a pregação de Jonas. E eis-aqui está neste lugar quem é mais do que Jonas." },
-    { "n": 42, "texto": "A rainha do meio-dia se levantará no dia do Juízo com esta geração, e a condenará: Porque veio lá das extremidades da terra a ouvir a sabedoria de Salomão e eis-aqui está neste lugar quem é mais do que Salomão.", "nota": "fn12_8" },
-    { "n": 43, "texto": "E quando o espírito imundo tem saído de um homem, anda por lugares secos, buscando repouso, e não o acha." },
-    { "n": 44, "texto": "E então diz: Voltarei para minha casa, donde saí. E quando vem, a acha desocupada, varrida e ornada." },
-    { "n": 45, "texto": "Então vai e ajunta a si outros sete espíritos piores do que êle, e entrando habitam ali: E o último estado daquele homem fica sendo pior que o primeiro. Assim também acontecerá a esta geração péssima." },
-    { "n": 46, "texto": "Estando êle ainda falando ao povo, eis-que se achava da parte de fora sua mãe, e seus irmãos, que procuravam falar-lhe.", "nota": "fn12_9" },
-    { "n": 47, "texto": "E um lhe disse: Olha que tua mãe, e teus irmãos estão ali fora, e te buscam." },
-    { "n": 48, "texto": "E êle respondendo ao que lhe falava, lhe disse: Quem é minha mãe, e quem são os meus irmãos?", "nota": "fn12_10" },
-    { "n": 49, "texto": "E estendendo a mão para seus discípulos, disse: Eis-ali minha mãe, e meus irmãos:", "nota": "fn12_11" },
-    { "n": 50, "texto": "Porque todo aquêle que fizer a vontade de meu Pai, que está nos Céus: Êsse é meu irmão, e irmã e mãe." }
+    {
+      "n": 1,
+      "texto": "Naquele tempo, num dia de sábado, saiu Jesus caminhando ao longo dos pães: E seus discípulos, que tinham fome, começaram a colhêr espigas, e a comer delas."
+    },
+    {
+      "n": 2,
+      "texto": "E vendo isto os fariseus, lhe disseram: Eis-aí estão fazendo os teus discípulos o que não é permitido fazer nos sábados."
+    },
+    {
+      "n": 3,
+      "texto": "Porém êle lhes disse: Não tendes lido o que fêz Davi, quando êle teve fome, e os que com êle estavam:"
+    },
+    {
+      "n": 4,
+      "texto": "Como entrou na casa de Deus, e comeu os pães da proposição, os quais não era lícito comer, nem a êle, nem aos que com êle estavam, mas ùnicamente aos sacerdotes?",
+      "nota": "fn12_1"
+    },
+    {
+      "n": 5,
+      "texto": "Ou não tendes lido na lei, que os sacerdotes nos sábados no templo quebrantam o sábado, e ficam sem pecado?"
+    },
+    {
+      "n": 6,
+      "texto": "Pois digo-vos, que aqui está o que é maior que o templo."
+    },
+    {
+      "n": 7,
+      "texto": "E se vós soubésseis o que é: Misericórdia quero, e não sacrifício, jamais condenarieis aos inocentes:"
+    },
+    {
+      "n": 8,
+      "texto": "Porque o Filho do homem é Senhor até do sábado mesmo."
+    },
+    {
+      "n": 9,
+      "texto": "E depois de partir dali, veio à sinagoga dêles."
+    },
+    {
+      "n": 10,
+      "texto": "E eis-que aparece um homem, que tinha ressecada uma das mãos, e êles, para terem de que o argúir, lhe fizeram esta pergunta, dizendo: É porventura lícito curar nos sábados?"
+    },
+    {
+      "n": 11,
+      "texto": "E êle lhes disse: Que homem haverá por acaso entre nós, que tenha uma ovelha, e que se esta lhe cair no sábado em uma cova, não lhe lance a mão para dali a tirar?"
+    },
+    {
+      "n": 12,
+      "texto": "Ora quanto mais excelente é um homem, do que uma ovelha? Logo é lícito fazer bem nos dias de sábado."
+    },
+    {
+      "n": 13,
+      "texto": "Então disse para o homem: Estende a tua mão. E êle a estendeu, e lhe foi restituída sã como a outra."
+    },
+    {
+      "n": 14,
+      "texto": "Mas os fariseus saindo dali, consultavam contra êle, como o fariam morrer."
+    },
+    {
+      "n": 15,
+      "texto": "E Jesus sabendo-o, se retirou daquele lugar, e foram muitos após êle, e os curou a todos:"
+    },
+    {
+      "n": 16,
+      "texto": "E lhes pôs preceito, que não descobrissem quem êle era."
+    },
+    {
+      "n": 17,
+      "texto": "Para que se cumprisse o que foi anunciado pelo profeta Isaías, que diz:",
+      "nota": "fn12_2"
+    },
+    {
+      "n": 18,
+      "texto": "<span class='prophetic'>Eis-aqui o meu servo, que eu escolhi, o meu amado, em quem a minha alma tem pôsto a sua complacência. Porei o meu espírito sôbre êle, e êle anunciará às gentes a justiça.</span>"
+    },
+    {
+      "n": 19,
+      "texto": "<span class='prophetic'>Não contenderá, nem clamará, nem ouvirá alguém a sua voz nas praças:</span>"
+    },
+    {
+      "n": 20,
+      "texto": "<span class='prophetic'>Não quebrará a cana, que está deprimida, nem apagará a torcida que fumega, até que saia vitoriosa a sua justiça.</span>"
+    },
+    {
+      "n": 21,
+      "texto": "<span class='prophetic'>E as gentes esperarão no seu nome.</span>"
+    },
+    {
+      "n": 22,
+      "texto": "Então lhe trouxeram um endemoninhado cego, e mudo, e êle o curou, de sorte que falava, e via."
+    },
+    {
+      "n": 23,
+      "texto": "E ficaram pasmadas tôdas as gentes, e diziam: Porventura é êste o filho de Davi?"
+    },
+    {
+      "n": 24,
+      "texto": "Mas os fariseus ouvindo isto diziam: Êste não lança fora os demônios, senão em virtude de Belzebu, príncipe dos demônios.",
+      "nota": "fn12_3"
+    },
+    {
+      "n": 25,
+      "texto": "E Jesus sabendo os pensamentos dêles, lhes disse: Todo o reino dividido contra si mesmo, será desolado: E tôda a cidade, ou casa dividida contra si mesma, não subsistirá."
+    },
+    {
+      "n": 26,
+      "texto": "Ora se satanás lança fora a satanás, está êle dividido contra si mesmo: Como persistirá logo o seu reino?"
+    },
+    {
+      "n": 27,
+      "texto": "E se eu lanço fora os demônios em virtude de Belzebu, em virtude de quem os expelem vossos filhos? Por isso é que êles serão os vossos juízes."
+    },
+    {
+      "n": 28,
+      "texto": "Se eu porém lanço fora os demônios pela virtude do espírito de Deus, logo é chegado a vós o Reino de Deus:"
+    },
+    {
+      "n": 29,
+      "texto": "Ou como pode alguém entrar na casa do valente e saquear os seus móveis, se antes não prender o valente? e então lhe saqueará a casa."
+    },
+    {
+      "n": 30,
+      "texto": "O que não é comigo, é contra mim: E o que não ajunta comigo, dispersa.",
+      "nota": "fn12_4"
+    },
+    {
+      "n": 31,
+      "texto": "Portanto vos digo: Todo o pecado e blasfêmia serão perdoados aos homens, porém a blasfêmia contra o Espírito Santo não lhes será perdoada.",
+      "nota": "fn12_5"
+    },
+    {
+      "n": 32,
+      "texto": "E todo o que disser alguma palavra contra o Filho do homem, perdoar-se-lhe-á: Porém o que a disser contra o Espírito Santo, não se lhe perdoará, nem neste mundo, nem no outro.",
+      "nota": "fn12_6"
+    },
+    {
+      "n": 33,
+      "texto": "Ou fazei a árvore boa, e o seu fruto bom: Ou fazei a árvore má e o seu fruto mau: Pois que pelo fruto é que a árvore se conhece."
+    },
+    {
+      "n": 34,
+      "texto": "Raça de víboras, como podeis falar coisas boas sendo maus? porque a bôca fala o de que está cheio o coração."
+    },
+    {
+      "n": 35,
+      "texto": "O homem bom do bom tesouro tira boas coisas: Mas o homem mau do mau tesouro tira más coisas."
+    },
+    {
+      "n": 36,
+      "texto": "E digo-vos, que tôda a palavra ociosa, que falarem os homens, darão conta dela no dia do Juízo.",
+      "nota": "fn12_7"
+    },
+    {
+      "n": 37,
+      "texto": "Porque pelas tuas palavras serás justificado, e pelas tuas palavras serás condenado."
+    },
+    {
+      "n": 38,
+      "texto": "Então lhe tornaram alguns dos escribas, e fariseus, dizendo: Mestre, nós quiséramos ver-te fazer algum prodígio."
+    },
+    {
+      "n": 39,
+      "texto": "Êle lhes respondeu, dizendo: Esta geração má, e adúltera, pede um prodígio: Mas não lhe será dado outro prodígio, senão o prodígio do profeta Jonas."
+    },
+    {
+      "n": 40,
+      "texto": "Porque assim como Jonas estêve no ventre da baleia três dias, e três noites; assim estará o Filho do homem três dias, e três noites no coração da terra."
+    },
+    {
+      "n": 41,
+      "texto": "Os habitantes de Nínive se levantarão no dia do Juízo com esta geração, e a condenarão: Porque fizeram penitência com a pregação de Jonas. E eis-aqui está neste lugar quem é mais do que Jonas."
+    },
+    {
+      "n": 42,
+      "texto": "A rainha do meio-dia se levantará no dia do Juízo com esta geração, e a condenará: Porque veio lá das extremidades da terra a ouvir a sabedoria de Salomão e eis-aqui está neste lugar quem é mais do que Salomão.",
+      "nota": "fn12_8"
+    },
+    {
+      "n": 43,
+      "texto": "E quando o espírito imundo tem saído de um homem, anda por lugares secos, buscando repouso, e não o acha."
+    },
+    {
+      "n": 44,
+      "texto": "E então diz: Voltarei para minha casa, donde saí. E quando vem, a acha desocupada, varrida e ornada."
+    },
+    {
+      "n": 45,
+      "texto": "Então vai e ajunta a si outros sete espíritos piores do que êle, e entrando habitam ali: E o último estado daquele homem fica sendo pior que o primeiro. Assim também acontecerá a esta geração péssima."
+    },
+    {
+      "n": 46,
+      "texto": "Estando êle ainda falando ao povo, eis-que se achava da parte de fora sua mãe, e seus irmãos, que procuravam falar-lhe.",
+      "nota": "fn12_9"
+    },
+    {
+      "n": 47,
+      "texto": "E um lhe disse: Olha que tua mãe, e teus irmãos estão ali fora, e te buscam."
+    },
+    {
+      "n": 48,
+      "texto": "E êle respondendo ao que lhe falava, lhe disse: Quem é minha mãe, e quem são os meus irmãos?",
+      "nota": "fn12_10"
+    },
+    {
+      "n": 49,
+      "texto": "E estendendo a mão para seus discípulos, disse: Eis-ali minha mãe, e meus irmãos:",
+      "nota": "fn12_11"
+    },
+    {
+      "n": 50,
+      "texto": "Porque todo aquêle que fizer a vontade de meu Pai, que está nos Céus: Êsse é meu irmão, e irmã e mãe."
+    }
   ],
   "notas": {
     "fn12_1": {
@@ -72,7 +233,7 @@
     },
     "fn12_5": {
       "rotulo": "A blasfêmia contra o Espírito Santo",
-      "texto": "Qual seja porém a blasfêmia contra o Espírito Santo, que Jesus Cristo aqui declara ser irremissível? diz Santo Agostinho, no sermão 71, que é talvez a maior dificuldade que se encontra em tôda a Escritura: <em>Forte in omnibus Escripturis nulla maior quaestio, nulla difficilior invenitur.</em> Êle se inclina, neste e noutros lugares, a que êste pecado contra o Espírito Santo se deve entender da Impenitência final junta com a desesperação da misericórdia divina. Porém Santo Atanásio na epístola 4, a Serapião, e S. Jerônimo na epístola 149, a Marcela, entendem que é o pecado com que as obras visivelmente do Espírito Santo se atribuem ao demônio, como os judeus atribuíam ao poder de Belzebu os milagres de Cristo. Desta matéria é digna de se ler a dissertação de Calmet, <em>De peccato in Spiritum Sanctum</em>: e as notas de Tomasi, e Vezzosi ao livro 3, dos testemunhos de S. Cipriano, cap. 28. Glaíre nesta segunda interpretação o dizer-se que a blasfêmia contra o Espírito Santo não se há-de perdoar nem neste século, nem no futuro, não é dizer que se não pode perdoar, mas sim que é muito dificultoso perdoar-se, porque também é dificultosíssimo arrepender-se o pecador da sua obstinação."
+      "texto": "Qual seja porém a blasfêmia contra o Espírito Santo, que Jesus Cristo aqui declara ser irremissível? diz Santo Agostinho, no sermão 71, que é talvez a maior dificuldade que se encontra em tôda a Escritura: <em>Forte in omnibus Escripturis nulla maior quaestio, nulla difficilior invenitur.</em> Êle se inclina, neste e noutros lugares, a que êste pecado contra o Espírito Santo se deve entender da Impenitência final junta com a desesperação da misericórdia divina. Porém Santo Atanásio na epístola 4, a Serapião, e S. Jerônimo na epístola 149, a Marcela, entendem que é o pecado com que as obras visivelmente do Espírito Santo se atribuem ao demônio, como os judeus atribuíam ao poder de Belzebu os milagres de Cristo. Desta matéria é digna de se ler a dissertação de Calmet, <em>De peccato in Spiritum Sanctum</em>: e as notas de Tomasi, e Vezzosi ao livro 3, dos testemunhos de S. Cipriano, cap. 28. Glaire nesta segunda interpretação o dizer-se que a blasfêmia contra o Espírito Santo não se há-de perdoar nem neste século, nem no futuro, não é dizer que se não pode perdoar, mas sim que é muito dificultoso perdoar-se, porque também é dificultosíssimo arrepender-se o pecador da sua obstinação."
     },
     "fn12_6": {
       "rotulo": "Nem neste mundo",
@@ -92,11 +253,11 @@
     },
     "fn12_10": {
       "rotulo": "Quem é minha mãe",
-      "texto": "Isto não foi deprezar sua mãe: foi mostrar quanto êle estava despegado da carne, e sangue, e quanto nós o devemos estar no exercício do ministério Apostólico, que todo é espiritual. — S. Jerônimo e S. Ambrósio."
+      "texto": "Isto não foi deprezar sua mãe: foi mostrar quanto êle estava despegado da carne, e sangue, e quanto nós o devemos estar no exercício do ministério Apostólico, que todo é espiritual. S. Jerônimo e S. Ambrósio."
     },
     "fn12_11": {
       "rotulo": "Eis-ali minha mãe",
-      "texto": "É mãe de Jesus Cristo todo o que faz nascer na alma de qualquer próximo, ou com a sua pregação, ou com o seu bom exemplo. — S. Ambrósio, S. Gregório, e S. Bernardo."
+      "texto": "É mãe de Jesus Cristo todo o que faz nascer na alma de qualquer próximo, ou com a sua pregação, ou com o seu bom exemplo. S. Ambrósio, S. Gregório, e S. Bernardo."
     }
   }
 }
