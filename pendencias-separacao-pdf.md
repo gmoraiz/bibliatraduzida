@@ -33,12 +33,8 @@ Total: **1.578 arquivos** distribuídos em livros abaixo.
 | **galatas** | 1–6, index, introducao |
 | **genesis** | 1–50 |
 | **hebreus** | 1–13, index, introducao |
-| **joao** | 1–21 |
 | **judas** | 1, index, introducao |
 | **levitico** | 1–27 |
-| **lucas** | 1–24 |
-| **marcos** | 1–16 |
-| **mateus** | 1–28 |
 | **numeros** | 1–36 |
 | **proverbios** | 1–31 |
 | **romanos** | 1–16, index |
@@ -94,9 +90,6 @@ Total: **1.578 arquivos** distribuídos em livros abaixo.
 | **judite** | 1–16 |
 | **juizes** | 1–21 |
 | **levitico** | 1–27 |
-| **lucas** | 1–24 |
-| **marcos** | 1–16 |
-| **mateus** | 1–28 |
 | **neemias** | 1–13 |
 | **numeros** | 1–36 |
 | **oseias** | 1–14 |
@@ -115,23 +108,12 @@ Total: **1.578 arquivos** distribuídos em livros abaixo.
 
 > ⚠️ Os PDFs fonte `.pdfs/figueiredo/{mateus,marcos,lucas,joao}.pdf` **não existem**. Os capítulos abaixo **não podem ser reprocessados** até que os PDFs fonte sejam adicionados.
 
-| Evangelho | Resultado | Problemas encontrados |
-|-----------|-----------|----------------------|
-| **marcos** | ✅ Perfeito | Nenhum |
-| **lucas** | ⚠️ `introducao.pdf` ausente | 5 páginas de introdução (Autor, Data, Fim, Estilo, Divisão, Autenticidade) presentes no PDF fonte mas sem PDF gerado. Os 24 capítulos estão corretos. |
-| **mateus** | ⚠️ Overlap cosmético | Cap 2 contém 1 página extra no final (abertura do cap 3 — página limpa com heading "CAPÍTULO 3" + Mt 3:1–5). Sem truncamento de conteúdo. |
-| **joao** | ❌ Bugs reais | 4 capítulos com início truncado (caps 7, 11, 12, 14) — ver tabela abaixo |
-
-### João — capítulos com início truncado
-
-| Cap | Versículos perdidos | Impacto |
-|-----|-------------------|---------|
-| 7 | João 7:1-3 | Heading + 3 versículos ausentes |
-| 11 | João 11:1-6 | Apresentação de Lázaro ausente |
-| 12 | João 12:1-5 | Unção em Betânia ausente |
-| 14 | João 14:1-2 | "Na casa de meu Pai há muitas mansões" ausente |
-
-Causa-raiz: em todas as 4 transições, a página compartilhada (que contém o fim do cap anterior + heading + início do cap seguinte) não foi incluída no capítulo seguinte — `inicio_(N+1)` foi definido como `p+1` em vez de `p`.
+| Evangelho | Resultado | Observações |
+|-----------|-----------|-------------|
+| **marcos** | ✅ Reprocessado 19/04 | 16 caps + `introducao.pdf` (págs. 1–6) |
+| **lucas** | ✅ Reprocessado 19/04 | 24 caps + `introducao.pdf` (págs. 1–6) — problema anterior de intro ausente corrigido |
+| **mateus** | ✅ Reprocessado 19/04 | 28 caps + `introducao.pdf` (págs. 1–6) — overlap cosmético do cap 2 corrigido |
+| **joao** | ✅ Reprocessado 19/04 | 21 caps + `introducao.pdf` — 4 bugs (caps 7, 11, 12, 14) corrigidos |
 
 ---
 
