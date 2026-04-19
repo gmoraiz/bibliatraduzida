@@ -1,0 +1,51 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  lang?: string;
+  hreflang?: Array<{lang: string; href: string}>;
+  jsonLd?: Record<string, unknown>;
+}
+const {
+  title,
+  description,
+  canonical,
+  lang = 'pt-BR',
+  hreflang = [],
+  jsonLd,
+} = Astro.props;
+
+import '../styles/global.css';
+---
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  {description && <meta name="description" content={description} />}
+  {canonical && <link rel="canonical" href={canonical} />}
+  {hreflang.map(h => <link rel="alternate" hreflang={h.lang} href={h.href} />)}
+  {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>}
+  <meta name="application-name" content="Biblia Traduzida">
+  <meta name="theme-color" content="#f7f2e8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Biblia Traduzida">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <slot />
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
+  <script>
+    import '../scripts/client.js';
+  </script>
+</body>
+</html>

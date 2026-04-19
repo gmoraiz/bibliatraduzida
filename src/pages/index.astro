@@ -1,0 +1,112 @@
+---
+import { readFileSync } from 'fs';
+import Base from '../layouts/Base.astro';
+import { CANONICAL_BOOK_CATALOG } from '../data/catalog.js';
+
+const editions = JSON.parse(readFileSync('edicoes/index.json', 'utf-8'));
+
+const title = 'Bíblia Pe. Figueiredo — Primeira tradução da Vulgata Clementina em Português | Bíblia Traduzida';
+const description = 'Leia a Bíblia Sagrada na tradução do Pe. Antônio Pereira de Figueiredo (1750-1816), a primeira e mais fiel tradução da Vulgata Clementina para o português, com texto integral de todos os livros canônicos.';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  'name': 'Bíblia Traduzida',
+  'url': 'https://bibliatraduzida.com',
+  'description': description,
+  'inLanguage': 'pt-BR',
+};
+
+const booksByGroup = new Map();
+for (const book of CANONICAL_BOOK_CATALOG) {
+  const t = book.testamento;
+  if (!booksByGroup.has(t)) booksByGroup.set(t, []);
+  booksByGroup.get(t).push(book);
+}
+---
+<Base {title} {description} canonical="https://bibliatraduzida.com/" {jsonLd}>
+<div id="home-page">
+  <header class="home-header">
+    <h1>Bíblia Traduzida</h1>
+    <p class="home-subtitle">Tradução do Pe. Antônio Pereira de Figueiredo</p>
+  </header>
+
+  <main class="home-main">
+    <section class="home-about">
+      <h2>Sobre esta tradução</h2>
+      <p>
+        A tradução do Pe. <strong>Antônio Pereira de Figueiredo</strong> (1725–1797) é a
+        <strong>primeira tradução completa da Bíblia Sagrada para o português</strong>, realizada
+        diretamente da <em>Vulgata Clementina</em> — texto latino oficial da Igreja Católica desde
+        o Concílio de Trento. Publicada entre 1778 e 1790, é considerada a tradução portuguesa mais
+        fiel à tradição bíblica latina e ao magistério da Igreja.
+      </p>
+      <p>
+        Esta versão digital torna acessível o texto integral da edição de 1950, com anotações e
+        introduções originais, permitindo a leitura e comparação com a Vulgata Clementina em latim
+        e a versão inglesa Douay-Rheims.
+      </p>
+    </section>
+
+    <section class="home-editions">
+      <h2>Edições disponíveis</h2>
+      <div class="edition-cards">
+        {editions.map(ed => (
+          <a href={`/${ed.id}/genesis/1/`} class="edition-card">
+            <strong>{ed.edicao}</strong>
+            <span>{ed.idioma === 'pt-BR' ? 'Português' : ed.idioma === 'la' ? 'Latim' : 'English'}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="home-books">
+      {Array.from(booksByGroup.entries()).map(([testamento, books]) => (
+        <div class="home-testament">
+          <h2>{testamento}</h2>
+          <ul class="home-book-list">
+            {books.map(book => (
+              <li>
+                <a href={`/figueiredo/${book.id}/1/`}>{book.tituloIndice}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+  </main>
+
+  <footer class="home-footer">
+    <p>
+      <a href="mailto:gmoraizsilva@gmail.com">gmoraizsilva@gmail.com</a>
+    </p>
+  </footer>
+</div>
+
+<style>
+  #home-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    font-family: 'David Libre', Georgia, 'Times New Roman', serif;
+  }
+  .home-header { text-align: center; padding: 40px 0 24px; border-bottom: 1px solid #d9cebd; margin-bottom: 32px; }
+  .home-header h1 { font-size: 2.2rem; color: #2a1f0e; }
+  .home-subtitle { color: #666; font-size: 1.1rem; margin-top: 8px; }
+  .home-about { background: #f7f2e8; border: 1px solid #d9cebd; border-radius: 8px; padding: 20px 24px; margin-bottom: 32px; line-height: 1.7; }
+  .home-about h2 { font-size: 1.2rem; margin-bottom: 12px; }
+  .home-about p { margin-bottom: 12px; }
+  .home-editions { margin-bottom: 32px; }
+  .home-editions h2 { font-size: 1.2rem; margin-bottom: 12px; }
+  .edition-cards { display: flex; gap: 12px; flex-wrap: wrap; }
+  .edition-card { display: flex; flex-direction: column; padding: 12px 20px; background: #fff; border: 1px solid #d9cebd; border-radius: 6px; text-decoration: none; color: #333; font-size: 14px; gap: 4px; }
+  .edition-card strong { font-size: 15px; color: #2a1f0e; }
+  .edition-card:hover { border-color: #8b6914; background: #faf7f0; }
+  .home-testament { margin-bottom: 24px; }
+  .home-testament h2 { font-size: 1.1rem; border-bottom: 1px solid #d9cebd; padding-bottom: 6px; margin-bottom: 12px; }
+  .home-book-list { display: flex; flex-wrap: wrap; gap: 6px 12px; list-style: none; padding: 0; }
+  .home-book-list a { color: #2f4f9d; font-size: 14px; }
+  .home-book-list a:hover { text-decoration: underline; }
+  .home-footer { border-top: 1px solid #d9cebd; padding: 16px 0; text-align: center; font-size: 13px; color: #666; }
+</style>
+</Base>

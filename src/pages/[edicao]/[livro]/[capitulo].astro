@@ -1,0 +1,355 @@
+---
+import { readFileSync } from 'fs';
+import Base from '../../../layouts/Base.astro';
+import { renderChapterHtml } from '../../../utils/render.js';
+import { CANONICAL_BOOK_CATALOG } from '../../../data/catalog.js';
+
+export async function getStaticPaths() {
+  const editions = JSON.parse(readFileSync('edicoes/index.json', 'utf-8'));
+  const paths = [];
+
+  for (const edition of editions) {
+    if (!edition.livros?.length) continue;
+
+    for (let bookIdx = 0; bookIdx < edition.livros.length; bookIdx++) {
+      const bookFile = edition.livros[bookIdx];
+      let bookIndex;
+      try {
+        bookIndex = JSON.parse(readFileSync(bookFile, 'utf-8'));
+      } catch (e) {
+        console.warn(`Skipping ${bookFile}: ${e.message}`);
+        continue;
+      }
+
+      const prevBookFile = bookIdx > 0 ? edition.livros[bookIdx - 1] : null;
+      const nextBookFile = bookIdx < edition.livros.length - 1 ? edition.livros[bookIdx + 1] : null;
+
+      let prevBookId = null, nextBookId = null;
+      if (prevBookFile) {
+        try { prevBookId = JSON.parse(readFileSync(prevBookFile, 'utf-8')).id; } catch (_) {}
+      }
+      if (nextBookFile) {
+        try { nextBookId = JSON.parse(readFileSync(nextBookFile, 'utf-8')).id; } catch (_) {}
+      }
+
+      for (let capIdx = 0; capIdx < bookIndex.capitulos.length; capIdx++) {
+        const cap = bookIndex.capitulos[capIdx];
+        paths.push({
+          params: {
+            edicao: edition.id,
+            livro: bookIndex.id,
+            capitulo: String(cap),
+          },
+          props: {
+            bookIndex: {
+              id: bookIndex.id,
+              titulo: bookIndex.titulo,
+              tituloIndice: bookIndex.tituloIndice,
+              testamento: bookIndex.testamento,
+              grupo: bookIndex.grupo,
+              abreviacao: bookIndex.abreviacao || '',
+              capitulos: bookIndex.capitulos,
+              introducao: bookIndex.introducao || null,
+            },
+            edition: {
+              id: edition.id,
+              edicao: edition.edicao,
+              idioma: edition.idioma || 'pt-BR',
+            },
+            allEditions: editions.map(e => ({
+              id: e.id,
+              edicao: e.edicao,
+              idioma: e.idioma || 'pt-BR',
+              hasBook: (e.livros || []).some(f => f.includes('/' + bookIndex.id + '/')),
+            })),
+            bookFile,
+            prevBookId,
+            nextBookId,
+            prevCap: capIdx > 0 ? bookIndex.capitulos[capIdx - 1] : null,
+            nextCap: capIdx < bookIndex.capitulos.length - 1 ? bookIndex.capitulos[capIdx + 1] : null,
+          },
+        });
+      }
+    }
+  }
+
+  return paths;
+}
+
+const { bookIndex, edition, allEditions, bookFile, prevBookId, nextBookId, prevCap, nextCap } = Astro.props;
+const { edicao, livro, capitulo } = Astro.params;
+
+const bookDir = bookFile.replace('/index.json', '');
+let chapterData;
+try {
+  chapterData = JSON.parse(readFileSync(`${bookDir}/${capitulo}.json`, 'utf-8'));
+} catch (e) {
+  chapterData = { num: parseInt(capitulo), sumario: '', versiculos: [], notas: {} };
+}
+
+const chapterHtml = renderChapterHtml(chapterData);
+const hasPdf = edition.id === 'figueiredo';
+const pdfUrl = hasPdf ? `/${bookDir}/${capitulo}.pdf` : null;
+const pdfOldUrl = hasPdf ? `/${bookDir.replace('/figueiredo/', '/figueiredo-original/')}/${capitulo}.pdf` : null;
+
+const title = `${bookIndex.titulo} — Capítulo ${capitulo} | Bíblia ${edition.edicao} | Bíblia Traduzida`;
+const description = chapterData.sumario
+  ? chapterData.sumario.slice(0, 160)
+  : `${bookIndex.titulo}, capítulo ${capitulo} — ${edition.edicao}.`;
+const canonical = `https://bibliatraduzida.com/${edicao}/${livro}/${capitulo}/`;
+
+const hreflang = allEditions
+  .filter(e => e.hasBook && e.id !== edition.id)
+  .map(e => ({ lang: e.idioma, href: `https://bibliatraduzida.com/${e.id}/${livro}/${capitulo}/` }));
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Chapter',
+  'name': `${bookIndex.titulo} — Capítulo ${capitulo}`,
+  'description': description,
+  'inLanguage': edition.idioma,
+  'position': parseInt(capitulo),
+  'url': canonical,
+  'isPartOf': {
+    '@type': 'Book',
+    'name': bookIndex.titulo,
+    'inLanguage': edition.idioma,
+    ...(edition.id === 'figueiredo' ? {
+      'author': { '@type': 'Person', 'name': 'Pe. Antônio Pereira de Figueiredo' },
+      'description': 'Primeira tradução da Vulgata Clementina para o português',
+    } : {}),
+  },
+};
+
+const booksByTestamentAndGroup = new Map();
+for (const cat of CANONICAL_BOOK_CATALOG) {
+  const t = cat.testamento;
+  const g = cat.grupo;
+  if (!booksByTestamentAndGroup.has(t)) booksByTestamentAndGroup.set(t, new Map());
+  const gMap = booksByTestamentAndGroup.get(t);
+  if (!gMap.has(g)) gMap.set(g, []);
+  gMap.get(g).push(cat);
+}
+
+const pageDataJson = JSON.stringify({
+  edition: edition.id,
+  book: livro,
+  chapter: parseInt(capitulo),
+  bookDir,
+  bookTitulo: bookIndex.titulo,
+  editions: allEditions,
+  chapterData,
+  hasPdf,
+  pdfUrl,
+  pdfOldUrl,
+  prevCap,
+  nextCap,
+  prevBookId,
+  nextBookId,
+  introducao: bookIndex.introducao || null,
+});
+---
+<Base {title} {description} {canonical} lang={edition.idioma} {hreflang} {jsonLd}>
+
+<div id="review-popup" class="review-popup" role="dialog" aria-live="polite" aria-label="Aviso de revisão" hidden>
+  <div class="review-popup-content">
+    <p class="review-popup-text">A revisão da transcrição da edição Pe. Figueiredo (1950) ainda está sendo feita. Se quiser reportar qualquer problema, envie um e-mail para <a href="mailto:gmoraizsilva@gmail.com">gmoraizsilva@gmail.com</a>.</p>
+    <div class="review-popup-actions">
+      <button id="review-popup-ok" class="review-popup-btn" type="button">Ok</button>
+      <button id="review-popup-hide" class="review-popup-btn review-popup-btn-secondary" type="button">Não mostrar novamente</button>
+    </div>
+  </div>
+</div>
+
+<div id="install-popup" class="install-popup" role="dialog" aria-live="polite" aria-label="Instalar aplicativo" hidden>
+  <div class="install-popup-content">
+    <p class="install-popup-text">Instale o app <strong>Biblia Traduzida</strong> para acessá-la mais rápido.</p>
+    <div class="install-popup-actions">
+      <button id="install-popup-install" class="install-popup-btn" type="button">Instalar</button>
+      <button id="install-popup-close" class="install-popup-btn install-popup-btn-secondary" type="button">Agora não</button>
+    </div>
+  </div>
+</div>
+
+<div id="page-layout">
+<div id="content-wrapper">
+
+<div id="topbar">
+  <button class="link-btn" onclick="openBooks()">📖 Todos os Livros</button>
+  <span id="topbar-edition-label">{edition.edicao}</span>
+  <div id="edition-selector">
+    <label for="sel-edition">Edição:</label>
+    <select id="sel-edition" onchange="onEditionChange(this.value)">
+      {allEditions.map(e => (
+        <option value={e.id} selected={e.id === edition.id}>{e.edicao}</option>
+      ))}
+    </select>
+    <button id="theme-toggle-btn" class="theme-toggle-btn" onclick="toggleDarkMode()" aria-pressed="false" title="Ativar modo noturno">🌙 Noturno</button>
+  </div>
+</div>
+
+<div id="compare-bar">
+  <select id="sel-compare-edition" onchange="onCompareEditionChange(this.value)">
+    <option value="">— selecionar edição —</option>
+    {allEditions.filter(e => e.id !== edition.id).map(e => (
+      <option value={e.id}>{e.edicao}</option>
+    ))}
+  </select>
+</div>
+
+<div id="nav">
+  <div class="nav-row">
+    {prevBookId
+      ? <a href={`/${edicao}/${prevBookId}/1/`}>&lt; livro ant.</a>
+      : <span class="dimmed">&lt; livro ant.</span>
+    }
+    <h2 class="book-title" id="nav-book-title">{bookIndex.titulo}</h2>
+    {nextBookId
+      ? <a href={`/${edicao}/${nextBookId}/1/`}>próx. livro &gt;</a>
+      : <span class="dimmed">próx. livro &gt;</span>
+    }
+  </div>
+  <div class="nav-row" id="nav-chapter-row">
+    {prevCap !== null
+      ? <a id="nav-prev-ch" href={`/${edicao}/${livro}/${prevCap}/`}>&lt; cap. ant.</a>
+      : <span class="dimmed" id="nav-prev-ch">&lt; cap. ant.</span>
+    }
+    <h3 class="book-title">Capítulo <span id="nav-ch-num">{capitulo}</span></h3>
+    {nextCap !== null
+      ? <a id="nav-next-ch" href={`/${edicao}/${livro}/${nextCap}/`}>próx. cap. &gt;</a>
+      : <span class="dimmed" id="nav-next-ch">próx. cap. &gt;</span>
+    }
+  </div>
+  <div class="chapter-links" id="chapter-links">
+    <span class="label">Capítulos:</span>
+    {bookIndex.introducao && (
+      <a href="#" onclick="openIntro(); return false;">Introdução</a>
+    )}
+    {bookIndex.capitulos.map(n => (
+      n === parseInt(capitulo)
+        ? <a class="current" href={`/${edicao}/${livro}/${n}/`}>{n}</a>
+        : <a href={`/${edicao}/${livro}/${n}/`}>{n}</a>
+    ))}
+  </div>
+  <span id="compare-status" class="compare-status"></span>
+</div>
+
+<div id="main-area" class="single">
+  <div id="col-primary">
+    <div id="content">
+      <div class="chapter-header">
+        <h1>Capítulo {capitulo}</h1>
+        {chapterData.sumario && <div class="summary">{chapterData.sumario}</div>}
+        <div class="chapter-header-actions">
+          {hasPdf && <button class="ver-original-btn" onclick={`openPdfPanel('${pdfOldUrl}', 'Ver PDF original', 'original')`}>Ver PDF original</button>}
+          {hasPdf && <button class="ver-original-btn" onclick={`openPdfPanel('${pdfUrl}', 'Ver PDF 1950', 'recent')`}>Ver PDF 1950</button>}
+          {allEditions.filter(e => e.id !== edition.id).length > 0 && (
+            <select id="compare-select" class="compare-toggle-btn compare-select" onchange="onCompareSelectChange(this.value)" title="Comparar com outra edição">
+              <option value="">Comparar com</option>
+              {allEditions.filter(e => e.id !== edition.id).map(e => (
+                <option value={e.id}>{e.edicao}</option>
+              ))}
+              {allEditions.filter(e => e.id !== edition.id).length > 1 && (
+                <option value="all">Todos</option>
+              )}
+            </select>
+          )}
+        </div>
+      </div>
+      <hr class="section-rule" />
+      <Fragment set:html={chapterHtml} />
+    </div>
+  </div>
+  <div id="col-compare">
+    <div id="col-compare-header"></div>
+    <div id="content-compare"></div>
+  </div>
+  <div id="compare-grid"></div>
+</div>
+
+<div id="bottomnav">
+  <div class="nav-row">
+    {prevCap !== null
+      ? <a id="bot-prev" href={`/${edicao}/${livro}/${prevCap}/`}>&lt; cap. ant.</a>
+      : <span class="dimmed" id="bot-prev">&lt; cap. ant.</span>
+    }
+    <h2 class="book-title" id="bot-book-title">{bookIndex.titulo}</h2>
+    {nextCap !== null
+      ? <a id="bot-next" href={`/${edicao}/${livro}/${nextCap}/`}>próx. cap. &gt;</a>
+      : <span class="dimmed" id="bot-next">próx. cap. &gt;</span>
+    }
+  </div>
+  <div>
+    <a href="#" style="font-size:13px;color:#00c;" onclick="window.scrollTo(0,0);return false;">↑ topo</a>
+    <span aria-hidden="true"> · </span>
+    <a href="mailto:gmoraizsilva@gmail.com" style="font-size:13px;color:#00c;">reporte um problema</a>
+  </div>
+</div>
+
+<div id="book-selector" onclick="closeBooksOverlay(event)">
+  <div id="book-panel">
+    <h2>Selecionar Livro <button class="close-btn" onclick="closeBooks()">&#x2715;</button></h2>
+    <div id="book-list-content">
+      {Array.from(booksByTestamentAndGroup.entries()).map(([testamento, grupoMap]) => (
+        <div class="testament-section">
+          <div class="testament-title">{testamento}</div>
+          {Array.from(grupoMap.entries()).map(([grupo, books]) => (
+            <div class="book-group">
+              <div class="group-label">{grupo}</div>
+              {books.map(book => (
+                <a
+                  data-book-id={book.id}
+                  href={`/${edicao}/${book.id}/1/`}
+                  class={book.id === livro ? 'current-book' : undefined}
+                >{book.tituloIndice}</a>
+              ))}
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<div id="intro-modal" onclick="closeIntroOverlay(event)">
+  <div id="intro-panel">
+    <button class="close-btn" onclick="closeIntro()">&#x2715;</button>
+    <div id="intro-content">
+      {bookIndex.introducao && <Fragment set:html={bookIndex.introducao} />}
+    </div>
+  </div>
+</div>
+
+<div id="pdf-modal" onclick="closePdfModalOverlay(event)">
+  <div id="pdf-modal-panel">
+    <div id="pdf-modal-header">
+      <span id="pdf-modal-title">&#128196; PDF</span>
+      <button id="pdf-modal-close" onclick="closePdfModal()" title="Fechar">&#x2715;</button>
+    </div>
+    <div class="pdfjs-mobile-toolbar" id="modal-pdf-toolbar" role="toolbar" aria-label="Controles de zoom do PDF">
+      <button class="pdfjs-tool-btn" onclick="pdfViewerZoomOut('modal')" title="Diminuir zoom">&#8722;</button>
+      <button class="pdfjs-tool-btn pdfjs-tool-btn-label" id="modal-pdf-zoom-label" onclick="pdfViewerZoomReset('modal')" title="Resetar zoom">100%</button>
+      <button class="pdfjs-tool-btn" onclick="pdfViewerZoomIn('modal')" title="Aumentar zoom">+</button>
+      <button class="pdfjs-tool-btn" onclick="pdfViewerFitWidth('modal')" title="Ajustar à largura">Ajustar</button>
+    </div>
+    <div class="pdfjs-canvas-wrap pdfjs-canvas-wrap-modal">
+      <div class="pdfjs-status" id="modal-pdf-status"></div>
+      <div id="modal-pdf-pages" class="pdfjs-pages" aria-label="Páginas do PDF"></div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<div id="pdf-panel">
+  <div id="pdf-panel-header">
+    <span id="pdf-panel-title">&#128196; Original</span>
+    <button id="pdf-panel-close" onclick="closePdfPanel()" title="Fechar">&#x2715;</button>
+  </div>
+  <iframe id="pdf-frame" src="" title="Conteúdo original"></iframe>
+</div>
+
+<script id="page-data" type="application/json" set:html={pageDataJson}></script>
+
+</Base>

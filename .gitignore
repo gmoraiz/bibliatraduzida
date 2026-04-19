@@ -3,3 +3,5 @@ edicoes/figueiredo/*/index.pdf
 edicoes/figueiredo-original/*/index.pdf
 node_modules/
 nul
+dist/
+.astro/
