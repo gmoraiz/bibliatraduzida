@@ -51,6 +51,14 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'always',
   vite: {
-    plugins: [serveEdicoesPlugin()]
+    plugins: [serveEdicoesPlugin()],
+    server: {
+      headers: {
+        'Cache-Control': 'no-store',
+      },
+    },
+    optimizeDeps: {
+      force: true,
+    },
   }
 });
