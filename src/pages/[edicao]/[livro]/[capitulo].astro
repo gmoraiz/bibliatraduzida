@@ -145,6 +145,7 @@ const pageDataJson = JSON.stringify({
   pdfUrl,
   pdfOldUrl,
   isPdfFallback,
+  chapterLink: chapterData.link || null,
   prevCap,
   nextCap,
   prevBookId,
@@ -178,7 +179,8 @@ const pageDataJson = JSON.stringify({
 <div id="content-wrapper">
 
 <div id="topbar">
-  <button class="link-btn" onclick="openBooks()">📖 Todos os Livros</button>
+  <a href="/" class="topbar-home-btn" title="Ir para a página inicial"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></a>
+  <button class="link-btn" onclick="openBooks()">Alterar livro</button>
   <span id="topbar-edition-label">{edition.edicao}</span>
   <div id="edition-selector">
     <label for="sel-edition">Edição:</label>
@@ -187,7 +189,6 @@ const pageDataJson = JSON.stringify({
         <option value={e.id} selected={e.id === edition.id}>{e.edicao}</option>
       ))}
     </select>
-    <button id="theme-toggle-btn" class="theme-toggle-btn" onclick="toggleDarkMode()" aria-pressed="false" title="Ativar modo noturno">🌙 Noturno</button>
   </div>
 </div>
 
@@ -280,6 +281,7 @@ const pageDataJson = JSON.stringify({
             <h1>Capítulo {capitulo}</h1>
             {chapterData.sumario && <div class="summary">{chapterData.sumario}</div>}
             <div class="chapter-header-actions">
+              {chapterData.link && <button class="ver-original-btn" onclick={`openPdfPanel('${chapterData.link}', 'Ver no Wikisource', 'link')`}>Ver no Wikisource</button>}
               {hasPdf && <button class="ver-original-btn" onclick={`openPdfPanel('${pdfOldUrl}', 'Ver PDF original', 'original')`}>Ver PDF original</button>}
               {hasPdf && <button class="ver-original-btn" onclick={`openPdfPanel('${pdfUrl}', 'Ver PDF 1950', 'recent')`}>Ver PDF 1950</button>}
               {allEditions.filter(e => e.id !== edition.id).length > 0 && (
@@ -329,7 +331,7 @@ const pageDataJson = JSON.stringify({
 
 <div id="book-selector" onclick="closeBooksOverlay(event)">
   <div id="book-panel">
-    <h2>Selecionar Livro <button class="close-btn" onclick="closeBooks()">&#x2715;</button></h2>
+    <h2>Selecione um livro<button class="close-btn" onclick="closeBooks()">&#x2715;</button></h2>
     <div id="book-list-content">
       {Array.from(booksByTestamentAndGroup.entries()).map(([testamento, grupoMap]) => (
         <div class="testament-section">
@@ -381,7 +383,7 @@ const pageDataJson = JSON.stringify({
 </div>
 
 </div>
-</div>
+<!-- fim #content-wrapper -->
 
 <div id="pdf-panel">
   <div id="pdf-panel-header">
@@ -390,6 +392,9 @@ const pageDataJson = JSON.stringify({
   </div>
   <iframe id="pdf-frame" src="" title="Conteúdo original"></iframe>
 </div>
+
+</div>
+<!-- fim #page-layout -->
 
 <script id="page-data" type="application/json" set:html={pageDataJson}></script>
 

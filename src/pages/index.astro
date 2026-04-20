@@ -5,7 +5,7 @@ import { CANONICAL_BOOK_CATALOG } from '../data/catalog.js';
 
 const editions = JSON.parse(readFileSync('edicoes/index.json', 'utf-8'));
 
-const title = 'Bíblia Pe. Figueiredo — Primeira tradução da Vulgata Clementina em Português | Bíblia Traduzida';
+const title = 'Bíblia Pe. Figueiredo — Tradução da Vulgata Clementina em Português';
 const description = 'Leia a Bíblia Sagrada na tradução do Pe. Antônio Pereira de Figueiredo (1750-1816), a primeira e mais fiel tradução da Vulgata Clementina para o português, com texto integral de todos os livros canônicos.';
 
 const jsonLd = {
@@ -15,13 +15,25 @@ const jsonLd = {
   'url': 'https://bibliatraduzida.com',
   'description': description,
   'inLanguage': 'pt-BR',
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'Bíblia Traduzida',
+    'url': 'https://bibliatraduzida.com',
+    'logo': {
+      '@type': 'ImageObject',
+      'url': 'https://bibliatraduzida.com/icons/icon-512.png',
+    },
+  },
 };
 
-const booksByGroup = new Map();
+const booksByTestament = new Map();
 for (const book of CANONICAL_BOOK_CATALOG) {
   const t = book.testamento;
-  if (!booksByGroup.has(t)) booksByGroup.set(t, []);
-  booksByGroup.get(t).push(book);
+  const g = book.grupo;
+  if (!booksByTestament.has(t)) booksByTestament.set(t, new Map());
+  const groups = booksByTestament.get(t);
+  if (!groups.has(g)) groups.set(g, []);
+  groups.get(g).push(book);
 }
 
 // Mapas para o "Continuar lendo" (usados no script client-side)
@@ -33,7 +45,10 @@ const homeDataJson = JSON.stringify({ bookTitleMap, editionNameMap });
 <div id="home-page">
   <header class="home-header">
     <h1>Bíblia Traduzida</h1>
-    <p class="home-subtitle">Tradução do Pe. Antônio Pereira de Figueiredo</p>
+    <p class="home-subtitle">por Padre Antônio Pereira de Figueiredo</p>
+    <p class="home-about">
+      A revisão da transcrição da edição Pe. Figueiredo (1950) ainda está sendo feita. Se quiser reportar qualquer problema, envie um e-mail para <a href="mailto:gmoraizsilva@gmail.com">gmoraizsilva@gmail.com</a>.
+    </p>
   </header>
 
   <main class="home-main">
@@ -41,28 +56,28 @@ const homeDataJson = JSON.stringify({ bookTitleMap, editionNameMap });
     <div id="continue-reading" hidden>
       <section class="home-continue">
         <h2>Continuar lendo</h2>
-        <a id="continue-link" href="#" class="continue-card">
-          <span id="continue-book" class="continue-book"></span>
-          <span id="continue-chapter" class="continue-chapter"></span>
-          <span id="continue-edition" class="continue-edition"></span>
-        </a>
+        <div id="continue-cards" class="continue-cards"></div>
       </section>
     </div>
 
-    <section class="home-about">
-      <h2>Sobre esta tradução</h2>
-      <p>
-        A tradução do Pe. <strong>Antônio Pereira de Figueiredo</strong> (1725–1797) é a
-        <strong>primeira tradução completa da Bíblia Sagrada para o português</strong>, realizada
-        diretamente da <em>Vulgata Clementina</em> — texto latino oficial da Igreja Católica desde
-        o Concílio de Trento. Publicada entre 1778 e 1790, é considerada a tradução portuguesa mais
-        fiel à tradição bíblica latina e ao magistério da Igreja.
-      </p>
-      <p>
-        Esta versão digital torna acessível o texto integral da edição de 1950, com anotações e
-        introduções originais, permitindo a leitura e comparação com a Vulgata Clementina em latim
-        e a versão inglesa Douay-Rheims.
-      </p>
+    <section class="home-books">
+      {Array.from(booksByTestament.entries()).map(([testamento, groups]) => (
+        <div class="home-testament">
+          <h2>{testamento}</h2>
+          {Array.from(groups.entries()).map(([grupo, books]) => (
+            <div class="home-group">
+              <h3>{grupo}</h3>
+              <ul class="home-book-list">
+                {books.map(book => (
+                  <li>
+                    <a href={`/figueiredo/${book.id}/1/`}>{book.tituloIndice}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      ))}
     </section>
 
     <section class="home-editions">
@@ -76,92 +91,205 @@ const homeDataJson = JSON.stringify({ bookTitleMap, editionNameMap });
         ))}
       </div>
     </section>
-
-    <section class="home-books">
-      {Array.from(booksByGroup.entries()).map(([testamento, books]) => (
-        <div class="home-testament">
-          <h2>{testamento}</h2>
-          <ul class="home-book-list">
-            {books.map(book => (
-              <li>
-                <a href={`/figueiredo/${book.id}/1/`}>{book.tituloIndice}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </section>
   </main>
-
-  <footer class="home-footer">
-    <p>
-      <a href="mailto:gmoraizsilva@gmail.com">gmoraizsilva@gmail.com</a>
-    </p>
-  </footer>
 </div>
 
 <style>
   #home-page {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 24px 16px;
+    padding: 16px 0 32px;
     font-family: 'David Libre', Georgia, 'Times New Roman', serif;
   }
-  .home-header { text-align: center; padding: 40px 0 24px; border-bottom: 1px solid #d9cebd; margin-bottom: 32px; }
-  .home-header h1 { font-size: 2.2rem; color: #2a1f0e; }
-  .home-subtitle { color: #666; font-size: 1.1rem; margin-top: 8px; }
-  .home-about { background: #f7f2e8; border: 1px solid #d9cebd; border-radius: 8px; padding: 20px 24px; margin-bottom: 32px; line-height: 1.7; }
-  .home-about h2 { font-size: 1.2rem; margin-bottom: 12px; }
-  .home-about p { margin-bottom: 12px; }
-  .home-editions { margin-bottom: 32px; }
-  .home-editions h2 { font-size: 1.2rem; margin-bottom: 12px; }
-  .edition-cards { display: flex; gap: 12px; flex-wrap: wrap; }
-  .edition-card { display: flex; flex-direction: column; padding: 12px 20px; background: #fff; border: 1px solid #d9cebd; border-radius: 6px; text-decoration: none; color: #333; font-size: 14px; gap: 4px; }
-  .edition-card strong { font-size: 15px; color: #2a1f0e; }
-  .edition-card:hover { border-color: #8b6914; background: #faf7f0; }
-  .home-testament { margin-bottom: 24px; }
-  .home-testament h2 { font-size: 1.1rem; border-bottom: 1px solid #d9cebd; padding-bottom: 6px; margin-bottom: 12px; }
-  .home-book-list { display: flex; flex-wrap: wrap; gap: 6px 12px; list-style: none; padding: 0; }
-  .home-book-list a { color: #2f4f9d; font-size: 14px; }
-  .home-book-list a:hover { text-decoration: underline; }
-  .home-footer { border-top: 1px solid #d9cebd; padding: 16px 0; text-align: center; font-size: 13px; color: #666; }
-  /* Continuar lendo */
-  .home-continue { margin-bottom: 28px; }
-  .home-continue h2 { font-size: 1.1rem; margin-bottom: 10px; color: #2a1f0e; }
-  .continue-card {
-    display: flex; align-items: center; gap: 14px;
-    padding: 14px 18px;
-    background: #fff8ec; border: 1px solid #c9a84c; border-radius: 8px;
-    text-decoration: none; color: #2a1f0e;
-    transition: background .15s, border-color .15s;
-    max-width: 480px;
+  .home-header { text-align: center; padding: 12px 16px 14px; border-bottom: 1px solid #d9cebd; margin-bottom: 20px; }
+  .home-header h1 { margin-top: 0; font-size: 1.8rem; color: #2a1f0e; line-height: 1.2; }
+  .home-subtitle { color: #666; font-size: 1rem; margin-top: 4px; }
+  .home-about { font-size: 12px; color: #888; margin-top: 8px; line-height: 1.5; }
+  .home-about a { color: #2f4f9d; }
+
+  /* Edições disponíveis */
+  .home-editions { padding: 0 16px; margin-bottom: 28px; }
+  .home-editions h2 { font-size: 1.1rem; margin-bottom: 10px; color: #2a1f0e; }
+  .edition-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
-  .continue-card:hover { background: #fff3d6; border-color: #8b6914; }
-  .continue-card::before { content: "📖"; font-size: 1.6rem; flex-shrink: 0; }
-  .continue-book { font-weight: bold; font-size: 1rem; }
-  .continue-chapter { font-size: .9rem; color: #555; }
-  .continue-edition { font-size: .8rem; color: #888; margin-left: auto; white-space: nowrap; }
+  .edition-card {
+    display: flex; flex-direction: column; padding: 10px 16px;
+    background: #fff; border: 1px solid #d9cebd; border-radius: 6px;
+    text-decoration: none; color: #333; font-size: 14px; gap: 3px;
+  }
+  .edition-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .edition-card strong { font-size: 14px; color: #2a1f0e; }
+  .edition-card span { font-size: 12px; color: #888; }
+  .edition-card:hover { border-color: #8b6914; background: #faf7f0; }
+
+  /* Lista de livros */
+  .home-books { display: grid; grid-template-columns: 1fr; gap: 0; margin-bottom: 0; padding: 0 16px 20px; }
+  .home-testament { margin-bottom: 20px; }
+  .home-testament:last-child { margin-bottom: 0; }
+  .home-testament > h2 { font-size: 1.05rem; border-bottom: 1px solid #d9cebd; padding-bottom: 5px; margin-bottom: 12px; color: #2a1f0e; }
+  .home-group { margin-bottom: 12px; }
+  .home-group:last-child { margin-bottom: 0; }
+  .home-group h3 { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: #7a6652; margin-bottom: 4px; }
+  .home-book-list { display: flex; flex-wrap: wrap; gap: 4px 10px; list-style: none; padding: 0; }
+  .home-book-list a { color: #2f4f9d; font-size: 14px; padding: 2px 0; display: inline-block; }
+  .home-book-list a:hover { text-decoration: underline; }
+
+  /* Continuar lendo — full-width, sem padding lateral no container */
+  .home-continue { margin-bottom: 0; padding-bottom: 16px; }
+  .home-continue h2 { font-size: 1.05rem; margin-bottom: 8px; color: #2a1f0e; padding-left: 16px; }
+
+  /* Último testamento sem margem extra — movido para dentro da regra acima */
+
+  @media (min-width: 640px) {
+    #home-page { padding: 24px 16px 40px; }
+    .home-header { padding: 12px 0 14px; }
+    .home-editions { padding: 0; }
+    .home-books { padding: 0; }
+    .home-header h1 { font-size: 2.2rem; }
+    .home-subtitle { font-size: 1.1rem; }
+    .home-about { font-size: 13px; }
+    .home-books { grid-template-columns: 1fr 1fr; gap: 0 32px; margin-bottom: 28px; }
+    .home-testament { margin-bottom: 0; }
+    .home-continue { padding-bottom: 20px; }
+    .home-continue h2 { padding-left: 0; }
+    .edition-cards { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+    .edition-card:last-child:nth-child(odd) { grid-column: auto; }
+  }
 </style>
 
-<!-- Dados para o script "Continuar lendo" -->
+<style is:global>
+  /* Classes aplicadas dinamicamente via JS — precisam ser globais */
+  .continue-cards {
+    display: flex; gap: 10px;
+    overflow-x: auto; flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 16px;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+  .continue-cards::-webkit-scrollbar { display: none; }
+  .continue-card {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 12px;
+    background: #fff8ec; border: 1px solid #c9a84c; border-radius: 6px;
+    text-decoration: none; color: #2a1f0e;
+    transition: background .15s, border-color .15s;
+    scroll-snap-align: start; flex-shrink: 0;
+  }
+  .continue-card:hover { background: #fff3d6; border-color: #8b6914; }
+  .continue-card::before { content: "📖"; font-size: 1.3rem; flex-shrink: 0; }
+  .continue-card-text { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+  .continue-book { font-weight: bold; font-size: .95rem; }
+  .continue-chapter { font-size: .95rem; font-weight: normal; color: #555; }
+  .continue-edition { font-size: .75rem; color: #888; }
+  /* Espaçador inicial — mais confiável que padding-left em overflow containers */
+  .continue-cards::before { content: ''; min-width: 16px; flex-shrink: 0; }
+  .continue-card:last-child { margin-right: 16px; }
+  @media (min-width: 640px) {
+    .continue-cards { flex-wrap: wrap; overflow-x: visible; }
+    .continue-cards::before { display: none; }
+    .continue-card:last-child { margin-right: 0; }
+  }
+
+  /* ── Home: modo noturno ─────────────────────────────────────── */
+  /* Usar #home-page para ganhar especificidade sobre os estilos escopados */
+  body.dark-mode #home-page .home-header {
+    border-bottom-color: #4d4338;
+  }
+  body.dark-mode #home-page .home-header h1 {
+    color: #f3e8d5;
+  }
+  body.dark-mode #home-page .home-subtitle {
+    color: #b4a899;
+  }
+  body.dark-mode #home-page .home-about {
+    color: #7a7065;
+  }
+  body.dark-mode #home-page .home-about a {
+    color: #8fb9ff;
+  }
+  body.dark-mode #home-page .home-testament > h2 {
+    color: #f3e8d5;
+    border-bottom-color: #4d4338;
+  }
+  body.dark-mode #home-page .home-group h3 {
+    color: #9e8c79;
+  }
+  body.dark-mode #home-page .home-book-list a {
+    color: #8fb9ff;
+  }
+  body.dark-mode #home-page .home-book-list a:hover {
+    color: #bdd4ff;
+  }
+  body.dark-mode #home-page .home-editions h2,
+  body.dark-mode #home-page .home-continue h2 {
+    color: #f3e8d5;
+  }
+  body.dark-mode #home-page .edition-card {
+    background: #1d1814;
+    border-color: #4d4338;
+    color: #eee6d6;
+  }
+  body.dark-mode #home-page .edition-card strong {
+    color: #f3e8d5;
+  }
+  body.dark-mode #home-page .edition-card span {
+    color: #b4a899;
+  }
+  body.dark-mode #home-page .edition-card:hover {
+    background: #2a231d;
+    border-color: #8b6914;
+  }
+  body.dark-mode .continue-card {
+    background: #1f1a14;
+    border-color: #5c4a24;
+    color: #eee6d6;
+  }
+  body.dark-mode .continue-card:hover {
+    background: #2a231d;
+    border-color: #8b6914;
+  }
+  body.dark-mode .continue-chapter {
+    color: #b4a899;
+  }
+  body.dark-mode .continue-edition {
+    color: #7a7065;
+  }
+</style>
+
 <script id="home-data" type="application/json" set:html={homeDataJson}></script>
 <script is:inline>
   (function () {
     try {
       const raw = localStorage.getItem('biblia:last-navigation');
       if (!raw) return;
-      const nav = JSON.parse(raw);
-      if (!nav.editionId || !nav.bookId || !nav.chapter) return;
+      const parsed = JSON.parse(raw);
+      // suporta formato antigo (objeto único) e novo (array)
+      const entries = Array.isArray(parsed) ? parsed : [parsed];
+      const valid = entries.filter(n => n.editionId && n.bookId && n.chapter);
+      if (!valid.length) return;
 
       const homeData = JSON.parse(document.getElementById('home-data').textContent);
-      const bookTitle = homeData.bookTitleMap[nav.bookId] || nav.bookId;
-      const editionName = homeData.editionNameMap[nav.editionId] || nav.editionId;
+      const container = document.getElementById('continue-cards');
 
-      const link = `/${nav.editionId}/${nav.bookId}/${nav.chapter}/`;
-      document.getElementById('continue-link').href = link;
-      document.getElementById('continue-book').textContent = bookTitle;
-      document.getElementById('continue-chapter').textContent = `Capítulo ${nav.chapter}`;
-      document.getElementById('continue-edition').textContent = editionName;
+      valid.forEach(nav => {
+        const bookTitle = homeData.bookTitleMap[nav.bookId] || nav.bookId;
+        const editionName = homeData.editionNameMap[nav.editionId] || nav.editionId;
+        const link = `/${nav.editionId}/${nav.bookId}/${nav.chapter}/`;
+        const a = document.createElement('a');
+        a.href = link;
+        a.className = 'continue-card';
+        a.innerHTML = `<span class="continue-card-text">
+          <span><span class="continue-book">${bookTitle}</span> <span class="continue-chapter">Cap. ${nav.chapter}</span></span>
+          <span class="continue-edition">${editionName}</span>
+        </span>`;
+        container.appendChild(a);
+      });
+
       document.getElementById('continue-reading').removeAttribute('hidden');
     } catch (_) {}
   })();

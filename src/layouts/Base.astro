@@ -6,6 +6,8 @@ export interface Props {
   lang?: string;
   hreflang?: Array<{lang: string; href: string}>;
   jsonLd?: Record<string, unknown>;
+  ogImage?: string;
+  ogType?: string;
 }
 const {
   title,
@@ -14,6 +16,8 @@ const {
   lang = 'pt-BR',
   hreflang = [],
   jsonLd,
+  ogImage = 'https://bibliatraduzida.com/icons/icon-512.png',
+  ogType = 'website',
 } = Astro.props;
 
 import '../styles/global.css';
@@ -28,6 +32,19 @@ import '../styles/global.css';
   {canonical && <link rel="canonical" href={canonical} />}
   {hreflang.map(h => <link rel="alternate" hreflang={h.lang} href={h.href} />)}
   {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>}
+  <!-- Open Graph -->
+  <meta property="og:type" content={ogType} />
+  <meta property="og:title" content={title} />
+  {description && <meta property="og:description" content={description} />}
+  {canonical && <meta property="og:url" content={canonical} />}
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Bíblia Traduzida" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={title} />
+  {description && <meta name="twitter:description" content={description} />}
+  <meta name="twitter:image" content={ogImage} />
   <meta name="application-name" content="Biblia Traduzida">
   <meta name="theme-color" content="#f7f2e8">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -42,6 +59,8 @@ import '../styles/global.css';
 </head>
 <body>
   <slot />
+  <!-- Botão flutuante de modo noturno (todas as páginas) -->
+  <button id="theme-toggle-btn" class="theme-fab" onclick="toggleDarkMode()" aria-pressed="false" title="Ativar modo noturno">🌙</button>
   <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
   <script>

@@ -202,6 +202,11 @@ body.dark-mode .install-popup-btn:active {
   align-items: center;
 }
 
+#topbar a, #topbar button.link-btn, #topbar span {
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
 #topbar a, #topbar button.link-btn {
   color: #00c;
   text-decoration: none;
@@ -211,10 +216,21 @@ body.dark-mode .install-popup-btn:active {
   cursor: pointer;
   font-family: inherit;
   padding: 0;
-  margin-bottom: 5px;
+  margin: 0;
 }
 #topbar a:hover, #topbar button.link-btn:hover { text-decoration: underline; }
 #topbar span { color: #555; }
+
+.topbar-home-btn {
+  display: inline-flex;
+  align-items: center;
+  color: #444 !important;
+  margin-bottom: 2px !important;
+  width: 18px;
+  height: 20px;
+}
+.topbar-home-btn:hover { opacity: 0.65; text-decoration: none !important; }
+body.dark-mode .topbar-home-btn { color: #b4a899 !important; }
 
 #edition-selector {
   margin-left: auto;
@@ -238,6 +254,48 @@ body.dark-mode .install-popup-btn:active {
 
 .theme-toggle-btn:hover {
   background: #ececec;
+}
+
+/* Botão flutuante de modo noturno */
+.theme-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 20px;
+  z-index: 500;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #c9beaf;
+  background: #fff8ec;
+  color: #2a1f0e;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: opacity 0.25s ease, transform 0.25s ease, background 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.theme-fab:hover {
+  background: #fff3d6;
+  border-color: #8b6914;
+}
+
+.theme-fab.fab-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+}
+
+@media (min-width: 640px) {
+  .theme-fab.fab-hidden {
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+  }
 }
 
 select {
@@ -816,9 +874,13 @@ body.pdf-modal-open {
   min-width: 0;
   overflow: visible;
   transition: flex 0.25s ease;
-  max-width: 1300px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 16px 60px;
+}
+
+#content-wrapper.compare-all {
+  max-width: 1300px;
 }
 
 /* ── Drawer de PDF original ── */
@@ -1156,6 +1218,17 @@ body.dark-mode .theme-toggle-btn {
 
 body.dark-mode .theme-toggle-btn:hover {
   background: #3a3128;
+}
+
+body.dark-mode .theme-fab {
+  background: #2a231d;
+  border-color: #5c4f41;
+  color: #eee6d6;
+}
+
+body.dark-mode .theme-fab:hover {
+  background: #3a3128;
+  border-color: #8b6914;
 }
 
 body.dark-mode .ver-original-btn,

@@ -40,7 +40,7 @@ function applyTheme(theme) {
   document.body.classList.toggle('dark-mode', isDark);
   const btn = document.getElementById('theme-toggle-btn');
   if (!btn) return;
-  btn.textContent = isDark ? '☀️ Claro' : '🌙 Noturno';
+  btn.textContent = isDark ? '☀️' : '🌙';
   btn.setAttribute('aria-pressed', String(isDark));
   btn.title = isDark ? 'Ativar modo claro' : 'Ativar modo noturno';
 }
@@ -66,11 +66,18 @@ function saveNavigationToStorage() {
     if (!el) return;
     const data = JSON.parse(el.textContent || '{}');
     if (!data.edition || !data.book || !data.chapter) return;
-    localStorage.setItem(NAV_STORAGE_KEY, JSON.stringify({
-      editionId: data.edition,
-      bookId: data.book,
-      chapter: data.chapter,
-    }));
+    const entry = { editionId: data.edition, bookId: data.book, chapter: data.chapter };
+
+    const raw = localStorage.getItem(NAV_STORAGE_KEY);
+    let entries = [];
+    try { const parsed = JSON.parse(raw); entries = Array.isArray(parsed) ? parsed : (parsed ? [parsed] : []); } catch (_) {}
+
+    // Remove entrada duplicada (mesmo livro, qualquer edição) e insere no início
+    entries = entries.filter(e => e.bookId !== entry.bookId);
+    entries.unshift(entry);
+    entries = entries.slice(0, 4);
+
+    localStorage.setItem(NAV_STORAGE_KEY, JSON.stringify(entries));
   } catch (_) {}
 }
 
@@ -358,6 +365,9 @@ function renderCompareGrid(ch1, bookDir1, compareEntries) {
     const pdfOldUrl = bookDir ? `/${bookDir.replace('/figueiredo/', '/figueiredo-original/')}/${ch.num}.pdf` : null;
     const hasPdf = bookDir ? bookDir.includes('/figueiredo/') : false;
     let buttonsHtml = '';
+    if (ch.link) {
+      buttonsHtml += `<button class="ver-original-btn" onclick="openPdfPanel('${ch.link}', 'Ver no Wikisource', 'link')">Ver no Wikisource</button>`;
+    }
     if (hasPdf && pdfUrl) {
       buttonsHtml += `<button class="ver-original-btn" onclick="openPdfPanel('${pdfUrl}', 'Ver PDF 1950', 'recent')">Ver PDF 1950</button>`;
       buttonsHtml += `<button class="ver-original-btn" onclick="openPdfPanel('${pdfOldUrl}', 'Ver PDF original', 'original')">Ver PDF original</button>`;
@@ -463,12 +473,14 @@ async function loadCompareChapter() {
 
 function onCompareSelectChange(value) {
   const area = document.getElementById('main-area');
+  const wrapper = document.getElementById('content-wrapper');
   if (!area) return;
 
   if (!value) {
     compareMode = false;
     compareEditionIds = [];
     area.classList.replace('compare', 'single') || (area.classList.remove('compare'), area.classList.add('single'));
+    if (wrapper) wrapper.classList.remove('compare-all');
     const grid = document.getElementById('compare-grid');
     if (grid) grid.innerHTML = '';
     const cc = document.getElementById('content-compare');
@@ -483,8 +495,10 @@ function onCompareSelectChange(value) {
   const otherEditions = (pageData.editions || []).filter(e => e.id !== pageData.edition);
   if (value === 'all') {
     newIds = otherEditions.map(e => e.id);
+    if (wrapper) wrapper.classList.add('compare-all');
   } else {
     newIds = [value];
+    if (wrapper) wrapper.classList.remove('compare-all');
   }
 
   compareMode = true;
@@ -971,11 +985,40 @@ window.closeIntroOverlay = closeIntroOverlay;
 window.switchInlinePdfFallback = switchInlinePdfFallback;
 
 // ── INIT ──────────────────────────────────────────────────────
+// ── FLOATING DARK MODE BUTTON (scroll behavior for mobile) ─────
+
+function initFabScrollBehavior() {
+  const fab = document.getElementById('theme-toggle-btn');
+  if (!fab) return;
+  const THRESHOLD = 80;
+  let isMobile = () => window.innerWidth < 640;
+  let lastScrollY = window.scrollY;
+
+  function updateFabVisibility() {
+    if (!isMobile()) {
+      fab.classList.remove('fab-hidden');
+      return;
+    }
+    const scrollY = window.scrollY;
+    if (scrollY > THRESHOLD) {
+      fab.classList.add('fab-hidden');
+    } else {
+      fab.classList.remove('fab-hidden');
+    }
+    lastScrollY = scrollY;
+  }
+
+  window.addEventListener('scroll', updateFabVisibility, { passive: true });
+  window.addEventListener('resize', updateFabVisibility, { passive: true });
+  updateFabVisibility();
+}
+
 // Usar DOMContentLoaded garante que o DOM está pronto mesmo em
 // dev mode (Vite pode executar módulos antes de DOMContentLoaded).
 
 function runInit() {
   try { initTheme(); } catch (_) {}
+  try { initFabScrollBehavior(); } catch (_) {}
   try { initReviewPopup(); } catch (_) {}
   try { initInstallPopup(); } catch (_) {}
   try { initPdfModalGestures(); } catch (_) {}
