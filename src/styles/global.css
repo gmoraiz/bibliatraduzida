@@ -232,6 +232,17 @@ body.dark-mode .install-popup-btn:active {
 .topbar-home-btn:hover { opacity: 0.65; text-decoration: none !important; }
 body.dark-mode .topbar-home-btn { color: #b4a899 !important; }
 
+@media (max-width: 639px) {
+  #topbar {
+    padding-bottom: 8px;
+    gap: 12px;
+  }
+}
+
+@media (min-width: 640px) {
+  .topbar-home-btn { margin-bottom: 2px; }
+}
+
 #edition-selector {
   margin-left: auto;
   display: flex;
