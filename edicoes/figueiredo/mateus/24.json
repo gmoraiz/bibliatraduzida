@@ -1,6 +1,7 @@
 {
   "num": 24,
-  "sumario": "Prediz Jesus Cristo a ruína do Templo. Manda-nos resguardar dos profetas falsos. Fenômenos espantosos, que hão de preceder a sua vinda. O bom servo está sempre vigilante ao que seu Senhor quereria dêle. Devemos estar prontos para o tempo em que o Senhor vier.",
+  "sumario": "Prediz Jesus Cristo a ruína do Templo. Manda-nos resguardar dos profetas falsos. Fenômenos espantosos, que hão de preceder a sua vinda. O bom servo está sempre vigilante ao que seu Senhor quererá dêle. Devemos estar prontos para o tempo em que o Senhor vier.",
+  "sumarioNota": "fn24_0",
   "versiculos": [
     { "n": 1, "texto": "E tendo saído Jesus do Templo, se ia retirando. E chegaram a êle os seus discípulos, para lhe mostrarem a fábrica do Templo." },
     { "n": 2, "texto": "Mas êle respondendo, lhes disse: Vêdes tudo isto? Na verdade vos digo, que não ficará aqui pedra sôbre pedra, que não seja derribada." },
@@ -55,6 +56,10 @@
     { "n": 51, "texto": "E removê-lo-á, e porá a sua parte com os hipócritas: Ali haverá chôro, e ranger de dentes." }
   ],
   "notas": {
+    "fn24_0": {
+      "rotulo": "QUERERÁ DÊLE",
+      "texto": "A Deus não convém a vontade imperfeita de simples desejo, pois o seu decreto é imutável, e sem a menor oposição, Is 46, 10; Rom 9, 19; assim que isto se há de entender dos meios externos, de que se valeu para os atrair: as suas exortações, doutrina, milagres, etc., a que êles, por efeito da sua depravada e rebelde vontade, e por um oculto juízo, e permissão de Deus; voluntàriamente fecharam os olhos. — Pereira."
+    },
     "fn24_1": {
       "rotulo": "FALSOS PROFETAS",
       "texto": "Os primeiros escritores eclesiásticos viram estes falsos profetas nos pseudo messias; Teudas, Barcochebas, Simão, o Mágico, Cerinto, etc. Notam os exegetas que nesta profecia se misturam os acontecimentos que se deviam cumprir na ruína de Jerusalém e no fim do mundo."
@@ -93,11 +98,11 @@
     },
     "fn24_10": {
       "rotulo": "QUE NÃO PASSARÁ ESTA GERAÇÃO, DOS JUDEUS",
-      "texto": "Mas que se perpetuará de família em família até ao fim do mundo, devendo converter-se então um grande número dêles, conforme à piedosa crença da Igreja. — S. João Crisóstomo."
+      "texto": "Mas que se perpetuará de família em família até ao fim do Mundo, devendo converter-se então um grande número dêles, conforme à piedosa crença da Igreja. — S. João Crisóstomo."
     },
     "fn24_11": {
       "rotulo": "O CONSTITUIRÁ ADMINISTRADOR DE TODOS OS SEUS BENS",
-      "texto": "O levará à sua glória, que é a soma de todos os bens, em recompensa da sua prudente fidelidade."
+      "texto": "O levará à sua glória, que é a suma de todos os bens, em recompensa da sua prudente fidelidade."
     },
     "fn24_12": {
       "rotulo": "MEU SENHOR TARDA EM VIR",

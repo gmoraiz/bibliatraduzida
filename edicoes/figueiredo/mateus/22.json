@@ -1,6 +1,6 @@
 {
   "num": 22,
-  "sumario": "Parábola do festim das bodas. O que não trouxe vestido nupcial é expulso, e lançado em trevas. Deve-se pagar o tributo a César. Os saduceus confundidos. O preceito máximo é o de amar a Deus de todo o coração. Davi sendo pai do Messias, chama a êste seu Senhor.",
+  "sumario": "Parábola do festim das bodas. O que não trouxe vestido nupcial, é expulso, e lançado em trevas. Deve-se pagar o tributo a César. Os saduceus confundidos. O preceito máximo é o de amar a Deus de todo o coração. Davi sendo pai do Messias, chama a êste seu Senhor.",
   "versiculos": [
     { "n": 1, "texto": "E respondendo Jesus, lhes tornou a falar segunda vez em parábolas, dizendo:" },
     { "n": 2, "texto": "O reino dos Céus é semelhante a um homem rei que fez as bodas a seu filho." },
@@ -38,9 +38,9 @@
     { "n": 34, "texto": "Mas os fariseus, quando ouviram que Jesus tinha feito calar a bôca aos saduceus, se ajuntaram em conselho:" },
     { "n": 35, "texto": "E um dêles, que era doutor da lei, tentando-o, lhe perguntou:" },
     { "n": 36, "texto": "Mestre, qual é o grande mandamento da lei?" },
-    { "n": 37, "texto": "Jesus lhe disse: Amarás ao Senhor teu Deus de todo o teu coração, e de tôda a tua alma, e de todo o teu entendimento," },
+    { "n": 37, "texto": "Jesus lhe disse: <span class='prophetic'>Amarás ao Senhor teu Deus de todo o teu coração, e de tôda a tua alma, e de todo o teu entendimento,</span>" },
     { "n": 38, "texto": "Êste é o máximo, e o primeiro mandamento." },
-    { "n": 39, "texto": "E o segundo semelhante a êste é: Amarás a teu próximo, como a ti mesmo." },
+    { "n": 39, "texto": "E o segundo semelhante a êste é: <span class='prophetic'>Amarás a teu próximo, como a ti mesmo.</span>" },
     { "n": 40, "texto": "Dêstes dois mandamentos depende toda a lei e os profetas." },
     { "n": 41, "texto": "E estando juntos os fariseus, lhes fez Jesus esta pergunta," },
     { "n": 42, "texto": "dizendo: Que vos parece a vós do Cristo? de quem é êle filho? Responderam-lhe: De Davi.", "nota": "fn22_9" },
@@ -76,7 +76,7 @@
     },
     "fn22_7": {
       "rotulo": "É LÍCITO",
-      "texto": "Desde o tempo de Pompeu eram obrigados os judeus a pagar o tributo de duas dracmas aos imperadores romanos, que por isso costumavam bater moeda do valor do tributo ou de uma metade. E êste tributo era muito diverso do outro que os judeus pagavam para as obras do templo, como ouvimos no cap. 17, vers. 23. Porque o do cap. 17, era instituído por Moisés a favor do templo, não o pagavam senão os que tivessem vinte e cinco anos. Êste porém do cap. 22, era imposto pelos romanos: e segundo escreve Ulpiano na lei 3, De Censibus, pagavam-no todos os varões de quatorze anos, e todas as fêmeas de doze para acima."
+      "texto": "Desde o tempo de Pompeu eram obrigados os judeus a pagar o tributo de duas dracmas aos imperadores romanos, que por isso costumavam bater moeda do valor do tributo ou de uma metade. E êste tributo era muito diverso do outro que os judeus pagavam para as obras do templo, como ouvimos no cap. 17, vers. 23. Porque o do cap. 17, era instituído por Moisés a favor do templo, não o pagavam senão os que tivessem vinte e cinco anos. Êste porém do cap. 22, era imposto pelos romanos: e segundo escreve Ulpiano na lei 3, De Censibus, pagavam-no todos os varões de quatorze anos, e todas as fêmeas de doze para cima."
     },
     "fn22_8": {
       "rotulo": "ORA DEUS NÃO O É DE MORTOS",

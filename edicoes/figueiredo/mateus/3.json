@@ -10,14 +10,14 @@
     { "n": 6,  "texto": "E confessando os seus pecados, eram por êle batizados no Jordão." },
     { "n": 7,  "texto": "Mas vendo que muitos dos fariseus, e dos saduceus vinham ao seu batismo, lhes disse: Raça de víboras, quem vos ensinou a fugir da ira vindoura?", "nota": "fn3_4" },
     { "n": 8,  "texto": "Fazei pois dignos frutos de penitência." },
-    { "n": 9,  "texto": "E não queirais dizer dentro de vós mesmos: Nós temos por pai a Abraão: porque eu vos digo que poderoso é Deus para fazer que nasçam destas pedras filhos de Abraão." },
+    { "n": 9,  "texto": "E não queirais dizer dentro de vós mesmos: Nós temos por pai a Abraão: porque eu vos digo que poderoso é Deus para fazer que nasçam destas pedras filhos a Abraão." },
     { "n": 10, "texto": "Porque já o machado está pôsto à raiz das árvores. Tôda a árvore pois que não dá bom fruto, será cortada, e lançada no fogo." },
     { "n": 11, "texto": "Eu na verdade vos batizo em água para vos trazer à penitência: Porém o que há de vir depois de mim, é mais poderoso do que eu, e eu não sou digno de lhe ministrar o calçado: êle vos batizará no Espírito Santo, e em fogo.", "nota": "fn3_5" },
     { "n": 12, "texto": "A sua pá na sua mão se acha: e êle limpará muito bem a sua eira: E recolherá o seu trigo no celeiro, mas queimará as palhas num fogo, que jamais se apagará." },
     { "n": 13, "texto": "Então veio Jesus da Galiléia ao Jordão ter com João, para ser batizado por êle." },
     { "n": 14, "texto": "Porém João o impedia, dizendo: Eu sou o que devo ser batizado por ti, e tu vens a mim?" },
     { "n": 15, "texto": "E respondendo Jesus, lhe disse: Deixa por ora: Porque assim nos convém cumprir tôda a justiça. Êle então o deixou.", "nota": "fn3_6" },
-    { "n": 16, "texto": "E depois que Jesus foi batizado, saiu logo para fora da água: e eis-que se lhe abriram os céus: e viu o Espírito de Deus, que descia como pomba, e que vinha sôbre êle.", "nota": "fn3_7" },
+    { "n": 16, "texto": "E depois que Jesus foi batizado, saiu logo para fora da água: e eis-que se lhe abriram os céus: e viu ao Espírito de Deus, que descia como pomba, e que vinha sôbre êle.", "nota": "fn3_7" },
     { "n": 17, "texto": "E eis uma voz dos céus, que dizia: Êste é meu filho amado, no qual tenho pôsto toda a minha complacência." }
   ],
   "notas": {
@@ -31,7 +31,7 @@
     },
     "fn3_3": {
       "rotulo": "gafanhotos, e mel silvestre",
-      "texto": "ERAM GAFANHOTOS — Entre os hebreus não se reputavam os gafanhotos alimento imundo, como se colhe do Lev 11, 22. E fora da Palestina, escreve Plínio no livro VI, cap. 30, e no livro VII, cap. 2, que a gente pobre os comia temperados com sal, e secos ao fumo. Calmet. — Ainda dêstes últimos séculos atesta o nosso Barros na Década 2, livro 3, cap. 40, ser esta conserva dos gafanhotos um prato delicioso entre os mouros da Índia.<br><br>MEL SILVESTRE — É muito abundante no deserto da Judéia."
+      "texto": "ERAM GAFANHOTOS — Entre os hebreus não se reputavam os gafanhotos alimento imundo, como se colhe do Lev 11, 22. E fora da Palestina, escreve Plínio no livro VI, cap. 30, e no livro VII, cap. 2, que a gente pobre os comia temperados com sal, e secos ao fumo. Calmet. — Ainda dêstes últimos séculos atesta o nosso Barros na Década 2, livro 3, cap. 4.°, ser esta conserva dos gafanhotos um prato delicioso entre os mouros da Índia.<br><br>MEL SILVESTRE — É muito abundante no deserto da Judéia."
     },
     "fn3_4": {
       "rotulo": "Raça de víboras",

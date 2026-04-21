@@ -19,12 +19,12 @@
     { "n": 15, "texto": "<span class='prophetic'>A terra de Zabulon, e a terra de Neftalim, a estrada que vai dar no mar além do Jordão, a Galiléia dos gentios.</span>" },
     { "n": 16, "texto": "<span class='prophetic'>Povo, que estava de assento nas trevas, viu uma grande luz: E aos que estavam de assento na região da sombra da morte, a êstes apareceu a luz.</span>" },
     { "n": 17, "texto": "Desde então começou Jesus a pregar, e a dizer: Fazei penitência; porque está próximo o reino dos céus." },
-    { "n": 18, "texto": "E caminhando Jesus ao longo do mar da Galiléia, viu dois irmãos, Simão, que se chama Pedro: e seu irmão André, que lançavam a rêde ao mar (porque eram pescadores).", "nota": "fn4_4" },
+    { "n": 18, "texto": "E caminhando Jesus ao longo do mar da Galiléia, viu dois irmãos, Simão, que se chama Pedro; e seu irmão André, que lançavam a rêde ao mar (porque eram pescadores).", "nota": "fn4_4" },
     { "n": 19, "texto": "E disse-lhes: Vinde após mim, e farei que vós sejais pescadores de homens." },
     { "n": 20, "texto": "E êles sem mais detença, deixadas as rêdes, o seguiram." },
     { "n": 21, "texto": "E passando dali, viu outros dois irmãos, Tiago, filho de Zebedeu, e João seu irmão, em uma barca com seu pai Zebedeu, que consertavam as suas rêdes: E os chamou." },
     { "n": 22, "texto": "E êles no mesmo ponto, deixando as rêdes, e o pai, foram em seu seguimento." },
-    { "n": 23, "texto": "E Jesus rodeava tôda a Galiléia, ensinando nas suas Sinagogas, e pregando o Evangelho do reino: E curando tôda casta de doenças, e tôda a casta de enfermidades no povo.", "nota": "fn4_5" },
+    { "n": 23, "texto": "E Jesus rodeava tôda a Galiléia, ensinando nas suas Sinagogas, e pregando o Evangelho do reino: E curando tôda a casta de doenças, e tôda a casta de enfermidades no povo.", "nota": "fn4_5" },
     { "n": 24, "texto": "E correu a sua fama por tôda a Síria e lhe trouxeram todos os que se achavam enfermos, possuídos de vários achaques, e dores, e os possessos, e os lunáticos, e os paralíticos, e os curou.", "nota": "fn4_6" },
     { "n": 25, "texto": "E uma grande multidão de povo o foi seguindo de Galiléia, e de Decápole, e de Jerusalém, e da Judéia, e de além do Jordão.", "nota": "fn4_7" }
   ],
@@ -55,7 +55,7 @@
     },
     "fn4_7": {
       "rotulo": "Decápole",
-      "texto": "DECÁPOLE — Era a confederação de muitas cidades unidas para a defesa mútua. Ainda que a palavra Decápole, etimologicamente, designe dez cidades, o número das cidades confederadas era variável. A maior parte ficava situada a este do Jordão. A capital, Scitópolis, a antiga Betsan, a oeste do rio, é a chave da Palestina; depois destas, as mais importantes são Cesaréia, Asor, Cades, Sefet, Corozain, Cafarnaum, Betsaida, Jotapata e Tiberíades."
+      "texto": "DECÁPOLE — Era a confederação de muitas cidades unidas para a defesa mútua. Ainda que a palavra Decápole, etimologicamente, designe dez cidades, o número das cidades confederadas era variável. A maior parte ficava situada a este no Jordão. A capital, Sitópolis, a antiga Betsan, a oeste do rio, é a chave da Palestina; depois destas, as mais importantes são Cesaréia, Asor, Cedes, Sefet, Corozain, Cafarnaum, Betsaida, Jetapata e Tiberíades."
     }
   }
 }
