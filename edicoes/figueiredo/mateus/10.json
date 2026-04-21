@@ -3,12 +3,12 @@
   "sumario": "Envia Jesus Cristo os doze discípulos a pregar, instrui-os. Descrevem-se os seus nomes. Exorta-os a padecer e sofrer. Diz-lhes que não viera ao mundo trazer paz, mas trazer guerra. Que é necessário confessá-lo diante dos homens, e prezar mais do que tudo o seu nome. Que o que honra aos seus servos, a êle honra e dêle terá a recompensa.",
   "versiculos": [
     { "n": 1,  "texto": "Então, convocados os seus doze discípulos, deu-lhes Jesus poder sôbre os espíritos imundos, para os expelirem, e para curarem tôdas as doenças, e tôdas as enfermidades." },
-    { "n": 2,  "texto": "Ora os nomes dos doze Apóstolos são êstes: O primeiro, Simão, que se chama Pedro, e André seu irmão." },
-    { "n": 3,  "texto": "Tiago, filho de Zebedeu, e João seu irmão, Filipe, e Bartolomeu, Tomé, e Mateus, o Publicano, Tiago, filho de Alfeu e Tadeu.", "nota": "fn10_1" },
+    { "n": 2,  "texto": "Ora os nomes dos doze Apóstolos são êstes: O primeiro, Simão, que se achama Pedro, e André seu irmão." },
+    { "n": 3,  "texto": "Iago, filho de Zebedeu, e João seu irmão, Filipe, e Bartolomeu, Tomé, e Mateus, o Publicano, Tiago, filho de Alfeu e Tadeu.", "nota": "fn10_1" },
     { "n": 4,  "texto": "Simão Cananeu e Judas Iscariotes, que foi o que o entregou.", "nota": "fn10_2" },
     { "n": 5,  "texto": "A êstes doze enviou Jesus, dando-lhes estas instruções, dizendo: Não ireis caminho de gentios, nem entreis nas cidades dos samaritanos." },
     { "n": 6,  "texto": "Mas ide antes às ovelhas, que pereceram da casa de Israel." },
-    { "n": 7,  "texto": "E pondo-vos a caminho pregai, dizendo: Que está próximo o reino dos Céus:" },
+    { "n": 7,  "texto": "E pondo-vos a caminho pregai, dizendo: Que está próximo o reino dos Céus." },
     { "n": 8,  "texto": "Curai os enfermos, ressuscitai os mortos, limpai os leprosos, expeli os demônios: Dai de graça o que de graça recebestes." },
     { "n": 9,  "texto": "Não possuais ouro, nem prata, nem tragais dinheiro nas vossas cintas:" },
     { "n": 10, "texto": "Nem alforje para o caminho, nem duas túnicas, nem calçado, nem bordão; porque digno é o trabalhador do seu alimento.", "nota": "fn10_3" },
@@ -47,8 +47,8 @@
   ],
   "notas": {
     "fn10_1": {
-      "rotulo": "Tiago",
-      "texto": "TIAGO — Em latim Jacob: pelo princípio de menor esfôrço começou a pronunciar-se na península hispânica Iago, precedido do Sant, vindo daí Sant'Iago e por corrupção inaceitável e injustificável Tiago, ou Thiago, como vulgarmente se diz e escreve, formando uma palavra só da abreviatura de Sant e do Iago. Dever-se-ia escrever T'Iago. (Nota do editor: — Seguindo o critério ortográfico adotado nesta edição, estamos exatamente usando a grafia Tiago)."
+      "rotulo": "Iago",
+      "texto": "IAGO — Em latim Jacob: pelo princípio de menor esfôrço começou a pronunciar-se na península hispânica Iago, precedido do Sant, vindo daí Sant'Iago e por corrupção inaceitável e injustificável Tiago, ou Thiago, como vulgarmente se diz e escreve, formando uma palavra só da abreviatura de Sant e do Iago. Dever-se-ia escrever T'Iago. (Nota do editor: — Seguindo o critério ortográfico adotado nesta edição, estamos exatamente usando a grafia Tiago)."
     },
     "fn10_2": {
       "rotulo": "Iscariotes",

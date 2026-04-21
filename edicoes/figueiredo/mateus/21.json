@@ -20,7 +20,7 @@
     { "n": 16, "texto": "E lhe disseram: Ouves o que dizem êstes? E Jesus lhes respondeu: Sim: Nunca lestes: Que da bôca dos meninos, e dos que mamam, tiraste o perfeito louvor?" },
     { "n": 17, "texto": "E tendo-os deixado, retirou-se Jesus para fora da cidade passando a Betânia, e ali ficou.", "nota": "fn21_5" },
     { "n": 18, "texto": "Mas pela manhã quando voltava para a cidade teve fome." },
-    { "n": 19, "texto": "E vendo uma figueira junto do caminho, se chegou a ela: E não achou nela senão unicamente folhas, e lhe disse: Nunca jamais nasça fruto de ti. E no mesmo ponto se secou a figueira.", "nota": "fn21_6" },
+    { "n": 19, "texto": "E vendo uma figueira junto do caminho, chegou a ela: E não achou nela senão unicamente folhas, e lhe disse: Nunca jamais nasça fruto de ti. E no mesmo ponto se secou a figueira.", "nota": "fn21_6" },
     { "n": 20, "texto": "E vendo isto os discípulos, se admiraram, dizendo: Como se secou para logo?" },
     { "n": 21, "texto": "E respondendo Jesus, lhes disse: Na verdade vos digo que, se tiverdes fé, e não duvidardes, não só fareis o que eu acabo de fazer à figueira, mas ainda se disserdes a êste monte, tira-te, e lança-te no mar, assim se fará." },
     { "n": 22, "texto": "E tôdas as coisas que pedirdes, fazendo oração com fé, haveis de conseguir." },
@@ -39,7 +39,7 @@
     { "n": 35, "texto": "Mas os lavradores, lançando a mão aos servos dêle, feriram um, mataram outro, e a outro apedrejaram." },
     { "n": 36, "texto": "Enviou ainda outros servos em maior número, do que os primeiros, e fizeram-lhes o mesmo." },
     { "n": 37, "texto": "E por último enviou-lhes seu filho, dizendo: Hão de ter respeito a meu filho." },
-    { "n": 38, "texto": "Porém os lavradores vendo o filho, disseram entre si: Êste é o herdeiro, vinde, matemo-lo, e ficaríamos senhores da sua herança." },
+    { "n": 38, "texto": "Porém os lavradores vendo o filho, disseram entre si: Êste é o herdeiro, vinde, matemo-lo, e ficarémos senhores da sua herança." },
     { "n": 39, "texto": "E, lançando-lhe as mãos, puseram-no fora da vinha e mataram-no." },
     { "n": 40, "texto": "Quando pois vier o senhor da vinha, que fará êle àqueles lavradores?" },
     { "n": 41, "texto": "Responderam-lhe: Aos maus destruirá rigorosamente: E arrendará a sua vinha a outros lavradores que lhe paguem o fruto a seus tempos devidos." },
@@ -64,7 +64,7 @@
     },
     "fn21_4": {
       "rotulo": "NO TEMPLO",
-      "texto": "No grego está hieron. O hagiógrafótém sempre cuidado de distinguir o hieron do naós: No hieron estavam as dependências do santuário, consagradas também a Deus; o naós era o santuário propriamente dito. Ora as cenas narradas neste e nos versículos seguintes passaram-se no hieron."
+      "texto": "No grego está hieron. O hagiógrafo tem sempre cuidado de distinguir o hieron do naós: No hieron estavam as dependências do santuário, consagradas também a Deus; o naós era o santuário propriamente dito. Ora as cenas narradas neste e nos versículos seguintes passaram-se no hieron."
     },
     "fn21_5": {
       "rotulo": "BETÂNIA",
@@ -80,7 +80,7 @@
     },
     "fn21_8": {
       "rotulo": "QUE PLANTOU UMA VINHA",
-      "texto": "Esta vinha significa o povo judaico. A sebe, a providência de Deus, que o protege por meio de seus anjos e profetas. O lugar é a lei, que pelo modo da pena estava pedindo dêle frutos de justiça. A torre é o Templo, onde estavam as sentinelas, isto é, sacerdotes e doutores da Lei, para velarem sôbre o povo. Os lavradores, os reis, os pontífices, e os sacerdotes. Os servos, os profetas que os Judeus mataram. O Filho, Jesus Cristo. — Amelote."
+      "texto": "Esta vinha significa o povo judaico. A sebe, a providência de Deus, que o protege por meio de seus anjos e profetas. O lugar é a lei, que pelo modo da pena estava pedindo dêle frutos de justiça. A torre é o Templo, onde estavam as sentinelas, isto é, sacerdotes e doutores da Lei, para valerem sôbre o povo. Os lavradores, os reis, os pontífices, e os sacerdotes. Os servos, os profetas que os Judeus mataram. O Filho, Jesus Cristo. — Amelote."
     },
     "fn21_9": {
       "rotulo": "ESSA TORNOU-SE",
