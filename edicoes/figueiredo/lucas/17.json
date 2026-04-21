@@ -3,7 +3,7 @@
   "sumario": "Condenação do que dá escândalo aos pequeninos. Deve-se perdoar sete vezes no dia ao que se arrepende. Quão poderosa seja a fé. Por mais que façamos, sempre nos devemos ter em conta de servos inúteis. De dez leprosos, que Jesus curou, só um é agradecido. Segunda vinda do Senhor ao mundo, como um relâmpago.",
   "versiculos": [
     {"n": 1, "texto": "E disse Jesus a seus discípulos: É impossível que deixe de haver escândalos, mas ai daquele por quem êles vêm."},
-    {"n": 2, "texto": "Seria melhor para êle que se lhe atasse ao pescoço uma pedra de moinho, e que fôsse precipitado ao mar, do que ser êle a causa de se escandalizar um dêstes pequeninos."},
+    {"n": 2, "texto": "Seria melhor para êle que se lhe atasse ao pescoço uma pedra de moinho, e que fôsse precipitado ao mar, do que ser êle a causa de escandalizar um dêstes pequeninos."},
     {"n": 3, "texto": "Estai com cuidado sôbre vós; se teu irmão pecar contra ti, repreende-o, e se êle se arrepender, perdoa-lhe."},
     {"n": 4, "texto": "E se êle pecar sete vezes no dia contra ti, e sete vezes no dia te vier buscar, dizendo: Pesa-me, perdoa-lhe."},
     {"n": 5, "texto": "E disseram os Apóstolos ao Senhor: Aumenta-nos a fé."},
@@ -25,7 +25,7 @@
     {"n": 21, "texto": "Nem dirão: Ei-lo aqui, ou ei-lo acolá. Porque eis aqui está o Reino de Deus dentro de vós.", "nota": "fn17_4"},
     {"n": 22, "texto": "Depois disse a seus discípulos: Lá virá tempo em que vós desejareis ver um dia o Filho do homem, e não o vereis.", "nota": "fn17_5"},
     {"n": 23, "texto": "Então vos dirão: Ei-lo aqui está, e ei-lo acolá. Não queirais ir, nem o sigais."},
-    {"n": 24, "texto": "Porque assim como o relâmpago, que fulminando na região inferior do Céu, faz clarão desde uma até à outra parte: Assim será o Filho do homem no seu dia."},
+    {"n": 24, "texto": "Porque assim como o relâmpago, que fuzilando na região inferior do Céu, faz clarão desde uma até à outra parte: Assim será o Filho do homem no seu dia."},
     {"n": 25, "texto": "Mas é necessário que êle sofra primeiro muito, e que seja rejeitado dêste povo."},
     {"n": 26, "texto": "E o que sucedeu em tempo de Noé, do mesmo modo sucederá também quando vier o Filho do homem."},
     {"n": 27, "texto": "Êles comiam e bebiam, casavam os homens com as mulheres, e as mulheres com os homens, até ao dia em que Noé entrou na arca, e então veio o dilúvio e fez perecer a todos."},
@@ -43,7 +43,7 @@
   "notas": {
     "fn17_1": {
       "rotulo": "Fizemos o que devíamos fazer",
-      "texto": "Com esta comparação pretende o Senhor curar a vaidade daqueles homens, que quando têm feito alguma coisa boa, querem logo entrar a contas com Deus."
+        "texto": "Com esta comparação pretende o Senhor curar a vaidade daqueles homens, que quando têm feito alguma cousa boa, querem logo entrar a contas com Deus."
     },
     "fn17_2": {
       "rotulo": "E êste era samaritano",
