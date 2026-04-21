@@ -9,19 +9,19 @@
     { "n": 5, "texto": "E Jesus lhes perguntou: Quantos pães tendes vós? Responderam êles: Sete." },
     { "n": 6, "texto": "E mandou à gente que se recostasse sôbre a terra. E tomando os sete pães, dando graças, os partiu, e deu a seus discípulos, para que os distribuíssem, e êles os distribuíram pelo povo." },
     { "n": 7, "texto": "Tinham também uns poucos de peixinhos, e êle os abençoou, e mandou que lhos pusessem:" },
-    { "n": 8, "texto": "Comeram pois, e ficaram fartos, e dos pedaços que tinham sobejado, levantaram sete côstos." },
+    { "n": 8, "texto": "Comeram pois, e ficaram fartos, e dos pedaços que tinham sobejado, levantaram sete cêstos." },
     { "n": 9, "texto": "Eram porém os que comeram perto de quatro mil, e Jesus os despediu." },
     { "n": 10, "texto": "E entrando logo na barca em companhia de seus discípulos, passou ao território de Dalmanuta.", "nota": "fn8_1" },
     { "n": 11, "texto": "E saíram os fariseus, e se puseram a disputar com êle, pedindo-lhe que lhes fizesse ver algum prodígio do Céu, tudo para o tentarem." },
-    { "n": 12, "texto": "Porém Jesus arrancando do íntimo do coração um suspiro, disse: Por que pede esta geração um prodígio? Em verdade vos digo, que esta geração se não concederá prodígio." },
+    { "n": 12, "texto": "Porém Jesus arrancando do íntimo do coração um suspiro, disse: Por que pede esta geração um prodígio? Em verdade vos digo, que a esta geração se não concederá prodígio." },
     { "n": 13, "texto": "E deixando-os, tornou outra vez a embarcar, e passou à outra banda." },
     { "n": 14, "texto": "Ora, os discípulos esqueceram-se de tomar pão, e não tinham consigo na barca senão um único." },
-    { "n": 15, "texto": "E pôs-lhes Jesus um preceito, em que dizia: Vêde bem; e acautelai-vos do fermento dos fariseus, e do fermento de Herodes.", "nota": "fn8_2" },
+    { "n": 15, "texto": "E pôs-lhes Jesus um preceito, em que dizia: Vêde bem, e acautelai-vos do fermento dos fariseus, e do fermento de Herodes.", "nota": "fn8_2" },
     { "n": 16, "texto": "E discorriam entre si, dizendo: É porque não temos pão.", "nota": "fn8_3" },
     { "n": 17, "texto": "O que conhecendo Jesus, disse-lhes: Que estais vós considerando que não tendes pão? É possível que ainda não no conheçais nem compreendais? ainda tendes cego o vosso coração?" },
     { "n": 18, "texto": "Tendo olhos não vêdes? e tendo ouvidos não ouvis? e não vos lembrais," },
-    { "n": 19, "texto": "quando parti cinco pães para cinco mil, quantos côstos levantastes cheios de pedaços? Responderam êles: Doze." },
-    { "n": 20, "texto": "E quando eu parti sete pães para quatro mil, quantos côstos levantastes de pedaços? E êles lhe responderam: Sete." },
+    { "n": 19, "texto": "quando parti cinco pães para cinco mil, quantos cêstos levantastes cheios de pedaços? Responderam êles: Doze." },
+    { "n": 20, "texto": "E quando eu parti sete pães para quatro mil, quantos cêstos levantastes de pedaços? E êles lhe responderam: Sete." },
     { "n": 21, "texto": "E Jesus lhes dizia: Pois como não entendeis ainda?" },
     { "n": 22, "texto": "E vieram a Betsaida, e lhe trouxeram um cego, e lhe rogavam que o tocasse." },
     { "n": 23, "texto": "E tomando ao cego pela mão, o tirou para fora da aldeia, e cuspindo-lhe nos olhos, tendo-lhe imposto as suas mãos, lhe perguntou se via alguma coisa." },
@@ -40,7 +40,7 @@
     { "n": 36, "texto": "Pois de que aproveitará ao homem, se ganhar o mundo inteiro e perder a sua alma?" },
     { "n": 37, "texto": "Ou que dará o homem em trôco pela sua alma?" },
     { "n": 38, "texto": "Porque se nesta geração adúltera, e pecadora, se envergonhar alguém de mim, e das minhas palavras: Também o Filho do homem se envergonhará dêle, quando vier na glória de seu Pai acompanhado dos santos anjos." },
-    { "n": 39, "texto": "Dizia-lhes mais: Em verdade vos afirmo que dos que aqui se acham, alguns há que não hão de gostar a morte, enquanto não virem chegar o reino de Deus no seu poder." }
+    { "n": 39, "texto": "Dizia-lhes mais: Em verdade vos affirmo que dos que aqui se acham, alguns há que não hão de gostar a morte, enquanto não virem chegar o reino de Deus no seu poder." }
   ],
   "notas": {
     "fn8_1": {
@@ -53,7 +53,7 @@
     },
     "fn8_3": {
       "rotulo": "É porque não temos pão",
-      "texto": "Parece que é o sentido: Diz porque não temos pão. Outros entendem que o que é para mais certa expressão, e então entrava a maior diligência e apêrto dos discípulos, se além de não terem pão, não podiam tomá-lo, nem dos fariseus, nem dos herodianos."
+      "texto": "Parece que é o sentido: Diz porque não temos pão. Outros entendem que o guia. é para mais certa expressão, e então entrava a maior diligência e apêrto dos discípulos, se além de não terem pão, não podiam tomá-lo, nem dos fariseus, nem dos herodianos."
     },
     "fn8_4": {
       "rotulo": "As árvores",

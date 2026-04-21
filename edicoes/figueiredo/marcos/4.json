@@ -28,15 +28,15 @@
     { "n": 24, "texto": "Também lhes dizia: Atendei ao que ides agora a ouvir. Com a medida com que medirdes aos mais, vos medirão a vós, ainda se vos acrescentará.", "nota": "fn4_2" },
     { "n": 25, "texto": "Porque ao que já tem, dar-se-lhe-á: E ao que não tem, ainda o que tem se lhe tirará." },
     { "n": 26, "texto": "Dizia também: Tal é o reino de Deus, como um homem que lança a semente sôbre a terra." },
-    { "n": 27, "texto": "E quer êle durma, quer se levante, de noite e de dia a semente vai lançando, e vai crescendo sem que êle o saiba." },
-    { "n": 28, "texto": "Porque a terra produz de si mesma, primeiro a erva, depois a espiga, e por último o grão cheio na espiga." },
-    { "n": 29, "texto": "E quando o fruto é já maduro, logo lhe mete a foice, porque é chegada a seara." },
-    { "n": 30, "texto": "Dizia mais: A que assemelharemos o reino de Deus? Ou com que parábola o compararemos?" },
-    { "n": 31, "texto": "É semelhante a um grão de mostarda, que quando se semeia na terra, é a menor de tôdas as sementes que há no mundo:" },
-    { "n": 32, "texto": "E depois de semeado, sobe, e faz-se maior do que tôdas as hortaliças, e lança uns ramos tão grandes, que as aves do Céu podem descansar debaixo de sua sombra." },
-    { "n": 33, "texto": "E por muitas parábolas semelhantes lhes falava desta sorte, conforme podiam entender." },
-    { "n": 34, "texto": "E sem parábola lhes não dizia coisa alguma; mas tudo explicava em particular a seus discípulos." },
-    { "n": 35, "texto": "Naquele mesmo dia, ao cair da tarde, lhes disse: Passemos à outra banda." },
+    { "n": 27, "texto": "E que dorme, e se levanta de noite e de dia, e a semente brota, e cresce sem êle saber como." },
+    { "n": 28, "texto": "Porque a terra por si mesma produz, primeiramente a erva, depois a espiga, e por último o grão grado na espiga." },
+    { "n": 29, "texto": "E quando produzir os frutos, mete logo a foice, porque está chegado o tempo da ceifa." },
+    { "n": 30, "texto": "Ainda dizia: A que coisa assemelharemos nós o reino de Deus? ou com que parábola o compararemos?" },
+    { "n": 31, "texto": "E’ como um grão de mostarda, que quando se semeia na terra, é a menor de tôdas as sementes que há na terra:" },
+    { "n": 32, "texto": "Mas depois de semeado, cresce, e faz-se mais alto que tôdas as hortaliças, e cria grandes ramos, de modo que as aves do Céu podem vir pousar debaixo da sua sombra." },
+    { "n": 33, "texto": "E assim lhes propunha a palavra com muitas parábolas, tais como estas, conforme o permitia a capacidade dos ouvintes:" },
+    { "n": 34, "texto": "E não lhes falava sem usar de parábolas: Mas tudo explicava depois em particular a seus discípulos." },
+    { "n": 35, "texto": "E naquele dia, já sôbre a tarde, lhes disse: Passemos à banda dalém." },
     { "n": 36, "texto": "E despedindo a gente, o levaram consigo assim mesmo como estava na barca: E outras embarcações, que com êle estavam, o seguiram." },
     { "n": 37, "texto": "Então se levantou uma grande tormenta de vento que metia as ondas na barca, de sorte que ela se encheu dágua." },
     { "n": 38, "texto": "Entretanto estava Jesus dormindo na pôpa sôbre um travesseiro: Então êles o acordam, e lhe dizem: Mestre, a ti não se te dá que pereçamos?" },
@@ -49,8 +49,8 @@
       "texto": "Da Galiléia."
     },
     "fn4_2": {
-      "rotulo": "Ainda se vos acrescentará",
-      "texto": "Com a medida com que medirdes aos mais, vos medirão a vós, e ainda mais se vos acrescentará."
+      "rotulo": "E ainda se vos acrescentará",
+      "texto": "O grego: “A vós outros que ouvis, isto é, à proporção do trabalho, e atenção que empregardes em receber, e cultivar a semente da divina palavra, será Deus liberal, e magnífico em derramar sobre vós novas e maiores graças. O homem recolherá à proporção do que houver semeado, S. Paulo aos Gál 6, 8, e na segunda aos Cor 9, 6. O que semeia pouco, colherá pouco. Deus é liberalíssimo, e aos que sabem fazer bom uso do que já têm, lhes dará mais e mais.”"
     }
   }
 }
