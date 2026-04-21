@@ -45,14 +45,14 @@
     { "n": 41, "texto": "E veio terceira vez, e disse-lhes: Dormi agora, e descansai. Basta: É chegada a hora: Eis aqui vai o Filho do homem a ser entregue em mãos de pecadores." },
     { "n": 42, "texto": "Levantai-vos, vamos: Eis aí vem chegando quem me há de entregar." },
     { "n": 43, "texto": "Ainda bem Jesus não tinha acabado de falar, quando chega Judas Iscariotes, um dos doze, e com êle uma grande tropa de gente armada de espadas e de varapaus, da parte dos príncipes dos sacerdotes, e dos escribas, e dos anciãos." },
-    { "n": 44, "texto": "Ora, o traidor tinha-lhes dado uma senha, dizendo: Aquêle a quem eu der um ósculo, êsse é que é, prendei-o e levai-o com cuidado." },
+    { "n": 44, "texto": "Ora, o traidor tinha-lhes dado uma senha, dizendo: Àquele a quem eu der um ósculo, êsse é que é, prendei-o e levai-o com cuidado." },
     { "n": 45, "texto": "E tanto que chegou, indo logo ter com Jesus, lhe disse: Deus te salve, Mestre: E deu-lhe um ósculo." },
     { "n": 46, "texto": "Então êles lhe lançaram as mãos, e o prenderam." },
-    { "n": 47, "texto": "E um certo dos circunstantes, tirando a espada, feriu a um servo do sumo sacerdote, e lhe cortou uma orelha." },
+    { "n": 47, "texto": "E um certo dos circunstantes, tirando da espada, feriu a um servo do sumo sacerdote, e lhe cortou uma orelha." },
     { "n": 48, "texto": "E respondendo Jesus lhes disse: Como se eu fôra algum ladrão viestes com espadas, e varapaus a prender-me?" },
     { "n": 49, "texto": "Todos os dias estava eu convosco ensinando no Templo e não me prendestes. Mas isto acontece para que se cumpram as Escrituras." },
     { "n": 50, "texto": "Então desamparando-o os seus discípulos, fugiram todos." },
-    { "n": 51, "texto": "Ia-o, porém, seguindo um mancebo, coberto com um lençol sôbre o corpo nu: E prenderam-no.", "nota": "fn14_8" },
+    { "n": 51, "texto": "Ia-o, porém, seguindo um mancebo, coberto com um lençol sôbre o corpo nu: E o prenderam.", "nota": "fn14_8" },
     { "n": 52, "texto": "Mas êle, largando o lençol, lhes escapou nu." },
     { "n": 53, "texto": "E levaram Jesus à casa do sumo sacerdote. E se ajuntaram todos os sacerdotes, e os escribas, e os anciãos." },
     { "n": 54, "texto": "Mas Pedro o foi seguindo de longe até dentro do pátio do sumo sacerdote: E estava assentado ao fogo com os oficiais, e ali se aquentava." },
@@ -94,7 +94,7 @@
     },
     "fn14_5": {
       "rotulo": "Cantado o hino",
-      "texto": "Assim os de Moais, Sacy e Huré, seguindo o texto grego. Porque a Vulgata diz simplesmente, dito o hino, tanto em S. Marcos, como em S. Mateus."
+      "texto": "Assim os de Moas, Sacy e Huré, seguindo o texto grego. Porque a Vulgata diz simplesmente, dito o hino, tanto em S. Marcos, como em S. Mateus."
     },
     "fn14_6": {
       "rotulo": "Aquela hora",

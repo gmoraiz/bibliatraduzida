@@ -9,7 +9,7 @@
     { "n": 5, "texto": "E não podia fazer ali milagre algum, senão foi que curou alguns poucos enfermos, impondo-lhes as mãos:", "nota": "fn6_3" },
     { "n": 6, "texto": "E Jesus se admirava da incredulidade deles, e andava pregando por tôdas as aldeias circunvizinhas." },
     { "n": 7, "texto": "E chamou os doze: E começou a enviá-los a dois e dois, e lhes dava poder contra os espíritos imundos." },
-    { "n": 8, "texto": "E ordenou-lhes que não levassem nada nas jornadas, senão somente um bordão; nem levassem alforge, nem pão, nem dinheiro na cinta." },
+    { "n": 8, "texto": "E ordenou-lhes que não levassem nada nas jornadas, senão sòmente um bordão; nem levassem alforge, nem pão, nem dinheiro na cinta." },
     { "n": 9, "texto": "Mas que fossem calçados de sandálias, e que não se provessem de duas túnicas." },
     { "n": 10, "texto": "E dizia-lhes: Em qualquer casa onde entrardes, ficai nela, até sairdes do lugar:" },
     { "n": 11, "texto": "E quando alguns vos não receberem, nem vos escutarem, saindo dali, sacudi o pó dos vossos pés, em testemunho contra êles." },
@@ -86,7 +86,7 @@
     },
     "fn6_7": {
       "rotulo": "Mas por causa do juramento",
-      "texto": "O juramento caindo sôbre uma obrigação iníqua, como era dar a morte a um homem como o Batista, por isso mesmo era nulo; e de nenhum vigor. Só o capricho, ou a vaidade, o podiam fazer cumprir. Êste assunto provaram os nossos Padres do Concílio 8 de Toledo no Cânon 2, com as autoridades de Santo Antônio, Santo Agostinho, S. Gregório Magno, e Santo Isidoro de Sevilha."
+      "texto": "O juramento caindo sôbre uma matéria tão iníqua, como era dar a morte a um homem como o Batista, por si mesmo era nulo, e de nenhum vigor. Só o capricho, ou a vaidade, o podiam fazer cumprir. Êste assunto provaram os nossos Padres do Concílio 8 de Toledo no Cânon 2, com as autoridades de Santo Antônio, Santo Agostinho, S. Gregório Magno, e Santo Isidoro de Sevilha."
     }
   }
 }
