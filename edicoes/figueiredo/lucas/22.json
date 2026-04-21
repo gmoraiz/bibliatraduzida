@@ -20,7 +20,7 @@
     {"n": 16, "texto": "Porque vos declaro que a não tornarei mais a comer, até que ela se cumpra no Reino de Deus.", "nota": "fn22_3"},
     {"n": 17, "texto": "E depois de tomar o cálice, deu graças, e disse: Tomai-o, e distribuí-o entre vós:", "nota": "fn22_4"},
     {"n": 18, "texto": "Porque vos declaro que não tornarei a beber do fruto da vida enquanto não chegar o Reino de Deus."},
-    {"n": 19, "texto": "Também depois de tomar o pão deu graças: e partiu-o, e deu-lho, dizendo: Este é o meu corpo, que se dá por vós: Fazei isto em memória de mim.", "nota": "fn22_5"},
+    {"n": 19, "texto": "Também depois de tomar o pão deu graças, e partiu-o, e deu-lho, dizendo: Este é o meu corpo, que se dá por vós: Fazei isto em memória de mim.", "nota": "fn22_5"},
     {"n": 20, "texto": "Tomou também da mesma sorte o cálice, depois de cear, dizendo: Este cálice é o Novo Testamento em meu sangue, que será derramado por vós.", "nota": "fn22_6"},
     {"n": 21, "texto": "Entretanto eis aí a mão de quem me há de entregar, está à mesa comigo."},
     {"n": 22, "texto": "E na verdade o Filho do homem vai, segundo o que está decretado: Mas ai daquele homem, por quem êle há de ser entregue!"},
@@ -38,7 +38,7 @@
     {"n": 34, "texto": "Mas Jesus lhe disse: Declaro-te, Pedro, que não cantará hoje o galo, sem que tu por três vezes não hajas negado que me conheces. Depois perguntou-lhes:"},
     {"n": 35, "texto": "Quando eu vos mandei caminhar sem bolsa, e sem alforge, e sem sapatos, faltou-vos porventura alguma coisa?"},
     {"n": 36, "texto": "E êles responderam: Nada. Prosseguiu logo Jesus: Pois agora quem tem bolsa, tome-a, e também alforge: E o que a não tem, venda a sua túnica e compre espada.", "nota": "fn22_9"},
-    {"n": 37, "texto": "Porque vos digo, que é necessário que se veja cumprido em mim ainda isto que está escrito: <span class='prophetic'>E foi reputado por um dos iníquos.</span> Porque as coisas que dizem respeito a mim, vão já a ter o seu cumprimento."},
+    {"n": 37, "texto": "Porque vos digo, que é necessário que se veja cumprido em mim ainda isto que está escrito: E foi reputado por um dos iníquos. Porque as coisas que dizem respeito a mim, vão já a ter o seu cumprimento."},
     {"n": 38, "texto": "Mas êles responderam: Senhor, eis aqui estão duas espadas. E Jesus lhes disse: Basta.", "nota": "fn22_10"},
     {"n": 39, "texto": "E tendo saído, foi dali, como costumava, para o monte das Oliveiras. E seus discípulos o seguiram também."},
     {"n": 40, "texto": "E quando chegou àquele lugar, lhes disse: Orai para que não entreis em tentação."},
@@ -97,7 +97,7 @@
     },
     "fn22_6": {
       "rotulo": "Que será derramado",
-      "texto": "No texto latino fica em dúvida a qual dos dois antecedentes se deve referir o relativo <em>qui</em>, se ao cálice, se ao sangue. O original grego tira tôda a equivocação. Porque, como advertem Amelote, Sacy e Duhamel, diz assim: <em>Poculum quod vobis effunditur</em>: onde necessàriamente se deve referir o relativo ao cálice.<br><br><em>Por vós</em> — O que em S. Mateus e em S. Marcos se diz, que será derramado por muitos; se diz em S. Lucas, que será derramado por vós. Uma e outra lição repete a Igreja no cânon da missa, quando diz: <em>Qui pro vobis et pro multis effunditur.</em> Sôbre o que é notável a doutrina que nos dá o Catecismo do Concílio de Trento, aprovado por Pio V e por Gregório XIII. Estas palavras (diz o Catecismo, tratando do Sacramento da Eucaristia) umas são tiradas de S. Mateus, outras de S. Lucas. Porém a Igreja, instruída pelo Espírito Santo, ajuntou umas e outras, para mostrar particularmente o fruto e a utilidade da Paixão de Nosso Senhor. Porque se nós consideramos a virtude, que a sua paixão tem em si mesmo, é necessário confessar que o sangue de Nosso Senhor foi derramado para salvação dos homens todos. Mas se nós olhamos para o fruto que os homens dêle recebem, fàcilmente reconhecemos que êste sangue não aproveita a todos, mas sòmente a muitos."
+      "texto": "No texto latino fica em dúvida a qual dos dois antecedentes se deve referir o relativo <em>qui</em>, se ao cálice, se ao sangue. O original grego tira tôda a equivocação. Porque, como advertem Amelote, Sacy e Duhamel, diz assim: <em>Poculum quod vobis effunditur</em>: onde necessàriamente se deve referir o relativo ao cálice.<br><br><em>Por vós</em> — O que em S. Mateus e em S. Marcos se diz, que será derramado por muitos; se diz em S. Lucas, que será derramado por vós. É uma e outra lição repete a Igreja no cânon da missa, quando diz: <em>Qui pro vobis et pro multis effunditur.</em> Sôbre o que é notável a doutrina que nos dá o Catecismo do Concílio de Trento, aprovado por Pio V. e por Gregório XIII. Estas palavras (diz o Catecismo, tratando do Sacramento da Eucaristia) umas são tiradas de S. Mateus, outras de S. Lucas. Porém a Igreja, instruída pelo Espírito Santo, ajuntou umas e outras, para mostrar particularmente o fruto e a utilidade da Paixão de Nosso Senhor. Porque se nós consideramos a virtude, que a sua paixão tem em si mesmo, é necessário confessar que o sangue de Nosso Senhor foi derramado para salvação dos homens todos. Mas se nós olhamos para o fruto que os homens dêle recebem, fàcilmente reconhecemos que êste sangue não aproveita a todos, mas sòmente a muitos."
     },
     "fn22_7": {
       "rotulo": "Chamam-se benfeitores",
@@ -109,11 +109,11 @@
     },
     "fn22_9": {
       "rotulo": "E compre espada",
-      "texto": "Não quer significar o Senhor com esta alegoria, que se armem os Apóstolos de espadas materiais, mas que serão tais os trabalhos e apertos, em que se hão de ver, que para vencer êstes combates lhes será preciso valer-se das armas, de que nos apertos do corpo se valem as pessoas do mundo, isto é, do escudo da fé, do capacete da esperança, e da espada da palavra de Deus. Assim o entenderam com os antigos Padres todos os bons expositores modernos."
+      "texto": "Não quer significar o Senhor com esta alegoria, que se armem os Apóstolos de espadas materiais; mas que serão tais os trabalhos e apertos, em que se hão de ver, que para vencer êstes combates lhes será preciso valer-se das armas, de que nos apertos do corpo se valem as pessoas do mundo, isto é, do escudo da fé, do capacete da esperança, e da espada da palavra de Deus. Assim o entenderam com os antigos Padres todos os bons expositores modernos."
     },
     "fn22_10": {
       "rotulo": "Eis aqui estão duas espadas",
-      "texto": "Daqui se conhece que os Apóstolos não entenderam o sentido em que seu Mestre lhes falava, e que se não enganaram menos os que depois entenderam por estas duas espadas em poder dos Apóstolos, os dois direitos de espiritualidade e temporalidade, que quiseram dar aos sucessores de Pedro.<br><br><em>Basta</em> — Os Apóstolos não compreenderam o sentido das palavras de Jesus Cristo. E como não julgou a propósito explicar-se mais por então, interrompeu o discurso, dizendo: Basta. Como se dissera: \"Deixemos isso, passemos a outras coisas: a experiência vos mostrará o que agora não entendeis.\""
+      "texto": "Daqui se conhece que os Apóstolos não entenderam o sentido em que seu Mestre lhes falava, e que se não enganaram menos os que depois entenderam por estas duas espadas em poder dos Apóstolos, os dois direitos de espiritualidade e temporalidade, que quiseram dar aos sucessores de Pedro.<br><br><em>Basta</em> — Os Apóstolos não compreenderam o sentido das palavras de Jesus Cristo. E como não julgou a propósito explicar-se mais por então, interrompeu o discurso, dizendo: Basta: Como se dissera: \"Deixemos isso, passemos a outras coisas: a experiência vos mostrará o que agora não entendeis.\""
     },
     "fn22_11": {
       "rotulo": "Que o confortava",

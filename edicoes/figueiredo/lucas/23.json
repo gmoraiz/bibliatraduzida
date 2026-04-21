@@ -2,7 +2,7 @@
   "num": 23,
   "sumario": "É Jesus levado à presença de Pilatos. Êste o remete a Herodes, donde torna a vir para Pilatos. Quer êste livrá-lo. Pede o povo que solte antes a Barrabás. Instam os judeus pela condenação de Jesus Cristo, e Pilatos o entrega a ser crucificado. É constrangido Simão a levar-lhe a Cruz. Crucificam-no entre dois ladrões. Ora pelos que lhe dão a morte. Iludido de grandes e pequenos. Dão-lhe a beber vinagre. O bom ladrão convertido e premiado. Escurece o sol, e rasga-se o véu do templo. Expira Jesus. O centurião o reconhece Filho de Deus. José o encerra.",
   "versiculos": [
-    {"n": 1, "texto": "E levantando-se tôda a multidão dos daquelle conselho, levaram Jesus a Pilatos."},
+    {"n": 1, "texto": "E levantando-se tôda a multidão dos daquele conselho, levaram Jesus a Pilatos."},
     {"n": 2, "texto": "E começaram a acusá-lo, dizendo: A êste temos achado pervertendo a nossa nação, e vedando dar o tributo a César, e dizendo que êle é o Cristo Rei."},
     {"n": 3, "texto": "E Pilatos lhe perguntou, dizendo: Tu és o rei dos judeus? E êle respondendo, disse: Tu o dizes.", "nota": "fn23_1"},
     {"n": 4, "texto": "Então disse Pilatos aos príncipes dos sacerdotes, e ao povo: Eu não acho neste homem crime algum."},
@@ -82,7 +82,7 @@
     },
     "fn23_6": {
       "rotulo": "As mulheres",
-      "texto": "Maria Madalena, Maria Cleófas, Salomé."
+      "texto": "Maria Madalena, Maria Cléofas, Salomé."
     },
     "fn23_7": {
       "rotulo": "Dia da preparação",
