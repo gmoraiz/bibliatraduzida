@@ -91,7 +91,6 @@ const chapterHtml = renderChapterHtml(chapterData);
 const hasPdf = edition.id === 'figueiredo';
 const pdfUrl = hasPdf ? `/${bookDir}/${capitulo}.pdf` : null;
 const pdfOldUrl = hasPdf ? `/${bookDir.replace('/figueiredo/', '/figueiredo-original/')}/${capitulo}.pdf` : null;
-// Fallback: capítulo sem transcrição → exibir PDF inline (como no app.js original)
 const isPdfFallback = hasPdf && (!chapterData.versiculos || chapterData.versiculos.length === 0);
 
 const title = `${bookIndex.titulo} — Capítulo ${capitulo} | Bíblia ${edition.edicao} | Bíblia Traduzida`;

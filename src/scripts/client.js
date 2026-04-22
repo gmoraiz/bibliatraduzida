@@ -270,6 +270,15 @@ async function onVerseNumberClick(e, verseNumber) {
   if (!Number.isFinite(n) || n <= 0) return;
   highlightSelectedVerses(n);
 
+  // Update URL with verse via query string, preserving compare mode if active
+  const url = new URL(window.location);
+  url.searchParams.set('v', String(n));
+  if (compareMode && compareEditionIds.length > 0) {
+    const compareValue = compareEditionIds.length === 1 ? compareEditionIds[0] : 'all';
+    url.searchParams.set('compare', compareValue);
+  }
+  window.history.replaceState(null, '', url.toString());
+
   // Share
   const verse = pageData.chapterData?.versiculos?.find(v => v && v.tipo !== 'bio' && Number(v.n) === n);
   const text = verse?.texto?.trim() || '';
@@ -1013,6 +1022,105 @@ function initFabScrollBehavior() {
   updateFabVisibility();
 }
 
+// ── VERSE SCROLL SUPPORT ───────────────────────────────────────
+
+function scrollToVerse(verseNumber, waitForComparison = false) {
+  if (!verseNumber || !Number.isFinite(verseNumber) || verseNumber <= 0) return false;
+  const selector = `#content .verse[data-v="${verseNumber}"]`;
+  const verseEl = document.querySelector(selector);
+  if (!verseEl) return false;
+  
+  highlightSelectedVerses(verseNumber);
+  
+  // Se waitForComparison, usa uma estratégia mais inteligente
+  if (waitForComparison) {
+    const grid = document.getElementById('compare-grid');
+    if (grid) {
+      const attemptScrollWhenReady = () => {
+        const el = document.querySelector(selector);
+        if (el && el.offsetParent !== null) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return true;
+        }
+        return false;
+      };
+      
+      // Se o grid já tem conteúdo, scrolla imediatamente
+      if (grid.innerHTML.length > 0 && grid.querySelector('.verse')) {
+        attemptScrollWhenReady();
+        return true;
+      }
+      
+      // Caso contrário, observa mudanças no grid
+      const observer = new MutationObserver(() => {
+        if (grid.querySelector('.verse') && attemptScrollWhenReady()) {
+          observer.disconnect();
+        }
+      });
+      
+      observer.observe(grid, { childList: true, subtree: true });
+      
+      // Timeout de segurança: se não conseguir em 3s, tenta de qualquer jeito
+      setTimeout(() => {
+        observer.disconnect();
+        attemptScrollWhenReady();
+      }, 3000);
+      
+      return true;
+    }
+  }
+  
+  // Scroll normal com retry: tenta múltiplas vezes para garantir que funcione
+  const attemptScroll = (delay) => {
+    setTimeout(() => {
+      const el = document.querySelector(selector);
+      if (el && el.offsetParent !== null) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, delay);
+  };
+  
+  // Tenta scroll com delays crescentes
+  attemptScroll(100);    // Primeiro render
+  attemptScroll(500);    // Layout reflow
+  attemptScroll(1200);   // Comparação típica (com cache)
+  attemptScroll(2000);   // Comparação lenta (rede)
+  return true;
+}
+
+function initVerseAndCompareFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  
+  const verseParam = params.get('v');
+  const compareParam = params.get('compare');
+  
+  // Se tem comparação, ativa PRIMEIRO
+  if (compareParam) {
+    const select = document.getElementById('compare-select');
+    if (select && select.querySelector(`option[value="${compareParam}"]`)) {
+      select.value = compareParam;
+      onCompareSelectChange(compareParam);
+      
+      // Faz scroll para versículo após ativar comparação (com flag para esperar render)
+      if (verseParam) {
+        const verseNum = parseInt(verseParam, 10);
+        if (Number.isFinite(verseNum) && verseNum > 0) {
+          scrollToVerse(verseNum, true);  // Passa true para waitForComparison
+        }
+      }
+      return;
+    }
+  }
+  
+  // Se não tem comparação, apenas faz scroll para versículo
+  if (verseParam) {
+    const verseNum = parseInt(verseParam, 10);
+    if (Number.isFinite(verseNum) && verseNum > 0) {
+      scrollToVerse(verseNum);
+    }
+  }
+}
+
 // Usar DOMContentLoaded garante que o DOM está pronto mesmo em
 // dev mode (Vite pode executar módulos antes de DOMContentLoaded).
 
@@ -1024,6 +1132,7 @@ function runInit() {
   try { initPdfModalGestures(); } catch (_) {}
   try { initPdfPinchGestures(); } catch (_) {}
   try { initPdfFallback(); } catch (_) {}
+  try { initVerseAndCompareFromUrl(); } catch (_) {}
   try { saveNavigationToStorage(); } catch (_) {}
   try { registerPwaServiceWorker(); } catch (_) {}
 }
