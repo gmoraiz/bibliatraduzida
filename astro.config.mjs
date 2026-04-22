@@ -49,7 +49,7 @@ export default defineConfig({
   site: 'https://bibliatraduzida.com',
   integrations: [sitemap(), copyEdicoesIntegration()],
   output: 'static',
-  trailingSlash: 'always',
+  trailingSlash: 'ignore',
   vite: {
     plugins: [serveEdicoesPlugin()],
     server: {
